@@ -6,12 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% if page.keywords %}<meta name="keywords" content="{{page.keywords}}">{% endif %}
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
-        
+
         <title>{{ page.title }} - Raddish</title>
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}assets/css/custom.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}assets/css/template.css">
 	    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/highlight.css">
 	    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/bootstrapValidator.min.css">
 
@@ -48,7 +47,7 @@
 			        </div>
 		        </div>
 
-		        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 			        <ul class="nav navbar-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
                         <li {% if page.url == '/features.html' %} class="active" {% endif %}><a href="/features.html" itemprop="url"><span itemprop="name">Features</span></a></li>
                         <li {% if page.url contains 'basics' %} class="active dropdown" {% else %} class="dropdown" {% endif %}>
@@ -56,7 +55,7 @@
                                 <span itemprop="name">Basics</span>
                                 <span class="caret"></span>
                             </a>
-    
+
                             <ul class="dropdown-menu">
                                 {% for post in site.categories.basics reversed %}
                                 <li>
@@ -83,30 +82,38 @@
 					            {% endfor %}
 				            </ul>
 				        </li>
-                        <!--<li {% if page.url contains 'advanced' %} class="active dropdown" {% else %} class="dropdown" {% endif %}>-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-                                <!--Advanced-->
-                                <!--<span class="caret"></span>-->
-                            <!--</a>-->
-    <!---->
-                            <!--<ul class="dropdown-menu">-->
-                                <!--{% for post in site.categories.advanced reversed %}-->
-                                <!--<li>-->
-                                    <!--<a href="{{ post.url }}">{{ post.title }}</a>-->
-                                <!--</li>-->
-                                <!--{% endfor %}-->
-                            <!--</ul>-->
-                        <!--</li>-->
+                        <li {% if page.url contains 'advanced' %} class="active dropdown" {% else %} class="dropdown" {% endif %}>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Advanced
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% for post in site.categories.advanced reversed %}
+                                <li>
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
 				        <li {% if page.url contains 'changelog' %} class="active" {% endif %}>
 				            <a href="/changelog.html"itemprop="url"><span itemprop="name">Changelog</span></a>
 				        </li>
                         <li {% if page.url == '/support.html' %} class="active" {% endif %}>
                             <a href="/support.html" itemprop="url"><span itemprop="name">Support</span></a>
                         </li>
+                        <li>
+                            <a href="https://github.com/JaspervRijbroek/raddish" target="_blank">
+                                <i class="icon-github"></i>
+                            </a>
+                        </li>
 			        </ul>
 	            </div>
 	        </div>
         </div>
+
+        {% if page.url == '/index.html' %}
+            {% include slider.html %}
+        {% endif %}
 
         <div class="container">
 	        {{content}}
@@ -115,7 +122,7 @@
 	<footer itemscope itemtype="http://schema.org/WPFooter">
 		<p class="text-center">
 			Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
-            <br/> Logo by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
+            <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
 		</p>
 	</footer>
 </html>

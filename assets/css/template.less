@@ -1,0 +1,199 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import "bootstrap/bootstrap";
+
+@chestnut-roze: #cb625f;
+@japonica: #d86865;
+@alizarin-crimson: #e91c28;
+@white: #ffffff;
+@conifer: #b0d45c;
+@dusty-gray: #989898;
+@dove-gray: #6e6d6d;
+@silver: #bbbbbb;
+@mercury: #e6e6e6;
+
+body {
+  margin-top: 52px;
+  margin-bottom: 85px;
+  font-family: 'Open Sans', sans-serif;
+  color: @dove-gray;
+}
+
+hr {
+  border-top: 2px solid @mercury;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 200;
+}
+
+ul {
+  li {
+    font-weight: 200;
+  }
+}
+
+@media(max-width: @screen-xs) {
+  body {
+    margin-top: 65px;
+    margin-bottom: 105px;
+  }
+}
+
+#slider {
+  height: 305px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  .item {
+    .container {
+      background: url(../images/slide.png) no-repeat;
+      background-size: 100% 310px;
+      height: 305px;
+      padding: 40px 50px 10px;
+      color: @white;
+
+      h1 {
+        text-transform: none;
+      }
+
+      img {
+        float: right;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: @white;
+  border-top: 2px solid @alizarin-crimson;
+  padding: 15px 0px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  background: #ffffff;
+  border-radius: 0px;
+  border-bottom: 2px solid @alizarin-crimson;
+}
+
+.page-header {
+  margin-top: 0px;
+  border-bottom: 2px solid @silver;
+
+  h1 {
+    color: @dove-gray;
+    margin-bottom: 0px;
+  }
+}
+
+.navbar {
+  .navbar-brand {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+
+    img {
+      padding-bottom: 5px;
+    }
+  }
+
+  .navbar-nav {
+    &> li {
+      &> a {
+        padding: 20px 15px;
+
+        .caret {
+          color: @conifer;
+          border-top: 8px solid;
+          border-right: 8px solid transparent;
+          border-left: 8px solid transparent;
+        }
+      }
+
+      .dropdown-menu {
+        right: auto;
+        left: 0px;
+      }
+    }
+  }
+}
+
+.quote {
+  text-align: center;
+
+  &::before {
+    background: url(../images/quote-before.png);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    content: " ";
+    margin-right: 25px;
+    vertical-align: super;
+  }
+
+  p {
+    display: inline-block;
+  }
+
+  &::after {
+    background: url(../images/quote-after.png);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    content: " ";
+    margin-left: 25px;
+    vertical-align: super;
+  }
+}
+
+dl {
+  dt {
+    font-weight: 400;
+    color: @dove-gray;
+  }
+
+  dd {
+    margin-top: 10px;
+
+    &::before {
+      background: url(../images/raddish-green.png);
+      height: 40px;
+      width: 40px;
+      content: " ";
+      display: inline-block;
+      margin: 0px 30px 0px 0px;
+      vertical-align: top;
+    }
+
+    @media(max-width: @screen-xs) {
+      &::before {
+        display: none;
+      }
+    }
+
+    p {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 80%;
+    }
+  }
+}
+
+.icon-github {
+  background: url(../images/github.png) no-repeat;
+  height: 20px;
+  width: 20px;
+  display: block;
+}

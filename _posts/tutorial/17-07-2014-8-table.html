@@ -23,25 +23,31 @@ layout: default
         <dl>
             <dt>identity_column</dt>
             <dd>
-                This is the column treated as the identity column of the table. <br/>
-                By default the table object will search for the identity column and register it, <br/>
-                but this behavior can be overridden by adding this value.
+                <p>
+                    This is the column treated as the identity column of the table. <br/>
+                    By default the table object will search for the identity column and register it, <br/>
+                    but this behavior can be overridden by adding this value.
+                </p>
             </dd>
 
             <br/>
             <dt>name</dt>
             <dd>
-                This is the name of the table to use. <br/>
-                By default the system uses the table name created by using the package and name from the identifiers like: <code>foo_bar</code>
-                <br/> When the variable is overridden it will use this as the table name.
+                <p>
+                    This is the name of the table to use. <br/>
+                    By default the system uses the table name created by using the package and name from the identifiers like: <code>foo_bar</code>
+                    <br/> When the variable is overridden it will use this as the table name.
+                </p>
             </dd>
 
             <br/>
             <dt>db</dt>
             <dd>
-                This is the name of the database the table has to connect to. <br/>
-                By default the <code>default</code> database is used, but when overridden it will use that database connection,
-                <br/> keep in mind that this connection has to be configured in the <code>config.json</code> file.
+                <p>
+                    This is the name of the database the table has to connect to. <br/>
+                    By default the <code>default</code> database is used, but when overridden it will use that database connection,
+                    <br/> keep in mind that this connection has to be configured in the <code>config.json</code> file.
+                </p>
             </dd>
         </dl>
         
@@ -111,54 +117,5 @@ module.exports = DemoTable;
     }
 }
         {% endhighlight %}
-    </div>
-</div>
-        
-<div class="row">
-    <div class="col-md-12">
-        <h2>Behaviors</h2>
-    
-        <p>
-            Here the behaviors are almost the same as in the controller. <br/>
-            Only the actions to bind on are different, in the table we have the following actions: <br/>
-            Select, Insert, Update and Delete on the before and after functions we can bind extra functions.
-        </p>
-        <p>
-            Below I will show an example behavior. <br/>
-            This example will set the created_on column (if exists) with the date of creation.
-        </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-        {% highlight javascript %}
-var TableBehavior   = require('raddish').TableBehavior;
-var util            = require('util');
-        
-function CreatableBehavior(config) {
-    TableBehavior.call(this, config);
-}
-        
-util.inherits(CreatableBehavior, TableBehavior);
-
-CreatableBehavior.prototype.onBeforeInsert = function(context) {
-    if(context.data.created_on) {
-        context.data.created_on = new Date().toISOString();
-    }
-        
-    return context;
-};
-        
-module.exports = CreatableBehavior;
-        {% endhighlight %}
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-        <p>
-            In the next tutorial we will cover the Rowset object.
-        </p>
     </div>
 </div>

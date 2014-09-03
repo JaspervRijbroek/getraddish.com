@@ -10,5 +10,54 @@ layout: default
         <div class="page-header">
             <h1>Sockets</h1>
         </div>
+
+        <p>
+            SocketIO has been integrated into the framework and is completely usable within the system. <br/>
+            In most cases to make the page submit events to SocketIO you only have to add the socketable <a href="/tutorial/table.html">behavior</a>.
+        </p>
+
+        <p>
+            If you want to add your own listeners this is of course possible. This however has to be done in a plugin.
+            <br/> Below an example for this.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+{% highlight javascript %}
+function SocketPlugin() {
+
+}
+
+SocketPlugin.prototype.onBeforeRegister = function(alias, path) {
+    // The addListener method will add an extra listener function to the sockets.
+    Socket.addListener('demo', function(message) {
+        // We only log the received message but you can do everything here.
+        // Even ObjectManager calls.
+        console.log(message);
+    });
+};
+
+module.exports = SocketPlugin;
+{% endhighlight %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            When sending messages to the clients you can use the <code>Socket.io</code> variable which holds the complete <a href="http://socket.io/docs/" target="_blank">API of SocketIO</a>.
+            <br/> Below an example.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+{% highlight javascript %}
+// Send the "Hello World" message to all connected sockets
+Socket.io.broadcast('message', 'Hello World');
+{% endhighlight %}
     </div>
 </div>
