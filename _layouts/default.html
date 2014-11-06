@@ -14,11 +14,6 @@
 	    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/highlight.css">
 	    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/bootstrapValidator.min.css">
 
-	    <!--Custom JS -->
-	    <script src="{{ site.baseurl }}assets/js/jquery-2.1.0.js"></script>
-	    <script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>
-	    <script src="{{ site.baseurl }}assets/js/bootstrapValidator.min.js"></script>
-
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -121,11 +116,16 @@
         <div class="container">
 	        {{content}}
         </div>
+
+        <footer itemscope itemtype="http://schema.org/WPFooter">
+            <p class="text-center">
+                Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+                <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
+            </p>
+        </footer>
+
+        <script src="{{ site.baseurl }}assets/js/jquery-2.1.1.min.js"></script>
+        <script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>
+        <script src="{{ site.baseurl }}assets/js/bootstrapValidator.min.js"></script>
     </body>
-	<footer itemscope itemtype="http://schema.org/WPFooter">
-		<p class="text-center">
-			Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
-            <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
-		</p>
-	</footer>
 </html>
