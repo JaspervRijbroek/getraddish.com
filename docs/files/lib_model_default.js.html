@@ -1,0 +1,415 @@
+---
+title: lib/model/default.js - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <h1>File: lib/model/default.js</h1>
+        
+        
+        {% highlight javascript linenos %}
+        "use strict";
+        
+        var ModelAbstract   = require('./abstract');
+        var util            = require('util');
+        var Inflector       = require('../inflector/inflector');
+        var clone           = require('clone');
+        
+        /**
+         * Default model used in most cases.
+         *
+         * @class Model
+         * @extends AbstractModel
+         * @param config The config object.
+         * @constructor
+         */
+        function Model(config) {
+            this.table = undefined;
+        
+            Model.super_.call(this, config);
+        }
+        
+        util.inherits(Model, ModelAbstract);
+        
+        Model.prototype.initialize = function (config) {
+            var self = this;
+        
+            return Model.super_.prototype.initialize.call(self, config)
+                .then(function () {
+                    return self.getTable();
+                })
+                .then(function (table) {
+                    return table.getUniqueColumns();
+                })
+                .then(function (columns) {
+                    for(var index in columns) {
+                        self.states.insert(index, columns[index].type, null, true);
+                    }
+        
+                    return self;
+                });
+        };
+        
+        /**
+         * getItem override of AbstractModel, this will create a complete query and execute this query on the table.
+         *
+         * @method getItem
+         * @returns {Promise} The promise with a single item from the table as content.
+         */
+        Model.prototype.getItem = function () {
+            var self = this;
+        
+            return Model.super_.prototype.getItem.call(this)
+                .then(function() {
+                    if(self.states.isUnique()) {
+                        return self.getTable()
+                            .then(function (table) {
+                                return [table.getQuery(), table];
+                            })
+                            .spread(function(query, table) {
+                                return Promise.cast([query.select(), self])
+                                    .spread(self.buildQueryColumns)
+                                    .spread(self.buildQueryFrom)
+                                    .spread(self.buildQueryJoins)
+                                    .spread(self.buildQueryWhere)
+                                    .spread(self.buildQueryGroup)
+                                    .spread(self.buildQueryHaving)
+                                    .spread(function(query) {
+                                        return [query, table];
+                                    });
+                            })
+                            .spread(function (query, table) {
+                                return table.select(query, 1);
+                            });
+                    } else {
+                        return self.getTable()
+                            .then(function (table) {
+                                return table.getRow();
+                            });
+                    }
+                });
+        };
+        
+        /**
+         * This method will retreive a complete list of objects from the table,
+         * this will also create a query using the buildQuery methods.
+         *
+         * @method getList
+         * @returns {Promise} A promise with the list of object as content
+         */
+        Model.prototype.getList = function () {
+            var self = this;
+        
+            return Model.super_.prototype.getList.call(this)
+                .then(function() {
+                    return self.getTable();
+                })
+                .then(function (table) {
+                    return [table.getQuery(), table];
+                })
+                .spread(function (query, table) {
+                    return Promise.cast([query.select(), self])
+                        .spread(self.buildQueryColumns)
+                        .spread(self.buildQueryFrom)
+                        .spread(self.buildQueryJoins)
+                        .spread(self.buildQueryWhere)
+                        .spread(self.buildQueryGroup)
+                        .spread(self.buildQueryHaving)
+                        .spread(self.buildQueryOrder)
+                        .spread(self.buildQueryLimit)
+                        .spread(function(query) {
+                            return [query, table];
+                        });
+                })
+                .spread(function (query, table) {
+                    return table.select(query, 2);
+                });
+        };
+        
+        /**
+         * A special query is being build to get the total of objects from the table.
+         *
+         * @method getTotal
+         * @returns {Promise} A promise holding the total number of objects as content.
+         */
+        Model.prototype.getTotal = function () {
+            var self = this;
+        
+            return self.getTable()
+                .then(function (table) {
+                    return [table.getQuery(), table];
+                })
+                .spread(function (query, table) {
+                    return Promise.cast([query.select(), self])
+                        .spread(self.buildQueryColumns)
+                        .spread(self.buildQueryFrom)
+                        .spread(self.buildQueryJoins)
+                        .spread(self.buildQueryWhere)
+                        .spread(self.buildQueryGroup)
+                        .spread(self.buildQueryHaving)
+                        .spread(self.buildQueryOrder)
+                        .spread(function(query) {
+                            return [query, table];
+                        });
+                })
+                .spread(function (query, table) {
+                    return table.select(query, 2);
+                })
+                .then(function(data) {
+                    return data.rows.length;
+                });
+        };
+        
+        /**
+         * buildQueryColumns will determine which columns need to be fetched from the table.
+         * by default this is "tbl.*"
+         *
+         * @method buildQueryColumns
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryColumns = function (query, self) {
+            query.columns('tbl.*');
+        
+            return [query, self];
+        };
+        
+        /**
+         * The buildQuiryFrom method will determin from which table the data needs to be fetched.
+         * This table will get the alias "tbl" by default.
+         *
+         * @method buildQueryFrom
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryFrom = function (query, self) {
+            return self.getTable()
+                .then(function(table) {
+                    query.table(table.getName(), 'tbl');
+        
+                    return [query, self];
+                });
+        };
+        
+        /**
+         * The buildQueryJoins will define which joins need to be made.
+         * By default no joins are made.
+         *
+         * @method buildQueryJoins
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryJoins = function (query, self) {
+            return [query, self];
+        };
+        
+        /**
+         * The buildQueryWhere will create the where statements on the query.
+         * By default unique states are filtered, this only happens when they have a value.
+         *
+         * @method buildQueryWhere
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryWhere = function (query, self) {
+            var states = clone(self.states.get());
+        
+            return self.getTable()
+                .then(function(table) {
+        
+                    states = table.mapColumns(states);
+                    for(var index in states) {
+                        if (states[index].unique && states[index].value) {
+                            query.where('tbl.' + index, '=', (states[index].value || states[index].defaultValue));
+                        }
+                    }
+        
+                    return [query, self];
+                });
+        };
+        
+        /**
+         * The buildQueryGroup will group the row together.
+         * By default no group query is made.
+         *
+         * @method buildQueryGroup
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryGroup = function (query, self) {
+            return [query, self];
+        };
+        
+        /**
+         * The buildQueryHaving will add a having statement to the query.
+         * By default no having statements will be added.
+         *
+         * @method buildQueryHaving
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryHaving = function (query, self) {
+            return [query, self];
+        };
+        
+        /**
+         * The buildQueryOrder will determine the order and direction on which to sort.
+         * By default the state sort and direction are used.
+         * When the state sort has a value this value is used, and by default the order is ascending,
+         * unless the direction state has been modified.
+         *
+         * @method buildQueryOrder
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryOrder = function (query, self) {
+            var order = self.states.get('sort');
+            var direction = self.states.get('direction');
+        
+            if(order.value) {
+                query.order(order.value, direction.value);
+            }
+        
+            return [query, self];
+        };
+        
+        /**
+         * BuildQueryLimit will use the limit and offset states to return the records
+         * When both aren't specified the default of limit is "20" and the default of offset is "0".
+         *
+         * @method buildQueryLimit
+         * @param {Object} query The querybuilder object
+         * @param {Object} self Property pointing to the model object.
+         * @returns {Array} An array containing query and self, in this order.
+         */
+        Model.prototype.buildQueryLimit = function (query, self) {
+            var limit = self.states.get('limit');
+            var offset = self.states.get('offset');
+        
+            if (limit.value > 0) {
+                query.limit(limit.value);
+            }
+        
+            if (offset.value > 0) {
+                query.offset(offset.value);
+            }
+        
+            return [query, self];
+        };
+        
+        module.exports = Model;
+        {% endhighlight %}    </div>
+</div>

@@ -1,0 +1,353 @@
+---
+title: lib/controller/default.js - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <h1>File: lib/controller/default.js</h1>
+        
+        
+        {% highlight javascript linenos %}
+        "use strict";
+        
+        var ControllerAbstract  = require('./abstract');
+        var util                = require('util');
+        var Inflector           = require('../inflector/inflector');
+        
+        /**
+         * Controller class
+         * This is the default called on every request,
+         * when overwritten a controller object will inherit from this object or the abstract.
+         *
+         * @class Controller
+         * @extends ControllerAbstract
+         * @constructor
+         */
+        function Controller(config) {
+            ControllerAbstract.call(this, config);
+        }
+        
+        util.inherits(Controller, ControllerAbstract);
+        
+        /**
+         * This function will react on a GET request.
+         * This function will check if the view is singular if it is than _actionRead is called, else _actionBrowse is called,
+         * else the getList function is called.
+         *
+         * @method _actionGet
+         * @param {Object} context Context object with the request data.
+         * @returns {Promise} The data of the model.
+         */
+        Controller.prototype._actionGet = function (context) {
+            var self = this;
+        
+            var method = Inflector.isPlural(self.getRequest().view) ? 'browse' : 'read';
+        
+            return this.execute(method, context)
+                .then(function(data) {
+                    return [self.getView(), data];
+                })
+                .spread(function(view, data) {
+                    view.setData(data.result);
+                    context.result = view;
+                    context.status = 200;
+        
+                    return context;
+                });
+        };
+        
+        /**
+         * This action will react on a PUT request,
+         * The complete context of this action will be forwarded to _actionPost
+         *
+         * @method _actionPut
+         * @param {CommandContext} context Context object with the request data
+         * @returns {Promise} The promise with the context to use afterwards
+         * @private
+         */
+        Controller.prototype._actionPut = function(context) {
+            return this.forward('post', context);
+        };
+        
+        /**
+         * This action will react on a PATCH request,
+         * The complete context of this action will be forwarded to _actionPost
+         *
+         * @method _actionPatch
+         * @param {CommandContext} context Context object with the request data
+         * @returns {Promise} The promise with the context to use afterwards
+         * @private
+         */
+        Controller.prototype._actionPatch = function(context) {
+            return this.forward('post', context);
+        };
+        
+        /**
+         * _actionBrowse will return a list of items,
+         * after this action has been called it will return the data to _actionGet.
+         *
+         * @method _actionBrowse
+         * @param {CommandContext} context Context object with the request data
+         * @returns {Promise} The promise with the context to use afterwards
+         * @private
+         */
+        Controller.prototype._actionBrowse = function(context) {
+            return this.getModel()
+                .then(function(model) {
+                    return model.getList();
+                })
+                .then(function(data) {
+                    context.result = data;
+                    context.status = 200;
+        
+                    return context;
+                });
+        };
+        
+        /**
+         * _actionBrowse will return a single item,
+         * after this action has been called it will return the data to _actionGet.
+         *
+         * @method _actionRead
+         * @param {CommandContext} context Context object with the request data
+         * @returns {Promise} The promise with the context to use afterwards
+         * @private
+         */
+        Controller.prototype._actionRead = function(context) {
+            return this.getModel()
+                .then(function(model) {
+                    return model.getItem();
+                })
+                .then(function(data) {
+                    context.result = data;
+        
+                    return context;
+                });
+        };
+        
+        /**
+         * This function is called on a POST request,
+         * When the state is unique _actionEdit is called else _actionAdd will be called.
+         * The returned data for these actions will be handled afterwards.
+         *
+         * @method _actionPost
+         * @param {Object} context Context object with the request data.
+         * @returns {Promise} The data of the update/ inserted item.
+         */
+        Controller.prototype._actionPost = function (context) {
+            var self = this;
+        
+            return this.getModel()
+                .then(function (model) {
+                    var method = model.states.isUnique() ? 'edit' : 'add';
+        
+                    return self.execute(method, context);
+                })
+                .then(function(data) {
+                    return [self.getView(), data];
+                })
+                .spread(function(view, data) {
+                    view.setData(data.result);
+                    context.result = view;
+        
+                    return context;
+                });
+        };
+        
+        /**
+         * _actionAdd will add a new record to the database.
+         * After this is done the data is returned to _actionPost.
+         *
+         * @method _actionAdd
+         * @param {CommandContext} context Context object with the request data
+         * @returns {Promise} The promise with the context to use afterwards
+         * @private
+         */
+        Controller.prototype._actionAdd = function(context) {
+            return this.getModel()
+                .then(function(model) {
+                    return model.getItem();
+                })
+                .then(function(item) {
+                    return item.setData(context.data.fields);
+                })
+                .then(function(row) {
+                    return [row.save(), row];
+                })
+                .spread(function(item, row) {
+                    row.table.mapColumns(row.data, true);
+                    context.result = row;
+                    context.status = 201;
+        
+                    return context;
+                });
+        };
+        
+        /**
+         * _actionEdit will update an record in the database.
+         * After this is done the data is returned to _actionPost.
+         *
+         * @method _actionEdit
+         * @param {CommandContext} context Context object with the request data
+         * @returns {Promise} The promise with the context to use afterwards
+         * @private
+         */
+        Controller.prototype._actionEdit = function(context) {
+            return this.getModel()
+                .then(function(model) {
+                    return model.getItem();
+                })
+                .then(function(item) {
+                    return item.setData(context.data.fields);
+                })
+                .then(function(row) {
+                    return [row.save(), row];
+                })
+                .spread(function(item, row) {
+                    row.table.mapColumns(row.data, true);
+                    context.result = row;
+                    context.status = 205;
+        
+                    return context;
+                });
+        };
+        
+        /**
+         * This function is called on a DELETE method,
+         * this will remove an item from the database.
+         *
+         * @method _actionDelete
+         * @param {Object} context Context object with the request data.
+         * @returns {Promise} The data of the removed item.
+         */
+        Controller.prototype._actionDelete = function (context) {
+            var self = this;
+        
+            return this.getModel()
+                .then(function (model) {
+                    return model.getItem();
+                })
+                .then(function (item) {
+                    return [item.delete(), item];
+                })
+                .spread(function(item, data) {
+                    return [self.getView(), data];
+                })
+                .spread(function(view, data) {
+                    view.setData(data);
+                    context.result = view;
+                    context.status = 204;
+        
+                    return context;
+                });
+        };
+        
+        module.exports = Controller;
+        {% endhighlight %}    </div>
+</div>

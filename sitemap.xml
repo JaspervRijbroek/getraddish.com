@@ -9,14 +9,16 @@ layout: nil
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-    </url>    
+    </url>
     {% for page in site.html_pages %}
-        <url>
-            <loc>http://getraddish.com{{ page.url }}</loc>
-            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.7</priority>
-        </url>
+        {% unless page.url contains 'docs' %}
+            <url>
+                <loc>http://getraddish.com{{ page.url }}</loc>
+                <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        {% endunless %}
     {% endfor %}
     {% for page in site.posts %}
         {% if page.category != 'changelog' %}
