@@ -10,6 +10,7 @@
 @dove-gray: #6e6d6d;
 @silver: #bbbbbb;
 @mercury: #e6e6e6;
+@veridian: #3B8F6E;
 
 a {
   color: #3B8F6E;
@@ -230,12 +231,21 @@ ul.commas {
 ul.nav-pills {
   li {
     a {
-      color: #3B8F6E;
+      color: @veridian;
+
+      &:hover {
+        color: @white;
+        background-color: lighten(@conifer, 10%);
+      }
     }
 
     &.active {
       a {
-        background-color: #b0d45c;
+        background-color: @conifer;
+
+        &:hover {
+          background-color: lighten(@conifer, 10%);
+        }
       }
     }
   }
