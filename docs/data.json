@@ -495,7 +495,6 @@
             "file": "lib/command/chain/chain.js",
             "line": 5,
             "description": "CommandChain class for the behaviors.\nThis object when created will process the behaviors.\nThis will be done in the way of Chain of Responsibility.",
-            "since": "28 March 2014",
             "params": [
                 {
                     "name": "parent",
@@ -821,7 +820,6 @@
             "file": "lib/inflector/inflector.js",
             "line": 1,
             "description": "Inflector class to allow REST",
-            "since": "28 March 2014",
             "author": "Jasper van Rijbroek <jasper@jvar.nl>",
             "is_constructor": 1
         },
@@ -880,7 +878,7 @@
             "file": "lib/model/default.js",
             "line": 8,
             "description": "Default model used in most cases.",
-            "extends": "AbstractModel",
+            "extends": "ModelAbstract",
             "params": [
                 {
                     "name": "config",
@@ -901,7 +899,6 @@
             "file": "lib/object/identifier/identifier.js",
             "line": 4,
             "description": "ObjectIdentifier object which helps with the location of files and building identifiers",
-            "since": "28 March 2014",
             "params": [
                 {
                     "name": "identifier",
@@ -923,7 +920,6 @@
             "file": "lib/object/loader/loader.js",
             "line": 16,
             "description": "ObjectLoader object which handles all the loading of the requested objects.",
-            "since": "28 March 2014",
             "is_constructor": 1
         },
         "ObjectManager": {
@@ -938,7 +934,6 @@
             "file": "lib/object/manager.js",
             "line": 12,
             "description": "ObjectManager class for inheritance and base functions",
-            "since": "28 March 2014",
             "is_constructor": 1
         },
         "Plugin": {
@@ -1231,7 +1226,7 @@
         },
         {
             "file": "lib/command/chain/chain.js",
-            "line": 29,
+            "line": 28,
             "description": "Run the requested behaviors, the behavior names are dot separated",
             "itemtype": "method",
             "name": "run",
@@ -1255,7 +1250,7 @@
         },
         {
             "file": "lib/command/chain/chain.js",
-            "line": 53,
+            "line": 52,
             "description": "This function will run in the background and map all the behavior till they are ready to run.",
             "itemtype": "method",
             "name": "processBehaviors",
@@ -2982,7 +2977,7 @@
         },
         {
             "file": "lib/inflector/inflector.js",
-            "line": 97,
+            "line": 96,
             "description": "Define a special rule in the inflector",
             "params": [
                 {
@@ -3000,7 +2995,7 @@
         },
         {
             "file": "lib/inflector/inflector.js",
-            "line": 135,
+            "line": 134,
             "description": "singularize method will make a singular of a plural word\nIf the word is singular it will do nothing.",
             "itemtype": "method",
             "name": "singularize",
@@ -3019,7 +3014,7 @@
         },
         {
             "file": "lib/inflector/inflector.js",
-            "line": 169,
+            "line": 168,
             "description": "Function to make the first letter of a sentence capital",
             "itemtype": "method",
             "name": "capitalize",
@@ -3038,7 +3033,7 @@
         },
         {
             "file": "lib/inflector/inflector.js",
-            "line": 180,
+            "line": 179,
             "description": "pluralize method will make a plural from a singular word\nwhen the word is plural it will do nothing",
             "itemtype": "method",
             "name": "pluralize",
@@ -3057,7 +3052,7 @@
         },
         {
             "file": "lib/inflector/inflector.js",
-            "line": 217,
+            "line": 216,
             "description": "isSingular method will check if the word is singular or not.\nIf the work is singular it returns true, else false is returned",
             "itemtype": "method",
             "name": "isSingular",
@@ -3076,7 +3071,7 @@
         },
         {
             "file": "lib/inflector/inflector.js",
-            "line": 232,
+            "line": 231,
             "description": "isPlural method will check if the word is plural or not.\nIf the work is plural it returns true, else false is returned",
             "itemtype": "method",
             "name": "isPlural",
@@ -3564,13 +3559,13 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 13,
+            "line": 12,
             "description": "Rewrite of the existing identifier package.\n\nIt will now become url like: <type>://<application>/<package>/<path>/<name>",
             "class": "ObjectIdentifier"
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 39,
+            "line": 38,
             "description": "Return a new instance of the current identifier.",
             "itemtype": "method",
             "name": "clone",
@@ -3582,7 +3577,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 49,
+            "line": 48,
             "description": "Recreate the identifier given to the Object.",
             "itemtype": "method",
             "name": "toString",
@@ -3594,7 +3589,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 81,
+            "line": 80,
             "description": "Return the current type",
             "itemtype": "method",
             "name": "getType",
@@ -3606,7 +3601,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 91,
+            "line": 90,
             "description": "Return the current application",
             "itemtype": "method",
             "name": "getApplication",
@@ -3618,7 +3613,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 101,
+            "line": 100,
             "description": "Return the current component",
             "itemtype": "method",
             "name": "getComponent",
@@ -3630,7 +3625,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 111,
+            "line": 110,
             "description": "Return the current path",
             "itemtype": "method",
             "name": "getPath",
@@ -3642,7 +3637,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 121,
+            "line": 120,
             "description": "Return the current name",
             "itemtype": "method",
             "name": "getName",
@@ -3654,7 +3649,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 131,
+            "line": 130,
             "description": "Set the type of the current identifier",
             "itemtype": "method",
             "name": "setApplication",
@@ -3669,7 +3664,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 143,
+            "line": 142,
             "description": "Set the application of the current identifier",
             "itemtype": "method",
             "name": "setApplication",
@@ -3684,7 +3679,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 155,
+            "line": 154,
             "description": "Set the component of the current identifier",
             "itemtype": "method",
             "name": "setComponent",
@@ -3699,7 +3694,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 167,
+            "line": 166,
             "description": "Set the path of the current identifier",
             "itemtype": "method",
             "name": "setPath",
@@ -3714,7 +3709,7 @@
         },
         {
             "file": "lib/object/identifier/identifier.js",
-            "line": 179,
+            "line": 178,
             "description": "Set the name for the current identifier",
             "itemtype": "method",
             "name": "setName",
@@ -3735,7 +3730,7 @@
         },
         {
             "file": "lib/object/loader/loader.js",
-            "line": 27,
+            "line": 26,
             "description": "Load a specific object.\nBy default it will be checking in the applications folder.",
             "itemtype": "method",
             "name": "resolve",
@@ -3755,7 +3750,7 @@
         },
         {
             "file": "lib/object/loader/loader.js",
-            "line": 50,
+            "line": 49,
             "description": "Parse the sequence identifier\nThis will result in a usable identifier",
             "itemtype": "method",
             "name": "parseSequence",
@@ -3778,7 +3773,7 @@
         },
         {
             "file": "lib/object/loader/loader.js",
-            "line": 69,
+            "line": 68,
             "description": "This method will check if there is a custom loader sequence, if not return the default.",
             "itemtype": "method",
             "name": "getSequence",
@@ -3790,7 +3785,7 @@
         },
         {
             "file": "lib/object/loader/loader.js",
-            "line": 98,
+            "line": 97,
             "description": "Receive method will triy to return the requested file.",
             "itemtype": "method",
             "name": "receive",
@@ -3809,7 +3804,7 @@
         },
         {
             "file": "lib/object/loader/loader.js",
-            "line": 109,
+            "line": 108,
             "description": "This method will act like the require method, but instead of a path it accepts an identifier.",
             "params": [
                 {
@@ -3826,7 +3821,7 @@
         },
         {
             "file": "lib/object/loader/loader.js",
-            "line": 123,
+            "line": 122,
             "description": "Add a locator for a specific type.",
             "params": [
                 {
@@ -3839,7 +3834,7 @@
         },
         {
             "file": "lib/object/loader/loader.js",
-            "line": 136,
+            "line": 135,
             "description": "The load method will check if the object has been cached.\nIf this is not the case it will try to resolve the object.\n\nWhen an object has been loaded for the first time it is cached for reuse in a later request.",
             "itemtype": "method",
             "name": "load",
@@ -3858,7 +3853,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 55,
+            "line": 54,
             "description": "Every object called through getObject will go through this function.\nThis will set the identifier and adds the behaviors (if any).",
             "itemtype": "method",
             "name": "initialize",
@@ -3877,7 +3872,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 72,
+            "line": 71,
             "description": "Use this function to acquire a variable from config.js",
             "itemtype": "method",
             "name": "getConfig",
@@ -3896,7 +3891,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 83,
+            "line": 82,
             "description": "Use this function to acquire the identifier object",
             "itemtype": "method",
             "name": "getIdentifier",
@@ -3908,7 +3903,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 93,
+            "line": 92,
             "description": "Return the command chain to run behaviors.",
             "itemtype": "method",
             "name": "getCommandChain",
@@ -3920,7 +3915,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 103,
+            "line": 102,
             "description": "Acquire an initialized object.\nYou can request all kinds of objects with this function",
             "params": [
                 {
@@ -3942,7 +3937,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 123,
+            "line": 122,
             "description": "This function will be available for every object,\nthis will clone the current object.",
             "itemtype": "method",
             "name": "clone",
@@ -3954,21 +3949,22 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 134,
+            "line": 133,
             "description": "This is the handler which will try to mixin functions from another object.",
             "itemtype": "method",
             "name": "mixin",
             "params": [
                 {
                     "name": "object",
-                    "description": ""
+                    "description": "The object to mix into the current object.",
+                    "type": "Object"
                 }
             ],
             "class": "ObjectManager"
         },
         {
             "file": "lib/object/manager.js",
-            "line": 150,
+            "line": 149,
             "description": "This method will check if there is a config for an component, if so it will return the requested key.\nIf no config is found it will return false. When there is no identifier for the component (in initialize functions) please use the identifier value.\n\nThe key is dot separated.",
             "params": [
                 {
@@ -3990,7 +3986,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 211,
+            "line": 210,
             "description": "This is a alias of ObjectManager.getObject to use in the \"this\" context.",
             "itemtype": "method",
             "name": "getObject",
@@ -4014,7 +4010,7 @@
         },
         {
             "file": "lib/object/manager.js",
-            "line": 223,
+            "line": 222,
             "description": "This is a private function to allow for config extending",
             "access": "private",
             "tagname": "",
@@ -4487,11 +4483,11 @@
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/command/chain/chain.js:29"
+            "line": " lib/command/chain/chain.js:28"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/command/chain/chain.js:53"
+            "line": " lib/command/chain/chain.js:52"
         },
         {
             "message": "replacing incorrect tag: returns with return",
@@ -4827,19 +4823,19 @@
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/inflector/inflector.js:135"
+            "line": " lib/inflector/inflector.js:134"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/inflector/inflector.js:180"
+            "line": " lib/inflector/inflector.js:179"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/inflector/inflector.js:217"
+            "line": " lib/inflector/inflector.js:216"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/inflector/inflector.js:232"
+            "line": " lib/inflector/inflector.js:231"
         },
         {
             "message": "replacing incorrect tag: returns with return",
@@ -4931,79 +4927,79 @@
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/identifier/identifier.js:39"
+            "line": " lib/object/identifier/identifier.js:38"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/identifier/identifier.js:49"
+            "line": " lib/object/identifier/identifier.js:48"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/identifier/identifier.js:81"
+            "line": " lib/object/identifier/identifier.js:80"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/identifier/identifier.js:91"
+            "line": " lib/object/identifier/identifier.js:90"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/identifier/identifier.js:101"
+            "line": " lib/object/identifier/identifier.js:100"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/identifier/identifier.js:111"
+            "line": " lib/object/identifier/identifier.js:110"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/identifier/identifier.js:121"
+            "line": " lib/object/identifier/identifier.js:120"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/loader/loader.js:50"
+            "line": " lib/object/loader/loader.js:49"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/loader/loader.js:69"
+            "line": " lib/object/loader/loader.js:68"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/loader/loader.js:98"
+            "line": " lib/object/loader/loader.js:97"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/loader/loader.js:109"
+            "line": " lib/object/loader/loader.js:108"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:55"
+            "line": " lib/object/manager.js:54"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:72"
+            "line": " lib/object/manager.js:71"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:83"
+            "line": " lib/object/manager.js:82"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:93"
+            "line": " lib/object/manager.js:92"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:103"
+            "line": " lib/object/manager.js:102"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:123"
+            "line": " lib/object/manager.js:122"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:150"
+            "line": " lib/object/manager.js:149"
         },
         {
             "message": "replacing incorrect tag: returns with return",
-            "line": " lib/object/manager.js:211"
+            "line": " lib/object/manager.js:210"
         },
         {
             "message": "replacing incorrect tag: returns with return",
@@ -5111,7 +5107,7 @@
         },
         {
             "message": "Missing item type\nDefine a special rule in the inflector",
-            "line": " lib/inflector/inflector.js:97"
+            "line": " lib/inflector/inflector.js:96"
         },
         {
             "message": "Missing item type\nThis is a simple adapter for error logging.\nThis object will get the specified logging adapter and set it,\nif the adapter is invalid it will fallback to the console adapter, logging everything to the console.",
@@ -5123,7 +5119,7 @@
         },
         {
             "message": "Missing item type\nRewrite of the existing identifier package.\n\nIt will now become url like: <type>://<application>/<package>/<path>/<name>",
-            "line": " lib/object/identifier/identifier.js:13"
+            "line": " lib/object/identifier/identifier.js:12"
         },
         {
             "message": "Missing item type\nThis is a complete loader for objects.\nThis will be handeling the identifiers as well.",
@@ -5131,23 +5127,23 @@
         },
         {
             "message": "Missing item type\nThis method will act like the require method, but instead of a path it accepts an identifier.",
-            "line": " lib/object/loader/loader.js:109"
+            "line": " lib/object/loader/loader.js:108"
         },
         {
             "message": "Missing item type\nAdd a locator for a specific type.",
-            "line": " lib/object/loader/loader.js:123"
+            "line": " lib/object/loader/loader.js:122"
         },
         {
             "message": "Missing item type\nAcquire an initialized object.\nYou can request all kinds of objects with this function",
-            "line": " lib/object/manager.js:103"
+            "line": " lib/object/manager.js:102"
         },
         {
             "message": "Missing item type\nThis method will check if there is a config for an component, if so it will return the requested key.\nIf no config is found it will return false. When there is no identifier for the component (in initialize functions) please use the identifier value.\n\nThe key is dot separated.",
-            "line": " lib/object/manager.js:150"
+            "line": " lib/object/manager.js:149"
         },
         {
             "message": "Missing item type\nThis is a private function to allow for config extending",
-            "line": " lib/object/manager.js:223"
+            "line": " lib/object/manager.js:222"
         },
         {
             "message": "Missing item type\nThis method converts the dot-separated method name to a camelcased method",

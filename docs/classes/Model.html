@@ -125,7 +125,7 @@ layout: default
         </h1>
         
             <p class="text-info">
-                Extends: AbstractModel
+                Extends: <a href="../classes/ModelAbstract.html" class="crosslink">ModelAbstract</a>
             </p>
         
             <p class="text-info">
@@ -414,6 +414,87 @@ layout: default
                 <hr/>
                 <div class="method">
                     <h4>
+                        clone ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l122">lib/object/manager.js:122</a>
+                        </p>
+        
+                    <p>
+                        <p>This function will be available for every object,
+        this will clone the current object.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getCommandChain ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l92">lib/object/manager.js:92</a>
+                        </p>
+        
+                    <p>
+                        <p>Return the command chain to run behaviors.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getConfig ( <ul class="commas"><li><code>key</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l71">lib/object/manager.js:71</a>
+                        </p>
+        
+                    <p>
+                        <p>Use this function to acquire a variable from config.js</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>key</code> <p>Key to specify the config to return</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getIdentifier ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l82">lib/object/manager.js:82</a>
+                        </p>
+        
+                    <p>
+                        <p>Use this function to acquire the identifier object</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
                         getItem ( <ul class="commas"></ul> )
                     </h4>
         
@@ -449,6 +530,56 @@ layout: default
                 <hr/>
                 <div class="method">
                     <h4>
+                        getObject ( <ul class="commas"><li><code>identifier</code></li><li><code>config</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l210">lib/object/manager.js:210</a>
+                        </p>
+        
+                    <p>
+                        <p>This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>identifier</code> <p>Identifier of the object to load</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>config</code> <p>Config to push to the object</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getTable ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_model_abstract.js.html#l92">lib/model/abstract.js:92</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will return the table connected to the current model.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
                         getTotal ( <ul class="commas"></ul> )
                     </h4>
         
@@ -461,6 +592,100 @@ layout: default
         
                     </p>
         
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        initialize ( <ul class="commas"><li><code>config</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l54">lib/object/manager.js:54</a>
+                        </p>
+        
+                    <p>
+                        <p>Every object called through getObject will go through this function.
+        This will set the identifier and adds the behaviors (if any).</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>config</code> <p>Object with config values</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        mixin ( <ul class="commas"><li><code>object</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l133">lib/object/manager.js:133</a>
+                        </p>
+        
+                    <p>
+                        <p>This is the handler which will try to mixin functions from another object.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>object</code> <p>The object to mix into the current object.</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        set ( <ul class="commas"><li><code>name</code></li><li><code>value</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_model_abstract.js.html#l70">lib/model/abstract.js:70</a>
+                        </p>
+        
+                    <p>
+                        <p>This method is used to set the states.
+        This method accepts an array or a string as the first parameter.
+        When the first parameter is a string the second parameter will be the value of this state.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>name</code> <p>The state/ array of states to set</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>value</code> <p>The value of the state</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
                 </div>
         
                 <hr/>

@@ -129,7 +129,6 @@ layout: default
          * ObjectManager class for inheritance and base functions
          *
          * @class ObjectManager
-         * @since 28 March 2014
          * @constructor
          */
         function ObjectManager(config) {
@@ -251,7 +250,7 @@ layout: default
          * This is the handler which will try to mixin functions from another object.
          *
          * @method mixin
-         * @param object
+         * @param {Object} object The object to mix into the current object.
          */
         ObjectManager.prototype.mixin = function(object) {
             // Make this a little more convinient.
