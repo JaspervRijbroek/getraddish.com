@@ -121,8 +121,12 @@
             {% include slider.html %}
         {% endif %}
 
-        <div class="container-fluid">
+        <div class="container-fluid content">
 	        {{content}}
+
+            {% if page.url != '/index.html' %}
+                <div class="content-logo"></div>
+            {% endif %}
         </div>
 
         <footer itemscope itemtype="http://schema.org/WPFooter">
