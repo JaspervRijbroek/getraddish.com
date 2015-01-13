@@ -1,5 +1,5 @@
 name: Raddish Docs
-markdown: redcarpetcd
+markdown: redcarpet
 highlighter: pygments
 pygments: true
 baseurl: /
