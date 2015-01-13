@@ -32,6 +32,21 @@
             ga('require', 'displayfeatures');
             ga('send', 'pageview');
         </script>
+
+        {% if page.url == '/index.html' %}
+        <script type="application/ld+json">
+        {
+           "@context": "http://schema.org",
+           "@type": "WebSite",
+           "url": "https://www.example-petstore.com/",
+           "potentialAction": {
+             "@type": "SearchAction",
+             "target": "https://query.example-petstore.com/search?q={search_term_string}",
+             "query-input": "required name=search_term_string"
+           }
+        }
+        </script>
+        {% endif %}
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
         <div class="navbar navbar-default navbar-fixed-top" itemscope itemtype="http://schema.org/WPHeader">
@@ -123,10 +138,6 @@
 
         <div class="container-fluid content">
 	        {{content}}
-
-            {% if page.url != '/index.html' %}
-                <div class="content-logo"></div>
-            {% endif %}
         </div>
 
         <footer itemscope itemtype="http://schema.org/WPFooter">
