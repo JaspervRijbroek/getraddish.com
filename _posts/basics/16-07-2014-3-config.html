@@ -41,7 +41,9 @@ layout: default
             "headers": ""
         },
         "routes": {
-            "/foo": "/demo/menu/items"
+            "/foos": "/demo/menu/items",
+            "/bar/:id": "/demo/menu/item",
+            "/baz/*": "/templates/css/",
         }
     },
     "ssl": {
@@ -90,13 +92,22 @@ layout: default
             </dd>
 
             <br/>
-            <dt>Router</dt>
+            <dt>router</dt>
             <dd>
                 <p>
                     This setting can be an object or not defined. <br/>
                     Here we can add extra settings to the router. <br/>
-                    We can controll how CORS (Cross Origin Resource Sharing) and the routes. <br/>
-                    The routes are source -> target.
+                    We can controll how CORS (Cross Origin Resource Sharing) and the routes. <br/> <br/>
+
+                    Simple complete url redirects: <br/>
+                    This is as simple as doing: <code>"/foos": "/demo/menu/items"</code> <br/><br/>
+
+                    For automatic dynamic states you can do: <br/>
+                    <code>"/bar/:id": "/demo/menu/item"</code> In this case the state id will automatically be set when available.
+                    <br/><br/>
+
+                    For complete redirects you can add: <br/>
+                    <code>"/baz/*": "/templates/css/"</code> This will redirect everything with <code>"/baz/"</code> to <code>/templates/css/</code>.
                 </p>
             </dd>
 
