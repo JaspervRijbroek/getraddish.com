@@ -68,51 +68,12 @@
 
 		        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 			        <ul class="nav navbar-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li {% if page.url == '/index.html' || page.url == '/' %} class="active" {% endif %}><a href="/index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
                         <li {% if page.url == '/features.html' %} class="active" {% endif %}><a href="/features.html" itemprop="url"><span itemprop="name">Features</span></a></li>
-                        <li {% if page.url contains 'basics' %} class="active dropdown" {% else %} class="dropdown" {% endif %}>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" itemprop="url" >
-                                <span itemprop="name">Basics</span>
-                                <span class="caret"></span>
+                        <li {% if page.url contains 'guide' %} class="active dropdown" {% else %} class="dropdown" {% endif %}>
+                            <a href="/guide/" itemprop="url" >
+                                <span itemprop="name">Guide</span>
                             </a>
-
-                            <ul class="dropdown-menu">
-                                {% for post in site.categories.basics reversed %}
-                                <li>
-                                    <a href="{{ post.url }}" itemprop="url">
-                                        <span itemprop="name">{{ post.title }}</span>
-                                    </a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-				        <li {% if page.url contains 'tutorial' %} class="active dropdown" {% else %} class="dropdown" {% endif %}>
-				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" itemprop="name">
-					            <span  itemprop="url">Tutorial</span>
-					            <span class="caret"></span>
-				            </a>
-
-				            <ul class="dropdown-menu">
-					            {% for post in site.categories.tutorial reversed %}
-					                <li>
-					                    <a href="{{ post.url }}" itemprop="url">
-                                            <span itemprop="name">{{ post.title }}</span>
-                                        </a>
-					                </li>
-					            {% endfor %}
-				            </ul>
-				        </li>
-                        <li {% if page.url contains 'advanced' %} class="active dropdown" {% else %} class="dropdown" {% endif %}>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Advanced
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                {% for post in site.categories.advanced reversed %}
-                                <li>
-                                    <a href="{{ post.url }}">{{ post.title }}</a>
-                                </li>
-                                {% endfor %}
-                            </ul>
                         </li>
 				        <li {% if page.url contains 'changelog' %} class="active" {% endif %}>
 				            <a href="/changelog.html"itemprop="url"><span itemprop="name">Changelog</span></a>
@@ -145,6 +106,7 @@
             <p class="text-center">
                 Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
                 <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
+                <br/> Brought to you by <a href="http://jvar.nl/" target="_blank">Jvar</a>.
             </p>
         </footer>
     </body>
