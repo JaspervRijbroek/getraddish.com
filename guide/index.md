@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Introduction
-permalink: guide/index.html
 category: guide
 position: 1
 ---

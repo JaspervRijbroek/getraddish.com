@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Overview
-permalink: guide/overview.html
 category: guide
 position: 2
 ---
