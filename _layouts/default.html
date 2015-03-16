@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{page.title}}</title>
+        
+        <link rel="stylesheet" href="/assets/css/template.css" />
+    </head>
+
+    <body>
+        <div class="navigation">
+            <div class="brand">
+                <a href="/">
+                    <img src="/assets/images/logo.svg" alt="Raddish Architecture">
+                </a>
+            </div>
+            <ul class="menu">
+                <li {% if page.url == '/features.html' %} class="active" {% endif %}>
+                    <a href="/features.html" itemprop="url">
+                        <span itemprop="name">Features</span>
+                    </a>
+                </li>
+                <li {% if page.url == '/guide/' %} class="active" {% endif %}>
+                    <a href="/guide/" itemprop="url">
+                        <span itemprop="name">Guide</span>
+                    </a>
+                </li>
+                <li {% if page.url contains 'changelog' %} class="active" {% endif %}>
+                    <a href="/changelog.html"itemprop="url">
+                        <span itemprop="name">Changelog</span>
+                    </a>
+                </li>
+                <li {% if page.url contains 'blog' %} class="active" {% endif %}>
+                    <a href="/blog.html" itemprop="url">
+                        <span itemprop="name">blog</span>
+                    </a>
+                </li>
+                <li {% if page.url == '/support.html' %} class="active" {% endif %}>
+                    <a href="/support.html" itemprop="url">
+                        <span itemprop="name">Support</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/JaspervRijbroek/raddish" target="_blank">
+                        <i class="icon-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            {{content}}
+        </div>
+
+        <footer class="row">
+            <p>
+                Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+                <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>
+                <br/> Brought to you by <a href="http://jvar.nl" target="_blank">Jvar.nl</a>.
+            </p>
+        </footer>
+    </body>
+</html>

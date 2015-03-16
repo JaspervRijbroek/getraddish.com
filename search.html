@@ -1,0 +1,41 @@
+---
+title: Search Results
+layout: default
+---
+
+<script type="text/javascript" src="//google.com/jsapi"></script>
+<script type="text/javascript">
+    var engine_id = '004589106240529843860:yubwuadc5d4',
+        customControl = {};
+
+    function getUrlVar(variable) {
+        var vars = {};
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+        });
+        
+        for(var key in vars) {
+            if(key == variable) {
+                return vars[key];
+            }
+        }
+        
+        return vars;
+    }
+
+    var search = document.getElementsByClassName('search')[0];
+    search.getElementsByTagName('input')[0].value = getUrlVar('keyword').replace('+', ' ');
+
+    google.load('search', '1', {language: 'en', style: google.loader.themes.V2_DEFAULT});
+    google.setOnLoadCallback(function() {
+        customControl = new google.search.CustomSearchControl(engine_id, {});
+        customControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+        customControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+        customControl.draw('cse');
+        
+        console.log(getUrlVar('keyword'));
+        customControl.execute(getUrlVar('keyword'));
+    });
+</script>
+
+<div id="cse" class="results"></div>

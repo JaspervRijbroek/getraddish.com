@@ -1,0 +1,28 @@
+---
+title: Changelog
+layout: default
+---
+
+<div class="row">
+    <div class="col12">
+        <h1 class="header">
+            Changelog
+        </h1>
+        
+        Stay up to date with all the changes done in Raddish.
+    </div>
+</div>
+
+<div class="row">
+    <div class="changelog">
+        {% for post in site.categories.changelog %}
+            <div class="change">
+                <h2>{{post.title}}</h2>
+                
+                {{post.content}}
+            </div>
+            
+            <hr/>
+        {% endfor %}
+    </div>
+</div>

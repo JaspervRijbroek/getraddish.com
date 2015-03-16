@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+h1, h2, h3, h4 {
+  &.header {
+    text-transform: uppercase;
+    border-bottom: 2px solid $dusty-gray;
+    margin-bottom: 10px;
+  }
+}
+
+.navigation {
+  @extend .clearfix;
+  
+  margin-bottom: 20px;
+  border-bottom: 2px solid $alizarin-crimson;
+  > * {
+    display: inline-block;
+  }
+  
+  ul.menu {
+    float: right;
+    text-align: right;
+    
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-top: -4px;
+      padding: 15px 15px;
+
+      &.active {
+        background: $mercury;
+      }
+      
+      a {
+        text-decoration: none;
+        color: $dove-gray;
+      }
+    }
+  }
+}
+
+footer {
+  @extend .text-center;
+  
+  padding-top: 20px;
+  border-top: 2px solid $alizarin-crimson;
+  
+  a {
+    color: $veridian;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.features {
+  margin-top: 20px;
+  
+  dd {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  dt {
+    &::before {
+      background: url(../images/raddish-green.png);
+      width: 40px;
+      height: 40px;
+      content: " ";
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 30px 0 0;
+    }
+    
+    margin-bottom: 20px;
+  }
+}
+
+.changelog {
+  @extend .col12;
+  
+  .change {
+    margin: 20px 0;
+    
+    &:first-of-type {
+      margin-top: 0;
+    }
+    
+    h2 {
+      margin-bottom: 10px;
+    }
+    
+    h4 {
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style-position: inside;
+    }
+  }
+  
+  hr {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+.install {
+//  &::before {
+//    @include hide($mobile);
+//    
+//    background: url(../images/raddish.svg) no-repeat;
+//    height: 120px;
+//    width: 120px;
+//    content: " ";
+//    display: block;
+//    position: absolute;
+//    top: -150px;
+//    left: 50%;
+//    margin-left: -80px;
+//  }
+  
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 25px;
+  color: $white;
+}

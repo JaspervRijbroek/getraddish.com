@@ -1,0 +1,17 @@
+@mixin media($media) {
+  @media #{$media} {
+    @content;
+  }
+}
+
+@mixin border-radius($radius: 3) {
+  border-radius: #{$radius}px;
+  -moz-border-radius: #{$radius}px;
+  -webkit-border-radius: #{$radius}px;
+}
+
+@mixin hide($object) {
+  @include media($object) {
+    display: none;
+  }
+}

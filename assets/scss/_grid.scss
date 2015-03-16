@@ -1,0 +1,78 @@
+$columns: 12 !default;
+$breakpoints: () !default;
+$gutter: (15, 15) !default;
+
+@function addBreakpoint($from, $to, $when) {
+  $new: ($from: ($to $when));
+  $breakpoints: map-merge($breakpoints, $new);
+  
+  @return $new;
+}
+
+@for $i from 1 through $columns {
+  .col#{$i} {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    position: relative;
+    float: left;
+    width: percentage(1 / $columns * $i);
+    padding-left: #{nth($gutter, 1)}px;
+    padding-right: #{nth($gutter, 2)}px;
+    
+    @each $query, $list in $breakpoints {
+      @each $from, $to in $list {
+        
+        // Still need to check some more stuff, because I want to add more breakpoints.
+        @if $i == $from {
+          @include media($query) {
+            width: percentage(1 / $columns * $to);
+          }
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .push#{$i} {
+    left: percentage(1 / $columns * $i);
+    
+    // I have to think about the breakpoints in here too.
+    @each $query, $list in $breakpoints {
+      @each $from, $to in $list {
+
+        // Still need to check some more stuff, because I want to add more breakpoints.
+        @if $i == $from {
+          @include media($query) {
+            @if $columns - $to == 0 {
+              left: 0%;
+            } @else {
+              left: percentage(1 / ($columns - $to) * $i);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.clearfix {
+  &::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.container {
+  width: 1024px;
+  margin: 0px auto;
+}
+
+.row {
+  @extend .clearfix;
+  
+  margin-bottom: 20px;
+}

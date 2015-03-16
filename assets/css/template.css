@@ -1,0 +1,248 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400);
+.col1 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 8.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col2 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 16.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col3 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col4 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 33.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col5 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 41.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col6 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col7 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 58.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col8 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 66.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col9 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col10 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 83.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col11 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 91.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col12, .changelog {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.push1 {
+  left: 8.33333%; }
+
+.push2 {
+  left: 16.66667%; }
+
+.push3 {
+  left: 25%; }
+
+.push4 {
+  left: 33.33333%; }
+
+.push5 {
+  left: 41.66667%; }
+
+.push6 {
+  left: 50%; }
+
+.push7 {
+  left: 58.33333%; }
+
+.push8 {
+  left: 66.66667%; }
+
+.push9 {
+  left: 75%; }
+
+.push10 {
+  left: 83.33333%; }
+
+.push11 {
+  left: 91.66667%; }
+
+.push12 {
+  left: 100%; }
+
+.clearfix::after, .row::after, .navigation::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.container {
+  width: 1024px;
+  margin: 0px auto; }
+
+.row {
+  margin-bottom: 20px; }
+
+.text-center, footer {
+  text-align: center; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Roboto"; }
+
+h1.header, h2.header, h3.header, h4.header {
+  text-transform: uppercase;
+  border-bottom: 2px solid #989898;
+  margin-bottom: 10px; }
+
+.navigation {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e91c28; }
+  .navigation > * {
+    display: inline-block; }
+  .navigation ul.menu {
+    float: right;
+    text-align: right; }
+    .navigation ul.menu li {
+      list-style: none;
+      display: inline-block;
+      margin-top: -4px;
+      padding: 15px 15px; }
+      .navigation ul.menu li.active {
+        background: #e6e6e6; }
+      .navigation ul.menu li a {
+        text-decoration: none;
+        color: #6e6d6d; }
+
+footer {
+  padding-top: 20px;
+  border-top: 2px solid #e91c28; }
+  footer a {
+    color: #3B8F6E;
+    text-decoration: none; }
+    footer a:hover {
+      text-decoration: underline; }
+
+.features {
+  margin-top: 20px; }
+  .features dd {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .features dt {
+    margin-bottom: 20px; }
+    .features dt::before {
+      background: url(../images/raddish-green.png);
+      width: 40px;
+      height: 40px;
+      content: " ";
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 30px 0 0; }
+
+.changelog .change {
+  margin: 20px 0; }
+  .changelog .change:first-of-type {
+    margin-top: 0; }
+  .changelog .change h2 {
+    margin-bottom: 10px; }
+  .changelog .change h4 {
+    margin: 10px 0; }
+  .changelog .change ul {
+    list-style-position: inside; }
+.changelog hr:last-of-type {
+  display: none; }
+
+.install {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 25px;
+  color: #ffffff; }
+
+/*# sourceMappingURL=template.css.map */
