@@ -1,0 +1,15 @@
+footer {
+  @extend .text-center;
+
+  padding-top: 20px;
+  border-top: 2px solid $alizarin-crimson;
+
+  a {
+    color: $veridian;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

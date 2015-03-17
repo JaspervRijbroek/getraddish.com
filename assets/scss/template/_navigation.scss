@@ -1,0 +1,34 @@
+.navigation {
+  @extend .clearfix;
+  
+  .brand {
+    margin: 5px 0;
+  }
+
+  margin-bottom: 20px;
+  border-bottom: 2px solid $alizarin-crimson;
+  > * {
+    display: inline-block;
+  }
+
+  ul.menu {
+    float: right;
+    text-align: right;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-top: -4px;
+      padding: 18px 15px;
+
+      &.active {
+        background: $mercury;
+      }
+
+      a {
+        text-decoration: none;
+        color: $dove-gray;
+      }
+    }
+  }
+}

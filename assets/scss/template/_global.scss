@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+  &.header {
+    text-transform: uppercase;
+    border-bottom: 2px solid $dusty-gray;
+    margin-bottom: 10px;
+  }
+}

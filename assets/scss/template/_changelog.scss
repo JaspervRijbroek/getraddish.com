@@ -1,0 +1,29 @@
+.changelog {
+  @extend .col12;
+
+  .change {
+    margin: 20px 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style-position: inside;
+    }
+  }
+
+  hr {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
