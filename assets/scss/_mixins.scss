@@ -15,3 +15,35 @@
     display: none;
   }
 }
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($name, $duration, $limit: 1) {
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
+  
+  -webkit-animation-iteration-count: $limit;
+  -moz-animation-iteration-count: $limit;
+  -o-animation-iteration-count: $limit;
+  animation-iteration-count: $limit;
+  
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  -o-animation-duration: $duration;
+  animation-duration: $duration;
+}
