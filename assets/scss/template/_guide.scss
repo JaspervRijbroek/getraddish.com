@@ -1,0 +1,53 @@
+.guide {
+  @extend .clearfix;
+  
+  .sidebar {
+    @extend .col4;
+    
+    // We have to make them full height.
+    // I don't know how to do that but I am sure I can figuire something out with media queries.
+    // Also I need a good way to design the navigation. Ask Heinz/ Christ?
+    
+    ul {
+      li {
+        &.nested {
+          ul {
+//            display: none;
+          }
+          
+          > a {
+            &::after {
+              color: #b0d45c;
+              border-top: 8px solid;
+              border-right: 8px solid transparent;
+              border-left: 8px solid transparent;
+              content: " ";
+              display: inline-block;
+              margin-left: 5px;
+            }
+          }
+        }
+        
+        &.open {
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  
+  .content {
+    @extend .col8;
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      list-style-position: inside;
+      padding-left: 40px;
+      margin-bottom: 10px;
+    }
+  }
+}
