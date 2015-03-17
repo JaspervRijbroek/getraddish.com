@@ -23,9 +23,6 @@ layout: default
         return vars;
     }
 
-    var search = document.getElementsByClassName('search')[0];
-    search.getElementsByTagName('input')[0].value = getUrlVar('keyword').replace('+', ' ');
-
     google.load('search', '1', {language: 'en', style: google.loader.themes.V2_DEFAULT});
     google.setOnLoadCallback(function() {
         customControl = new google.search.CustomSearchControl(engine_id, {});
@@ -33,8 +30,7 @@ layout: default
         customControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
         customControl.draw('cse');
         
-        console.log(getUrlVar('keyword'));
-        customControl.execute(getUrlVar('keyword'));
+        customControl.execute(getUrlVar('keyword').replace('+', ' '));
     });
 </script>
 
