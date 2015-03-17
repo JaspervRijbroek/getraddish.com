@@ -9,6 +9,10 @@ $gutter: (15, 15) !default;
   @return $new;
 }
 
+// So how does our grid system needs to work?
+// When we have a breakpoint the columns need to become smaller/ bigger.
+// But what to do when we have less breakpoints?
+
 @for $i from 1 through $columns {
   .col#{$i} {
     box-sizing: border-box;
@@ -23,8 +27,6 @@ $gutter: (15, 15) !default;
     
     @each $query, $list in $breakpoints {
       @each $from, $to in $list {
-        
-        // Still need to check some more stuff, because I want to add more breakpoints.
         @if $i == $from {
           @include media($query) {
             width: percentage(1 / $columns * $to);
@@ -42,8 +44,6 @@ $gutter: (15, 15) !default;
     // I have to think about the breakpoints in here too.
     @each $query, $list in $breakpoints {
       @each $from, $to in $list {
-
-        // Still need to check some more stuff, because I want to add more breakpoints.
         @if $i == $from {
           @include media($query) {
             @if $columns - $to == 0 {
