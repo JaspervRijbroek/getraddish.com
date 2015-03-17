@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 .col1 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -29,7 +30,7 @@
   padding-left: 15px;
   padding-right: 15px; }
 
-.col4 {
+.col4, .guide .sidebar {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -69,7 +70,7 @@
   padding-left: 15px;
   padding-right: 15px; }
 
-.col8 {
+.col8, .guide .content {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -155,7 +156,7 @@
 .push12 {
   left: 100%; }
 
-.clearfix::after, .row::after, .navigation::after {
+.clearfix::after, .row::after, .navigation::after, .guide::after {
   content: " ";
   display: block;
   clear: both; }
@@ -173,10 +174,6 @@
 * {
   padding: 0;
   margin: 0; }
-
-body {
-  font-family: "Roboto";
-  font-size: 15px; }
 
 h1.header, h2.header, h3.header, h4.header {
   text-transform: uppercase;
@@ -289,6 +286,32 @@ footer {
 
 .icon-github:before {
   content: "\eab1"; }
+
+body {
+  font-family: "Open Sans";
+  color: #666; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #666; }
+
+.guide .sidebar ul li.nested > a::after {
+  color: #b0d45c;
+  border-top: 8px solid;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  content: " ";
+  display: inline-block;
+  margin-left: 5px; }
+.guide .sidebar ul li.open ul {
+  display: block; }
+.guide .content p {
+  margin-bottom: 10px; }
+.guide .content ul {
+  list-style-position: inside;
+  padding-left: 40px;
+  margin-bottom: 10px; }
 
 .install {
   background: rgba(0, 0, 0, 0.6);

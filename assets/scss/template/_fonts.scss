@@ -1,4 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400);
+// I might need to talk with Heinz/ Christ about a good readable font.
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 @font-face {
   font-family: 'icomoon';
@@ -33,3 +35,13 @@
   content: "\eab1";
 }
 
+body {
+  font-family: "Open Sans";
+  color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #666;
+}
