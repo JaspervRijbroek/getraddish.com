@@ -30,7 +30,7 @@
   padding-left: 15px;
   padding-right: 15px; }
 
-.col4, .guide .sidebar {
+.col4, .features .feature, .guide .sidebar {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -184,6 +184,7 @@ h1.header, h2.header, h3.header, h4.header {
   margin-bottom: 20px;
   border-bottom: 2px solid #e91c28; }
   .navigation .brand {
+    float: left;
     margin: 5px 0; }
   .navigation > * {
     display: inline-block; }
@@ -212,19 +213,6 @@ footer {
 
 .features {
   margin-top: 20px; }
-  .features dd {
-    font-weight: bold;
-    margin-bottom: 10px; }
-  .features dt {
-    margin-bottom: 20px; }
-    .features dt::before {
-      background: url(../images/raddish-green.png);
-      width: 40px;
-      height: 40px;
-      content: " ";
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 30px 0 0; }
 
 .changelog .change {
   margin: 20px 0; }

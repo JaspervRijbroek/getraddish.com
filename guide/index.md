@@ -1,9 +1,9 @@
 ---
-title: Guide Index
+title: Introduction
+author: Jasper van Rijbroek
 layout: guide
 ---
 
-# Introduction
 This guide is meant for the beginners and more advanced with Raddish,  
 In here you will find how to get started and how to use Raddish more thoroughly.
 
