@@ -2,13 +2,6 @@ $columns: 12 !default;
 $breakpoints: () !default;
 $gutter: (15, 15) !default;
 
-@function addBreakpoint($from, $to, $when) {
-  $new: ($from: ($to $when));
-  $breakpoints: map-merge($breakpoints, $new);
-  
-  @return $new;
-}
-
 // So how does our grid system needs to work?
 // When we have a breakpoint the columns need to become smaller/ bigger.
 // But what to do when we have less breakpoints?
