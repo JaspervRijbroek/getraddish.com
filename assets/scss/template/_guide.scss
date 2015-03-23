@@ -9,10 +9,18 @@
     // Also I need a good way to design the navigation. Ask Heinz/ Christ?
     
     ul {
+      list-style: none;
+      
       li {
+        margin: 5px 0;
+        
         &.nested {
           ul {
 //            display: none;
+            
+            li {
+              padding-left: 20px;
+            }
           }
           
           > a {

@@ -3,3 +3,4 @@ markdown: kramdown
 highlighter: pygments
 pygments: true
 baseurl: /
+include: [_*.scss]
