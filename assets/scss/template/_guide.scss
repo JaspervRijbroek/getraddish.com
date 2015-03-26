@@ -4,10 +4,6 @@
   .sidebar {
     @extend .col4;
     
-    // We have to make them full height.
-    // I don't know how to do that but I am sure I can figuire something out with media queries.
-    // Also I need a good way to design the navigation. Ask Heinz/ Christ?
-    
     ul {
       list-style: none;
       
@@ -16,7 +12,7 @@
         
         &.nested {
           ul {
-//            display: none;
+            display: none;
             
             li {
               padding-left: 20px;
@@ -36,8 +32,8 @@
           }
         }
         
-        &.open {
-          ul {
+        &.active {
+          > ul {
             display: block;
           }
         }

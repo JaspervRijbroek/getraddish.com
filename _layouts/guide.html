@@ -8,18 +8,48 @@ layout: default
             <li>
                 <a href="/guide/">Introduction</a>
             </li>
-            <li class="nested">
+            <li class="nested {% if page.url == '/guide/essentials.html' or page.url contains '/guide/essentials/' %}active{% endif %}">
                 <a href="/guide/essentials.html">Essentials</a>
                 
                 <ul>
                     <li>
-                        <a href="/guide/essentials/basics.html">Basics</a>
+                        <a href="/guide/essentials/file-structure.html">File Structure</a>
                     </li>
                     <li>
-                        <a href="/guide/essentials/request-response.html">Request and Response</a>
+                        <a href="/guide/essentials/urls.html">URLs</a>
+                    </li>
+                    <li>
+                        <a href="/guide/essentials/identifiers.html">Identifiers</a>
                     </li>
                     <li>
                         <a href="/guide/essentials/config.html">Config</a>
+                    </li>
+                    <li>
+                        <a href="/guide/essentials/component-config.html">Component Config</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nested {% if page.url == '/guide/extras.html' or page.url contains '/guide/extras/' %}active{% endif %}">
+                <a href="/guide/extras.html">Extras</a>
+                
+                <ul>
+                    <li class="nested {% if page.url == '/guide/extras/raddish-ember.html' or page.url contains '/guide/extras/raddish-ember/' %}active{% endif %}">
+                        <a href="/guide/extras/raddish-ember.html">Raddish-Ember</a>
+
+                        <ul>
+                            <li>
+                                <a href="/guide/extras/raddish-ember/adapter.html">Adapter</a>
+                            </li>
+                            <li>
+                                <a href="/guide/extras/raddish-ember/models.html">Models</a>
+                            </li>
+                            <li>
+                                <a href="/guide/extras/raddish-ember/sockets.html">Sockets</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/guide/extras/universal-query.html">Universal Query</a>
                     </li>
                 </ul>
             </li>
