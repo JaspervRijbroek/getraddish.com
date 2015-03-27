@@ -2,11 +2,13 @@
 layout: default
 ---
 
-<div class="row">
-    <div class="col4">
-        {% include {{page.navigation}} %}
-    </div>
-    <div class="col8">
+<div class="api">
+    {% if page.navigation %}
+        <aside class="sidebar">
+            {% include {{page.navigation}}.html %}
+        </aside>
+    {% endif %}
+    <div class="content">
         {{content}}
     </div>
 </div>

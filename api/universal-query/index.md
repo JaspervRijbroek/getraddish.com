@@ -1,6 +1,6 @@
 ---
 title: API - Universal Query
-navigation: universal-query.html
+navigation: universal-query
 layout: api
 ---
 
