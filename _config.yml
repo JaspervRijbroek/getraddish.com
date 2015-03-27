@@ -1,6 +1,5 @@
 name: Raddish Docs
 markdown: redcarpet
 highlighter: pygments
-pygments: true
 baseurl: /
 include: [_*.scss]
