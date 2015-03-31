@@ -123,4 +123,85 @@ Below I will give an example config file, with more detail underneath.
             The <code>interval</code> is the interval in millisecond when the system must check for process usage.
         </p>
     <dd>
+    
+    <dt>
+        socketio    
+    </dt>
+    <dd>
+        <p>
+            The value can be true, an object, false or not defined.
+        </p>
+        
+        <p>
+            When true it will start sockets on port 1338, 
+            when an object you can manually set the <code>port</code> to start on.
+        </p>
+    </dd>
+    
+    <dt>
+        logging
+    </dt>
+    <dd>
+        <p>
+            With the logging object you can specify a logging object. 
+            Whenever an error is thrown the RaddishError object will log to this object.
+        </p>
+        
+        <p>
+            For more details read here.
+        </p>
+    </dd>
+    
+    <dt>
+        plugins
+    </dt>
+    <dd>
+        Specify the path to the plugins directory. 
+        When not defined plugins will not be used in the system.
+    </dd>
+    
+    <dt>
+        cache
+    </dt>
+    <dd>
+        This value can be true, false or not defined. 
+        When true it will cache the initialized objects resulting in a huge speed advantage. 
+        When false or not defined the system will not cache any objects.
+    </dd>
+    
+    <dt>
+        gzip
+    </dt>
+    <dd>
+        Enable gzip compression or not. 
+        When the client doesn't support gzip compression the result isn't compressed.
+    </dd>
+    
+    <dt class="required">
+        format
+    </dt>
+    <dd>
+        This value is required. 
+        Specify the default returned value.
+    </dd>
+    
+    <dt class="required">
+        port
+    </dt>
+    <dd>
+        This value is required. 
+        Specify on which port the system starts.
+    </dd>
+    
+    <dt class="required">
+        public
+    </dt>
+    <dd>
+        This value is required. 
+        Specify the folder where the public files are stored.
+    </dd>
 </dl>
+
+<div class="note">
+    * = required
+</div>
