@@ -29,6 +29,26 @@ layout: default
                     </li>
                 </ul>
             </li>
+            <li class="nested {% if page.url == '/guide/getting-started.html' or page.url contains '/guide/getting-started/' %}active{% endif %}">
+                <a href="/guide/getting-started.html">Getting Started</a>
+                
+                <ul>
+                    <li>
+                        <a href="/guide/getting-started/setup.html">Setup</a>
+                    </li>
+                    <li>
+                        <a href="/guide/getting-started/applications.html">Applications</a>
+                    </li>
+                    <li class="nested {% if page.url == '/guide/getting-started/components.html' or page.url contains '/guide/getting-started/components/' %}active{% endif %}">
+                        <a href="/guide/getting-started/components.html">Components</a>
+                        <ul>
+                            <li>
+                                <a href="/guide/getting-started/components/dispatcher.html">Dispatcher</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li class="nested {% if page.url == '/guide/extras.html' or page.url contains '/guide/extras/' %}active{% endif %}">
                 <a href="/guide/extras.html">Extras</a>
                 
