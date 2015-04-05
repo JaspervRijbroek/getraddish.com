@@ -13,6 +13,7 @@ $gutter: (15, 15) !default;
     width: percentage(1 / $columns * $i);
     padding-left: #{nth($gutter, 1)}px;
     padding-right: #{nth($gutter, 2)}px;
+    word-wrap: break-word;
     
     @each $query, $list in $breakpoints {
       @each $from, $to in $list {
