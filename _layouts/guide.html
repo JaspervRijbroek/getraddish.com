@@ -5,26 +5,26 @@ layout: default
 <div class="guide">
     <aside class="sidebar">
         <ul>
-            <li>
+            <li class="{% if page.url == '/guide/index.html' %}active{% endif %}">
                 <a href="/guide/">Introduction</a>
             </li>
             <li class="nested {% if page.url == '/guide/essentials.html' or page.url contains '/guide/essentials/' %}active{% endif %}">
                 <a href="/guide/essentials.html">Essentials</a>
                 
                 <ul>
-                    <li>
+                    <li class="{% if page.url == '/guide/essentials/file-structure.html' %}active{% endif %}">
                         <a href="/guide/essentials/file-structure.html">File Structure</a>
                     </li>
-                    <li>
+                    <li class="{% if page.url == '/guide/essentials/urls.html' %}active{% endif %}">
                         <a href="/guide/essentials/urls.html">URLs</a>
                     </li>
-                    <li>
+                    <li class="{% if page.url == '/guide/essentials/identifiers.html' %}active{% endif %}">
                         <a href="/guide/essentials/identifiers.html">Identifiers</a>
                     </li>
-                    <li>
+                    <li class="{% if page.url == '/guide/essentials/config.html' %}active{% endif %}">
                         <a href="/guide/essentials/config.html">Config</a>
                     </li>
-                    <li>
+                    <li class="{% if page.url == '/guide/essentials/component-config.html' %}active{% endif %}">
                         <a href="/guide/essentials/component-config.html">Component Config</a>
                     </li>
                 </ul>
@@ -33,17 +33,23 @@ layout: default
                 <a href="/guide/getting-started.html">Getting Started</a>
                 
                 <ul>
-                    <li>
+                    <li class="{% if page.url == '/guide/getting-started/setup.html' %}active{% endif %}">
                         <a href="/guide/getting-started/setup.html">Setup</a>
                     </li>
-                    <li>
+                    <li class="{% if page.url == '/guide/getting-started/applications.html' %}active{% endif %}">
                         <a href="/guide/getting-started/applications.html">Applications</a>
                     </li>
                     <li class="nested {% if page.url == '/guide/getting-started/components.html' or page.url contains '/guide/getting-started/components/' %}active{% endif %}">
                         <a href="/guide/getting-started/components.html">Components</a>
                         <ul>
-                            <li>
+                            <li class="{% if page.url == '/guide/getting-started/components/dispatcher.html' %}active{% endif %}">
                                 <a href="/guide/getting-started/components/dispatcher.html">Dispatcher</a>
+                            </li>
+                            <li class="{% if page.url == '/guide/getting-started/components/controller.html' %}active{% endif %}">
+                                <a href="/guide/getting-started/components/controller.html">Controller</a>
+                            </li>
+                            <li class="{% if page.url == '/guide/getting-started/components/model.html' %}active{% endif %}">
+                              <a href="/guide/getting-started/components/model.html">Model</a>
                             </li>
                         </ul>
                     </li>
@@ -57,25 +63,25 @@ layout: default
                         <a href="/guide/extras/raddish-ember.html">Raddish-Ember</a>
 
                         <ul>
-                            <li>
+                            <li class="{% if page.url == '/guide/extras/raddish-ember/adapter.html' %}active{% endif %}">
                                 <a href="/guide/extras/raddish-ember/adapter.html">Adapter</a>
                             </li>
-                            <li>
+                            <li class="{% if page.url == '/guide/extras/raddish-ember/models.html' %}active{% endif %}">
                                 <a href="/guide/extras/raddish-ember/models.html">Models</a>
                             </li>
-                            <li>
+                            <li class="{% if page.url == '/guide/extras/raddish-ember/sockets.html' %}active{% endif %}">
                                 <a href="/guide/extras/raddish-ember/sockets.html">Sockets</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="{% if page.url == '/guide/extras/universal-query.html' %}active{% endif %}">
                         <a href="/guide/extras/universal-query.html">Universal Query</a>
                     </li>
                 </ul>
             </li>
         </ul>
     </aside>
-    <div class="content" itemscope itemtype="http://schema.org/Article">
+    <article itemscope itemtype="http://schema.org/Article">
         <meta itemprop="author" content="{{page.author}}"/>
         <meta itemprop="url" content="{{page.url}}"/>
         
@@ -83,5 +89,5 @@ layout: default
         
         <div itemprop="articleBody"></div>
         {{content}}
-    </div>
+    </article>
 </div>

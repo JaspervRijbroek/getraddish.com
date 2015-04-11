@@ -36,7 +36,7 @@ $gutter: (15, 15) !default;
         @if $i == $from {
           @include media($query) {
             @if $columns - $to == 0 {
-              left: 0%;
+              left: 0;
             } @else {
               left: percentage(1 / ($columns - $to) * $i);
             }

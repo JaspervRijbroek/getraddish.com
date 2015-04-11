@@ -34,6 +34,10 @@
         }
         
         &.active {
+          > a {
+            color: $black;
+          }
+
           > ul {
             display: block;
           }
@@ -42,7 +46,7 @@
     }
   }
   
-  .content {
+  article {
     @extend .col9;
     
     p {
