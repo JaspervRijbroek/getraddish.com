@@ -22,6 +22,4 @@ App.ApplicationSerializer = RaddishSerializer.extend();
 App.DemoAdapater = RaddishAdapter.extend({
     application: 'demo'
 });
-
-App.DemoSerializer = RaddishSerializer.extend();
 ```

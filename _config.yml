@@ -3,3 +3,5 @@ markdown: redcarpet
 highlighter: pygments
 baseurl: /
 include: [_*.scss]
+sass:
+  sass_dir: assets/css
