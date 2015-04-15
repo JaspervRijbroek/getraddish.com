@@ -47,3 +47,11 @@
   -o-animation-duration: $duration;
   animation-duration: $duration;
 }
+
+@mixin alpha-color-property($property, $color, $alpha) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  #{$property}: rgba($red, $green, $blue, $alpha);
+}

@@ -18,3 +18,9 @@ Whenever the item does exist it will update the existing item with the data in t
  
 A ```DELETE``` request will remove the item specified, when no unique states are given the action is omitted.
 
+When a request is started, the controller will get the model for the request.
+The model the gets the data which is then returned.
+
+## Custom actions
+Within Raddish it is possible to add your own custom actions. However these actions will only respond on a ```POST``` request.
+

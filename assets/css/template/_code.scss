@@ -1,0 +1,18 @@
+code {
+  padding: 5px;
+  background: rgba($japonica, 0.5);
+  border-radius: 5px;
+  border: 1px solid $alizarin-crimson;
+}
+
+pre {
+  code {
+    &.language-javascript,
+    &.language-json {
+      display: block;
+
+      background: none;
+      border: 0;
+    }
+  }
+}
