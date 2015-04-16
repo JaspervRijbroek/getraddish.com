@@ -3,7 +3,7 @@
   @extend .row;
   
   .sidebar {
-    @extend .col3;
+    @extend .col2;
     
     ul {
       list-style: none;
@@ -47,7 +47,7 @@
   }
   
   article {
-    @extend .col9;
+    @extend .col10;
     
     p {
       margin-bottom: 10px;

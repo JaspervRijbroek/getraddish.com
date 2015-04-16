@@ -22,5 +22,92 @@ When a request is started, the controller will get the model for the request.
 The model the gets the data which is then returned.
 
 ## Custom actions
-Within Raddish it is possible to add your own custom actions. However these actions will only respond on a ```POST``` request.
+Within Raddish it is possible to add your own custom actions. However these actions will only respond on a ```POST``` request.  
+To trigger the action, it must be send as the ```POST``` value ```action```. Otherwise the action will not be called.
 
+The method for the action must be placed in the controller with the name: ```_action<Action_name>```.  
+The action name must have a capital first letter.
+
+## Permissions
+The permissions are handled per controller. Within the controller directory a ```permissions``` can be created with files having the same name as the controller itself.
+Within here you can add the permissions per action with your own logic.
+
+This is an example:
+
+```javascript
+var Permission  = require('raddish').Permission;
+var util        = require('util');
+
+function DefaultPermission(config) {
+    Permission.call(this, config);
+}
+
+util.inherits(DefaultPermission, Permission);
+
+DefaultPermission.prototype.canAdd = function(context) {
+    if(typeof context.auth.isAdmin == 'function') {
+        return context.auth.isAdmin();
+    }
+
+    return Promise.resolve(true);
+};
+
+module.exports = DefaultPermission;
+```
+
+## Component Config
+Within the controller some parts can be controlled by component config and object override.
+
+<div class="row">
+    <div class="col6">
+{% highlight javascript %}
+var Controller  = require('raddish').Controller;
+var util        = require('util');
+
+function DemoController(config) {
+    Controller.call(this, config);
+}
+
+util.inherits(DemoController, Controller);
+
+DemoController.prototype.initialize = function(config) {
+    // When a behavior is in this component you can just give the behavior name
+    // but when it is in another component you must give the full identifier.
+    config.behaviors = {
+        'uploadable': {},
+        'com://demo/menu.controller.behavior.itemable': {}
+    };
+
+    return Controller.prototype.initialize.call(this, config);
+};
+
+DemoController.prototype.getRequest = function() {
+    var request = Controller.prototype.getRequest.call(this);
+
+    request.id = 11;
+
+    return request;
+};
+
+module.exports = DemoController;
+{% endhighlight %}
+    </div>
+    
+    <div class="col6">
+{% highlight json %}
+{
+    "controller": {
+        "demo": {
+            "behaviors": {
+                "uploadable": {},
+                "com://demo.menu.controller.behavior.itemable": {}
+            }
+        }
+    }
+}
+{% endhighlight %}
+    </div>
+</div>
+```javascript
+
+```
