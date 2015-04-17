@@ -28,6 +28,8 @@ To trigger the action, it must be send as the ```POST``` value ```action```. Oth
 The method for the action must be placed in the controller with the name: ```_action<Action_name>```.  
 The action name must have a capital first letter.
 
+Be sure to add the permissions and the action you want to call to the controller or else you will encounter an error.
+
 ## Permissions
 The permissions are handled per controller. Within the controller directory a ```permissions``` can be created with files having the same name as the controller itself.
 Within here you can add the permissions per action with your own logic.
