@@ -110,6 +110,3 @@ module.exports = DemoController;
 {% endhighlight %}
     </div>
 </div>
-```javascript
-
-```
