@@ -57,6 +57,33 @@ DefaultPermission.prototype.canAdd = function(context) {
 module.exports = DefaultPermission;
 ```
 
+## Behaviors
+Within Raddish it is possible to add extra behaviors to the controller.
+By default on the controller level there are no behaviors, so any behaviors you want you need to add yourself.
+
+The methods that behaviors can have on the controller level are al follows:
+
+- onInitializeBrowse
+- onBeforeBrowse
+- onAfterBrowse
+- onInitializeRead
+- onBeforeRead
+- onAfterRead
+- onInitializeAdd
+- onBeforeAdd
+- onAfterAdd
+- onInitializeEdit
+- onBeforeEdit
+- onAfterEdit
+- onInitializeDelete
+- onBeforeDelete
+- onAfterDelete
+
+The behaviors also allow for custom defined actions.  
+These follow the same pattern and have the methods ```onInitialize```, ```onBefore``` and ```onAfter```.
+
+[More on behaviors](/guide/getting-started/behaviors.html).
+
 ## Component Config
 Within the controller some parts can be controlled by component config and object override.
 

@@ -24,6 +24,29 @@ Next to this the filters for the columns in the table are assumed based on the v
 ## Changing the filters
 Filters can be changed on two levels. The table level itself as a comment on the column like ```@Filter('<filter_value>')``` of in the filter object in the table.
 
+# Behaviors
+Within Raddish it is possible to add behaviors to the table object.  
+The behaviors are added in a special subfolder in the table folder called behavior.
+
+In a behavior object you can bind on before and after methods.
+In the table the following methods are available:
+
+- onInitializeSelect
+- onBeforeSelect
+- onAfterSelect
+- onInitializeInsert
+- onBeforeInsert
+- onAfterInsert
+- onInitializeUpdate
+- onBeforeUpdate
+- onAfterUpdate
+- onInitializeDelete
+- onBeforeDelete
+- onAfterDelete
+
+All of these methods will get an context. onBefore methods have an query object and onAfter methods will have the raw data from the database.  
+Here you can add DCI or your own reusable code. [More on behaviors](/guide/getting-started/behaviors.html).
+
 ## Example
 In this example we will set some values and we will show the component config values.
 
@@ -49,6 +72,13 @@ function FooTable(config) {
         name: "title",
         user: "complicated_table_column_name"
     };
+    
+    // Behaviors will accept name only. But it is also possible to add the complete identifier.
+    config.behaviors = {
+        'creatable': {},
+        'modifiable': {},
+        'com://demo/foo.database.table.barable': {}
+    }
 
     Table.call(this, config);
 };
@@ -69,6 +99,11 @@ module.exports = FooTable;
             "column_map": {
                 "name": "title",
                 "user": "complicated_table_column_name"
+            },
+            "behaviors": {
+                "creatable": {},
+                "modifiable": {},
+                "com://demo/foo.database.table.barable": {}
             }
         }
     }
