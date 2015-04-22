@@ -14,7 +14,7 @@ All the methods added to the row object can later also be used in a loop through
 When extra methods are added you can use them further in the framework or even use them in behaviors.
 
 Also it is possible to add extra functions to a save method on row level. (which is preferred over a table override without behaviors).
-This can be done on the following methods: ```save```, ```update``` and ```delete```. If you add any method here, this will execute no matter what.
+This can be done on the following methods: ```save``` and ```delete```. If you add any method here, this will execute no matter what.
 
 **Note!:**  
 When extending the functionality be sure to call the parent. Else return the data.
