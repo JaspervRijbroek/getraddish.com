@@ -2,7 +2,7 @@ code {
   padding: 2px;
   background: rgba($japonica, 0.2);
   border-radius: 5px;
-  border: 1px solid $alizarin-crimson;
+  color: $red;
   display: inline-block;
 }
 
@@ -13,10 +13,10 @@ pre {
     &.language-bash {
       display: block;
       padding: 10px;
-      background: rgba($japonica, 0.2);
-      border: 1px solid $alizarin-crimson;
+      background: rgba($silver, 0.2);
       border-radius: 5px;
       margin: 20px 0;
+      color: initial;
     }
   }
 }
