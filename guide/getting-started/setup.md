@@ -23,7 +23,8 @@ raddish.start();
 ```
 
 The ```setConfig``` has a single parameter, this can be a string to a file
-which will then be included, or this can be an object.
+which will then be included, or this can be an object.  
+This will be the config used globally within Raddish. Go here to read more about the [config file](/guide/essentials/config.html).
 
 After the ```setConfig``` we call ```setApplication``` this method has 2 parameters and can be called many times.  
 the first is the alias of the application, which will be represented in the [identifiers](/guide/essentials/identifiers.html) and the [url](/guide/essentials/urls.html).  

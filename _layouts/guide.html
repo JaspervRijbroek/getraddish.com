@@ -67,6 +67,17 @@ layout: default
                   </li>
                 </ul>
             </li>
+            <li class="nested {% if page.url == '/guide/advanced.html' or page.url contains '/guide/advanced/' %}active{% endif %}">
+                <a href="/guide/advanced.html">Advanced</a>
+                <ul>
+                    <li class="{% if page.url == '/guide/advanced/system-calls.html' %}active{% endif %}">
+                        <a href="/guide/advanced/system-calls.html">System calls</a>
+                    </li>
+                    <li class="{% if page.url == '/guide/advanced/plugins.html' %}active{% endif %}">
+                        <a href="/guide/advanced/plugins.html">Plugins</a>
+                    </li>
+                </ul>
+            </li>
             <li class="nested {% if page.url == '/guide/extras.html' or page.url contains '/guide/extras/' %}active{% endif %}">
                 <a href="/guide/extras.html">Extras</a>
                 

@@ -1,6 +1,6 @@
 code {
   padding: 2px;
-  background: rgba($japonica, 0.5);
+  background: rgba($japonica, 0.2);
   border-radius: 5px;
   border: 1px solid $alizarin-crimson;
   display: inline-block;
@@ -12,9 +12,11 @@ pre {
     &.language-json,
     &.language-bash {
       display: block;
-
-      background: none;
-      border: 0;
+      padding: 10px;
+      background: rgba($japonica, 0.2);
+      border: 1px solid $alizarin-crimson;
+      border-radius: 5px;
+      margin: 20px 0;
     }
   }
 }
