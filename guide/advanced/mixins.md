@@ -37,5 +37,5 @@ function FooModel(config) {
 
 util.inherits(FooModel, Model);
 
-module.exports - FooModel;
+module.exports = FooModel;
 ```
