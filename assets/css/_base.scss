@@ -12,6 +12,10 @@
         "template/code",
         "template/highlight";
 
+.subtitle {
+  font-size: 20px;
+}
+
 .install {
   &::after {
     display: inline-block;

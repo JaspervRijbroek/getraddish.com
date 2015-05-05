@@ -18,3 +18,12 @@ a {
     color: $black;
   }
 }
+
+hr {
+  &.small {
+    width: 40%;
+    margin: 0 auto 10px;
+    border: none;
+    border-bottom: 1px solid $japonica;
+  }
+}

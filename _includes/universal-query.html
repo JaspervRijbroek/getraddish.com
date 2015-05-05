@@ -1,5 +1,32 @@
 <ul>
     <li>
-        <a href="#">Test</a>
+    <li class="{% if page.url == '/api/universal-query/index.html' %}active{% endif %}">
+        <a href="/api/universal-query/index.html">Module</a>
+    </li>
+    <li class="nested {% if page.url == '/api/universal-query/classes.html' or page.url contains '/api/universal-query/classes/' %}active{% endif %}">
+        <a href="/api/universal-query/classes.html">Classes</a>
+
+        <ul>
+            <li class="{% if page.url == '/api/universal-query/classes/select-query.html' %}active{% endif %}">
+                <a href="/api/universal-query/classes/select-query.html">
+                    SelectQuery
+                </a>
+            </li>
+            <li class="{% if page.url == '/api/universal-query/classes/insert-query.html' %}active{% endif %}">
+                <a href="/api/universal-query/classes/insert-query.html">
+                    InsertQuery
+                </a>
+            </li>
+            <li class="{% if page.url == '/api/universal-query/classes/update-query.html' %}active{% endif %}">
+                <a href="/api/universal-query/classes/update-query.html">
+                    UpdateQuery
+                </a>
+            </li>
+            <li class="{% if page.url == '/api/universal-query/classes/delete-query.html' %}active{% endif %}">
+                <a href="/api/universal-query/classes/delete-query.html">
+                    DeleteQuery
+                </a>
+            </li>
+        </ul>
     </li>
 </ul>
