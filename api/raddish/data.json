@@ -1,0 +1,5097 @@
+{
+    "project": {},
+    "files": {
+        "lib/application/application.js": {
+            "name": "lib/application/application.js",
+            "modules": {},
+            "classes": {
+                "Application": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/command/behavior/behavior.js": {
+            "name": "lib/command/behavior/behavior.js",
+            "modules": {},
+            "classes": {
+                "CommandBehavior": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/command/chain/chain.js": {
+            "name": "lib/command/chain/chain.js",
+            "modules": {},
+            "classes": {
+                "CommandChain": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/command/context/context.js": {
+            "name": "lib/command/context/context.js",
+            "modules": {},
+            "classes": {
+                "CommandContext": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/command/role/role.js": {
+            "name": "lib/command/role/role.js",
+            "modules": {},
+            "classes": {
+                "Role": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/controller/permission/abstract.js": {
+            "name": "lib/controller/permission/abstract.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/controller/permission/default.js": {
+            "name": "lib/controller/permission/default.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/controller/abstract.js": {
+            "name": "lib/controller/abstract.js",
+            "modules": {},
+            "classes": {
+                "ControllerAbstract": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/controller/default.js": {
+            "name": "lib/controller/default.js",
+            "modules": {},
+            "classes": {
+                "Controller": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/adapter/abstract.js": {
+            "name": "lib/database/adapter/abstract.js",
+            "modules": {},
+            "classes": {
+                "AbstractAdapter": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/adapter/mongo.js": {
+            "name": "lib/database/adapter/mongo.js",
+            "modules": {},
+            "classes": {
+                "MongoAdapter": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/adapter/mysql.js": {
+            "name": "lib/database/adapter/mysql.js",
+            "modules": {},
+            "classes": {
+                "MysqlAdapter": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/adapter/sqlite.js": {
+            "name": "lib/database/adapter/sqlite.js",
+            "modules": {},
+            "classes": {
+                "SqliteAdapter": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/row/abstract.js": {
+            "name": "lib/database/row/abstract.js",
+            "modules": {},
+            "classes": {
+                "RowAbstract": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/row/default.js": {
+            "name": "lib/database/row/default.js",
+            "modules": {},
+            "classes": {
+                "Row": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/rowset/abstract.js": {
+            "name": "lib/database/rowset/abstract.js",
+            "modules": {},
+            "classes": {
+                "RowsetAbstract": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/rowset/default.js": {
+            "name": "lib/database/rowset/default.js",
+            "modules": {},
+            "classes": {
+                "Rowset": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/table/behavior/creatable.js": {
+            "name": "lib/database/table/behavior/creatable.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/table/behavior/modifiable.js": {
+            "name": "lib/database/table/behavior/modifiable.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/table/behavior/sluggable.js": {
+            "name": "lib/database/table/behavior/sluggable.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/table/behavior/socketable.js": {
+            "name": "lib/database/table/behavior/socketable.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/table/abstract.js": {
+            "name": "lib/database/table/abstract.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/database/table/default.js": {
+            "name": "lib/database/table/default.js",
+            "modules": {},
+            "classes": {
+                "Table": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/dispatcher/authenticator/default.js": {
+            "name": "lib/dispatcher/authenticator/default.js",
+            "modules": {},
+            "classes": {
+                "DefaultAuthenticator": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/dispatcher/abstract.js": {
+            "name": "lib/dispatcher/abstract.js",
+            "modules": {},
+            "classes": {
+                "AbstractDispatcher": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/dispatcher/http.js": {
+            "name": "lib/dispatcher/http.js",
+            "modules": {},
+            "classes": {
+                "Dispatcher": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/error/error.js": {
+            "name": "lib/error/error.js",
+            "modules": {},
+            "classes": {
+                "RaddishError": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/filter/filter.js": {
+            "name": "lib/filter/filter.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/inflector/inflector.js": {
+            "name": "lib/inflector/inflector.js",
+            "modules": {},
+            "classes": {
+                "Inflector": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/log/log.js": {
+            "name": "lib/log/log.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/mixin/mixin.js": {
+            "name": "lib/mixin/mixin.js",
+            "modules": {},
+            "classes": {
+                "Mixin": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/model/states/states.js": {
+            "name": "lib/model/states/states.js",
+            "modules": {},
+            "classes": {
+                "States": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/model/abstract.js": {
+            "name": "lib/model/abstract.js",
+            "modules": {},
+            "classes": {
+                "ModelAbstract": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/model/default.js": {
+            "name": "lib/model/default.js",
+            "modules": {},
+            "classes": {
+                "Model": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/object/identifier/identifier.js": {
+            "name": "lib/object/identifier/identifier.js",
+            "modules": {},
+            "classes": {
+                "ObjectIdentifier": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/object/loader/loader.js": {
+            "name": "lib/object/loader/loader.js",
+            "modules": {},
+            "classes": {
+                "ObjectLoader": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/object/manager.js": {
+            "name": "lib/object/manager.js",
+            "modules": {},
+            "classes": {
+                "ObjectManager": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/plugin/plugin.js": {
+            "name": "lib/plugin/plugin.js",
+            "modules": {},
+            "classes": {
+                "Plugin": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/raddish/raddish.js": {
+            "name": "lib/raddish/raddish.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/router/router.js": {
+            "name": "lib/router/router.js",
+            "modules": {},
+            "classes": {
+                "Router": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/socket/socket.js": {
+            "name": "lib/socket/socket.js",
+            "modules": {},
+            "classes": {
+                "Socket": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/threads/threads.js": {
+            "name": "lib/threads/threads.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/view/abstract.js": {
+            "name": "lib/view/abstract.js",
+            "modules": {},
+            "classes": {
+                "ViewAbstract": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/view/json.js": {
+            "name": "lib/view/json.js",
+            "modules": {},
+            "classes": {
+                "ViewJson": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Application": {
+            "name": "Application",
+            "shortname": "Application",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/application/application.js",
+            "line": 6,
+            "description": "Application class to structure everything and give more flexibility.",
+            "is_constructor": 1
+        },
+        "CommandBehavior": {
+            "name": "CommandBehavior",
+            "shortname": "CommandBehavior",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/command/behavior/behavior.js",
+            "line": 5,
+            "description": "This is the base class every behavior needs.\nThis has the basic functions to let your behavior function properly.",
+            "extends": "ObjectManager",
+            "params": [
+                {
+                    "name": "config",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1
+        },
+        "CommandChain": {
+            "name": "CommandChain",
+            "shortname": "CommandChain",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/command/chain/chain.js",
+            "line": 3,
+            "description": "CommandChain class for the behaviors.\nThis object when created will process the behaviors.\nThis will be done in the way of Chain of Responsibility.",
+            "params": [
+                {
+                    "name": "parent",
+                    "description": "Parent object which needs to hold the behaviors.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "With the promised object.",
+                "type": "Promise"
+            },
+            "is_constructor": 1
+        },
+        "CommandContext": {
+            "name": "CommandContext",
+            "shortname": "CommandContext",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/command/context/context.js",
+            "line": 4,
+            "description": "This is the context object which will be passed to every behavior method.",
+            "is_constructor": 1
+        },
+        "Role": {
+            "name": "Role",
+            "shortname": "Role",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/command/role/role.js",
+            "line": 1,
+            "description": "This is an abstract Role object to use with your roles.",
+            "is_constructor": 1
+        },
+        "ControllerAbstract": {
+            "name": "ControllerAbstract",
+            "shortname": "ControllerAbstract",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/controller/abstract.js",
+            "line": 8,
+            "description": "This class holds all the basic function calls from the controller.",
+            "extends": "ObjectManager",
+            "is_constructor": 1
+        },
+        "Controller": {
+            "name": "Controller",
+            "shortname": "Controller",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/controller/default.js",
+            "line": 7,
+            "description": "Controller class\nThis is the default called on every request,\nwhen overwritten a controller object will inherit from this object or the abstract.",
+            "extends": "ControllerAbstract",
+            "is_constructor": 1
+        },
+        "AbstractAdapter": {
+            "name": "AbstractAdapter",
+            "shortname": "AbstractAdapter",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/adapter/abstract.js",
+            "line": 8,
+            "description": "Abstract database adapter class\nThis class is used for extending for your own adapters",
+            "extends": "ObjectManager"
+        },
+        "MongoAdapter": {
+            "name": "MongoAdapter",
+            "shortname": "MongoAdapter",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/adapter/mongo.js",
+            "line": 8,
+            "description": "The MongoDB database adapter.\nThis adapter will create a connection with the MongoDB server",
+            "extends": "AbstractAdapter",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "This is the config object for the adapter",
+                    "type": "Object"
+                },
+                {
+                    "name": "connection",
+                    "description": "The connection to the server",
+                    "type": "Object"
+                }
+            ],
+            "is_constructor": 1
+        },
+        "MysqlAdapter": {
+            "name": "MysqlAdapter",
+            "shortname": "MysqlAdapter",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/adapter/mysql.js",
+            "line": 10,
+            "description": "The MysqlAdapter is the default adapter in this framework,\nthis sets the queryBuilder object with the \"squel\" module which is a query builder for mysql.",
+            "extends": "AbstractAdapter",
+            "is_constructor": 1
+        },
+        "SqliteAdapter": {
+            "name": "SqliteAdapter",
+            "shortname": "SqliteAdapter",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/adapter/sqlite.js",
+            "line": 9,
+            "description": "The SQLite adapter uses a file stored on the server as its database\nThis adapter will create a connection with that file.",
+            "extends": "AbstractAdapter",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "This is the config object for the adapter",
+                    "type": "Object"
+                },
+                {
+                    "name": "connection",
+                    "description": "The connection to the server",
+                    "type": "Object"
+                }
+            ],
+            "is_constructor": 1
+        },
+        "RowAbstract": {
+            "name": "RowAbstract",
+            "shortname": "RowAbstract",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/row/abstract.js",
+            "line": 6,
+            "description": "The RowAbstract class can be used when not using a table, and thus can contain your own functions.",
+            "extends": "ObjectManager",
+            "is_constructor": 1
+        },
+        "Row": {
+            "name": "Row",
+            "shortname": "Row",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/row/default.js",
+            "line": 6,
+            "description": "This class is a helper to structure data of the table,\nthis will only hold one table row.\n\nAlso when extended the extra functions can be used.",
+            "extends": "RowAbstract",
+            "is_constructor": 1
+        },
+        "RowsetAbstract": {
+            "name": "RowsetAbstract",
+            "shortname": "RowsetAbstract",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/rowset/abstract.js",
+            "line": 6,
+            "description": "The RowsetAbstract class can be used without a table,\nyou can use this when using an external API.",
+            "extends": "ObjectManager",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The basic config",
+                    "type": "Object"
+                }
+            ],
+            "is_constructor": 1
+        },
+        "Rowset": {
+            "name": "Rowset",
+            "shortname": "Rowset",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/rowset/default.js",
+            "line": 6,
+            "description": "Rowset object which is basically a collection of Row objects",
+            "extends": "RowsetAbstract",
+            "is_constructor": 1
+        },
+        "Table": {
+            "name": "Table",
+            "shortname": "Table",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/database/table/default.js",
+            "line": 8,
+            "description": "Default table class",
+            "extends": "ObjectManager",
+            "is_constructor": 1
+        },
+        "DefaultAuthenticator": {
+            "name": "DefaultAuthenticator",
+            "shortname": "DefaultAuthenticator",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/dispatcher/authenticator/default.js",
+            "line": 4,
+            "description": "This authenticator will do a basic auth check on the headers.",
+            "extends": "ObjectManager",
+            "is_constructor": 1
+        },
+        "AbstractDispatcher": {
+            "name": "AbstractDispatcher",
+            "shortname": "AbstractDispatcher",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/dispatcher/abstract.js",
+            "line": 8,
+            "description": "This is the abstract dispatcher\nThis class contains the default methods.",
+            "extends": "ObjectManager",
+            "params": [
+                {
+                    "name": "config",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1
+        },
+        "Dispatcher": {
+            "name": "Dispatcher",
+            "shortname": "Dispatcher",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/dispatcher/http.js",
+            "line": 6,
+            "description": "Dispatcher class which will dispatch the http request to the appropriate controller.",
+            "extends": "AbstractDispatcher",
+            "is_constructor": 1
+        },
+        "RaddishError": {
+            "name": "RaddishError",
+            "shortname": "RaddishError",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/error/error.js",
+            "line": 38,
+            "description": "This object will handle Browser Exceptions. The error message will also be logged.\nWhen a exception is hit it will return the response and end the request.",
+            "params": [
+                {
+                    "name": "code",
+                    "description": "Status code to return to the browser",
+                    "type": "Int"
+                },
+                {
+                    "name": "message",
+                    "description": "Message to return to the browser",
+                    "type": "String"
+                }
+            ],
+            "is_constructor": 1
+        },
+        "Inflector": {
+            "name": "Inflector",
+            "shortname": "Inflector",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/inflector/inflector.js",
+            "line": 6,
+            "description": "Inflector class to allow REST",
+            "author": "Jasper van Rijbroek <jasper@jvar.nl>",
+            "is_constructor": 1
+        },
+        "Mixin": {
+            "name": "Mixin",
+            "shortname": "Mixin",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/mixin/mixin.js",
+            "line": 5,
+            "description": "This is the mixin object, this will help with mixing in the objects.",
+            "is_constructor": 1
+        },
+        "States": {
+            "name": "States",
+            "shortname": "States",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/model/states/states.js",
+            "line": 4,
+            "description": "The states object is the handler for all the states.",
+            "is_constructor": 1
+        },
+        "ModelAbstract": {
+            "name": "ModelAbstract",
+            "shortname": "ModelAbstract",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/model/abstract.js",
+            "line": 8,
+            "description": "This is an abstract model, used when using a model without table,\nor creating your own model.\n\nThis will create the states and set some predefined states which can be used at will.",
+            "extends": "ObjectManager",
+            "is_constructor": 1
+        },
+        "Model": {
+            "name": "Model",
+            "shortname": "Model",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/model/default.js",
+            "line": 7,
+            "description": "Default model used in most cases.",
+            "extends": "ModelAbstract",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object."
+                }
+            ],
+            "is_constructor": 1
+        },
+        "ObjectIdentifier": {
+            "name": "ObjectIdentifier",
+            "shortname": "ObjectIdentifier",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/object/identifier/identifier.js",
+            "line": 4,
+            "description": "ObjectIdentifier object which helps with the location of files and building identifiers",
+            "params": [
+                {
+                    "name": "identifier",
+                    "description": "Identifier to convert to an object.",
+                    "type": "String"
+                }
+            ],
+            "is_constructor": 1
+        },
+        "ObjectLoader": {
+            "name": "ObjectLoader",
+            "shortname": "ObjectLoader",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/object/loader/loader.js",
+            "line": 16,
+            "description": "ObjectLoader object which handles all the loading of the requested objects.",
+            "is_constructor": 1
+        },
+        "ObjectManager": {
+            "name": "ObjectManager",
+            "shortname": "ObjectManager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/object/manager.js",
+            "line": 11,
+            "description": "ObjectManager class for inheritance and base functions",
+            "is_constructor": 1
+        },
+        "Plugin": {
+            "name": "Plugin",
+            "shortname": "Plugin",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/plugin/plugin.js",
+            "line": 5,
+            "description": "Plugin object which will discover and run specific plugins.",
+            "is_constructor": 1
+        },
+        "Router": {
+            "name": "Router",
+            "shortname": "Router",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/router/router.js",
+            "line": 10,
+            "description": "Router object, this will route the request to the application.",
+            "is_constructor": 1
+        },
+        "Socket": {
+            "name": "Socket",
+            "shortname": "Socket",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/socket/socket.js",
+            "line": 3,
+            "description": "Socket object which allows to communicate over sockets.\nBy default SocketIO is supported",
+            "is_constructor": 1
+        },
+        "ViewAbstract": {
+            "name": "ViewAbstract",
+            "shortname": "ViewAbstract",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/view/abstract.js",
+            "line": 6,
+            "description": "The ViewAbstract object can be used as template for any extra formats.",
+            "extends": "ObjectManager",
+            "is_constructor": 1
+        },
+        "ViewJson": {
+            "name": "ViewJson",
+            "shortname": "ViewJson",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/view/json.js",
+            "line": 7,
+            "description": "This is the main view object.\nWhich is also used by default.",
+            "extends": "ViewAbstract",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object",
+                    "type": "Object"
+                }
+            ],
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "lib/application/application.js",
+            "line": 16,
+            "description": "This function will set the config of the Application.",
+            "itemtype": "method",
+            "name": "setConfig",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object for the Application",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "For chaning purposes.",
+                "type": "Application"
+            },
+            "class": "Application"
+        },
+        {
+            "file": "lib/application/application.js",
+            "line": 29,
+            "description": "This function will try to find the component and will run it.\nIf the component isn't found it will throw a RaddishError.",
+            "itemtype": "method",
+            "name": "runComponent",
+            "params": [
+                {
+                    "name": "component",
+                    "description": "The component to search for.",
+                    "type": "String"
+                },
+                {
+                    "name": "req",
+                    "description": "NodeJS request object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "NodeJS response object.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "lib/application/application.js",
+            "line": 51,
+            "description": "This function will try to get the application module and add this to the applications registry.",
+            "itemtype": "method",
+            "name": "setApplication",
+            "params": [
+                {
+                    "name": "alias",
+                    "description": "The alias of the Application.",
+                    "type": "String"
+                },
+                {
+                    "name": "path",
+                    "description": "The path to the Application file.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Application"
+            },
+            "class": "Application"
+        },
+        {
+            "file": "lib/application/application.js",
+            "line": 66,
+            "description": "This function returns an initialized application ready to use.",
+            "itemtype": "method",
+            "name": "getApplication",
+            "params": [
+                {
+                    "name": "alias",
+                    "description": "The alias of the application.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "Application"
+        },
+        {
+            "file": "lib/application/application.js",
+            "line": 77,
+            "description": "This function will try to match an application to the url,\nIf no application is found an error will be fired.\nIf the application isn't found it will throw a RaddishError.",
+            "itemtype": "method",
+            "name": "matchApplication",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "The url object of the (parsed) request.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "lib/command/behavior/behavior.js",
+            "line": 23,
+            "description": "Add the config to the global object.",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The complete config object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The complete initialized object",
+                "type": "Object"
+            },
+            "class": "CommandBehavior"
+        },
+        {
+            "file": "lib/command/behavior/behavior.js",
+            "line": 37,
+            "description": "With the help of this method you can register methods to a specific call.",
+            "itemtype": "method",
+            "name": "registerMethod",
+            "params": [
+                {
+                    "name": "action",
+                    "description": "The action or collection of actions to bind your method to.",
+                    "type": "Array|String"
+                },
+                {
+                    "name": "method",
+                    "description": "The function to call on the specified action(s).",
+                    "type": "Function"
+                }
+            ],
+            "class": "CommandBehavior"
+        },
+        {
+            "file": "lib/command/behavior/behavior.js",
+            "line": 56,
+            "description": "This method will check if the function exists in the current behavior, if so it will return true,",
+            "itemtype": "method",
+            "name": "hasMethod",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "The method name to check on.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The function exists or not.",
+                "type": "Boolean"
+            },
+            "class": "CommandBehavior"
+        },
+        {
+            "file": "lib/command/behavior/behavior.js",
+            "line": 76,
+            "description": "Execute the action.",
+            "itemtype": "method",
+            "name": "execute",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "The method name to execute, this is dot-separated",
+                    "type": "String"
+                },
+                {
+                    "name": "context",
+                    "description": "The context object to use in the method call.",
+                    "type": "CommandContext"
+                }
+            ],
+            "return": {
+                "description": "The context object, which has gone through all the behaviors.",
+                "type": "CommandContext"
+            },
+            "class": "CommandBehavior"
+        },
+        {
+            "file": "lib/command/behavior/behavior.js",
+            "line": 98,
+            "description": "Convert the action name to a function name.",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "getMethod",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "The dot-separated name of the behavior",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The behavior name as function name.",
+                "type": "String"
+            },
+            "class": "CommandBehavior"
+        },
+        {
+            "file": "lib/command/chain/chain.js",
+            "line": 25,
+            "description": "Disable the complete command chain.",
+            "return": {
+                "description": "The commandChain object used for chaining.",
+                "type": "CommandChain"
+            },
+            "class": "CommandChain"
+        },
+        {
+            "file": "lib/command/chain/chain.js",
+            "line": 36,
+            "description": "Enabled the command Chain.",
+            "return": {
+                "description": "The commandChain object used for chaining.",
+                "type": "CommandChain"
+            },
+            "class": "CommandChain"
+        },
+        {
+            "file": "lib/command/chain/chain.js",
+            "line": 47,
+            "description": "Run the requested behaviors, the behavior names are dot separated",
+            "itemtype": "method",
+            "name": "run",
+            "params": [
+                {
+                    "name": "behavior",
+                    "description": "The name of the behavior to run (eg: before.run)",
+                    "type": "String"
+                },
+                {
+                    "name": "context",
+                    "description": "The context of the behavior in which it has to run. (DCI)",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "When all the behaviors have ran we will return a resolve of the context.",
+                "type": "Promise"
+            },
+            "class": "CommandChain"
+        },
+        {
+            "file": "lib/command/chain/chain.js",
+            "line": 73,
+            "description": "This function will run in the background and map all the behavior till they are ready to run.",
+            "itemtype": "method",
+            "name": "processBehaviors",
+            "return": {
+                "description": "Return the CommandChain object when the behaviors have been processed.",
+                "type": "Promise"
+            },
+            "class": "CommandChain"
+        },
+        {
+            "file": "lib/command/context/context.js",
+            "line": 14,
+            "description": "This method will create a new Role to use in DCI.\nThese roles will only be available in the current context.",
+            "itemtype": "method",
+            "name": "addRole",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the created role",
+                    "type": "String"
+                },
+                {
+                    "name": "object",
+                    "description": "The object the methods need to be bound to.",
+                    "type": "Object"
+                },
+                {
+                    "name": "methods",
+                    "description": "The methods which need to be bound to the role.",
+                    "type": "Object"
+                }
+            ],
+            "class": "CommandContext"
+        },
+        {
+            "file": "lib/command/context/context.js",
+            "line": 36,
+            "description": "Returns a single role Object.\nThe returned object will have all the role functions added to it.",
+            "itemtype": "method",
+            "name": "getRole",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The role object",
+                "type": "Object"
+            },
+            "class": "CommandContext"
+        },
+        {
+            "file": "lib/command/context/context.js",
+            "line": 48,
+            "description": "This method will clear the context of all remaining Roles.",
+            "itemtype": "method",
+            "name": "clearRoles",
+            "class": "CommandContext"
+        },
+        {
+            "file": "lib/controller/permission/abstract.js",
+            "line": 4,
+            "description": "Abstract permission object,\nWon't be directly used in development.\n\nThis object holds the basic permissions for the framework",
+            "extends": "ObjectManager",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object.",
+                    "type": "Object"
+                }
+            ],
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/abstract.js",
+            "line": 19,
+            "description": "Basic permissions for a GET request,\nThis function is here for basic purposes.",
+            "itemtype": "method",
+            "name": "canGet",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The context object with authentication information.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/abstract.js",
+            "line": 31,
+            "description": "Basic permissions for a POST request,\nThis function is here for basic purposes.",
+            "itemtype": "method",
+            "name": "canPost",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The context object with authentication information.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/abstract.js",
+            "line": 43,
+            "description": "Basic permissions for a PUT request,\nThis function is here for basic purposes.",
+            "itemtype": "method",
+            "name": "canPut",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The context object with authentication information.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/abstract.js",
+            "line": 55,
+            "description": "Basic permissions for a PATCH request,\nThis function is here for basic purposes.",
+            "itemtype": "method",
+            "name": "canPatch",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The context object with authentication information.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/default.js",
+            "line": 6,
+            "description": "Basic permissions object",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object.",
+                    "type": "Object"
+                }
+            ],
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/default.js",
+            "line": 17,
+            "description": "Return true by default on a browse request.",
+            "itemtype": "method",
+            "name": "canBrowse",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The complete context from the controller",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Containing true by default",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/default.js",
+            "line": 28,
+            "description": "Return true by default on a browse request.",
+            "itemtype": "method",
+            "name": "canRead",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The complete context from the controller",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Containing true by default",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/default.js",
+            "line": 39,
+            "description": "Only when a user is authenticated return true else return false.",
+            "itemtype": "method",
+            "name": "canAdd",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The complete context from the controller",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Containing true by default",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/default.js",
+            "line": 56,
+            "description": "Only when a user is authenticated return true else return false.",
+            "itemtype": "method",
+            "name": "canEdit",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The complete context from the controller",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Containing true by default",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/permission/default.js",
+            "line": 73,
+            "description": "Only when a user is authenticated return true else return false.",
+            "itemtype": "method",
+            "name": "canDelete",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "The complete context from the controller",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Containing true by default",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 26,
+            "description": "This function will initialize the controller,\nit will set the request and response got from the dispatcher.",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Config object for extra configuration.",
+                    "type": "Object|null"
+                }
+            ],
+            "return": {
+                "description": "The initialized controller object.",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 50,
+            "description": "Execute function will execute a command given the method.\nThis command will use the context for the behaviors.",
+            "itemtype": "method",
+            "name": "execute",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "Name of the action to execute.",
+                    "type": "String"
+                },
+                {
+                    "name": "context",
+                    "description": "Data got from the request.",
+                    "type": "Object"
+                }
+            ],
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 90,
+            "description": "The forward method forwards the complete context to another action.\nTHis will return the promise for that specific action.",
+            "itemtype": "method",
+            "name": "forward",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "The method to forward to.",
+                    "type": "String"
+                },
+                {
+                    "name": "context",
+                    "description": "The context specified for that method.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The promise for the specified method.",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 103,
+            "description": "This function returns the model matching the controller name.\nAlso this method will automatically set the states.",
+            "itemtype": "method",
+            "name": "getModel",
+            "return": {
+                "description": "The initialized model object with set states",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 120,
+            "description": "This function will return the context of the current controller.",
+            "itemtype": "method",
+            "name": "getContext",
+            "return": {
+                "description": "Context object.",
+                "type": "Object"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 130,
+            "description": "This function returns the complete request.",
+            "itemtype": "method",
+            "name": "getRequest",
+            "return": {
+                "description": "The states in the request",
+                "type": "Object"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 140,
+            "description": "This function will return the initialize view matching the layout given in the request or on the default",
+            "itemtype": "method",
+            "name": "getView",
+            "return": {
+                "description": "The initialized view object",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/abstract.js",
+            "line": 162,
+            "description": "This function returns the permission set of the current controller.\nThis function has not been implemented as of yet.",
+            "itemtype": "method",
+            "name": "getPermissions",
+            "return": {
+                "description": "The complete permissions set",
+                "type": "Promise"
+            },
+            "class": "ControllerAbstract"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 22,
+            "description": "This function will react on a GET request.\nThis function will check if the view is singular if it is than _actionRead is called, else _actionBrowse is called,\nelse the getList function is called.",
+            "itemtype": "method",
+            "name": "_actionGet",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The data of the model.",
+                "type": "Promise"
+            },
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 49,
+            "description": "This action will react on a PUT request,\nThe complete context of this action will be forwarded to _actionPost",
+            "itemtype": "method",
+            "name": "_actionPut",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data",
+                    "type": "CommandContext"
+                }
+            ],
+            "return": {
+                "description": "The promise with the context to use afterwards",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 62,
+            "description": "This action will react on a PATCH request,\nThe complete context of this action will be forwarded to _actionPost",
+            "itemtype": "method",
+            "name": "_actionPatch",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data",
+                    "type": "CommandContext"
+                }
+            ],
+            "return": {
+                "description": "The promise with the context to use afterwards",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 75,
+            "description": "_actionBrowse will return a list of items,\nafter this action has been called it will return the data to _actionGet.",
+            "itemtype": "method",
+            "name": "_actionBrowse",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data",
+                    "type": "CommandContext"
+                }
+            ],
+            "return": {
+                "description": "The promise with the context to use afterwards",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 97,
+            "description": "_actionBrowse will return a single item,\nafter this action has been called it will return the data to _actionGet.",
+            "itemtype": "method",
+            "name": "_actionRead",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data",
+                    "type": "CommandContext"
+                }
+            ],
+            "return": {
+                "description": "The promise with the context to use afterwards",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 118,
+            "description": "This function is called on a POST request,\nWhen the state is unique _actionEdit is called else _actionAdd will be called.\nThe returned data for these actions will be handled afterwards.",
+            "itemtype": "method",
+            "name": "_actionPost",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The data of the update/ inserted item.",
+                "type": "Promise"
+            },
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 147,
+            "description": "_actionAdd will add a new record to the database.\nAfter this is done the data is returned to _actionPost.",
+            "itemtype": "method",
+            "name": "_actionAdd",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data",
+                    "type": "CommandContext"
+                }
+            ],
+            "return": {
+                "description": "The promise with the context to use afterwards",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 175,
+            "description": "_actionEdit will update an record in the database.\nAfter this is done the data is returned to _actionPost.",
+            "itemtype": "method",
+            "name": "_actionEdit",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data",
+                    "type": "CommandContext"
+                }
+            ],
+            "return": {
+                "description": "The promise with the context to use afterwards",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Controller"
+        },
+        {
+            "file": "lib/controller/default.js",
+            "line": 208,
+            "description": "This function is called on a DELETE method,\nthis will remove an item from the database.",
+            "itemtype": "method",
+            "name": "_actionDelete",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "Context object with the request data.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The data of the removed item.",
+                "type": "Promise"
+            },
+            "class": "Controller"
+        },
+        {
+            "file": "lib/database/adapter/abstract.js",
+            "line": 26,
+            "description": "This method will return a single instance,\nif the instance isn't there it has to be created.",
+            "itemtype": "method",
+            "name": "getInstance",
+            "params": [
+                {
+                    "name": "name",
+                    "description": ""
+                },
+                {
+                    "name": "config",
+                    "description": ""
+                }
+            ],
+            "class": "AbstractAdapter"
+        },
+        {
+            "file": "lib/database/adapter/abstract.js",
+            "line": 38,
+            "description": "This function must return a query builder object, or sele when overridden.",
+            "itemtype": "method",
+            "name": "getQuery",
+            "return": {
+                "description": "",
+                "type": "Undefined|*"
+            },
+            "class": "AbstractAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mongo.js",
+            "line": 33,
+            "description": "This function will return a single instance of a server connection.\nIf the connection does not exists it will try to create it.",
+            "itemtype": "method",
+            "name": "getInstance",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The instance name",
+                    "type": "String"
+                },
+                {
+                    "name": "config",
+                    "description": "The config object for the connection.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The server connection to use.",
+                "type": "Promise"
+            },
+            "class": "MongoAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mongo.js",
+            "line": 73,
+            "description": "This method will execute a query on the server,\nthe received data is then returned.",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The query to be executed",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The promise with the received data",
+                "type": "Promise"
+            },
+            "class": "MongoAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mongo.js",
+            "line": 128,
+            "description": "This method will create the schema to use.",
+            "itemtype": "method",
+            "name": "getSchema",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the table to get the schema from.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise containing the schema.",
+                "type": "Promise"
+            },
+            "class": "MongoAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mongo.js",
+            "line": 157,
+            "description": "This method will receive various information of the server.",
+            "itemtype": "method",
+            "name": "_fetchInfo",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The table name from which to return the data.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise with the server information.",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MongoAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mongo.js",
+            "line": 171,
+            "description": "This function will return the indexes on the selected table.",
+            "itemtype": "method",
+            "name": "_fetchIndexes",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The table name to get the indexed from",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise with all the information.",
+                "type": "Promse"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MongoAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mongo.js",
+            "line": 199,
+            "description": "This method will return the column layout.\nThis column layout will be used in the data responses.",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the table to get the columns from.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise with the table columns.",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MongoAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mongo.js",
+            "line": 264,
+            "description": "This function will define the type of the column data.",
+            "params": [
+                {
+                    "name": "item",
+                    "description": "the item to get the type from.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The object type.",
+                "type": "String"
+            },
+            "class": "MongoAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mysql.js",
+            "line": 78,
+            "description": "This method will return an instance of the mysql connection,\nIf there is a problem with the connection an error will be thrown.",
+            "itemtype": "method",
+            "name": "getInstance",
+            "params": [
+                {
+                    "name": "name",
+                    "description": ""
+                },
+                {
+                    "name": "config",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "A resolved promise with the connection.",
+                "type": "Object"
+            },
+            "class": "MysqlAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mysql.js",
+            "line": 123,
+            "description": "This method will execute a query on the server.",
+            "itemtype": "method",
+            "name": "execute",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The query object to execute.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The promise with all the data returned from the server.",
+                "type": "Promise"
+            },
+            "class": "MysqlAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mysql.js",
+            "line": 146,
+            "description": "This method will create the schema to use.",
+            "itemtype": "method",
+            "name": "getSchema",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the table to get the schema from.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise containing the schema.",
+                "type": "Promise"
+            },
+            "class": "MysqlAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mysql.js",
+            "line": 176,
+            "description": "This method will receive various information of the server.",
+            "itemtype": "method",
+            "name": "_fetchInfo",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The table name from which to return the data.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise with the server information.",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MysqlAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mysql.js",
+            "line": 213,
+            "description": "This function will return the indexes on the selected table.",
+            "itemtype": "method",
+            "name": "_fetchIndexes",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The table name to get the indexed from",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise with all the information.",
+                "type": "Promse"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MysqlAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mysql.js",
+            "line": 249,
+            "description": "This method will return the column layout.\nThis column layout will be used in the data responses.",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the table to get the columns from.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise with the table columns.",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MysqlAdapter"
+        },
+        {
+            "file": "lib/database/adapter/mysql.js",
+            "line": 288,
+            "description": "This function will define the type of the column data.",
+            "params": [
+                {
+                    "name": "item",
+                    "description": "the item to get the type from.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The object type.",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MysqlAdapter"
+        },
+        {
+            "file": "lib/database/adapter/sqlite.js",
+            "line": 33,
+            "description": "This method will return an instance of the sqlite database,\nIf there is a problem with the connection an error will be thrown.",
+            "itemtype": "method",
+            "name": "getInstance",
+            "params": [
+                {
+                    "name": "name",
+                    "description": ""
+                },
+                {
+                    "name": "config",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "A resolved promise with the connection.",
+                "type": "Object"
+            },
+            "class": "SqliteAdapter"
+        },
+        {
+            "file": "lib/database/adapter/sqlite.js",
+            "line": 63,
+            "description": "This method will create the schema to use.",
+            "itemtype": "method",
+            "name": "getSchema",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the table to get the schema from.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The promise containing the schema.",
+                "type": "Promise"
+            },
+            "class": "SqliteAdapter"
+        },
+        {
+            "file": "lib/database/adapter/sqlite.js",
+            "line": 99,
+            "description": "This method will execute a query on the server.",
+            "itemtype": "method",
+            "name": "execute",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The query object to execute.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The promise with all the data returned from the server.",
+                "type": "Promise"
+            },
+            "class": "SqliteAdapter"
+        },
+        {
+            "file": "lib/database/row/abstract.js",
+            "line": 23,
+            "description": "This method will set the data in the Row object,\nwhen there is data present it will add data to the modified array and set this in the data as well.",
+            "itemtype": "method",
+            "name": "setData",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "The data to set on the object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Returns the Row object with filled data",
+                "type": "Promise"
+            },
+            "class": "RowAbstract"
+        },
+        {
+            "file": "lib/database/row/abstract.js",
+            "line": 52,
+            "description": "This method will return only the data from the Row object",
+            "itemtype": "method",
+            "name": "getData",
+            "return": {
+                "description": "The data of the Row object",
+                "type": "Promise"
+            },
+            "class": "RowAbstract"
+        },
+        {
+            "file": "lib/database/row/abstract.js",
+            "line": 62,
+            "description": "This method will check if the row object is new or not",
+            "itemtype": "method",
+            "name": "isNew",
+            "return": {
+                "description": "True if new, False if exists",
+                "type": "Boolean"
+            },
+            "class": "RowAbstract"
+        },
+        {
+            "file": "lib/database/row/abstract.js",
+            "line": 72,
+            "description": "This function will clone the object and return a new RowAbstract object.",
+            "itemtype": "method",
+            "name": "clone",
+            "return": {
+                "description": "The newly created RowAbstract",
+                "type": "RowAbstract"
+            },
+            "class": "RowAbstract"
+        },
+        {
+            "file": "lib/database/row/default.js",
+            "line": 22,
+            "description": "This function will intialize the Row object.",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The configuration of the Row object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "Row"
+        },
+        {
+            "file": "lib/database/row/default.js",
+            "line": 48,
+            "description": "The load method will try to load the row from the database.",
+            "itemtype": "method",
+            "name": "load",
+            "return": {
+                "description": "The promise with the row object, or an empty row object.",
+                "type": "Promise"
+            },
+            "class": "Row"
+        },
+        {
+            "file": "lib/database/row/default.js",
+            "line": 77,
+            "description": "This function tries to save the object to the database,\nwhen it is new the object is inerted into the database if it exists the row is updated.",
+            "itemtype": "method",
+            "name": "save",
+            "return": {
+                "description": "Returns the returned data.",
+                "type": "Promise"
+            },
+            "class": "Row"
+        },
+        {
+            "file": "lib/database/row/default.js",
+            "line": 92,
+            "description": "This function tries to remove an entity from the database.",
+            "itemtype": "method",
+            "name": "delete",
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "Row"
+        },
+        {
+            "file": "lib/database/row/default.js",
+            "line": 102,
+            "description": "Return the table assiciated to the Row.",
+            "itemtype": "method",
+            "name": "getTable",
+            "return": {
+                "description": "Return the table of the current row.",
+                "type": "Object"
+            },
+            "class": "Row"
+        },
+        {
+            "file": "lib/database/row/default.js",
+            "line": 125,
+            "description": "This function will map the table columns to the values of the row object.\nDefault table column values are supported.",
+            "itemtype": "method",
+            "name": "mapColumns",
+            "params": [
+                {
+                    "name": "columns",
+                    "description": "All the columns from the table.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The current row object for chaining.",
+                "type": "Row"
+            },
+            "class": "Row"
+        },
+        {
+            "file": "lib/database/row/default.js",
+            "line": 141,
+            "description": "This function will clone the object and return a new Row object.",
+            "itemtype": "method",
+            "name": "clone",
+            "return": {
+                "description": "The newly create Row object",
+                "type": "Row"
+            },
+            "class": "Row"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 23,
+            "description": "This method will set the data in the Rowset object,\nThis accepts a array, for every entry it will create Row object and add it to the rows array",
+            "itemtype": "method",
+            "name": "setData",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "The data to set on the object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Returns the Rowset object with filled data",
+                "type": "Promise"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 50,
+            "description": "This method will return only the data from the Rowset object",
+            "itemtype": "method",
+            "name": "getData",
+            "return": {
+                "description": "The data of the Rowset object",
+                "type": "Promise"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 67,
+            "description": "This method will save all the rows in the rowset.\nIf one of the rows already exists, it will be updated.",
+            "itemtype": "method",
+            "name": "save",
+            "return": {
+                "description": "All the saved rows.",
+                "type": "Promise"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 87,
+            "description": "This method will delete all the rows in the current rowset.\nThis however is only done when the row isn't new.",
+            "itemtype": "method",
+            "name": "delete",
+            "return": {
+                "description": "All the removed rows.",
+                "type": "Promise"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 109,
+            "description": "This method will return the first row object in the rowset.",
+            "itemtype": "method",
+            "name": "first",
+            "return": {
+                "description": "The first row object in the rowset",
+                "type": "Row"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 119,
+            "description": "This method will return the last row object in the rowset.",
+            "itemtype": "method",
+            "name": "last",
+            "return": {
+                "description": "The last row object in the rowset",
+                "type": "Row"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 129,
+            "description": "This method will return the total length of the rows.",
+            "itemtype": "method",
+            "name": "count",
+            "return": {
+                "description": "The total rows in this rowset object.",
+                "type": "Number"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/abstract.js",
+            "line": 139,
+            "description": "The RowsetAbstract will expect no database so it will try to get its sibling Row object.",
+            "itemtype": "method",
+            "name": "getRow",
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "RowsetAbstract"
+        },
+        {
+            "file": "lib/database/rowset/default.js",
+            "line": 19,
+            "description": "This function initializes the Rowset object.",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config for the rowset object",
+                    "type": "Object|null"
+                }
+            ],
+            "return": {
+                "description": "Returns the initialized Rowset object",
+                "type": "Promise"
+            },
+            "class": "Rowset"
+        },
+        {
+            "file": "lib/database/rowset/default.js",
+            "line": 42,
+            "description": "Return the table assiciated to the Rowset.",
+            "itemtype": "method",
+            "name": "getTable",
+            "return": {
+                "description": "Return the table of the current rowset.",
+                "type": "Object"
+            },
+            "class": "Rowset"
+        },
+        {
+            "file": "lib/database/rowset/default.js",
+            "line": 65,
+            "description": "The Rowset will expects a table so it will call the getRow from the table object.",
+            "itemtype": "method",
+            "name": "getRow",
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "Rowset"
+        },
+        {
+            "file": "lib/database/table/behavior/creatable.js",
+            "line": 4,
+            "description": "The creatable behavior will automatically populate the created_on column.\nWhen created_on isn't in the submitted data, it will be added",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object",
+                    "type": "Object"
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/behavior/modifiable.js",
+            "line": 4,
+            "description": "The modifiable behavior will automatically populate and update the modified_on column.\nWhen modified isn't in the submitted data, it will be added",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object",
+                    "type": "Object"
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/behavior/sluggable.js",
+            "line": 5,
+            "description": "The sluggable bahavior will automatically add the slug.\nThe slug to be created will be based on the column config value, if none is given the default will be the title column",
+            "is_constructor": 1,
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/behavior/socketable.js",
+            "line": 5,
+            "description": "The socketable behavior will automatically send the changes to the sockets of the connected clients.",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object",
+                    "type": "Object"
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 15,
+            "description": "This method will execute a certain command combined with a context.\nThis method will also call specialized for the selected method.\nThe methods callable are: Select, Insert, Update and Delete.",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "The method to execute.",
+                    "type": "String"
+                },
+                {
+                    "name": "context",
+                    "description": "The context object to use in this call.",
+                    "type": "CommandContext"
+                }
+            ],
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 90,
+            "description": "This method returns the name of the table.",
+            "itemtype": "method",
+            "name": "getName",
+            "return": {
+                "description": "Table name",
+                "type": "String"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 100,
+            "description": "This method will return the adapter associated with the current table object",
+            "itemtype": "method",
+            "name": "getAdapter",
+            "return": {
+                "description": "The associated adapter.",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 116,
+            "description": "This method will return an empty Row object\nHere we will also cache the Row object for later use.",
+            "itemtype": "method",
+            "name": "getRow",
+            "return": {
+                "description": "Returns a Row object",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 132,
+            "description": "This method will return an empty Rowset object",
+            "itemtype": "method",
+            "name": "getRowset",
+            "return": {
+                "description": "Returns a Rowset object",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 147,
+            "description": "Returns all the columns of the table",
+            "itemtype": "method",
+            "name": "getColumns",
+            "return": {
+                "description": "The columns of the table.",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 170,
+            "description": "This method will return the unique columns of the table",
+            "itemtype": "method",
+            "name": "getUniqueColumns",
+            "return": {
+                "description": "The unique columns of the table.",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 192,
+            "description": "This method will return the single identity column, identified by the auto_increment value.",
+            "itemtype": "method",
+            "name": "getIdentityColumn",
+            "return": {
+                "description": "The promise with the identity column.",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 216,
+            "description": "This Method will check if the table exists or not, if not, it will return an error.",
+            "itemtype": "method",
+            "name": "getSchema",
+            "return": {
+                "description": "The promise with the complete schema.",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/abstract.js",
+            "line": 235,
+            "description": "This method will translate table columns to their original values, or visa versa.\nThis will work on the column_map variable.",
+            "itemtype": "method",
+            "name": "mapColumns",
+            "params": [
+                {
+                    "name": "object",
+                    "description": ""
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/default.js",
+            "line": 24,
+            "description": "Initialize function to initialize the Table model",
+            "itemtype": "method",
+            "name": "initialze",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Config object for the Table object",
+                    "type": "Object|null"
+                }
+            ],
+            "return": {
+                "description": "The initialized Table object",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/default.js",
+            "line": 66,
+            "description": "This method tries to get get a row or rowset from the table.",
+            "itemtype": "method",
+            "name": "select",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "mode",
+                    "description": "Mode to get from the table.",
+                    "type": "Int"
+                }
+            ],
+            "return": {
+                "description": "The data requested from the database.",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/default.js",
+            "line": 134,
+            "description": "This method will try to insert a row in the database",
+            "itemtype": "method",
+            "name": "insert",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The query string for the database",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The inserted data",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/default.js",
+            "line": 189,
+            "description": "This method will try to update a row in the database",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The query string for the database",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The updated data",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/default.js",
+            "line": 249,
+            "description": "This method will try to delete a row in the database",
+            "itemtype": "method",
+            "name": "delete",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The query string for the database",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The deleted data",
+                "type": "Promise"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/default.js",
+            "line": 291,
+            "description": "This function will filter the data based on the columns.\nAnd will check if the value is correct.",
+            "itemtype": "method",
+            "name": "filter",
+            "params": [
+                {
+                    "name": "adapter",
+                    "description": "The adapter object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "columns",
+                    "description": "The object containing all the columns.",
+                    "type": "Object"
+                },
+                {
+                    "name": "data",
+                    "description": "The data object.",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Table"
+        },
+        {
+            "file": "lib/database/table/default.js",
+            "line": 314,
+            "description": "The getQuery method returns the query received from the associated adapter (default: mysql).",
+            "itemtype": "method",
+            "name": "getQuery",
+            "return": {
+                "description": "The queryBuilder object.",
+                "type": "Object"
+            },
+            "class": "Table"
+        },
+        {
+            "file": "lib/dispatcher/authenticator/default.js",
+            "line": 17,
+            "description": "This authenticator will check for a basic auth header\nand when it is available it will authenticate the user.\n\nThis behavior can be overwritten with your own authenticator.",
+            "itemtype": "method",
+            "name": "authenticate",
+            "params": [
+                {
+                    "name": "request",
+                    "description": "The NodeJS request object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The promise containing the username and password",
+                "type": "Promise"
+            },
+            "class": "DefaultAuthenticator"
+        },
+        {
+            "file": "lib/dispatcher/abstract.js",
+            "line": 35,
+            "description": "This method will dispatch check the view parameter and get the correct controller,\nafter this the correct action is ran.",
+            "itemtype": "method",
+            "name": "dispatch",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "NodeJS Request Object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "NodeJS Response Object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The promise with the controller as content.",
+                "type": "Promise"
+            },
+            "class": "AbstractDispatcher"
+        },
+        {
+            "file": "lib/dispatcher/abstract.js",
+            "line": 64,
+            "description": "This method will return the Controller object for the request.",
+            "itemtype": "method",
+            "name": "getController",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "NodeJS Request Object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "NodeJS Response Object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Return the Controller object.",
+                "type": "Promise"
+            },
+            "class": "AbstractDispatcher"
+        },
+        {
+            "file": "lib/dispatcher/abstract.js",
+            "line": 85,
+            "description": "Get the authenticator belonging to the current dispatcher.",
+            "itemtype": "method",
+            "name": "getAuthenticator",
+            "return": {
+                "description": "The promised authenticator",
+                "type": "Promise"
+            },
+            "class": "AbstractDispatcher"
+        },
+        {
+            "file": "lib/dispatcher/abstract.js",
+            "line": 103,
+            "description": "This method will parse the request and returns the fields and files send in the request.",
+            "itemtype": "method",
+            "name": "parseRequest",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "NodeJS Request Object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Return the POST data and Files",
+                "type": "Promise"
+            },
+            "class": "AbstractDispatcher"
+        },
+        {
+            "file": "lib/dispatcher/abstract.js",
+            "line": 127,
+            "description": "This method will check if gzip is enabled and supported, if both are true it will gzip the data and send it to the response.",
+            "itemtype": "method",
+            "name": "GZip",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "The NodeJS request object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "The NodeJS response object",
+                    "type": "Object"
+                },
+                {
+                    "name": "data",
+                    "description": "The data object which needs GZipping.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The encoded response.",
+                "type": "Promise"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "AbstractDispatcher"
+        },
+        {
+            "file": "lib/dispatcher/abstract.js",
+            "line": 154,
+            "description": "This method will handle the exceptions thrown in the framework,\nif it is an instance of RaddishError it will return it to the browser.",
+            "itemtype": "method",
+            "name": "handleException",
+            "params": [
+                {
+                    "name": "response",
+                    "description": "NodeJS request object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "error",
+                    "description": "The error object.",
+                    "type": "Object"
+                }
+            ],
+            "class": "AbstractDispatcher"
+        },
+        {
+            "file": "lib/dispatcher/http.js",
+            "line": 19,
+            "description": "This is an override of the dispatch method,\nThis will handle the output to the client.",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "The NodeJS request object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "The NodeJS response object",
+                    "type": "Object"
+                }
+            ],
+            "class": "Dispatcher"
+        },
+        {
+            "file": "lib/error/error.js",
+            "line": 1,
+            "description": "RaddishError\n\nThis is an object which will call to adapters.\nBut this object will also output to the dispatcher. When an error is dispatched it will hold a few options.\nThese are:\n* severity:  The level of the error.\n* message:   The message given.\n\nThis will be fluently parsed to all the adapters and then used be them.\nThe adapters which will be supported initially are:\n* file\n* console\n\nTo use them you do need to add the logging module to your own project,\nif this module isn't present then we will fallback to the console. A check will be added in this object.\n\nThe options will also have a global notation. Which will be:\n{\n     \"logging\": {\n         \"adapter\": \"file\", (file or console)\n         \"options\": {\n             Specific handler options according to the adapter (http://getraddish.com/advanced/logging.html).\n         }\n     }\n}\n\nWhen a error is thrown the object will check the for the config variable in Raddish\nfor the error handler.\n\nWhen this one is present it will call the error handler.\nWhen there is none present or the error handler presents an error\nthen we will use the default (console).\n\nAfter the error has been logged it will be returned to the dispatcher.",
+            "class": "RaddishError"
+        },
+        {
+            "file": "lib/filter/filter.js",
+            "line": 3,
+            "description": "Abstract factory kind of function,\nThis class will cache and return the filter requested.",
+            "is_constructor": 1,
+            "class": "Inflector"
+        },
+        {
+            "file": "lib/inflector/inflector.js",
+            "line": 101,
+            "description": "Define a special rule in the inflector",
+            "params": [
+                {
+                    "name": "single",
+                    "description": "The singular of the rule",
+                    "type": "String"
+                },
+                {
+                    "name": "plural",
+                    "description": "The plural of the rule",
+                    "type": "String"
+                }
+            ],
+            "class": "Inflector"
+        },
+        {
+            "file": "lib/inflector/inflector.js",
+            "line": 143,
+            "description": "singularize method will make a singular of a plural word\nIf the word is singular it will do nothing.",
+            "itemtype": "method",
+            "name": "singularize",
+            "params": [
+                {
+                    "name": "word",
+                    "description": "Word to singularize",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Singular word",
+                "type": "String"
+            },
+            "class": "Inflector"
+        },
+        {
+            "file": "lib/inflector/inflector.js",
+            "line": 180,
+            "description": "pluralize method will make a plural from a singular word\nwhen the word is plural it will do nothing",
+            "itemtype": "method",
+            "name": "pluralize",
+            "params": [
+                {
+                    "name": "word",
+                    "description": "Word to pluralize",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Plural word",
+                "type": "String"
+            },
+            "class": "Inflector"
+        },
+        {
+            "file": "lib/inflector/inflector.js",
+            "line": 219,
+            "description": "Function to make the first letter of a sentence capital",
+            "itemtype": "method",
+            "name": "capitalize",
+            "params": [
+                {
+                    "name": "word",
+                    "description": "Word to capitalize",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Capitalized word",
+                "type": "String"
+            },
+            "class": "Inflector"
+        },
+        {
+            "file": "lib/inflector/inflector.js",
+            "line": 230,
+            "description": "isSingular method will check if the word is singular or not.\nIf the work is singular it returns true, else false is returned",
+            "itemtype": "method",
+            "name": "isSingular",
+            "params": [
+                {
+                    "name": "word",
+                    "description": "The word to check",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "True or false.",
+                "type": "Boolean"
+            },
+            "class": "Inflector"
+        },
+        {
+            "file": "lib/inflector/inflector.js",
+            "line": 245,
+            "description": "isPlural method will check if the word is plural or not.\nIf the work is plural it returns true, else false is returned",
+            "itemtype": "method",
+            "name": "isPlural",
+            "params": [
+                {
+                    "name": "word",
+                    "description": "The word to check",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "True or false.",
+                "type": "Boolean"
+            },
+            "class": "Inflector"
+        },
+        {
+            "file": "lib/log/log.js",
+            "line": 1,
+            "description": "This is a simple adapter for error logging.\nThis object will get the specified logging adapter and set it,\nif the adapter is invalid it will fallback to the console adapter, logging everything to the console.",
+            "params": [
+                {
+                    "name": "code",
+                    "description": "The code of the error",
+                    "type": "Number"
+                },
+                {
+                    "name": "message",
+                    "description": "The error message",
+                    "type": "String"
+                }
+            ],
+            "is_constructor": 1,
+            "class": "Mixin"
+        },
+        {
+            "file": "lib/log/log.js",
+            "line": 18,
+            "description": "The function which will check the adapter, and return it,\nif defined, when an error occures it will fallback to the console adapter.",
+            "params": [
+                {
+                    "name": "adapter",
+                    "description": "The identifier of the adapter",
+                    "type": "ObjectIdentifier"
+                },
+                {
+                    "name": "options",
+                    "description": "The config variables for the adapter",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The logging adapter",
+                "type": "Object"
+            },
+            "class": "Mixin"
+        },
+        {
+            "file": "lib/mixin/mixin.js",
+            "line": 15,
+            "description": "Mix the mixableMethods of the source into the target.\nThis will also set the hasMixins property on the target.",
+            "itemtype": "method",
+            "name": "mix",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The object receiving the methods",
+                    "type": "Object"
+                },
+                {
+                    "name": "source",
+                    "description": "The object giving the methods",
+                    "type": "Object"
+                }
+            ],
+            "class": "Mixin"
+        },
+        {
+            "file": "lib/mixin/mixin.js",
+            "line": 40,
+            "description": "This method checks if the target has mixins defined or not.",
+            "itemtype": "method",
+            "name": "has",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The object to be checked.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The value of the hasMixin property.",
+                "type": "Boolean"
+            },
+            "class": "Mixin"
+        },
+        {
+            "file": "lib/model/states/states.js",
+            "line": 14,
+            "description": "This method will insert a state in the object.\nthese will be used for filtering in the model.",
+            "itemtype": "method",
+            "name": "insert",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the state",
+                    "type": "String"
+                },
+                {
+                    "name": "filter",
+                    "description": "The name of the filter to use on the value",
+                    "type": "String"
+                },
+                {
+                    "name": "defaultValue",
+                    "description": "The default value of the state",
+                    "type": "String"
+                },
+                {
+                    "name": "unique",
+                    "description": "Determines if the state is unique or not",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "The states object used for chaining",
+                "type": "States"
+            },
+            "class": "States"
+        },
+        {
+            "file": "lib/model/states/states.js",
+            "line": 35,
+            "description": "This method will try to get a state from the object,\nwhen the state isn't found it will return false.",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name of the state to find",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The return value of the state",
+                "type": "*"
+            },
+            "class": "States"
+        },
+        {
+            "file": "lib/model/states/states.js",
+            "line": 55,
+            "description": "This method will set the value of a single state.\nThis will only happen when the state is registred.",
+            "itemtype": "method",
+            "name": "set",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "Name of the state",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "The value the state should get",
+                    "type": "*"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "States"
+            },
+            "class": "States"
+        },
+        {
+            "file": "lib/model/states/states.js",
+            "line": 81,
+            "description": "This method will check if the specified states are unique if it is it will return true,\nelse false.",
+            "itemtype": "method",
+            "name": "isUnique",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "States"
+        },
+        {
+            "file": "lib/model/abstract.js",
+            "line": 34,
+            "description": "getList method which you need to override when you are fetching your own data.",
+            "itemtype": "method",
+            "name": "getList",
+            "return": {
+                "description": "The retreived data from the data object.",
+                "type": "Object"
+            },
+            "class": "ModelAbstract"
+        },
+        {
+            "file": "lib/model/abstract.js",
+            "line": 44,
+            "description": "getItem method which you need to override when you are fetching your own data.",
+            "itemtype": "method",
+            "name": "getItem",
+            "return": {
+                "description": "The retreived data from the data object.",
+                "type": "Object"
+            },
+            "class": "ModelAbstract"
+        },
+        {
+            "file": "lib/model/abstract.js",
+            "line": 54,
+            "description": "getTotal which has the basic behavior of counting the rows in the current list.",
+            "itemtype": "method",
+            "name": "getTotal",
+            "return": {
+                "description": "The total amount of rows.",
+                "type": "Number"
+            },
+            "class": "ModelAbstract"
+        },
+        {
+            "file": "lib/model/abstract.js",
+            "line": 71,
+            "description": "This method is used to set the states.\nThis method accepts an array or a string as the first parameter.\nWhen the first parameter is a string the second parameter will be the value of this state.",
+            "itemtype": "method",
+            "name": "set",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The state/ array of states to set",
+                    "type": "Object|string"
+                },
+                {
+                    "name": "value",
+                    "description": "The value of the state",
+                    "type": "*"
+                }
+            ],
+            "return": {
+                "description": "The current model with set states.",
+                "type": "ModelAbstract"
+            },
+            "class": "ModelAbstract"
+        },
+        {
+            "file": "lib/model/abstract.js",
+            "line": 93,
+            "description": "This method will return the table connected to the current model.",
+            "itemtype": "method",
+            "name": "getTable",
+            "return": {
+                "description": "The promise holding the table object as content.",
+                "type": "Promise"
+            },
+            "class": "ModelAbstract"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 40,
+            "description": "getItem override of AbstractModel, this will create a complete query and execute this query on the table.",
+            "itemtype": "method",
+            "name": "getItem",
+            "return": {
+                "description": "The promise with a single item from the table as content.",
+                "type": "Promise"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 80,
+            "description": "This method will retreive a complete list of objects from the table,\nthis will also create a query using the buildQuery methods.",
+            "itemtype": "method",
+            "name": "getList",
+            "return": {
+                "description": "A promise with the list of object as content",
+                "type": "Promise"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 116,
+            "description": "A special query is being build to get the total of objects from the table.",
+            "itemtype": "method",
+            "name": "getTotal",
+            "return": {
+                "description": "A promise holding the total number of objects as content.",
+                "type": "Promise"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 151,
+            "description": "buildQueryColumns will determine which columns need to be fetched from the table.\nby default this is \"tbl.*\"",
+            "itemtype": "method",
+            "name": "buildQueryColumns",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 166,
+            "description": "The buildQuiryFrom method will determin from which table the data needs to be fetched.\nThis table will get the alias \"tbl\" by default.",
+            "itemtype": "method",
+            "name": "buildQueryFrom",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 184,
+            "description": "The buildQueryJoins will define which joins need to be made.\nBy default no joins are made.",
+            "itemtype": "method",
+            "name": "buildQueryJoins",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 197,
+            "description": "The buildQueryWhere will create the where statements on the query.\nBy default unique states are filtered, this only happens when they have a value.",
+            "itemtype": "method",
+            "name": "buildQueryWhere",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 223,
+            "description": "The buildQueryGroup will group the row together.\nBy default no group query is made.",
+            "itemtype": "method",
+            "name": "buildQueryGroup",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 236,
+            "description": "The buildQueryHaving will add a having statement to the query.\nBy default no having statements will be added.",
+            "itemtype": "method",
+            "name": "buildQueryHaving",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 249,
+            "description": "The buildQueryOrder will determine the order and direction on which to sort.\nBy default the state sort and direction are used.\nWhen the state sort has a value this value is used, and by default the order is ascending,\nunless the direction state has been modified.",
+            "itemtype": "method",
+            "name": "buildQueryOrder",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/model/default.js",
+            "line": 271,
+            "description": "BuildQueryLimit will use the limit and offset states to return the records\nWhen both aren't specified the default of limit is \"20\" and the default of offset is \"0\".",
+            "itemtype": "method",
+            "name": "buildQueryLimit",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "The querybuilder object",
+                    "type": "Object"
+                },
+                {
+                    "name": "self",
+                    "description": "Property pointing to the model object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An array containing query and self, in this order.",
+                "type": "Array"
+            },
+            "class": "Model"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 12,
+            "description": "Rewrite of the existing identifier package.\n\nIt will now become url like: <type>://<application>/<package>/<path>/<name>",
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 38,
+            "description": "Return a new instance of the current identifier.",
+            "itemtype": "method",
+            "name": "clone",
+            "return": {
+                "description": "A cloned identifier.",
+                "type": "BaseIdentifier"
+            },
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 48,
+            "description": "Recreate the identifier given to the Object.",
+            "itemtype": "method",
+            "name": "toString",
+            "return": {
+                "description": "The recreated identifier string given to the current object.",
+                "type": "String"
+            },
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 80,
+            "description": "Return the current type",
+            "itemtype": "method",
+            "name": "getType",
+            "return": {
+                "description": "Type of the current identifier.",
+                "type": "String"
+            },
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 90,
+            "description": "Return the current application",
+            "itemtype": "method",
+            "name": "getApplication",
+            "return": {
+                "description": "Application name of the current identifier.",
+                "type": "String"
+            },
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 100,
+            "description": "Return the current component",
+            "itemtype": "method",
+            "name": "getComponent",
+            "return": {
+                "description": "Component name of the current identifier.",
+                "type": "String"
+            },
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 110,
+            "description": "Return the current path",
+            "itemtype": "method",
+            "name": "getPath",
+            "return": {
+                "description": "path of the current identifier.",
+                "type": "Array"
+            },
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 120,
+            "description": "Return the current name",
+            "itemtype": "method",
+            "name": "getName",
+            "return": {
+                "description": "Name of the current identifier.",
+                "type": "String"
+            },
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 130,
+            "description": "Set the type of the current identifier",
+            "itemtype": "method",
+            "name": "setApplication",
+            "params": [
+                {
+                    "name": "newApplication",
+                    "description": "The application name for the current identifier.",
+                    "type": "String"
+                }
+            ],
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 142,
+            "description": "Set the application of the current identifier",
+            "itemtype": "method",
+            "name": "setApplication",
+            "params": [
+                {
+                    "name": "newApplication",
+                    "description": "The application name for the current identifier.",
+                    "type": "String"
+                }
+            ],
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 154,
+            "description": "Set the component of the current identifier",
+            "itemtype": "method",
+            "name": "setComponent",
+            "params": [
+                {
+                    "name": "component",
+                    "description": "The component name for the current identifier.",
+                    "type": "String"
+                }
+            ],
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 166,
+            "description": "Set the path of the current identifier",
+            "itemtype": "method",
+            "name": "setPath",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "The path for the current identifier.",
+                    "type": "Array"
+                }
+            ],
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/identifier/identifier.js",
+            "line": 178,
+            "description": "Set the name for the current identifier",
+            "itemtype": "method",
+            "name": "setName",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "The name for the current identifier.",
+                    "type": "String"
+                }
+            ],
+            "class": "ObjectIdentifier"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 3,
+            "description": "This is a complete loader for objects.\nThis will be handeling the identifiers as well.",
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 26,
+            "description": "Load a specific object.\nBy default it will be checking in the applications folder.",
+            "itemtype": "method",
+            "name": "resolve",
+            "params": [
+                {
+                    "name": "identifier",
+                    "description": "The identifier of the object which needs to be resolved.",
+                    "type": "String"
+                }
+            ],
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 48,
+            "description": "Parse the sequence identifier\nThis will result in a usable identifier",
+            "itemtype": "method",
+            "name": "parseSequence",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The sequence string to parse",
+                    "type": "Sring"
+                },
+                {
+                    "name": "identifier",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "ObjectIdentifier"
+            },
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 67,
+            "description": "This method will check if there is a custom loader sequence, if not return the default.",
+            "itemtype": "method",
+            "name": "getSequence",
+            "return": {
+                "description": "The complete sequence",
+                "type": "Array"
+            },
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 96,
+            "description": "Receive method will triy to return the requested file.",
+            "itemtype": "method",
+            "name": "receive",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "The path to the filename.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Result of the call when the file isn't found it will return false.",
+                "type": "Object|false"
+            },
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 107,
+            "description": "This method will act like the require method, but instead of a path it accepts an identifier.",
+            "params": [
+                {
+                    "name": "identifier",
+                    "description": "The identifier of the required object",
+                    "type": "String|ObjectIdentifier"
+                }
+            ],
+            "return": {
+                "description": "Returns the uninstanciated object.",
+                "type": "Object"
+            },
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 121,
+            "description": "Add a locator for a specific type.",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "The path to the locator.",
+                    "type": "String"
+                }
+            ],
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/loader/loader.js",
+            "line": 134,
+            "description": "The load method will check if the object has been cached.\nIf this is not the case it will try to resolve the object.\n\nWhen an object has been loaded for the first time it is cached for reuse in a later request.",
+            "itemtype": "method",
+            "name": "load",
+            "params": [
+                {
+                    "name": "identifier",
+                    "description": "The identifier of the object to be loaded",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "This will hold the uninitialized object.",
+                "type": "Promise"
+            },
+            "class": "ObjectLoader"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 25,
+            "description": "Every object called through getObject will go through this function.\nThis will set the identifier and adds the behaviors (if any).",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Object with config values",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "call \".then\" to use the object when ready.",
+                "type": "Promise"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 42,
+            "description": "Use this function to acquire a variable from config.js",
+            "itemtype": "method",
+            "name": "getConfig",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Key to specify the config to return",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The requested config value.",
+                "type": "*"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 53,
+            "description": "Use this function to acquire the identifier object",
+            "itemtype": "method",
+            "name": "getIdentifier",
+            "return": {
+                "description": "Identifier object.",
+                "type": "RObjectdentifier"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 63,
+            "description": "Return the command chain to run behaviors.",
+            "itemtype": "method",
+            "name": "getCommandChain",
+            "return": {
+                "description": "CommandChain object.",
+                "type": "CommandChain"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 73,
+            "description": "Acquire an initialized object.\nYou can request all kinds of objects with this function",
+            "params": [
+                {
+                    "name": "identifier",
+                    "description": "Identifier of the object to load",
+                    "type": "String"
+                },
+                {
+                    "name": "config",
+                    "description": "Config to push to the object",
+                    "type": "Object|null"
+                }
+            ],
+            "return": {
+                "description": "call \".then\" to use the object when ready.",
+                "type": "Promise"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 93,
+            "description": "This function will be available for every object,\nthis will clone the current object.",
+            "itemtype": "method",
+            "name": "clone",
+            "return": {
+                "description": "An exact copy of the current object",
+                "type": "Object"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 104,
+            "description": "This is the handler which will try to mixin functions from another object.",
+            "itemtype": "method",
+            "name": "mixin",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "The object to mix into the current object.",
+                    "type": "Object"
+                }
+            ],
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 120,
+            "description": "This method will check if there is a config for an component, if so it will return the requested key.\nIf no config is found it will return false. When there is no identifier for the component (in initialize functions) please use the identifier value.\n\nThe key is dot separated.",
+            "params": [
+                {
+                    "name": "identifier",
+                    "description": "The key of the identifier, only used in initialize functions.",
+                    "type": "String"
+                },
+                {
+                    "name": "config",
+                    "description": "Key to resceive of the config.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The found config item.",
+                "type": "*"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 183,
+            "description": "This is a alias of ObjectManager.getObject to use in the \"this\" context.",
+            "itemtype": "method",
+            "name": "getObject",
+            "params": [
+                {
+                    "name": "identifier",
+                    "description": "Identifier of the object to load",
+                    "type": "String"
+                },
+                {
+                    "name": "config",
+                    "description": "Config to push to the object",
+                    "type": "Object|null"
+                }
+            ],
+            "return": {
+                "description": "call \".then\" to use the object when ready.",
+                "type": "Promise"
+            },
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/object/manager.js",
+            "line": 195,
+            "description": "This is a private function to allow for config extending",
+            "access": "private",
+            "tagname": "",
+            "class": "ObjectManager"
+        },
+        {
+            "file": "lib/plugin/plugin.js",
+            "line": 15,
+            "description": "This function will execute a function in the plugins.\nThis will bind the provided parameters to the function.",
+            "itemtype": "method",
+            "name": "execute",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "The name of the function to execute",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The plugin object itself, used to run more plugins.",
+                "type": "Object"
+            },
+            "class": "Plugin"
+        },
+        {
+            "file": "lib/plugin/plugin.js",
+            "line": 59,
+            "description": "This method will get the requested plugin(s).\nThe plugins are for a global system. Because the affect system behaviors.\n\nWhen the type has a \".\" in the name it is split.\nFirst we will check if the single plugin exists which is path ( + name ) + name.\nif this file doesn't exist then we will check all the files in the directory. (if it is a directory).\n\nthen we will return everything (file or array).\nEverything will be cast to a promise.",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "The type of plugins to receive.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "Plugin"
+        },
+        {
+            "file": "lib/plugin/plugin.js",
+            "line": 149,
+            "description": "This method converts the dot-separated method name to a camelcased method",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "The dot-separated method name",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The camelcased method name.",
+                "type": "String"
+            },
+            "class": "Plugin"
+        },
+        {
+            "file": "lib/raddish/raddish.js",
+            "line": 15,
+            "description": "The main class of our framework. This object will help with registring our applications.",
+            "is_constructor": 1,
+            "class": "Router"
+        },
+        {
+            "file": "lib/raddish/raddish.js",
+            "line": 23,
+            "description": "This will set an application handler.",
+            "itemtype": "method",
+            "name": "setApplication",
+            "params": [
+                {
+                    "name": "alias",
+                    "description": "The alias of the application",
+                    "type": "String"
+                },
+                {
+                    "name": "path",
+                    "description": "The path to the application.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "Router"
+        },
+        {
+            "file": "lib/raddish/raddish.js",
+            "line": 53,
+            "description": "This function will set the config of Raddish which is located in a JSON file..",
+            "itemtype": "method",
+            "name": "setConfig",
+            "params": [
+                {
+                    "name": "config",
+                    "description": ""
+                }
+            ],
+            "class": "Router"
+        },
+        {
+            "file": "lib/raddish/raddish.js",
+            "line": 65,
+            "description": "This function will get a single config value,\nif there is no key given it will return the complete config.",
+            "itemtype": "method",
+            "name": "getConfig",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "The key of the config value",
+                    "type": "Name"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "Router"
+        },
+        {
+            "file": "lib/raddish/raddish.js",
+            "line": 92,
+            "description": "This will start the listener for http traffic, and will route it to the correct application (if there it isn't a file)",
+            "params": [
+                {
+                    "name": "port",
+                    "description": "A override for the port given in the config.",
+                    "type": "Int"
+                }
+            ],
+            "class": "Router"
+        },
+        {
+            "file": "lib/raddish/raddish.js",
+            "line": 142,
+            "description": "This function will start the webserver\nwith the right specification.",
+            "itemtype": "method",
+            "name": "startWebServer",
+            "params": [
+                {
+                    "name": "port",
+                    "description": "The late port of the server.",
+                    "type": "Int"
+                }
+            ],
+            "class": "Router"
+        },
+        {
+            "file": "lib/raddish/raddish.js",
+            "line": 166,
+            "description": "This function will check if there is an update available from NPM.\nIf there is an update, then the user should update manually.",
+            "itemtype": "method",
+            "name": "checkUpdate",
+            "class": "Router"
+        },
+        {
+            "file": "lib/router/router.js",
+            "line": 20,
+            "description": "This method will check if the request is a file, if so it will return the file,\nif not it will try to find an application and will try to run the component.\n\nWhen a file is found and the gzip option in the config is true it will send a gzipped response.",
+            "itemtype": "method",
+            "name": "route",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "NodeJS request object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "NodeJS response object",
+                    "type": "Object"
+                }
+            ],
+            "class": "Router"
+        },
+        {
+            "file": "lib/router/router.js",
+            "line": 41,
+            "description": "This method will try to match a route to the current request.",
+            "itemtype": "method",
+            "name": "getRoute",
+            "params": [
+                {
+                    "name": "req",
+                    "description": ""
+                },
+                {
+                    "name": "res",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*[]"
+            },
+            "class": "Router"
+        },
+        {
+            "file": "lib/router/router.js",
+            "line": 94,
+            "description": "This method will set the CORS headers to the response.",
+            "itemtype": "method",
+            "name": "checkCors",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "Nodejs Request Object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "Nodejs Response Object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*[]"
+            },
+            "class": "Router"
+        },
+        {
+            "file": "lib/router/router.js",
+            "line": 130,
+            "description": "This method will check if the request is going to a direct file, if so return it.\nIf gzip is enabled and supported it will gzip the response.",
+            "itemtype": "method",
+            "name": "checkFile",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "Nodejs Request Object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "Nodejs Response Object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Promise"
+            },
+            "class": "Router"
+        },
+        {
+            "file": "lib/router/router.js",
+            "line": 163,
+            "description": "This method will try to parse the request if the request a an API request.\nBy default the app and component parameters must be passed in the request.",
+            "itemtype": "method",
+            "name": "parseRequest",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "Nodejs Request Object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The parsed request object.",
+                "type": "Object"
+            },
+            "class": "Router"
+        },
+        {
+            "file": "lib/router/router.js",
+            "line": 191,
+            "description": "This method will do the request to the framework to receive the data.",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "Nodejs Request Object",
+                    "type": "Object"
+                },
+                {
+                    "name": "res",
+                    "description": "Nodejs Response Object",
+                    "type": "Object"
+                }
+            ],
+            "class": "Router"
+        },
+        {
+            "file": "lib/router/router.js",
+            "line": 213,
+            "description": "This method will check if the gzip value is in the request accept-encoding header,\nif so return true else return false.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "req",
+                    "description": "NodeJS request object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Router"
+        },
+        {
+            "file": "lib/socket/socket.js",
+            "line": 14,
+            "description": "This method starts the SocketIO Server.\nWhen socketio is enabled this will be done automatically.\n\nBy default there are two events:\n- Register\n     Used to register to a specific room\n\n- Unregister\n     Used to unregister from a specific room",
+            "itemtype": "method",
+            "name": "start",
+            "class": "Socket"
+        },
+        {
+            "file": "lib/socket/socket.js",
+            "line": 44,
+            "description": "This method add an event listener with custom logic.",
+            "params": [
+                {
+                    "name": "event",
+                    "description": "The event name",
+                    "type": "String"
+                },
+                {
+                    "name": "funct",
+                    "description": "The function to execute on that event",
+                    "type": "Method"
+                }
+            ],
+            "class": "Socket"
+        },
+        {
+            "file": "lib/threads/threads.js",
+            "line": 3,
+            "description": "The Threads class will scale the amount of processes when the load is higher.\nThis will be done completely automatic.\n\nAnd in the config file you can turn this on or off and set more data.\nThis must scale automatically.\n\nAlso this class will be a little bit like cluster2.\n\nIf a process activity is higher than 50% we will spawn a new process to lighten the tasks.",
+            "class": "ViewAbstract"
+        },
+        {
+            "file": "lib/threads/threads.js",
+            "line": 25,
+            "description": "This object is automatically started when thread support is enabled.",
+            "is_constructor": 1,
+            "class": "ViewAbstract"
+        },
+        {
+            "file": "lib/threads/threads.js",
+            "line": 64,
+            "description": "This method will check the registred threads and if the thread is too busy\nanother thread will be spawn automatically.\n\nWhen the threads are not busy at all, the last added thread will be closed automatically.",
+            "itemtype": "method",
+            "name": "checkThreads",
+            "class": "ViewAbstract"
+        },
+        {
+            "file": "lib/view/abstract.js",
+            "line": 22,
+            "description": "The initialize method will set the mimetype which is set in the override.\nalong with other information.",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object for the layout",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The promise containing the view",
+                "type": "Promise"
+            },
+            "class": "ViewAbstract"
+        },
+        {
+            "file": "lib/view/abstract.js",
+            "line": 45,
+            "description": "This method will set the data to the Object.",
+            "itemtype": "method",
+            "name": "setData",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "The data for the view object",
+                    "type": "Object"
+                }
+            ],
+            "class": "ViewAbstract"
+        },
+        {
+            "file": "lib/view/json.js",
+            "line": 22,
+            "description": "This method will receive a model object and will set it locally.\nAlso it will set the mimetype of the response.",
+            "itemtype": "method",
+            "name": "initialize",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "The config object of the object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*|Promise"
+            },
+            "class": "ViewJson"
+        },
+        {
+            "file": "lib/view/json.js",
+            "line": 36,
+            "description": "This is the overridden display method which will format our data and return it to the controller when done.",
+            "itemtype": "method",
+            "name": "display",
+            "return": {
+                "description": "The promise containing the json as a string.",
+                "type": "Promise"
+            },
+            "class": "ViewJson"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/application/application.js:16"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/application/application.js:51"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/application/application.js:66"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/behavior/behavior.js:23"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/behavior/behavior.js:56"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/behavior/behavior.js:76"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/behavior/behavior.js:98"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/chain/chain.js:3"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/chain/chain.js:25"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/chain/chain.js:36"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/chain/chain.js:47"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/chain/chain.js:73"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/command/context/context.js:36"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/abstract.js:19"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/abstract.js:31"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/abstract.js:43"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/abstract.js:55"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/default.js:17"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/default.js:28"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/default.js:39"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/default.js:56"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/permission/default.js:73"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/abstract.js:26"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/abstract.js:90"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/abstract.js:103"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/abstract.js:120"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/abstract.js:130"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/abstract.js:140"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/abstract.js:162"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:22"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:49"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:62"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:75"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:97"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:118"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:147"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:175"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/controller/default.js:208"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/abstract.js:38"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mongo.js:33"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mongo.js:73"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mongo.js:128"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mongo.js:157"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mongo.js:171"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mongo.js:199"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mongo.js:264"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mysql.js:78"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mysql.js:123"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mysql.js:146"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mysql.js:176"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mysql.js:213"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mysql.js:249"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/mysql.js:288"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/sqlite.js:33"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/sqlite.js:63"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/adapter/sqlite.js:99"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/abstract.js:23"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/abstract.js:52"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/abstract.js:62"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/abstract.js:72"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/default.js:22"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/default.js:48"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/default.js:77"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/default.js:92"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/default.js:102"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/default.js:125"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/row/default.js:141"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:23"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:50"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:67"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:87"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:109"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:119"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:129"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/abstract.js:139"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/default.js:19"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/default.js:42"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/rowset/default.js:65"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:90"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:100"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:116"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:132"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:147"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:170"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:192"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/abstract.js:216"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/default.js:24"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/default.js:66"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/database/table/default.js:314"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/dispatcher/authenticator/default.js:17"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/dispatcher/abstract.js:64"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/dispatcher/abstract.js:85"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/dispatcher/abstract.js:103"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/dispatcher/abstract.js:127"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/inflector/inflector.js:143"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/inflector/inflector.js:180"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/inflector/inflector.js:230"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/inflector/inflector.js:245"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/log/log.js:18"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/mixin/mixin.js:40"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/states/states.js:14"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/states/states.js:35"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/states/states.js:55"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/states/states.js:81"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/abstract.js:34"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/abstract.js:44"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/abstract.js:54"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/abstract.js:71"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/abstract.js:93"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:40"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:80"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:116"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:151"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:166"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:184"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:197"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:223"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:236"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:249"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/model/default.js:271"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/identifier/identifier.js:38"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/identifier/identifier.js:48"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/identifier/identifier.js:80"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/identifier/identifier.js:90"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/identifier/identifier.js:100"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/identifier/identifier.js:110"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/identifier/identifier.js:120"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/loader/loader.js:48"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/loader/loader.js:67"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/loader/loader.js:96"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/loader/loader.js:107"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:25"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:42"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:53"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:63"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:73"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:93"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:120"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/object/manager.js:183"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/plugin/plugin.js:59"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/plugin/plugin.js:149"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/raddish/raddish.js:23"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/raddish/raddish.js:65"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/router/router.js:41"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/router/router.js:94"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/router/router.js:130"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/router/router.js:163"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/router/router.js:213"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/view/abstract.js:22"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/view/json.js:22"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " lib/view/json.js:36"
+        },
+        {
+            "message": "Missing item type\nDisable the complete command chain.",
+            "line": " lib/command/chain/chain.js:25"
+        },
+        {
+            "message": "Missing item type\nEnabled the command Chain.",
+            "line": " lib/command/chain/chain.js:36"
+        },
+        {
+            "message": "Missing item type\nAbstract permission object,\nWon't be directly used in development.\n\nThis object holds the basic permissions for the framework",
+            "line": " lib/controller/permission/abstract.js:4"
+        },
+        {
+            "message": "Missing item type\nBasic permissions object",
+            "line": " lib/controller/permission/default.js:6"
+        },
+        {
+            "message": "Missing item type\nThis method will execute a query on the server,\nthe received data is then returned.",
+            "line": " lib/database/adapter/mongo.js:73"
+        },
+        {
+            "message": "Missing item type\nThis method will return the column layout.\nThis column layout will be used in the data responses.",
+            "line": " lib/database/adapter/mongo.js:199"
+        },
+        {
+            "message": "Missing item type\nThis function will define the type of the column data.",
+            "line": " lib/database/adapter/mongo.js:264"
+        },
+        {
+            "message": "Missing item type\nThis method will return the column layout.\nThis column layout will be used in the data responses.",
+            "line": " lib/database/adapter/mysql.js:249"
+        },
+        {
+            "message": "Missing item type\nThis function will define the type of the column data.",
+            "line": " lib/database/adapter/mysql.js:288"
+        },
+        {
+            "message": "Missing item type\nThe creatable behavior will automatically populate the created_on column.\nWhen created_on isn't in the submitted data, it will be added",
+            "line": " lib/database/table/behavior/creatable.js:4"
+        },
+        {
+            "message": "Missing item type\nThe modifiable behavior will automatically populate and update the modified_on column.\nWhen modified isn't in the submitted data, it will be added",
+            "line": " lib/database/table/behavior/modifiable.js:4"
+        },
+        {
+            "message": "Missing item type\nThe sluggable bahavior will automatically add the slug.\nThe slug to be created will be based on the column config value, if none is given the default will be the title column",
+            "line": " lib/database/table/behavior/sluggable.js:5"
+        },
+        {
+            "message": "Missing item type\nThe socketable behavior will automatically send the changes to the sockets of the connected clients.",
+            "line": " lib/database/table/behavior/socketable.js:5"
+        },
+        {
+            "message": "Missing item type\nThis method will execute a certain command combined with a context.\nThis method will also call specialized for the selected method.\nThe methods callable are: Select, Insert, Update and Delete.",
+            "line": " lib/database/table/abstract.js:15"
+        },
+        {
+            "message": "Missing item type\nThis is an override of the dispatch method,\nThis will handle the output to the client.",
+            "line": " lib/dispatcher/http.js:19"
+        },
+        {
+            "message": "Missing item type\nRaddishError\n\nThis is an object which will call to adapters.\nBut this object will also output to the dispatcher. When an error is dispatched it will hold a few options.\nThese are:\n* severity:  The level of the error.\n* message:   The message given.\n\nThis will be fluently parsed to all the adapters and then used be them.\nThe adapters which will be supported initially are:\n* file\n* console\n\nTo use them you do need to add the logging module to your own project,\nif this module isn't present then we will fallback to the console. A check will be added in this object.\n\nThe options will also have a global notation. Which will be:\n{\n     \"logging\": {\n         \"adapter\": \"file\", (file or console)\n         \"options\": {\n             Specific handler options according to the adapter (http://getraddish.com/advanced/logging.html).\n         }\n     }\n}\n\nWhen a error is thrown the object will check the for the config variable in Raddish\nfor the error handler.\n\nWhen this one is present it will call the error handler.\nWhen there is none present or the error handler presents an error\nthen we will use the default (console).\n\nAfter the error has been logged it will be returned to the dispatcher.",
+            "line": " lib/error/error.js:1"
+        },
+        {
+            "message": "Missing item type\nAbstract factory kind of function,\nThis class will cache and return the filter requested.",
+            "line": " lib/filter/filter.js:3"
+        },
+        {
+            "message": "Missing item type\nDefine a special rule in the inflector",
+            "line": " lib/inflector/inflector.js:101"
+        },
+        {
+            "message": "Missing item type\nThis is a simple adapter for error logging.\nThis object will get the specified logging adapter and set it,\nif the adapter is invalid it will fallback to the console adapter, logging everything to the console.",
+            "line": " lib/log/log.js:1"
+        },
+        {
+            "message": "Missing item type\nThe function which will check the adapter, and return it,\nif defined, when an error occures it will fallback to the console adapter.",
+            "line": " lib/log/log.js:18"
+        },
+        {
+            "message": "Missing item type\nRewrite of the existing identifier package.\n\nIt will now become url like: <type>://<application>/<package>/<path>/<name>",
+            "line": " lib/object/identifier/identifier.js:12"
+        },
+        {
+            "message": "Missing item type\nThis is a complete loader for objects.\nThis will be handeling the identifiers as well.",
+            "line": " lib/object/loader/loader.js:3"
+        },
+        {
+            "message": "Missing item type\nThis method will act like the require method, but instead of a path it accepts an identifier.",
+            "line": " lib/object/loader/loader.js:107"
+        },
+        {
+            "message": "Missing item type\nAdd a locator for a specific type.",
+            "line": " lib/object/loader/loader.js:121"
+        },
+        {
+            "message": "Missing item type\nAcquire an initialized object.\nYou can request all kinds of objects with this function",
+            "line": " lib/object/manager.js:73"
+        },
+        {
+            "message": "Missing item type\nThis method will check if there is a config for an component, if so it will return the requested key.\nIf no config is found it will return false. When there is no identifier for the component (in initialize functions) please use the identifier value.\n\nThe key is dot separated.",
+            "line": " lib/object/manager.js:120"
+        },
+        {
+            "message": "Missing item type\nThis is a private function to allow for config extending",
+            "line": " lib/object/manager.js:195"
+        },
+        {
+            "message": "Missing item type\nThis method converts the dot-separated method name to a camelcased method",
+            "line": " lib/plugin/plugin.js:149"
+        },
+        {
+            "message": "Missing item type\nThe main class of our framework. This object will help with registring our applications.",
+            "line": " lib/raddish/raddish.js:15"
+        },
+        {
+            "message": "Missing item type\nThis will start the listener for http traffic, and will route it to the correct application (if there it isn't a file)",
+            "line": " lib/raddish/raddish.js:92"
+        },
+        {
+            "message": "Missing item type\nThis method will do the request to the framework to receive the data.",
+            "line": " lib/router/router.js:191"
+        },
+        {
+            "message": "Missing item type\nThis method will check if the gzip value is in the request accept-encoding header,\nif so return true else return false.",
+            "line": " lib/router/router.js:213"
+        },
+        {
+            "message": "Missing item type\nThis method add an event listener with custom logic.",
+            "line": " lib/socket/socket.js:44"
+        },
+        {
+            "message": "Missing item type\nThe Threads class will scale the amount of processes when the load is higher.\nThis will be done completely automatic.\n\nAnd in the config file you can turn this on or off and set more data.\nThis must scale automatically.\n\nAlso this class will be a little bit like cluster2.\n\nIf a process activity is higher than 50% we will spawn a new process to lighten the tasks.",
+            "line": " lib/threads/threads.js:3"
+        },
+        {
+            "message": "Missing item type\nThis object is automatically started when thread support is enabled.",
+            "line": " lib/threads/threads.js:25"
+        }
+    ]
+}

@@ -28,6 +28,11 @@
                         <span itemprop="name">Guide</span>
                     </a>
                 </li>
+                <li {% if page.url contains 'guide' %} class="active" {% endif %}>
+                    <a href="/api/" itemprop="url">
+                        <span itemprop="name">APIs</span>
+                    </a>
+                </li>
                 <li {% if page.url contains 'changelog' %} class="active" {% endif %}>
                     <a href="/changelog.html"itemprop="url">
                         <span itemprop="name">Changelog</span>
