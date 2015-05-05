@@ -20,10 +20,11 @@ a {
 }
 
 hr {
+  margin: 10px auto 10px;
+  border: none;
+  border-bottom: 1px solid $japonica;
+
   &.small {
     width: 40%;
-    margin: 0 auto 10px;
-    border: none;
-    border-bottom: 1px solid $japonica;
   }
 }

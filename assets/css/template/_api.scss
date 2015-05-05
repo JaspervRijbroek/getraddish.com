@@ -1,5 +1,69 @@
 .api {
-  .content {
-    
+  article {
+    table {
+      &.table {
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .methods {
+      .method {
+        .has_args {
+          display: inline-block;
+        }
+        
+        .arguments {
+          display: inline-block;
+
+          .parent,
+          ul.inline,
+          ul.inline li {
+            display: inline-block;
+          }
+
+          ul.inline {
+            padding-left: 0;
+          }
+
+          ul.commas {
+            li {
+              &::after {
+                content: ",";
+              }
+
+              &:last-child {
+                &::after {
+                  content: "";
+                }
+              }
+            }
+          }
+
+          .arg {
+            color: $red;
+          }
+          
+          &::after {
+            content: " ";
+            display: block;
+          }
+        }
+
+        .returns {
+          p {
+            display: inline-block;
+          }
+        }
+
+        border-bottom: 1px solid $japonica;
+        margin-bottom: 10px;
+      }
+
+      :last-child {
+        border-bottom: none;
+      }
+    }
   }
 }
