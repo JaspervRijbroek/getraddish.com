@@ -15,9 +15,24 @@ layout: default
                         AbstractDispatcher
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractFilter.html">
+                        AbstractFilter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
                     <a href="../classes/Application.html">
                         Application
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AsciiFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/AsciiFilter.html">
+                        AsciiFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/BooleanFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/BooleanFilter.html">
+                        BooleanFilter
                     </a>
                 </li>
                 <li {% if page.url == '../classes/CommandBehavior.html' %} class="active" {% endif %}>
@@ -35,6 +50,16 @@ layout: default
                         CommandContext
                     </a>
                 </li>
+                <li {% if page.url == '../classes/ComponentLocator.html' %} class="active" {% endif %}>
+                    <a href="../classes/ComponentLocator.html">
+                        ComponentLocator
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ConsoleAdapter.html' %} class="active" {% endif %}>
+                    <a href="../classes/ConsoleAdapter.html">
+                        ConsoleAdapter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Controller.html' %} class="active" {% endif %}>
                     <a href="../classes/Controller.html">
                         Controller
@@ -43,6 +68,11 @@ layout: default
                 <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
                     <a href="../classes/ControllerAbstract.html">
                         ControllerAbstract
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
+                    <a href="../classes/CoreLocator.html">
+                        CoreLocator
                     </a>
                 </li>
                 <li {% if page.url == '../classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
@@ -58,6 +88,21 @@ layout: default
                 <li {% if page.url == '../classes/Inflector.html' %} class="active" {% endif %}>
                     <a href="../classes/Inflector.html">
                         Inflector
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/IntFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/IntFilter.html">
+                        IntFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/Md5Filter.html' %} class="active" {% endif %}>
+                    <a href="../classes/Md5Filter.html">
+                        Md5Filter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/MingoIDFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/MingoIDFilter.html">
+                        MingoIDFilter
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Mixin.html' %} class="active" {% endif %}>
@@ -110,6 +155,16 @@ layout: default
                         RaddishError
                     </a>
                 </li>
+                <li {% if page.url == '../classes/RaddishStream.html' %} class="active" {% endif %}>
+                    <a href="../classes/RaddishStream.html">
+                        RaddishStream
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/RawFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/RawFilter.html">
+                        RawFilter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Role.html' %} class="active" {% endif %}>
                     <a href="../classes/Role.html">
                         Role
@@ -160,9 +215,24 @@ layout: default
                         Table
                     </a>
                 </li>
+                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
+                    <a href="../classes/TableAbstract.html">
+                        TableAbstract
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
                     <a href="../classes/ViewAbstract.html">
                         ViewAbstract
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
+                    <a href="../classes/ViewEmber.html">
+                        ViewEmber
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ViewFile.html' %} class="active" {% endif %}>
+                    <a href="../classes/ViewFile.html">
+                        ViewFile
                     </a>
                 </li>
                 <li {% if page.url == '../classes/ViewJson.html' %} class="active" {% endif %}>
@@ -175,7 +245,8 @@ layout: default
     <article>
         <h1>Application Class</h1>
         <div class="description">
-            <p>Application class to structure everything and give more flexibility.</p>
+            <p>The Application object holds the information about every application,
+        including the config for the component and config directories.</p>
         
         </div>
         
@@ -189,7 +260,7 @@ layout: default
                 <h2>Methods</h2>
         
                     <div id="method_getApplication" class="method item">
-                        <h3 class="title has_args">getApplication</h3>
+                        <h3 class="title">getApplication</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -210,7 +281,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L66"><code>lib&#x2F;application&#x2F;application.js:66</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L67" target="_blank"><code>lib&#x2F;application&#x2F;application.js:67</code></a>
                         </p>
                     
                     
@@ -218,7 +289,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function returns an initialized application ready to use.</p>
+                            <p>This method will teturn application instance bound to the given object.</p>
                     
                         </div>
                     
@@ -257,10 +328,12 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type"></span>:
+                                        <span class="type"><a href="../classes/Application.html" class="crosslink">Application</a></span>:
+                                    <p>The application registred to the alias.</p>
+                    
                             </div>
                     </div>            <div id="method_matchApplication" class="method item">
-                        <h3 class="title has_args">matchApplication</h3>
+                        <h3 class="title">matchApplication</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -281,7 +354,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L77"><code>lib&#x2F;application&#x2F;application.js:77</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L78" target="_blank"><code>lib&#x2F;application&#x2F;application.js:78</code></a>
                         </p>
                     
                     
@@ -289,7 +362,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function will try to match an application to the url,
+                            <p>This method will try to match an application to the url,
                     If no application is found an error will be fired.
                     If the application isn't found it will throw a RaddishError.</p>
                     
@@ -328,7 +401,7 @@ layout: default
                             </table>
                     
                     </div>            <div id="method_runComponent" class="method item">
-                        <h3 class="title has_args">runComponent</h3>
+                        <h3 class="title">runComponent</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -355,7 +428,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L29"><code>lib&#x2F;application&#x2F;application.js:29</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L30" target="_blank"><code>lib&#x2F;application&#x2F;application.js:30</code></a>
                         </p>
                     
                     
@@ -363,7 +436,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function will try to find the component and will run it.
+                            <p>This method will try to find the component and will run it.
                     If the component isn't found it will throw a RaddishError.</p>
                     
                         </div>
@@ -425,7 +498,7 @@ layout: default
                             </table>
                     
                     </div>            <div id="method_setApplication" class="method item">
-                        <h3 class="title has_args">setApplication</h3>
+                        <h3 class="title">setApplication</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -449,7 +522,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L51"><code>lib&#x2F;application&#x2F;application.js:51</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L52" target="_blank"><code>lib&#x2F;application&#x2F;application.js:52</code></a>
                         </p>
                     
                     
@@ -457,7 +530,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function will try to get the application module and add this to the applications registry.</p>
+                            <p>This method will try to get the application module and add this to the applications registry.</p>
                     
                         </div>
                     
@@ -509,9 +582,11 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type"><a href="../classes/Application.html" class="crosslink">Application</a></span>:
+                                    <p>The application object for chaining purposes.</p>
+                    
                             </div>
                     </div>            <div id="method_setConfig" class="method item">
-                        <h3 class="title has_args">setConfig</h3>
+                        <h3 class="title">setConfig</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -532,7 +607,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L16"><code>lib&#x2F;application&#x2F;application.js:16</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L17" target="_blank"><code>lib&#x2F;application&#x2F;application.js:17</code></a>
                         </p>
                     
                     
@@ -540,7 +615,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function will set the config of the Application.</p>
+                            <p>The setConfig method will set the config for the current Application object.</p>
                     
                         </div>
                     
@@ -580,7 +655,7 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type"><a href="../classes/Application.html" class="crosslink">Application</a></span>:
-                                    <p>For chaning purposes.</p>
+                                    <p>The application object for chaning purposes.</p>
                     
                             </div>
                     </div></div>    </article>

@@ -15,9 +15,24 @@ layout: default
                         AbstractDispatcher
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractFilter.html">
+                        AbstractFilter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
                     <a href="../classes/Application.html">
                         Application
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AsciiFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/AsciiFilter.html">
+                        AsciiFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/BooleanFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/BooleanFilter.html">
+                        BooleanFilter
                     </a>
                 </li>
                 <li {% if page.url == '../classes/CommandBehavior.html' %} class="active" {% endif %}>
@@ -35,6 +50,16 @@ layout: default
                         CommandContext
                     </a>
                 </li>
+                <li {% if page.url == '../classes/ComponentLocator.html' %} class="active" {% endif %}>
+                    <a href="../classes/ComponentLocator.html">
+                        ComponentLocator
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ConsoleAdapter.html' %} class="active" {% endif %}>
+                    <a href="../classes/ConsoleAdapter.html">
+                        ConsoleAdapter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Controller.html' %} class="active" {% endif %}>
                     <a href="../classes/Controller.html">
                         Controller
@@ -43,6 +68,11 @@ layout: default
                 <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
                     <a href="../classes/ControllerAbstract.html">
                         ControllerAbstract
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
+                    <a href="../classes/CoreLocator.html">
+                        CoreLocator
                     </a>
                 </li>
                 <li {% if page.url == '../classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
@@ -58,6 +88,21 @@ layout: default
                 <li {% if page.url == '../classes/Inflector.html' %} class="active" {% endif %}>
                     <a href="../classes/Inflector.html">
                         Inflector
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/IntFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/IntFilter.html">
+                        IntFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/Md5Filter.html' %} class="active" {% endif %}>
+                    <a href="../classes/Md5Filter.html">
+                        Md5Filter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/MingoIDFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/MingoIDFilter.html">
+                        MingoIDFilter
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Mixin.html' %} class="active" {% endif %}>
@@ -110,6 +155,16 @@ layout: default
                         RaddishError
                     </a>
                 </li>
+                <li {% if page.url == '../classes/RaddishStream.html' %} class="active" {% endif %}>
+                    <a href="../classes/RaddishStream.html">
+                        RaddishStream
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/RawFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/RawFilter.html">
+                        RawFilter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Role.html' %} class="active" {% endif %}>
                     <a href="../classes/Role.html">
                         Role
@@ -160,9 +215,24 @@ layout: default
                         Table
                     </a>
                 </li>
+                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
+                    <a href="../classes/TableAbstract.html">
+                        TableAbstract
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
                     <a href="../classes/ViewAbstract.html">
                         ViewAbstract
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
+                    <a href="../classes/ViewEmber.html">
+                        ViewEmber
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ViewFile.html' %} class="active" {% endif %}>
+                    <a href="../classes/ViewFile.html">
+                        ViewFile
                     </a>
                 </li>
                 <li {% if page.url == '../classes/ViewJson.html' %} class="active" {% endif %}>
@@ -189,7 +259,7 @@ layout: default
                 <h2>Methods</h2>
         
                     <div id="method_getSequence" class="method item">
-                        <h3 class="title ">getSequence</h3>
+                        <h3 class="title">getSequence</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -204,7 +274,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L67"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:67</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L67" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:67</code></a>
                         </p>
                     
                     
@@ -225,13 +295,16 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_load" class="method item">
-                        <h3 class="title has_args">load</h3>
+                        <h3 class="title">load</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
                                                 identifier
+                                            </li>
+                                            <li class="arg">
+                                                config
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
@@ -246,7 +319,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L134"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:134</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L134" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:134</code></a>
                         </p>
                     
                     
@@ -289,6 +362,18 @@ layout: default
                     
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td>
+                                                config
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>This is the config object to send loaded object</p>
+                    
+                                            </td>
+                                        </tr>
                                 </tbody>
                             </table>
                     
@@ -300,7 +385,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_parseSequence" class="method item">
-                        <h3 class="title has_args">parseSequence</h3>
+                        <h3 class="title">parseSequence</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -324,7 +409,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L48"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:48</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L48" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:48</code></a>
                         </p>
                     
                     
@@ -386,13 +471,13 @@ layout: default
                                         <span class="type"><a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a></span>:
                             </div>
                     </div>            <div id="method_receive" class="method item">
-                        <h3 class="title has_args">receive</h3>
+                        <h3 class="title">receive</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                path
+                                                identifier
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
@@ -407,7 +492,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L96"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:96</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L96" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:96</code></a>
                         </p>
                     
                     
@@ -438,13 +523,13 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                path
+                                                identifier
                                             </td>
                                             <td>
                                                 String
                                             </td>
                                             <td>
-                                                <p>The path to the filename.</p>
+                                                <p>The identifier of the object to load.</p>
                     
                                             </td>
                                         </tr>
@@ -459,7 +544,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_resolve" class="method item">
-                        <h3 class="title has_args">resolve</h3>
+                        <h3 class="title">resolve</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -480,7 +565,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L26"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:26</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L26" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:26</code></a>
                         </p>
                     
                     

@@ -15,9 +15,24 @@ layout: default
                         AbstractDispatcher
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractFilter.html">
+                        AbstractFilter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
                     <a href="../classes/Application.html">
                         Application
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AsciiFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/AsciiFilter.html">
+                        AsciiFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/BooleanFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/BooleanFilter.html">
+                        BooleanFilter
                     </a>
                 </li>
                 <li {% if page.url == '../classes/CommandBehavior.html' %} class="active" {% endif %}>
@@ -35,6 +50,16 @@ layout: default
                         CommandContext
                     </a>
                 </li>
+                <li {% if page.url == '../classes/ComponentLocator.html' %} class="active" {% endif %}>
+                    <a href="../classes/ComponentLocator.html">
+                        ComponentLocator
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ConsoleAdapter.html' %} class="active" {% endif %}>
+                    <a href="../classes/ConsoleAdapter.html">
+                        ConsoleAdapter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Controller.html' %} class="active" {% endif %}>
                     <a href="../classes/Controller.html">
                         Controller
@@ -43,6 +68,11 @@ layout: default
                 <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
                     <a href="../classes/ControllerAbstract.html">
                         ControllerAbstract
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
+                    <a href="../classes/CoreLocator.html">
+                        CoreLocator
                     </a>
                 </li>
                 <li {% if page.url == '../classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
@@ -58,6 +88,21 @@ layout: default
                 <li {% if page.url == '../classes/Inflector.html' %} class="active" {% endif %}>
                     <a href="../classes/Inflector.html">
                         Inflector
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/IntFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/IntFilter.html">
+                        IntFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/Md5Filter.html' %} class="active" {% endif %}>
+                    <a href="../classes/Md5Filter.html">
+                        Md5Filter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/MingoIDFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/MingoIDFilter.html">
+                        MingoIDFilter
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Mixin.html' %} class="active" {% endif %}>
@@ -110,6 +155,16 @@ layout: default
                         RaddishError
                     </a>
                 </li>
+                <li {% if page.url == '../classes/RaddishStream.html' %} class="active" {% endif %}>
+                    <a href="../classes/RaddishStream.html">
+                        RaddishStream
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/RawFilter.html' %} class="active" {% endif %}>
+                    <a href="../classes/RawFilter.html">
+                        RawFilter
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/Role.html' %} class="active" {% endif %}>
                     <a href="../classes/Role.html">
                         Role
@@ -160,9 +215,24 @@ layout: default
                         Table
                     </a>
                 </li>
+                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
+                    <a href="../classes/TableAbstract.html">
+                        TableAbstract
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
                     <a href="../classes/ViewAbstract.html">
                         ViewAbstract
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
+                    <a href="../classes/ViewEmber.html">
+                        ViewEmber
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/ViewFile.html' %} class="active" {% endif %}>
+                    <a href="../classes/ViewFile.html">
+                        ViewFile
                     </a>
                 </li>
                 <li {% if page.url == '../classes/ViewJson.html' %} class="active" {% endif %}>
@@ -192,7 +262,7 @@ layout: default
                 <h2>Methods</h2>
         
                     <div id="method_canAdd" class="method item">
-                        <h3 class="title has_args">canAdd</h3>
+                        <h3 class="title">canAdd</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -213,7 +283,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L39"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:39</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L39" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:39</code></a>
                         </p>
                     
                     
@@ -247,7 +317,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The complete context from the controller</p>
@@ -265,7 +335,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_canBrowse" class="method item">
-                        <h3 class="title has_args">canBrowse</h3>
+                        <h3 class="title">canBrowse</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -286,7 +356,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L17"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:17</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L17" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:17</code></a>
                         </p>
                     
                     
@@ -320,7 +390,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The complete context from the controller</p>
@@ -338,7 +408,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_canDelete" class="method item">
-                        <h3 class="title has_args">canDelete</h3>
+                        <h3 class="title">canDelete</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -359,7 +429,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L73"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:73</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L73" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:73</code></a>
                         </p>
                     
                     
@@ -393,7 +463,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The complete context from the controller</p>
@@ -411,7 +481,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_canEdit" class="method item">
-                        <h3 class="title has_args">canEdit</h3>
+                        <h3 class="title">canEdit</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -432,7 +502,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L56"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:56</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L56" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:56</code></a>
                         </p>
                     
                     
@@ -466,7 +536,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The complete context from the controller</p>
@@ -484,7 +554,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_canGet" class="method item">
-                        <h3 class="title has_args">canGet</h3>
+                        <h3 class="title">canGet</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -505,7 +575,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L19"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:19</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L19" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:19</code></a>
                         </p>
                     
                     
@@ -540,7 +610,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The context object with authentication information.</p>
@@ -556,7 +626,7 @@ layout: default
                                         <span class="type">Promise</span>:
                             </div>
                     </div>            <div id="method_canPatch" class="method item">
-                        <h3 class="title has_args">canPatch</h3>
+                        <h3 class="title">canPatch</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -577,7 +647,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L55"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:55</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L55" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:55</code></a>
                         </p>
                     
                     
@@ -612,7 +682,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The context object with authentication information.</p>
@@ -628,7 +698,7 @@ layout: default
                                         <span class="type">Promise</span>:
                             </div>
                     </div>            <div id="method_canPost" class="method item">
-                        <h3 class="title has_args">canPost</h3>
+                        <h3 class="title">canPost</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -649,7 +719,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L31"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:31</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L31" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:31</code></a>
                         </p>
                     
                     
@@ -684,7 +754,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The context object with authentication information.</p>
@@ -700,7 +770,7 @@ layout: default
                                         <span class="type">Promise</span>:
                             </div>
                     </div>            <div id="method_canPut" class="method item">
-                        <h3 class="title has_args">canPut</h3>
+                        <h3 class="title">canPut</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -721,7 +791,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L43"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:43</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L43" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:43</code></a>
                         </p>
                     
                     
@@ -756,7 +826,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The context object with authentication information.</p>
@@ -772,7 +842,7 @@ layout: default
                                         <span class="type">Promise</span>:
                             </div>
                     </div>            <div id="method_canRead" class="method item">
-                        <h3 class="title has_args">canRead</h3>
+                        <h3 class="title">canRead</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -793,7 +863,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L28"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:28</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L28" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:28</code></a>
                         </p>
                     
                     
@@ -827,7 +897,7 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                Object
+                                                CommandContext
                                             </td>
                                             <td>
                                                 <p>The complete context from the controller</p>
@@ -845,7 +915,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_clone" class="method item">
-                        <h3 class="title ">clone</h3>
+                        <h3 class="title">clone</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -860,7 +930,7 @@ layout: default
                         <div class="meta">
                                 <p>Inherited from
                                     <a href="../classes/ObjectManager.html#method_clone">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L93"><code>lib&#x2F;object&#x2F;manager.js:93</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L93" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:93</code></a>
                         </p>
                     
                     
@@ -880,7 +950,7 @@ layout: default
                                     An exact copy of the current object
                             </div>
                     </div>            <div id="method_execute" class="method item">
-                        <h3 class="title has_args">execute</h3>
+                        <h3 class="title">execute</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -904,7 +974,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L50"><code>lib&#x2F;controller&#x2F;abstract.js:50</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L50" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:50</code></a>
                         </p>
                     
                     
@@ -961,8 +1031,88 @@ layout: default
                                 </tbody>
                             </table>
                     
+                    </div>            <div id="method_extendConfig" class="method item">
+                        <h3 class="title">extendConfig</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                target
+                                            </li>
+                                            <li class="arg">
+                                                source
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_extendConfig">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L195" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:195</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            This is a private function to allow for config extending
+                    This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                target
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                The config object.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                source
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                The object to extend the config object.
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
                     </div>            <div id="method_forward" class="method item">
-                        <h3 class="title has_args">forward</h3>
+                        <h3 class="title">forward</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -986,7 +1136,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L90"><code>lib&#x2F;controller&#x2F;abstract.js:90</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L90" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:90</code></a>
                         </p>
                     
                     
@@ -1051,7 +1201,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_getCommandChain" class="method item">
-                        <h3 class="title ">getCommandChain</h3>
+                        <h3 class="title">getCommandChain</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1066,7 +1216,7 @@ layout: default
                         <div class="meta">
                                 <p>Inherited from
                                     <a href="../classes/ObjectManager.html#method_getCommandChain">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L63"><code>lib&#x2F;object&#x2F;manager.js:63</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L63" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:63</code></a>
                         </p>
                     
                     
@@ -1085,7 +1235,7 @@ layout: default
                                     CommandChain object.
                             </div>
                     </div>            <div id="method_getConfig" class="method item">
-                        <h3 class="title has_args">getConfig</h3>
+                        <h3 class="title">getConfig</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -1106,7 +1256,7 @@ layout: default
                         <div class="meta">
                                 <p>Inherited from
                                     <a href="../classes/ObjectManager.html#method_getConfig">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L42"><code>lib&#x2F;object&#x2F;manager.js:42</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L42" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:42</code></a>
                         </p>
                     
                     
@@ -1155,7 +1305,7 @@ layout: default
                                     The requested config value.
                             </div>
                     </div>            <div id="method_getContext" class="method item">
-                        <h3 class="title ">getContext</h3>
+                        <h3 class="title">getContext</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1170,7 +1320,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L120"><code>lib&#x2F;controller&#x2F;abstract.js:120</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L120" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:120</code></a>
                         </p>
                     
                     
@@ -1186,12 +1336,12 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">Object</span>:
+                                        <span class="type"><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></span>:
                                     <p>Context object.</p>
                     
                             </div>
                     </div>            <div id="method_getIdentifier" class="method item">
-                        <h3 class="title ">getIdentifier</h3>
+                        <h3 class="title">getIdentifier</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1206,7 +1356,7 @@ layout: default
                         <div class="meta">
                                 <p>Inherited from
                                     <a href="../classes/ObjectManager.html#method_getIdentifier">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L53"><code>lib&#x2F;object&#x2F;manager.js:53</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L53" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:53</code></a>
                         </p>
                     
                     
@@ -1225,7 +1375,7 @@ layout: default
                                     Identifier object.
                             </div>
                     </div>            <div id="method_getModel" class="method item">
-                        <h3 class="title ">getModel</h3>
+                        <h3 class="title">getModel</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1240,7 +1390,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L103"><code>lib&#x2F;controller&#x2F;abstract.js:103</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L103" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:103</code></a>
                         </p>
                     
                     
@@ -1262,7 +1412,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_getObject" class="method item">
-                        <h3 class="title has_args">getObject</h3>
+                        <h3 class="title">getObject</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -1286,7 +1436,7 @@ layout: default
                         <div class="meta">
                                 <p>Inherited from
                                     <a href="../classes/ObjectManager.html#method_getObject">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L183"><code>lib&#x2F;object&#x2F;manager.js:183</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L183" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:183</code></a>
                         </p>
                     
                     
@@ -1346,7 +1496,7 @@ layout: default
                                     call ".then" to use the object when ready.
                             </div>
                     </div>            <div id="method_getPermissions" class="method item">
-                        <h3 class="title ">getPermissions</h3>
+                        <h3 class="title">getPermissions</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1361,7 +1511,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L162"><code>lib&#x2F;controller&#x2F;abstract.js:162</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L162" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:162</code></a>
                         </p>
                     
                     
@@ -1369,8 +1519,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function returns the permission set of the current controller.
-                    This function has not been implemented as of yet.</p>
+                            <p>This method returns the permission set of the current controller.</p>
                     
                         </div>
                     
@@ -1383,7 +1532,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_getRequest" class="method item">
-                        <h3 class="title ">getRequest</h3>
+                        <h3 class="title">getRequest</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1398,7 +1547,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L130"><code>lib&#x2F;controller&#x2F;abstract.js:130</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L130" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:130</code></a>
                         </p>
                     
                     
@@ -1406,7 +1555,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function returns the complete request.</p>
+                            <p>This method returns the complete request.</p>
                     
                         </div>
                     
@@ -1419,7 +1568,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_getView" class="method item">
-                        <h3 class="title ">getView</h3>
+                        <h3 class="title">getView</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1434,7 +1583,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L140"><code>lib&#x2F;controller&#x2F;abstract.js:140</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L140" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:140</code></a>
                         </p>
                     
                     
@@ -1442,7 +1591,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function will return the initialize view matching the layout given in the request or on the default</p>
+                            <p>This method will return the initialize view matching the format given in the request or on the default.</p>
                     
                         </div>
                     
@@ -1455,7 +1604,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_initialize" class="method item">
-                        <h3 class="title has_args">initialize</h3>
+                        <h3 class="title">initialize</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -1479,7 +1628,7 @@ layout: default
                                     ObjectManager
                                 </a>
                                     but overwritten in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L26"><code>lib&#x2F;controller&#x2F;abstract.js:26</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L26" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:26</code></a>
                         </p>
                     
                     
@@ -1532,7 +1681,7 @@ layout: default
                     
                             </div>
                     </div>            <div id="method_mixin" class="method item">
-                        <h3 class="title has_args">mixin</h3>
+                        <h3 class="title">mixin</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -1553,7 +1702,7 @@ layout: default
                         <div class="meta">
                                 <p>Inherited from
                                     <a href="../classes/ObjectManager.html#method_mixin">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L104"><code>lib&#x2F;object&#x2F;manager.js:104</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L104" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:104</code></a>
                         </p>
                     
                     

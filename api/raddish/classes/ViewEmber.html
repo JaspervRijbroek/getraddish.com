@@ -243,22 +243,179 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>ObjectIdentifier Class</h1>
+        <h1>ViewEmber Class</h1>
         <div class="description">
-            <p>ObjectIdentifier object which helps with the location of files and building identifiers</p>
+            <p>The ViewEmber object makes sure an EmberJS response object is returned.</p>
         
         </div>
         
+            <div class="extends">
+                Extends <a href="../classes/ViewJson.html" class="crosslink">ViewJson</a>
+            </div>
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L4" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:4</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/ember.js#L5" target="_blank"><code>lib&#x2F;view&#x2F;ember.js:5</code></a>
             </div>
         
         <div class="methods">
                 <hr/>
                 <h2>Methods</h2>
         
-                    <div id="method_clone" class="method item">
+                    <div id="method__viewPlural" class="method item">
+                        <h3 class="title">_viewPlural</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                data
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                            <p>Inherited from
+                                <a href="../classes/ViewJson.html#method__viewPlural">
+                                    ViewJson
+                                </a>
+                                    but overwritten in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/ember.js#L46" target="_blank"><code>lib&#x2F;view&#x2F;ember.js:46</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>The _viewSingle method presents a list of EmberJS JSON Object together with the provided states.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                data
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The data to convert to a string.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Object</span>:
+                                    <p>The JSON string containing a list objects.</p>
+                    
+                            </div>
+                    </div>            <div id="method__viewSingle" class="method item">
+                        <h3 class="title">_viewSingle</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                data
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                            <p>Inherited from
+                                <a href="../classes/ViewJson.html#method__viewSingle">
+                                    ViewJson
+                                </a>
+                                    but overwritten in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/ember.js#L19" target="_blank"><code>lib&#x2F;view&#x2F;ember.js:19</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>The _viewSingle method presents a single EmberJS JSON Object together with the provided states.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                data
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The data to convert to a string.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Object</span>:
+                                    <p>The JSON string containing a single object.</p>
+                    
+                            </div>
+                    </div>            <div id="method_clone" class="method item">
                         <h3 class="title">clone</h3>
                     
                             <div class="arguments">
@@ -272,9 +429,9 @@ layout: default
                     
                     
                         <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L38" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:38</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_clone">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L93" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:93</code></a>
                         </p>
                     
                     
@@ -282,7 +439,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Return a new instance of the current identifier.</p>
+                            <p>This function will be available for every object,
+                    this will clone the current object.</p>
                     
                         </div>
                     
@@ -290,12 +448,12 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">BaseIdentifier</span>:
-                                    <p>A cloned identifier.</p>
+                                        <span class="type">Object</span>:
+                                    <p>An exact copy of the current object</p>
                     
                             </div>
-                    </div>            <div id="method_getApplication" class="method item">
-                        <h3 class="title">getApplication</h3>
+                    </div>            <div id="method_display" class="method item">
+                        <h3 class="title">display</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -308,9 +466,9 @@ layout: default
                     
                     
                         <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L90" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:90</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/ViewJson.html#method_display">ViewJson</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/json.js#L36" target="_blank"><code>lib&#x2F;view&#x2F;json.js:36</code></a>
                         </p>
                     
                     
@@ -318,185 +476,43 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Return the current application</p>
-                    
+                            This is the overridden display method which will format our data and return it to the controller when done.
                         </div>
                     
                     
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">String</span>:
-                                    <p>Application name of the current identifier.</p>
-                    
+                                        <span class="type">Promise</span>:
+                                    The promise containing the json as a string.
                             </div>
-                    </div>            <div id="method_getComponent" class="method item">
-                        <h3 class="title">getComponent</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L100" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:100</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Return the current component</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">String</span>:
-                                    <p>Component name of the current identifier.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getName" class="method item">
-                        <h3 class="title">getName</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L120" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:120</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Return the current name</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">String</span>:
-                                    <p>Name of the current identifier.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getPath" class="method item">
-                        <h3 class="title">getPath</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L110" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:110</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Return the current path</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Array</span>:
-                                    <p>path of the current identifier.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getType" class="method item">
-                        <h3 class="title">getType</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L80" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:80</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Return the current type</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">String</span>:
-                                    <p>Type of the current identifier.</p>
-                    
-                            </div>
-                    </div>            <div id="method_setApplication" class="method item">
-                        <h3 class="title">setApplication</h3>
+                    </div>            <div id="method_extendConfig" class="method item">
+                        <h3 class="title">extendConfig</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                newApplication
+                                                target
+                                            </li>
+                                            <li class="arg">
+                                                source
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
                             </div>
                     
                     
+                            <span class="flag private">private</span>
                     
                     
                     
                     
                     
                         <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L130" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:130</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_extendConfig">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L195" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:195</code></a>
                         </p>
                     
                     
@@ -504,7 +520,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Set the type of the current identifier</p>
+                            <p>This is a private function to allow for config extending
+                    This method takes two parameters the first is the original config and the second will be appeneded to this one.</p>
                     
                         </div>
                     
@@ -527,285 +544,142 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                newApplication
+                                                target
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The config object.</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                source
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The object to extend the config object.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method_getCommandChain" class="method item">
+                        <h3 class="title">getCommandChain</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_getCommandChain">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L63" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:63</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Return the command chain to run behaviors.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/CommandChain.html" class="crosslink">CommandChain</a></span>:
+                                    <p>CommandChain object.</p>
+                    
+                            </div>
+                    </div>            <div id="method_getConfig" class="method item">
+                        <h3 class="title">getConfig</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                key
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_getConfig">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L42" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:42</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Use this function to acquire a variable from config.js</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                key
                                             </td>
                                             <td>
                                                 String
                                             </td>
                                             <td>
-                                                <p>The application name for the current identifier.</p>
+                                                <p>Key to specify the config to return</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method_setApplication" class="method item">
-                        <h3 class="title">setApplication</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
                     
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                newApplication
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
+                                        <span class="type"></span>:
+                                    <p>The requested config value.</p>
+                    
                             </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L142" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:142</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Set the application of the current identifier</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                newApplication
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                <p>The application name for the current identifier.</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                    </div>            <div id="method_setComponent" class="method item">
-                        <h3 class="title">setComponent</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                component
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L154" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:154</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Set the component of the current identifier</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                component
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                <p>The component name for the current identifier.</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                    </div>            <div id="method_setName" class="method item">
-                        <h3 class="title">setName</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                name
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L178" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:178</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Set the name for the current identifier</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                name
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                <p>The name for the current identifier.</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                    </div>            <div id="method_setPath" class="method item">
-                        <h3 class="title">setPath</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                path
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L166" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:166</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Set the path of the current identifier</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                path
-                                            </td>
-                                            <td>
-                                                Array
-                                            </td>
-                                            <td>
-                                                <p>The path for the current identifier.</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                    </div>            <div id="method_toString" class="method item">
-                        <h3 class="title">toString</h3>
+                    </div>            <div id="method_getIdentifier" class="method item">
+                        <h3 class="title">getIdentifier</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -818,9 +692,9 @@ layout: default
                     
                     
                         <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/identifier/identifier.js#L48" target="_blank"><code>lib&#x2F;object&#x2F;identifier&#x2F;identifier.js:48</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_getIdentifier">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L53" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:53</code></a>
                         </p>
                     
                     
@@ -828,7 +702,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Recreate the identifier given to the Object.</p>
+                            <p>Use this function to acquire the identifier object</p>
                     
                         </div>
                     
@@ -836,9 +710,302 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">String</span>:
-                                    <p>The recreated identifier string given to the current object.</p>
+                                        <span class="type">RObjectdentifier</span>:
+                                    <p>Identifier object.</p>
                     
                             </div>
+                    </div>            <div id="method_getObject" class="method item">
+                        <h3 class="title">getObject</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                identifier
+                                            </li>
+                                            <li class="arg">
+                                                config
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_getObject">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L183" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:183</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                identifier
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>Identifier of the object to load</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                config
+                                            </td>
+                                            <td>
+                                                Object|null
+                                            </td>
+                                            <td>
+                                                <p>Config to push to the object</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>call &quot;.then&quot; to use the object when ready.</p>
+                    
+                            </div>
+                    </div>            <div id="method_initialize" class="method item">
+                        <h3 class="title">initialize</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                config
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                            <p>Inherited from
+                                <a href="../classes/ObjectManager.html#method_initialize">
+                                    ObjectManager
+                                </a>
+                                    but overwritten in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/json.js#L22" target="_blank"><code>lib&#x2F;view&#x2F;json.js:22</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            This method will receive a model object and will set it locally.
+                    Also it will set the mimetype of the response.
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                config
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                The config object of the object
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"> | Promise</span>:
+                            </div>
+                    </div>            <div id="method_mixin" class="method item">
+                        <h3 class="title">mixin</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                object
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_mixin">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L104" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:104</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the handler which will try to mixin functions from another object.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                object
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The object to mix into the current object.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method_setData" class="method item">
+                        <h3 class="title">setData</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                data
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/ViewAbstract.html#method_setData">ViewAbstract</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/abstract.js#L45" target="_blank"><code>lib&#x2F;view&#x2F;abstract.js:45</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will set the data to the Object.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                data
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The data for the view object</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
                     </div></div>    </article>
 </div>

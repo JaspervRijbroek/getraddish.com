@@ -243,35 +243,36 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>Mixin Class</h1>
+        <h1>IntFilter Class</h1>
         <div class="description">
-            <p>This is the mixin object, this will help with mixing in the objects.</p>
+            <p>The Integer filter will check if the object is an Integer or not.</p>
         
         </div>
         
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L5" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:5</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/filter/int.js#L4" target="_blank"><code>lib&#x2F;filter&#x2F;int.js:4</code></a>
             </div>
         
         <div class="methods">
                 <hr/>
                 <h2>Methods</h2>
         
-                    <div id="method_has" class="method item">
-                        <h3 class="title">has</h3>
+                    <div id="method__sanitize" class="method item">
+                        <h3 class="title">_sanitize</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                target
+                                                value
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
                             </div>
                     
                     
+                            <span class="flag private">private</span>
                     
                     
                     
@@ -280,7 +281,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L40" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:40</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/filter/int.js#L29" target="_blank"><code>lib&#x2F;filter&#x2F;int.js:29</code></a>
                         </p>
                     
                     
@@ -288,7 +289,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method checks if the target has mixins defined or not.</p>
+                            <p>The sanitize method will force the value to be an integer.</p>
                     
                         </div>
                     
@@ -311,13 +312,88 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                target
+                                                value
                                             </td>
                                             <td>
-                                                Object
+                                                *
                                             </td>
                                             <td>
-                                                <p>The object to be checked.</p>
+                                                <p>The value to be sanitized.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Number</span>:
+                                    <p>The sanitized value.</p>
+                    
+                            </div>
+                    </div>            <div id="method__validate" class="method item">
+                        <h3 class="title">_validate</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                value
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/filter/int.js#L16" target="_blank"><code>lib&#x2F;filter&#x2F;int.js:16</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>The validate method will check if the value is a number or not
+                    if the value is not a number false will be returned.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                value
+                                            </td>
+                                            <td>
+                                                *
+                                            </td>
+                                            <td>
+                                                <p>The value to be validated.</p>
                     
                                             </td>
                                         </tr>
@@ -328,20 +404,17 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Boolean</span>:
-                                    <p>The value of the hasMixin property.</p>
+                                    <p>If the value is valid or not.</p>
                     
                             </div>
-                    </div>            <div id="method_log" class="method item">
-                        <h3 class="title">log</h3>
+                    </div>            <div id="method_getFilter" class="method item">
+                        <h3 class="title">getFilter</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                code
-                                            </li>
-                                            <li class="arg">
-                                                message
+                                                filter
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
@@ -356,7 +429,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/log/adapter/file.js#L26" target="_blank"><code>lib&#x2F;log&#x2F;adapter&#x2F;file.js:26</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/filter/filter.js#L11" target="_blank"><code>lib&#x2F;filter&#x2F;filter.js:11</code></a>
                         </p>
                     
                     
@@ -364,7 +437,9 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will log an error message to the defined file.</p>
+                            <p>This method will examine the cache of the filters and check if the requested filter is present.
+                    If not it will try to load this filter, when found it is added to the cache and returned.
+                    When there is an error and the filter rejects to load an error is returned.</p>
                     
                         </div>
                     
@@ -387,112 +462,25 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                code
+                                                filter
                                             </td>
                                             <td>
-                                                Integer
+                                                String
                                             </td>
                                             <td>
-                                                <p>The error code to use.</p>
-                    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                message
-                                            </td>
-                                            <td>
-                                                Message
-                                            </td>
-                                            <td>
-                                                <p>The error message.</p>
+                                                <p>The name of the filter to get.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method_mix" class="method item">
-                        <h3 class="title">mix</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
                     
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                target
-                                            </li>
-                                            <li class="arg">
-                                                source
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
+                                        <span class="type">Object</span>:
+                                    <p>The requested filter.</p>
+                    
                             </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L15" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:15</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Mix the mixableMethods of the source into the target.
-                    This will also set the hasMixins property on the target.</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                target
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The object receiving the methods</p>
-                    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                source
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The object giving the methods</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
                     </div></div>    </article>
 </div>

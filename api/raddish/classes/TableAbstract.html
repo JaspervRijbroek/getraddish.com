@@ -243,10 +243,9 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>CommandBehavior Class</h1>
+        <h1>TableAbstract Class</h1>
         <div class="description">
-            <p>This is the base class for every behavior,
-        this holds the basic methods to let your behavior function properly.</p>
+            <p>This class holds the basic methods of the table object.</p>
         
         </div>
         
@@ -255,14 +254,550 @@ layout: default
             </div>
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior/behavior.js#L5" target="_blank"><code>lib&#x2F;command&#x2F;behavior&#x2F;behavior.js:5</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L6" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:6</code></a>
             </div>
         
         <div class="methods">
                 <hr/>
                 <h2>Methods</h2>
         
-                    <div id="method_clone" class="method item">
+                    <div id="method__afterDelete" class="method item">
+                        <h3 class="title">_afterDelete</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L144" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:144</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the default _afterDelete method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method__afterInsert" class="method item">
+                        <h3 class="title">_afterInsert</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L100" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:100</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the default _afterInsert method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method__afterSelect" class="method item">
+                        <h3 class="title">_afterSelect</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L78" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:78</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the default _afterSelect method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method__afterUpdate" class="method item">
+                        <h3 class="title">_afterUpdate</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L122" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:122</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the defaul t_afterUpdate method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method__beforeDelete" class="method item">
+                        <h3 class="title">_beforeDelete</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L133" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:133</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the default _beforeDelete method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method__beforeInsert" class="method item">
+                        <h3 class="title">_beforeInsert</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L89" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:89</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the default _beforeInsert method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method__beforeSelect" class="method item">
+                        <h3 class="title">_beforeSelect</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L67" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:67</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the default _beforeSelect method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method__beforeUpdate" class="method item">
+                        <h3 class="title">_beforeUpdate</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L111" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:111</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This is the default _beforeUpdate method which needs to be overridden!</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The context to use in this method</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                    </div>            <div id="method_clone" class="method item">
                         <h3 class="title">clone</h3>
                     
                             <div class="arguments">
@@ -295,7 +830,8 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Object</span>:
-                                    An exact copy of the current object
+                                    <p>An exact copy of the current object</p>
+                    
                             </div>
                     </div>            <div id="method_execute" class="method item">
                         <h3 class="title">execute</h3>
@@ -322,7 +858,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior/behavior.js#L77" target="_blank"><code>lib&#x2F;command&#x2F;behavior&#x2F;behavior.js:77</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L23" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:23</code></a>
                         </p>
                     
                     
@@ -330,8 +866,9 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will execute the given method,
-                    and will also give the given context over to the called method.</p>
+                            <p>This method will execute a certain command combined with a context.
+                    This method will also call specialized for the selected method.
+                    The methods callable are: Select, Insert, Update and Delete.</p>
                     
                         </div>
                     
@@ -360,7 +897,7 @@ layout: default
                                                 String
                                             </td>
                                             <td>
-                                                <p>The method name to execute, this is dot-separated</p>
+                                                <p>The method to execute.</p>
                     
                                             </td>
                                         </tr>
@@ -372,20 +909,13 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context object to use in the method call.</p>
+                                                <p>The context object to use in this call.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type"><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></span>:
-                                    <p>The context object, which has gone through all the behaviors.</p>
-                    
-                            </div>
                     </div>            <div id="method_extendConfig" class="method item">
                         <h3 class="title">extendConfig</h3>
                     
@@ -466,6 +996,78 @@ layout: default
                                 </tbody>
                             </table>
                     
+                    </div>            <div id="method_getAdapter" class="method item">
+                        <h3 class="title">getAdapter</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L165" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:165</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return the adapter associated with the current table object</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>The associated adapter.</p>
+                    
+                            </div>
+                    </div>            <div id="method_getColumns" class="method item">
+                        <h3 class="title">getColumns</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L212" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:212</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return all the columns of the table.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>The columns of the table.</p>
+                    
+                            </div>
                     </div>            <div id="method_getCommandChain" class="method item">
                         <h3 class="title">getCommandChain</h3>
                     
@@ -604,21 +1206,14 @@ layout: default
                                         <span class="type">RObjectdentifier</span>:
                                     Identifier object.
                             </div>
-                    </div>            <div id="method_getMethod" class="method item">
-                        <h3 class="title">getMethod</h3>
+                    </div>            <div id="method_getIdentityColumn" class="method item">
+                        <h3 class="title">getIdentityColumn</h3>
                     
                             <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                method
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
+                                <span class="paren">()</span>
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -627,7 +1222,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior/behavior.js#L100" target="_blank"><code>lib&#x2F;command&#x2F;behavior&#x2F;behavior.js:100</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L257" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:257</code></a>
                         </p>
                     
                     
@@ -635,47 +1230,52 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Convert the action name to a function name.</p>
+                            <p>This method will return the single identity column, identified by the auto_increment value.</p>
                     
                         </div>
                     
-                            <h3>Parameters</h3>
                     
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                method
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                <p>The dot-separated name of the behavior</p>
+                            <div class="returns">
+                                <h4>Returns:</h4>
                     
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
+                                        <span class="type">Promise</span>:
+                                    <p>The promise with the identity column.</p>
+                    
+                            </div>
+                    </div>            <div id="method_getName" class="method item">
+                        <h3 class="title">getName</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L155" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:155</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method returns the name of the table.</p>
+                    
+                        </div>
+                    
                     
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
                                         <span class="type">String</span>:
-                                    <p>The behavior name as function name.</p>
+                                    <p>Table name</p>
                     
                             </div>
                     </div>            <div id="method_getObject" class="method item">
@@ -762,17 +1362,11 @@ layout: default
                                         <span class="type">Promise</span>:
                                     call ".then" to use the object when ready.
                             </div>
-                    </div>            <div id="method_hasMethod" class="method item">
-                        <h3 class="title">hasMethod</h3>
+                    </div>            <div id="method_getRow" class="method item">
+                        <h3 class="title">getRow</h3>
                     
                             <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                method
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
+                                <span class="paren">()</span>
                             </div>
                     
                     
@@ -784,7 +1378,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior/behavior.js#L57" target="_blank"><code>lib&#x2F;command&#x2F;behavior&#x2F;behavior.js:57</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L181" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:181</code></a>
                         </p>
                     
                     
@@ -792,47 +1386,126 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will check if the function exists in the current behavior, if so it will return true,</p>
+                            <p>This method will return an empty Row object
+                    Here we will also cache the Row object for later use.</p>
                     
                         </div>
                     
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                method
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                <p>The method name to check on.</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
                     
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">Boolean</span>:
-                                    <p>The function exists or not.</p>
+                                        <span class="type">Promise</span>:
+                                    <p>Returns a Row object</p>
+                    
+                            </div>
+                    </div>            <div id="method_getRowset" class="method item">
+                        <h3 class="title">getRowset</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L197" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:197</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return an empty Rowset object</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>Returns a Rowset object</p>
+                    
+                            </div>
+                    </div>            <div id="method_getSchema" class="method item">
+                        <h3 class="title">getSchema</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L281" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:281</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will check if the table exists or not, if not, it will return an error.
+                    Else an object with its schema is returned.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>The promise with the complete schema.</p>
+                    
+                            </div>
+                    </div>            <div id="method_getUniqueColumns" class="method item">
+                        <h3 class="title">getUniqueColumns</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L235" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:235</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return the unique columns of the table</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>The unique columns of the table.</p>
                     
                             </div>
                     </div>            <div id="method_initialize" class="method item">
@@ -849,19 +1522,15 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
                     
                     
                         <div class="meta">
-                            <p>Inherited from
-                                <a href="../classes/ObjectManager.html#method_initialize">
-                                    ObjectManager
-                                </a>
-                                    but overwritten in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior/behavior.js#L23" target="_blank"><code>lib&#x2F;command&#x2F;behavior&#x2F;behavior.js:23</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_initialize">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L25" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:25</code></a>
                         </p>
                     
                     
@@ -869,8 +1538,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Initialize override to allow the config to be used globally.</p>
-                    
+                            Every object called through getObject will go through this function.
+                    This will set the identifier and adds the behaviors (if any).
                         </div>
                     
                             <h3>Parameters</h3>
@@ -898,7 +1567,7 @@ layout: default
                                                 Object
                                             </td>
                                             <td>
-                                                <p>The complete config object</p>
+                                                <p>Object with config values</p>
                     
                                             </td>
                                         </tr>
@@ -908,10 +1577,93 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">Object</span>:
-                                    <p>The complete initialized object</p>
+                                        <span class="type">Promise</span>:
+                                    <p>call &quot;.then&quot; to use the object when ready.</p>
                     
                             </div>
+                    </div>            <div id="method_mapColumns" class="method item">
+                        <h3 class="title">mapColumns</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                object
+                                            </li>
+                                            <li class="arg">
+                                                reverse
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                            <span class="flag private">private</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L301" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:301</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will translate table columns to their original values, or visa versa.
+                    This will work on the column_map variable.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                object
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The object with the column map</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                reverse
+                                            </td>
+                                            <td>
+                                                Boolean
+                                            </td>
+                                            <td>
+                                                <p>Wether or not to reverse the behavior</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
                     </div>            <div id="method_mixin" class="method item">
                         <h3 class="title">mixin</h3>
                     
@@ -971,88 +1723,6 @@ layout: default
                                             </td>
                                             <td>
                                                 The object to mix into the current object.
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                    </div>            <div id="method_registerMethod" class="method item">
-                        <h3 class="title">registerMethod</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                action
-                                            </li>
-                                            <li class="arg">
-                                                method
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior/behavior.js#L37" target="_blank"><code>lib&#x2F;command&#x2F;behavior&#x2F;behavior.js:37</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method accepts an array or string as action parameter and will
-                    connect this action to a given method.</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                action
-                                            </td>
-                                            <td>
-                                                Array|String
-                                            </td>
-                                            <td>
-                                                <p>The action or collection of actions to bind your method to.</p>
-                    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                method
-                                            </td>
-                                            <td>
-                                                Function
-                                            </td>
-                                            <td>
-                                                <p>The function to call on the specified action(s).</p>
-                    
                                             </td>
                                         </tr>
                                 </tbody>

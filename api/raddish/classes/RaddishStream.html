@@ -243,29 +243,31 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>Mixin Class</h1>
+        <h1>RaddishStream Class</h1>
         <div class="description">
-            <p>This is the mixin object, this will help with mixing in the objects.</p>
+            <p>This object is a wrapper around streams and promises,
+        this makes it easy to cast a value to a Stream and cast a stream to a promise.</p>
+        <p>Also it adds a convenient transform method.</p>
         
         </div>
         
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L5" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:5</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L4" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:4</code></a>
             </div>
         
         <div class="methods">
                 <hr/>
                 <h2>Methods</h2>
         
-                    <div id="method_has" class="method item">
-                        <h3 class="title">has</h3>
+                    <div id="method_cast" class="method item">
+                        <h3 class="title">cast</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                target
+                                                object
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
@@ -280,7 +282,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L40" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:40</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L76" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:76</code></a>
                         </p>
                     
                     
@@ -288,7 +290,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method checks if the target has mixins defined or not.</p>
+                            <p>The cast method will cast any value to a Stream,
+                    after this a RaddishStream object will be returned.</p>
                     
                         </div>
                     
@@ -311,13 +314,13 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                target
+                                                object
                                             </td>
                                             <td>
-                                                Object
+                                                *
                                             </td>
                                             <td>
-                                                <p>The object to be checked.</p>
+                                                <p>The value to be cast to a stream.</p>
                     
                                             </td>
                                         </tr>
@@ -327,21 +330,21 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">Boolean</span>:
-                                    <p>The value of the hasMixin property.</p>
+                                        <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
+                                    <p>The RaddishStream object used for chaining.</p>
                     
                             </div>
-                    </div>            <div id="method_log" class="method item">
-                        <h3 class="title">log</h3>
+                    </div>            <div id="method_on" class="method item">
+                        <h3 class="title">on</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                code
+                                                event
                                             </li>
                                             <li class="arg">
-                                                message
+                                                action
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
@@ -356,7 +359,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/log/adapter/file.js#L26" target="_blank"><code>lib&#x2F;log&#x2F;adapter&#x2F;file.js:26</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L107" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:107</code></a>
                         </p>
                     
                     
@@ -364,7 +367,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will log an error message to the defined file.</p>
+                            <p>This method is a proxy between the RaddishStream object and it containing stream.
+                    This method therefor works the same as any other .on method.</p>
                     
                         </div>
                     
@@ -387,42 +391,46 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                code
+                                                event
                                             </td>
                                             <td>
-                                                Integer
+                                                String
                                             </td>
                                             <td>
-                                                <p>The error code to use.</p>
+                                                <p>The event which to listen to.</p>
                     
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                message
+                                                action
                                             </td>
                                             <td>
-                                                Message
+                                                Function
                                             </td>
                                             <td>
-                                                <p>The error message.</p>
+                                                <p>The action to do in the event.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method_mix" class="method item">
-                        <h3 class="title">mix</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
+                                    <p>The RaddishStream object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_pipe" class="method item">
+                        <h3 class="title">pipe</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                target
-                                            </li>
-                                            <li class="arg">
-                                                source
+                                                destination
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
@@ -437,7 +445,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L15" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:15</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L35" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:35</code></a>
                         </p>
                     
                     
@@ -445,8 +453,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Mix the mixableMethods of the source into the target.
-                    This will also set the hasMixins property on the target.</p>
+                            <p>This method is a proxy for the pipe method,
+                    this will bind its destination to the contained stream.</p>
                     
                         </div>
                     
@@ -469,30 +477,238 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                target
+                                                destination
                                             </td>
                                             <td>
                                                 Object
                                             </td>
                                             <td>
-                                                <p>The object receiving the methods</p>
-                    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                source
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The object giving the methods</p>
+                                                <p>The destination stream to pipe to.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
+                                    <p>The RaddishStream object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_promise" class="method item">
+                        <h3 class="title">promise</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L122" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:122</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method converts the stream to a promise.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>The resolved or rejected promise.</p>
+                    
+                            </div>
+                    </div>            <div id="method_setSource" class="method item">
+                        <h3 class="title">setSource</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                stream
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L17" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:17</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method adds a stream as its source.
+                    If the source is a RaddishStream its containing stream will be used.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                stream
+                                            </td>
+                                            <td>
+                                                *
+                                            </td>
+                                            <td>
+                                                <p>The stream to use as the source.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
+                                    <p>The RaddishStream object itself.</p>
+                    
+                            </div>
+                    </div>            <div id="method_transform" class="method item">
+                        <h3 class="title">transform</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                transform
+                                            </li>
+                                            <li class="arg">
+                                                flush
+                                            </li>
+                                            <li class="arg">
+                                                objectMode
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L49" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:49</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>The transform method is a convenient wrapper for a transformation.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                transform
+                                            </td>
+                                            <td>
+                                                Function
+                                            </td>
+                                            <td>
+                                                <p>The function which to execute on each chunk for its transformation.</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                flush
+                                            </td>
+                                            <td>
+                                                Function
+                                            </td>
+                                            <td>
+                                                <p>The last chunk to send after all the transformations.</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                objectMode
+                                            </td>
+                                            <td>
+                                                Boolean
+                                            </td>
+                                            <td>
+                                                <p>To force objectMode.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
+                                    <p>The RaddishStream object itself used for chaining.</p>
+                    
+                            </div>
                     </div></div>    </article>
 </div>

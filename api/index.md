@@ -1,6 +1,6 @@
 ---
 title: Raddish APIs
-layout: api
+layout: default
 ---
 
 # Raddish APIs

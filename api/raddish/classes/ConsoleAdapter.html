@@ -243,95 +243,22 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>Mixin Class</h1>
+        <h1>ConsoleAdapter Class</h1>
         <div class="description">
-            <p>This is the mixin object, this will help with mixing in the objects.</p>
+            <p>This is the default and fallback log adapter in the system.</p>
         
         </div>
         
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L5" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:5</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/log/adapter/console.js#L1" target="_blank"><code>lib&#x2F;log&#x2F;adapter&#x2F;console.js:1</code></a>
             </div>
         
         <div class="methods">
                 <hr/>
                 <h2>Methods</h2>
         
-                    <div id="method_has" class="method item">
-                        <h3 class="title">has</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                target
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L40" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:40</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method checks if the target has mixins defined or not.</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                target
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The object to be checked.</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Boolean</span>:
-                                    <p>The value of the hasMixin property.</p>
-                    
-                            </div>
-                    </div>            <div id="method_log" class="method item">
+                    <div id="method_log" class="method item">
                         <h3 class="title">log</h3>
                     
                             <div class="arguments">
@@ -356,7 +283,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/log/adapter/file.js#L26" target="_blank"><code>lib&#x2F;log&#x2F;adapter&#x2F;file.js:26</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/log/adapter/console.js#L15" target="_blank"><code>lib&#x2F;log&#x2F;adapter&#x2F;console.js:15</code></a>
                         </p>
                     
                     
@@ -364,7 +291,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will log an error message to the defined file.</p>
+                            <p>This method will log an error to the console.</p>
                     
                         </div>
                     
@@ -393,7 +320,7 @@ layout: default
                                                 Integer
                                             </td>
                                             <td>
-                                                <p>The error code to use.</p>
+                                                <p>The error code for the error.</p>
                     
                                             </td>
                                         </tr>
@@ -402,92 +329,10 @@ layout: default
                                                 message
                                             </td>
                                             <td>
-                                                Message
+                                                String
                                             </td>
                                             <td>
                                                 <p>The error message.</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                    </div>            <div id="method_mix" class="method item">
-                        <h3 class="title">mix</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                target
-                                            </li>
-                                            <li class="arg">
-                                                source
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L15" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:15</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>Mix the mixableMethods of the source into the target.
-                    This will also set the hasMixins property on the target.</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                target
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The object receiving the methods</p>
-                    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                source
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The object giving the methods</p>
                     
                                             </td>
                                         </tr>
