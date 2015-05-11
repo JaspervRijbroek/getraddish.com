@@ -4,13 +4,14 @@ layout: default
 ---
 
 <script src="assets/js/moment.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
 <script src="assets/js/raddish.js"></script>
 <script type="text/javascript">
-    window.onload = function() {
+    jQuery(document).ready(function($) {
         var raddish = new Raddish();
-        raddish.getDownloads(document.querySelector('.downloads'));
-        raddish.getLatestVersion(document.querySelector('.version'));
-    };
+        raddish.getDownloads($('.downloads'));
+        raddish.getLatestVersion($('.version'));
+    });
 </script>
 
 <div class="row">
@@ -27,6 +28,11 @@ layout: default
     <div class="install push4 col4">
         $ npm install --save raddish
     </div>
+</div>
+
+<div class="information">
+    <div class="downloads"></div>
+    <div class="version"></div>
 </div>
 
 <hr class="small"/>

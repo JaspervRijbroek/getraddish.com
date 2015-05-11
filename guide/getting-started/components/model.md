@@ -19,15 +19,18 @@ Within the models you have the query methods
 - buildQueryGroup
 - buildQueryOrder
 
-Which might look like a sql query, this is used for the building of the queries.
+Which might look like a sql query, this is used for the building of the queries.  
 Although the query builder doesn't care where the code is, it is advised to place the code in its respective place.
+
+By default the model is aware of the unique columns in the database and its keys.  
+The unique columns and keys will automatically be set and are automatically filtered on in the buildQueryWhere if the state has a value.
 
 ### States
 
 The states are set per model. To be specific, this is done in the constructor after the parent model is called.
 
 There are some special cases, there are default states and unique columns.
-These will be added by default. Every column inside the table which is unique will be a state by default having the same name as the column.
+The default states are added automatically in the parent model.
 
 The default states are:
 
