@@ -16,6 +16,25 @@
   font-size: 20px;
 }
 
+.information {
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    &::after {
+      padding: 0 6px 0 10px;
+      content: "●";
+    }
+
+    &:last-child {
+      &::after {
+        content: ""
+      }
+    }
+  }
+}
+
 .install {
   &::after {
     display: inline-block;

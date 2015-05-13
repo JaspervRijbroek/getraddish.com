@@ -14,7 +14,7 @@ function Raddish() {
 Raddish.prototype.getDownloads = function(element) {
     var self = this,
         now = moment().format('YYYY-MM-DD'),
-        prev = moment().subtract(1, 'months').format('YYYY-MM-DD');
+        prev = moment().subtract(1, 'years').format('YYYY-MM-DD');
 
     jQuery.ajax('http://npm-stat.com/downloads/range/' + prev + ':' + now + '/raddish', {
         success: function(json) {
@@ -32,10 +32,11 @@ Raddish.prototype.getDownloads = function(element) {
 Raddish.prototype.getLatestVersion = function(element) {
     var self = this;
 
-    jQuery.ajax('https://registry.npmjs.org/raddish/latest', {
-        dataType: "jsonp",
+    jQuery.ajax('https://jsonp.afeld.me/?url=https%3A%2F%2Fregistry.npmjs.org%2Fraddish%2Flatest', {
+        dataType: 'jsonp',
+        crossDomain: true,
         success: function(data) {
-            console.log(data);
+            element.html(data.version);
         },
         error: function() {
             console.log(arguments);
