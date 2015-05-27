@@ -32,5 +32,3 @@ The second parameter is the path to the javascript file which will hold the base
 
 Then the ```checkUpdate``` method is called which is optional, this method will check for updates on raddish.  
 If there are updates you will get a message prompt about this.
-
-To learn more about the config file please go [here](/guide/essentials/config.html).
