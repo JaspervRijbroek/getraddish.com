@@ -10,6 +10,11 @@ layout: default
                         AbstractAdapter
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractController.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractController.html">
+                        AbstractController
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/AbstractDispatcher.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractDispatcher.html">
                         AbstractDispatcher
@@ -18,6 +23,31 @@ layout: default
                 <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractFilter.html">
                         AbstractFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractModel.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractModel.html">
+                        AbstractModel
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRow.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRow.html">
+                        AbstractRow
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRowset.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRowset.html">
+                        AbstractRowset
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractTable.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractTable.html">
+                        AbstractTable
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractView.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractView.html">
+                        AbstractView
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
@@ -65,11 +95,6 @@ layout: default
                         Controller
                     </a>
                 </li>
-                <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ControllerAbstract.html">
-                        ControllerAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
                     <a href="../classes/CoreLocator.html">
                         CoreLocator
@@ -113,11 +138,6 @@ layout: default
                 <li {% if page.url == '../classes/Model.html' %} class="active" {% endif %}>
                     <a href="../classes/Model.html">
                         Model
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ModelAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ModelAbstract.html">
-                        ModelAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/MongoAdapter.html' %} class="active" {% endif %}>
@@ -180,19 +200,9 @@ layout: default
                         Row
                     </a>
                 </li>
-                <li {% if page.url == '../classes/RowAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowAbstract.html">
-                        RowAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/Rowset.html' %} class="active" {% endif %}>
                     <a href="../classes/Rowset.html">
                         Rowset
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/RowsetAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowsetAbstract.html">
-                        RowsetAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Socket.html' %} class="active" {% endif %}>
@@ -215,16 +225,6 @@ layout: default
                         Table
                     </a>
                 </li>
-                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/TableAbstract.html">
-                        TableAbstract
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ViewAbstract.html">
-                        ViewAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
                     <a href="../classes/ViewEmber.html">
                         ViewEmber
@@ -243,11 +243,10 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>ModelAbstract Class</h1>
+        <h1>AbstractRowset Class</h1>
         <div class="description">
-            <p>This is an abstract model, used when using a model without table,
-        or creating your own model.</p>
-        <p>This will create the states and set some predefined states which can be used at will.</p>
+            <p>The AbstractRowset class can be used without a table,
+        you can use this when using an external API.</p>
         
         </div>
         
@@ -256,7 +255,7 @@ layout: default
             </div>
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L8" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:8</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L6" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:6</code></a>
             </div>
         
         <div class="methods">
@@ -297,6 +296,79 @@ layout: default
                     
                                         <span class="type">Object</span>:
                                     <p>An exact copy of the current object</p>
+                    
+                            </div>
+                    </div>            <div id="method_count" class="method item">
+                        <h3 class="title">count</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L128" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:128</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return the total length of the rows.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Number</span>:
+                                    <p>The total rows in this rowset object.</p>
+                    
+                            </div>
+                    </div>            <div id="method_delete" class="method item">
+                        <h3 class="title">delete</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L86" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:86</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will delete all the rows in the current rowset.
+                    This however is only done when the row isn't new.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>All the removed rows.</p>
                     
                             </div>
                     </div>            <div id="method_extendConfig" class="method item">
@@ -379,6 +451,42 @@ layout: default
                                 </tbody>
                             </table>
                     
+                    </div>            <div id="method_first" class="method item">
+                        <h3 class="title">first</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L108" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:108</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return the first row object in the rowset.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/Row.html" class="crosslink">Row</a></span>:
+                                    <p>The first row object in the rowset</p>
+                    
+                            </div>
                     </div>            <div id="method_getCommandChain" class="method item">
                         <h3 class="title">getCommandChain</h3>
                     
@@ -480,8 +588,44 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type"></span>:
+                                        <span class="type">Object</span>:
                                     The requested config value.
+                            </div>
+                    </div>            <div id="method_getData" class="method item">
+                        <h3 class="title">getData</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L49" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:49</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return only the data from the Rowset object</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>The data of the Rowset object</p>
+                    
                             </div>
                     </div>            <div id="method_getIdentifier" class="method item">
                         <h3 class="title">getIdentifier</h3>
@@ -514,80 +658,8 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">RObjectdentifier</span>:
+                                        <span class="type"><a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a></span>:
                                     Identifier object.
-                            </div>
-                    </div>            <div id="method_getItem" class="method item">
-                        <h3 class="title">getItem</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L44" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:44</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>getItem method which you need to override when you are fetching your own data.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Object</span>:
-                                    <p>The retreived data from the data object.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getList" class="method item">
-                        <h3 class="title">getList</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L34" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:34</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>getList method which you need to override when you are fetching your own data.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Object</span>:
-                                    <p>The retreived data from the data object.</p>
-                    
                             </div>
                     </div>            <div id="method_getObject" class="method item">
                         <h3 class="title">getObject</h3>
@@ -673,8 +745,8 @@ layout: default
                                         <span class="type">Promise</span>:
                                     call ".then" to use the object when ready.
                             </div>
-                    </div>            <div id="method_getTable" class="method item">
-                        <h3 class="title">getTable</h3>
+                    </div>            <div id="method_getRow" class="method item">
+                        <h3 class="title">getRow</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -689,7 +761,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L93" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:93</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L138" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:138</code></a>
                         </p>
                     
                     
@@ -697,7 +769,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will return the table connected to the current model.</p>
+                            <p>The AbstractRowset will expect no database so it will try to get its sibling Row object.</p>
                     
                         </div>
                     
@@ -706,44 +778,6 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>The promise holding the table object as content.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getTotal" class="method item">
-                        <h3 class="title">getTotal</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L54" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:54</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>getTotal which has the basic behavior of counting the rows in the current list.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Number</span>:
-                                    <p>The total amount of rows.</p>
-                    
                             </div>
                     </div>            <div id="method_initialize" class="method item">
                         <h3 class="title">initialize</h3>
@@ -818,6 +852,42 @@ layout: default
                                     <p>call &quot;.then&quot; to use the object when ready.</p>
                     
                             </div>
+                    </div>            <div id="method_last" class="method item">
+                        <h3 class="title">last</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L118" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:118</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return the last row object in the rowset.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/Row.html" class="crosslink">Row</a></span>:
+                                    <p>The last row object in the rowset</p>
+                    
+                            </div>
                     </div>            <div id="method_mixin" class="method item">
                         <h3 class="title">mixin</h3>
                     
@@ -882,17 +952,51 @@ layout: default
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method_set" class="method item">
-                        <h3 class="title">set</h3>
+                    </div>            <div id="method_save" class="method item">
+                        <h3 class="title">save</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L66" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:66</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will save all the rows in the rowset.
+                    If one of the rows already exists, it will be updated.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>All the saved rows.</p>
+                    
+                            </div>
+                    </div>            <div id="method_setData" class="method item">
+                        <h3 class="title">setData</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
                                 <ul class="args-list inline commas">
                                             <li class="arg">
-                                                name
-                                            </li>
-                                            <li class="arg">
-                                                value
+                                                data
                                             </li>
                                 </ul>
                                 <span class="paren">)</span>
@@ -907,7 +1011,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L71" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:71</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L23" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:23</code></a>
                         </p>
                     
                     
@@ -915,9 +1019,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method is used to set the states.
-                    This method accepts an array or a string as the first parameter.
-                    When the first parameter is a string the second parameter will be the value of this state.</p>
+                            <p>This method will set the data in the Rowset object,
+                    This accepts a array, for every entry it will create Row object and add it to the rows array</p>
                     
                         </div>
                     
@@ -940,25 +1043,13 @@ layout: default
                                 <tbody>
                                         <tr>
                                             <td>
-                                                name
+                                                data
                                             </td>
                                             <td>
-                                                Object|string
+                                                Object
                                             </td>
                                             <td>
-                                                <p>The state/ array of states to set</p>
-                    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                value
-                                            </td>
-                                            <td>
-                                                *
-                                            </td>
-                                            <td>
-                                                <p>The value of the state</p>
+                                                <p>The data to set on the object</p>
                     
                                             </td>
                                         </tr>
@@ -968,8 +1059,8 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type"><a href="../classes/ModelAbstract.html" class="crosslink">ModelAbstract</a></span>:
-                                    <p>The current model with set states.</p>
+                                        <span class="type">Promise</span>:
+                                    <p>Returns the Rowset object with filled data</p>
                     
                             </div>
                     </div></div>    </article>

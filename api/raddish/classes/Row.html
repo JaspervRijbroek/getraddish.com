@@ -10,6 +10,11 @@ layout: default
                         AbstractAdapter
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractController.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractController.html">
+                        AbstractController
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/AbstractDispatcher.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractDispatcher.html">
                         AbstractDispatcher
@@ -18,6 +23,31 @@ layout: default
                 <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractFilter.html">
                         AbstractFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractModel.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractModel.html">
+                        AbstractModel
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRow.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRow.html">
+                        AbstractRow
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRowset.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRowset.html">
+                        AbstractRowset
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractTable.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractTable.html">
+                        AbstractTable
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractView.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractView.html">
+                        AbstractView
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
@@ -65,11 +95,6 @@ layout: default
                         Controller
                     </a>
                 </li>
-                <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ControllerAbstract.html">
-                        ControllerAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
                     <a href="../classes/CoreLocator.html">
                         CoreLocator
@@ -113,11 +138,6 @@ layout: default
                 <li {% if page.url == '../classes/Model.html' %} class="active" {% endif %}>
                     <a href="../classes/Model.html">
                         Model
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ModelAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ModelAbstract.html">
-                        ModelAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/MongoAdapter.html' %} class="active" {% endif %}>
@@ -180,19 +200,9 @@ layout: default
                         Row
                     </a>
                 </li>
-                <li {% if page.url == '../classes/RowAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowAbstract.html">
-                        RowAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/Rowset.html' %} class="active" {% endif %}>
                     <a href="../classes/Rowset.html">
                         Rowset
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/RowsetAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowsetAbstract.html">
-                        RowsetAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Socket.html' %} class="active" {% endif %}>
@@ -213,16 +223,6 @@ layout: default
                 <li {% if page.url == '../classes/Table.html' %} class="active" {% endif %}>
                     <a href="../classes/Table.html">
                         Table
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/TableAbstract.html">
-                        TableAbstract
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ViewAbstract.html">
-                        ViewAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
@@ -252,7 +252,7 @@ layout: default
         </div>
         
             <div class="extends">
-                Extends <a href="../classes/RowAbstract.html" class="crosslink">RowAbstract</a>
+                Extends RowAbstract
             </div>
         
             <div class="foundat">
@@ -277,12 +277,9 @@ layout: default
                     
                     
                         <div class="meta">
-                            <p>Inherited from
-                                <a href="../classes/ObjectManager.html#method_clone">
-                                    ObjectManager
-                                </a>
-                                    but overwritten in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L141" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:141</code></a>
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L158" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:158</code></a>
                         </p>
                     
                     
@@ -318,7 +315,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L92" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:92</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L104" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:104</code></a>
                         </p>
                     
                     
@@ -336,344 +333,6 @@ layout: default
                     
                                         <span class="type">Promise</span>:
                             </div>
-                    </div>            <div id="method_extendConfig" class="method item">
-                        <h3 class="title">extendConfig</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                target
-                                            </li>
-                                            <li class="arg">
-                                                source
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                            <span class="flag private">private</span>
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_extendConfig">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L195" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:195</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            This is a private function to allow for config extending
-                    This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                target
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                The config object.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                source
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                The object to extend the config object.
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                    </div>            <div id="method_getCommandChain" class="method item">
-                        <h3 class="title">getCommandChain</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_getCommandChain">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L63" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:63</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            Return the command chain to run behaviors.
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type"><a href="../classes/CommandChain.html" class="crosslink">CommandChain</a></span>:
-                                    CommandChain object.
-                            </div>
-                    </div>            <div id="method_getConfig" class="method item">
-                        <h3 class="title">getConfig</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                key
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_getConfig">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L42" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:42</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            Use this function to acquire a variable from config.js
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                key
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                Key to specify the config to return
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type"></span>:
-                                    The requested config value.
-                            </div>
-                    </div>            <div id="method_getData" class="method item">
-                        <h3 class="title">getData</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/RowAbstract.html#method_getData">RowAbstract</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L52" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:52</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method will return only the data from the Row object</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Promise</span>:
-                                    <p>The data of the Row object</p>
-                    
-                            </div>
-                    </div>            <div id="method_getIdentifier" class="method item">
-                        <h3 class="title">getIdentifier</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_getIdentifier">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L53" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:53</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            Use this function to acquire the identifier object
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">RObjectdentifier</span>:
-                                    Identifier object.
-                            </div>
-                    </div>            <div id="method_getObject" class="method item">
-                        <h3 class="title">getObject</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                identifier
-                                            </li>
-                                            <li class="arg">
-                                                config
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_getObject">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L183" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:183</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            This is a alias of ObjectManager.getObject to use in the "this" context.
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                identifier
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                Identifier of the object to load
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                config
-                                            </td>
-                                            <td>
-                                                Object|null
-                                            </td>
-                                            <td>
-                                                Config to push to the object
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Promise</span>:
-                                    call ".then" to use the object when ready.
-                            </div>
                     </div>            <div id="method_getTable" class="method item">
                         <h3 class="title">getTable</h3>
                     
@@ -690,7 +349,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L102" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:102</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L119" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:119</code></a>
                         </p>
                     
                     
@@ -730,11 +389,8 @@ layout: default
                     
                     
                         <div class="meta">
-                            <p>Inherited from
-                                <a href="../classes/ObjectManager.html#method_initialize">
-                                    ObjectManager
-                                </a>
-                                    but overwritten in
+                                <p>
+                                        Defined in
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L22" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:22</code></a>
                         </p>
                     
@@ -783,42 +439,6 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                            </div>
-                    </div>            <div id="method_isNew" class="method item">
-                        <h3 class="title">isNew</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/RowAbstract.html#method_isNew">RowAbstract</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L62" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:62</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method will check if the row object is new or not</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Boolean</span>:
-                                    <p>True if new, False if exists</p>
-                    
                             </div>
                     </div>            <div id="method_load" class="method item">
                         <h3 class="title">load</h3>
@@ -878,7 +498,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L125" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:125</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L142" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:142</code></a>
                         </p>
                     
                     
@@ -930,70 +550,6 @@ layout: default
                                     <p>The current row object for chaining.</p>
                     
                             </div>
-                    </div>            <div id="method_mixin" class="method item">
-                        <h3 class="title">mixin</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                object
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_mixin">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L104" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:104</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            This is the handler which will try to mixin functions from another object.
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                object
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                The object to mix into the current object.
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
                     </div>            <div id="method_save" class="method item">
                         <h3 class="title">save</h3>
                     
@@ -1010,7 +566,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L77" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:77</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L80" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:80</code></a>
                         </p>
                     
                     
@@ -1029,80 +585,6 @@ layout: default
                     
                                         <span class="type">Promise</span>:
                                     <p>Returns the returned data.</p>
-                    
-                            </div>
-                    </div>            <div id="method_setData" class="method item">
-                        <h3 class="title">setData</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                data
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/RowAbstract.html#method_setData">RowAbstract</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L23" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:23</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method will set the data in the Row object,
-                    when there is data present it will add data to the modified array and set this in the data as well.</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                data
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The data to set on the object</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Promise</span>:
-                                    <p>Returns the Row object with filled data</p>
                     
                             </div>
                     </div></div>    </article>

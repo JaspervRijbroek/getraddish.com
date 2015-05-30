@@ -10,6 +10,11 @@ layout: default
                         AbstractAdapter
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractController.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractController.html">
+                        AbstractController
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/AbstractDispatcher.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractDispatcher.html">
                         AbstractDispatcher
@@ -18,6 +23,31 @@ layout: default
                 <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractFilter.html">
                         AbstractFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractModel.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractModel.html">
+                        AbstractModel
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRow.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRow.html">
+                        AbstractRow
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRowset.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRowset.html">
+                        AbstractRowset
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractTable.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractTable.html">
+                        AbstractTable
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractView.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractView.html">
+                        AbstractView
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
@@ -65,11 +95,6 @@ layout: default
                         Controller
                     </a>
                 </li>
-                <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ControllerAbstract.html">
-                        ControllerAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
                     <a href="../classes/CoreLocator.html">
                         CoreLocator
@@ -113,11 +138,6 @@ layout: default
                 <li {% if page.url == '../classes/Model.html' %} class="active" {% endif %}>
                     <a href="../classes/Model.html">
                         Model
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ModelAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ModelAbstract.html">
-                        ModelAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/MongoAdapter.html' %} class="active" {% endif %}>
@@ -180,19 +200,9 @@ layout: default
                         Row
                     </a>
                 </li>
-                <li {% if page.url == '../classes/RowAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowAbstract.html">
-                        RowAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/Rowset.html' %} class="active" {% endif %}>
                     <a href="../classes/Rowset.html">
                         Rowset
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/RowsetAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowsetAbstract.html">
-                        RowsetAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Socket.html' %} class="active" {% endif %}>
@@ -215,16 +225,6 @@ layout: default
                         Table
                     </a>
                 </li>
-                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/TableAbstract.html">
-                        TableAbstract
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ViewAbstract.html">
-                        ViewAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
                     <a href="../classes/ViewEmber.html">
                         ViewEmber
@@ -243,9 +243,9 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>TableAbstract Class</h1>
+        <h1>AbstractController Class</h1>
         <div class="description">
-            <p>This class holds the basic methods of the table object.</p>
+            <p>This class holds all the basic function calls from the controller.</p>
         
         </div>
         
@@ -254,15 +254,15 @@ layout: default
             </div>
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L6" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:6</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L8" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:8</code></a>
             </div>
         
         <div class="methods">
                 <hr/>
                 <h2>Methods</h2>
         
-                    <div id="method__afterDelete" class="method item">
-                        <h3 class="title">_afterDelete</h3>
+                    <div id="method_canAdd" class="method item">
+                        <h3 class="title">canAdd</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -275,7 +275,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -284,7 +283,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L144" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:144</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L39" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:39</code></a>
                         </p>
                     
                     
@@ -292,7 +291,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the default _afterDelete method which needs to be overridden!</p>
+                            <p>Only when a user is authenticated return true else return false.</p>
                     
                         </div>
                     
@@ -321,15 +320,22 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The complete context from the controller</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method__afterInsert" class="method item">
-                        <h3 class="title">_afterInsert</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>Containing true by default</p>
+                    
+                            </div>
+                    </div>            <div id="method_canBrowse" class="method item">
+                        <h3 class="title">canBrowse</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -342,7 +348,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -351,7 +356,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L100" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:100</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L17" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:17</code></a>
                         </p>
                     
                     
@@ -359,7 +364,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the default _afterInsert method which needs to be overridden!</p>
+                            <p>Return true by default on a browse request.</p>
                     
                         </div>
                     
@@ -388,15 +393,22 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The complete context from the controller</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method__afterSelect" class="method item">
-                        <h3 class="title">_afterSelect</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>Containing true by default</p>
+                    
+                            </div>
+                    </div>            <div id="method_canDelete" class="method item">
+                        <h3 class="title">canDelete</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -409,7 +421,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -418,7 +429,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L78" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:78</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L73" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:73</code></a>
                         </p>
                     
                     
@@ -426,7 +437,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the default _afterSelect method which needs to be overridden!</p>
+                            <p>Only when a user is authenticated return true else return false.</p>
                     
                         </div>
                     
@@ -455,15 +466,22 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The complete context from the controller</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method__afterUpdate" class="method item">
-                        <h3 class="title">_afterUpdate</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>Containing true by default</p>
+                    
+                            </div>
+                    </div>            <div id="method_canEdit" class="method item">
+                        <h3 class="title">canEdit</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -476,7 +494,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -485,7 +502,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L122" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:122</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L56" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:56</code></a>
                         </p>
                     
                     
@@ -493,7 +510,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the defaul t_afterUpdate method which needs to be overridden!</p>
+                            <p>Only when a user is authenticated return true else return false.</p>
                     
                         </div>
                     
@@ -522,15 +539,22 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The complete context from the controller</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method__beforeDelete" class="method item">
-                        <h3 class="title">_beforeDelete</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>Containing true by default</p>
+                    
+                            </div>
+                    </div>            <div id="method_canGet" class="method item">
+                        <h3 class="title">canGet</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -543,7 +567,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -552,7 +575,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L133" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:133</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L19" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:19</code></a>
                         </p>
                     
                     
@@ -560,7 +583,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the default _beforeDelete method which needs to be overridden!</p>
+                            <p>Basic permissions for a GET request,
+                    This function is here for basic purposes.</p>
                     
                         </div>
                     
@@ -589,15 +613,20 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The context object with authentication information.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method__beforeInsert" class="method item">
-                        <h3 class="title">_beforeInsert</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                            </div>
+                    </div>            <div id="method_canPatch" class="method item">
+                        <h3 class="title">canPatch</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -610,7 +639,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -619,7 +647,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L89" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:89</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L55" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:55</code></a>
                         </p>
                     
                     
@@ -627,7 +655,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the default _beforeInsert method which needs to be overridden!</p>
+                            <p>Basic permissions for a PATCH request,
+                    This function is here for basic purposes.</p>
                     
                         </div>
                     
@@ -656,15 +685,20 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The context object with authentication information.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method__beforeSelect" class="method item">
-                        <h3 class="title">_beforeSelect</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                            </div>
+                    </div>            <div id="method_canPost" class="method item">
+                        <h3 class="title">canPost</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -677,7 +711,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -686,7 +719,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L67" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:67</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L31" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:31</code></a>
                         </p>
                     
                     
@@ -694,7 +727,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the default _beforeSelect method which needs to be overridden!</p>
+                            <p>Basic permissions for a POST request,
+                    This function is here for basic purposes.</p>
                     
                         </div>
                     
@@ -723,15 +757,20 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The context object with authentication information.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method__beforeUpdate" class="method item">
-                        <h3 class="title">_beforeUpdate</h3>
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                            </div>
+                    </div>            <div id="method_canPut" class="method item">
+                        <h3 class="title">canPut</h3>
                     
                             <div class="arguments">
                                 <span class="paren">(</span>
@@ -744,7 +783,6 @@ layout: default
                             </div>
                     
                     
-                            <span class="flag private">private</span>
                     
                     
                     
@@ -753,7 +791,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L111" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:111</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L43" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:43</code></a>
                         </p>
                     
                     
@@ -761,7 +799,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the default _beforeUpdate method which needs to be overridden!</p>
+                            <p>Basic permissions for a PUT request,
+                    This function is here for basic purposes.</p>
                     
                         </div>
                     
@@ -790,13 +829,91 @@ layout: default
                                                 CommandContext
                                             </td>
                                             <td>
-                                                <p>The context to use in this method</p>
+                                                <p>The context object with authentication information.</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                            </div>
+                    </div>            <div id="method_canRead" class="method item">
+                        <h3 class="title">canRead</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L28" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:28</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Return true by default on a browse request.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                CommandContext
+                                            </td>
+                                            <td>
+                                                <p>The complete context from the controller</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>Containing true by default</p>
+                    
+                            </div>
                     </div>            <div id="method_clone" class="method item">
                         <h3 class="title">clone</h3>
                     
@@ -830,8 +947,7 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Object</span>:
-                                    <p>An exact copy of the current object</p>
-                    
+                                    An exact copy of the current object
                             </div>
                     </div>            <div id="method_execute" class="method item">
                         <h3 class="title">execute</h3>
@@ -858,7 +974,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L23" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:23</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L50" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:50</code></a>
                         </p>
                     
                     
@@ -866,9 +982,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will execute a certain command combined with a context.
-                    This method will also call specialized for the selected method.
-                    The methods callable are: Select, Insert, Update and Delete.</p>
+                            <p>Execute function will execute a command given the method.
+                    This command will use the context for the behaviors.</p>
                     
                         </div>
                     
@@ -897,7 +1012,7 @@ layout: default
                                                 String
                                             </td>
                                             <td>
-                                                <p>The method to execute.</p>
+                                                <p>Name of the action to execute.</p>
                     
                                             </td>
                                         </tr>
@@ -906,10 +1021,10 @@ layout: default
                                                 context
                                             </td>
                                             <td>
-                                                CommandContext
+                                                Object
                                             </td>
                                             <td>
-                                                <p>The context object to use in this call.</p>
+                                                <p>Data got from the request.</p>
                     
                                             </td>
                                         </tr>
@@ -996,11 +1111,20 @@ layout: default
                                 </tbody>
                             </table>
                     
-                    </div>            <div id="method_getAdapter" class="method item">
-                        <h3 class="title">getAdapter</h3>
+                    </div>            <div id="method_forward" class="method item">
+                        <h3 class="title">forward</h3>
                     
                             <div class="arguments">
-                                <span class="paren">()</span>
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                method
+                                            </li>
+                                            <li class="arg">
+                                                context
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
                             </div>
                     
                     
@@ -1012,7 +1136,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L165" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:165</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L90" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:90</code></a>
                         </p>
                     
                     
@@ -1020,52 +1144,60 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will return the adapter associated with the current table object</p>
+                            <p>The forward method forwards the complete context to another action.
+                    THis will return the promise for that specific action.</p>
                     
                         </div>
                     
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                method
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>The method to forward to.</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                context
+                                            </td>
+                                            <td>
+                                                Object
+                                            </td>
+                                            <td>
+                                                <p>The context specified for that method.</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
                     
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>The associated adapter.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getColumns" class="method item">
-                        <h3 class="title">getColumns</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L212" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:212</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method will return all the columns of the table.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Promise</span>:
-                                    <p>The columns of the table.</p>
+                                    <p>The promise for the specified method.</p>
                     
                             </div>
                     </div>            <div id="method_getCommandChain" class="method item">
@@ -1169,8 +1301,44 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type"></span>:
+                                        <span class="type">Object</span>:
                                     The requested config value.
+                            </div>
+                    </div>            <div id="method_getContext" class="method item">
+                        <h3 class="title">getContext</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L123" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:123</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This function will return the context of the current controller.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></span>:
+                                    <p>Context object.</p>
+                    
                             </div>
                     </div>            <div id="method_getIdentifier" class="method item">
                         <h3 class="title">getIdentifier</h3>
@@ -1203,11 +1371,11 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">RObjectdentifier</span>:
+                                        <span class="type"><a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a></span>:
                                     Identifier object.
                             </div>
-                    </div>            <div id="method_getIdentityColumn" class="method item">
-                        <h3 class="title">getIdentityColumn</h3>
+                    </div>            <div id="method_getModel" class="method item">
+                        <h3 class="title">getModel</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1222,7 +1390,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L257" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:257</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L103" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:103</code></a>
                         </p>
                     
                     
@@ -1230,7 +1398,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will return the single identity column, identified by the auto_increment value.</p>
+                            <p>This function returns the model matching the controller name.
+                    Also this method will automatically set the states.</p>
                     
                         </div>
                     
@@ -1239,43 +1408,7 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>The promise with the identity column.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getName" class="method item">
-                        <h3 class="title">getName</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L155" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:155</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method returns the name of the table.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">String</span>:
-                                    <p>Table name</p>
+                                    <p>The initialized model object with set states</p>
                     
                             </div>
                     </div>            <div id="method_getObject" class="method item">
@@ -1362,8 +1495,8 @@ layout: default
                                         <span class="type">Promise</span>:
                                     call ".then" to use the object when ready.
                             </div>
-                    </div>            <div id="method_getRow" class="method item">
-                        <h3 class="title">getRow</h3>
+                    </div>            <div id="method_getPermissions" class="method item">
+                        <h3 class="title">getPermissions</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1378,7 +1511,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L181" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:181</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L169" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:169</code></a>
                         </p>
                     
                     
@@ -1386,8 +1519,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will return an empty Row object
-                    Here we will also cache the Row object for later use.</p>
+                            <p>This method returns the permission set of the current controller.</p>
                     
                         </div>
                     
@@ -1396,11 +1528,11 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>Returns a Row object</p>
+                                    <p>The complete permissions set</p>
                     
                             </div>
-                    </div>            <div id="method_getRowset" class="method item">
-                        <h3 class="title">getRowset</h3>
+                    </div>            <div id="method_getRequest" class="method item">
+                        <h3 class="title">getRequest</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1415,7 +1547,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L197" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:197</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L133" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:133</code></a>
                         </p>
                     
                     
@@ -1423,7 +1555,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will return an empty Rowset object</p>
+                            <p>This method returns the complete request.</p>
                     
                         </div>
                     
@@ -1431,12 +1563,12 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">Promise</span>:
-                                    <p>Returns a Rowset object</p>
+                                        <span class="type">Object</span>:
+                                    <p>The states in the request</p>
                     
                             </div>
-                    </div>            <div id="method_getSchema" class="method item">
-                        <h3 class="title">getSchema</h3>
+                    </div>            <div id="method_getView" class="method item">
+                        <h3 class="title">getView</h3>
                     
                             <div class="arguments">
                                 <span class="paren">()</span>
@@ -1451,7 +1583,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L281" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:281</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L143" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:143</code></a>
                         </p>
                     
                     
@@ -1459,8 +1591,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will check if the table exists or not, if not, it will return an error.
-                    Else an object with its schema is returned.</p>
+                            <p>This method will return the initialize view matching the format given in the request or on the default.</p>
                     
                         </div>
                     
@@ -1469,43 +1600,7 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>The promise with the complete schema.</p>
-                    
-                            </div>
-                    </div>            <div id="method_getUniqueColumns" class="method item">
-                        <h3 class="title">getUniqueColumns</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L235" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:235</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method will return the unique columns of the table</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Promise</span>:
-                                    <p>The unique columns of the table.</p>
+                                    <p>The initialized view object</p>
                     
                             </div>
                     </div>            <div id="method_initialize" class="method item">
@@ -1528,9 +1623,12 @@ layout: default
                     
                     
                         <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_initialize">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L25" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:25</code></a>
+                            <p>Inherited from
+                                <a href="../classes/ObjectManager.html#method_initialize">
+                                    ObjectManager
+                                </a>
+                                    but overwritten in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L26" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:26</code></a>
                         </p>
                     
                     
@@ -1538,8 +1636,9 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            Every object called through getObject will go through this function.
-                    This will set the identifier and adds the behaviors (if any).
+                            <p>This function will initialize the controller,
+                    it will set the request and response got from the dispatcher.</p>
+                    
                         </div>
                     
                             <h3>Parameters</h3>
@@ -1564,10 +1663,10 @@ layout: default
                                                 config
                                             </td>
                                             <td>
-                                                Object
+                                                Object|null
                                             </td>
                                             <td>
-                                                <p>Object with config values</p>
+                                                <p>Config object for extra configuration.</p>
                     
                                             </td>
                                         </tr>
@@ -1578,92 +1677,9 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>call &quot;.then&quot; to use the object when ready.</p>
+                                    <p>The initialized controller object.</p>
                     
                             </div>
-                    </div>            <div id="method_mapColumns" class="method item">
-                        <h3 class="title">mapColumns</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                object
-                                            </li>
-                                            <li class="arg">
-                                                reverse
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
-                            </div>
-                    
-                    
-                            <span class="flag private">private</span>
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L301" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:301</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method will translate table columns to their original values, or visa versa.
-                    This will work on the column_map variable.</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td>
-                                                object
-                                            </td>
-                                            <td>
-                                                Object
-                                            </td>
-                                            <td>
-                                                <p>The object with the column map</p>
-                    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                reverse
-                                            </td>
-                                            <td>
-                                                Boolean
-                                            </td>
-                                            <td>
-                                                <p>Wether or not to reverse the behavior</p>
-                    
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                    
                     </div>            <div id="method_mixin" class="method item">
                         <h3 class="title">mixin</h3>
                     

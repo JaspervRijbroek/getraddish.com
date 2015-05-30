@@ -10,6 +10,11 @@ layout: default
                         AbstractAdapter
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractController.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractController.html">
+                        AbstractController
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/AbstractDispatcher.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractDispatcher.html">
                         AbstractDispatcher
@@ -18,6 +23,31 @@ layout: default
                 <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractFilter.html">
                         AbstractFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractModel.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractModel.html">
+                        AbstractModel
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRow.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRow.html">
+                        AbstractRow
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRowset.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRowset.html">
+                        AbstractRowset
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractTable.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractTable.html">
+                        AbstractTable
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractView.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractView.html">
+                        AbstractView
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
@@ -65,11 +95,6 @@ layout: default
                         Controller
                     </a>
                 </li>
-                <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ControllerAbstract.html">
-                        ControllerAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
                     <a href="../classes/CoreLocator.html">
                         CoreLocator
@@ -113,11 +138,6 @@ layout: default
                 <li {% if page.url == '../classes/Model.html' %} class="active" {% endif %}>
                     <a href="../classes/Model.html">
                         Model
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ModelAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ModelAbstract.html">
-                        ModelAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/MongoAdapter.html' %} class="active" {% endif %}>
@@ -180,19 +200,9 @@ layout: default
                         Row
                     </a>
                 </li>
-                <li {% if page.url == '../classes/RowAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowAbstract.html">
-                        RowAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/Rowset.html' %} class="active" {% endif %}>
                     <a href="../classes/Rowset.html">
                         Rowset
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/RowsetAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowsetAbstract.html">
-                        RowsetAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Socket.html' %} class="active" {% endif %}>
@@ -213,16 +223,6 @@ layout: default
                 <li {% if page.url == '../classes/Table.html' %} class="active" {% endif %}>
                     <a href="../classes/Table.html">
                         Table
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/TableAbstract.html">
-                        TableAbstract
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ViewAbstract.html">
-                        ViewAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
@@ -252,7 +252,7 @@ layout: default
         </div>
         
             <div class="extends">
-                Extends <a href="../classes/ControllerAbstract.html" class="crosslink">ControllerAbstract</a>
+                Extends <a href="../classes/AbstractController.html" class="crosslink">AbstractController</a>
             </div>
         
             <div class="foundat">
@@ -958,7 +958,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canAdd">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canAdd">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L39" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:39</code></a>
                         </p>
                     
@@ -1031,7 +1031,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canBrowse">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canBrowse">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L17" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:17</code></a>
                         </p>
                     
@@ -1104,7 +1104,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canDelete">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canDelete">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L73" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:73</code></a>
                         </p>
                     
@@ -1177,7 +1177,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canEdit">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canEdit">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L56" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:56</code></a>
                         </p>
                     
@@ -1250,7 +1250,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canGet">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canGet">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L19" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:19</code></a>
                         </p>
                     
@@ -1322,7 +1322,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canPatch">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canPatch">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L55" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:55</code></a>
                         </p>
                     
@@ -1394,7 +1394,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canPost">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canPost">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L31" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:31</code></a>
                         </p>
                     
@@ -1466,7 +1466,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canPut">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canPut">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L43" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:43</code></a>
                         </p>
                     
@@ -1538,7 +1538,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_canRead">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_canRead">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L28" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:28</code></a>
                         </p>
                     
@@ -1649,7 +1649,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_execute">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_execute">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L50" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:50</code></a>
                         </p>
                     
@@ -1811,7 +1811,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_forward">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_forward">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L90" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:90</code></a>
                         </p>
                     
@@ -1977,7 +1977,7 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type"></span>:
+                                        <span class="type">Object</span>:
                                     The requested config value.
                             </div>
                     </div>            <div id="method_getContext" class="method item">
@@ -1995,8 +1995,8 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_getContext">ControllerAbstract</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L120" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:120</code></a>
+                                    <a href="../classes/AbstractController.html#method_getContext">AbstractController</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L123" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:123</code></a>
                         </p>
                     
                     
@@ -2047,7 +2047,7 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">RObjectdentifier</span>:
+                                        <span class="type"><a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a></span>:
                                     Identifier object.
                             </div>
                     </div>            <div id="method_getModel" class="method item">
@@ -2065,7 +2065,7 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_getModel">ControllerAbstract</a>:
+                                    <a href="../classes/AbstractController.html#method_getModel">AbstractController</a>:
                                 <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L103" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:103</code></a>
                         </p>
                     
@@ -2186,8 +2186,8 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_getPermissions">ControllerAbstract</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L162" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:162</code></a>
+                                    <a href="../classes/AbstractController.html#method_getPermissions">AbstractController</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L169" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:169</code></a>
                         </p>
                     
                     
@@ -2222,8 +2222,8 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_getRequest">ControllerAbstract</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L130" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:130</code></a>
+                                    <a href="../classes/AbstractController.html#method_getRequest">AbstractController</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L133" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:133</code></a>
                         </p>
                     
                     
@@ -2258,8 +2258,8 @@ layout: default
                     
                         <div class="meta">
                                 <p>Inherited from
-                                    <a href="../classes/ControllerAbstract.html#method_getView">ControllerAbstract</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L140" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:140</code></a>
+                                    <a href="../classes/AbstractController.html#method_getView">AbstractController</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L143" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:143</code></a>
                         </p>
                     
                     

@@ -10,6 +10,11 @@ layout: default
                         AbstractAdapter
                     </a>
                 </li>
+                <li {% if page.url == '../classes/AbstractController.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractController.html">
+                        AbstractController
+                    </a>
+                </li>
                 <li {% if page.url == '../classes/AbstractDispatcher.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractDispatcher.html">
                         AbstractDispatcher
@@ -18,6 +23,31 @@ layout: default
                 <li {% if page.url == '../classes/AbstractFilter.html' %} class="active" {% endif %}>
                     <a href="../classes/AbstractFilter.html">
                         AbstractFilter
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractModel.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractModel.html">
+                        AbstractModel
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRow.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRow.html">
+                        AbstractRow
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractRowset.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractRowset.html">
+                        AbstractRowset
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractTable.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractTable.html">
+                        AbstractTable
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractView.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractView.html">
+                        AbstractView
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Application.html' %} class="active" {% endif %}>
@@ -65,11 +95,6 @@ layout: default
                         Controller
                     </a>
                 </li>
-                <li {% if page.url == '../classes/ControllerAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ControllerAbstract.html">
-                        ControllerAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/CoreLocator.html' %} class="active" {% endif %}>
                     <a href="../classes/CoreLocator.html">
                         CoreLocator
@@ -113,11 +138,6 @@ layout: default
                 <li {% if page.url == '../classes/Model.html' %} class="active" {% endif %}>
                     <a href="../classes/Model.html">
                         Model
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ModelAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ModelAbstract.html">
-                        ModelAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/MongoAdapter.html' %} class="active" {% endif %}>
@@ -180,19 +200,9 @@ layout: default
                         Row
                     </a>
                 </li>
-                <li {% if page.url == '../classes/RowAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowAbstract.html">
-                        RowAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/Rowset.html' %} class="active" {% endif %}>
                     <a href="../classes/Rowset.html">
                         Rowset
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/RowsetAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/RowsetAbstract.html">
-                        RowsetAbstract
                     </a>
                 </li>
                 <li {% if page.url == '../classes/Socket.html' %} class="active" {% endif %}>
@@ -215,16 +225,6 @@ layout: default
                         Table
                     </a>
                 </li>
-                <li {% if page.url == '../classes/TableAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/TableAbstract.html">
-                        TableAbstract
-                    </a>
-                </li>
-                <li {% if page.url == '../classes/ViewAbstract.html' %} class="active" {% endif %}>
-                    <a href="../classes/ViewAbstract.html">
-                        ViewAbstract
-                    </a>
-                </li>
                 <li {% if page.url == '../classes/ViewEmber.html' %} class="active" {% endif %}>
                     <a href="../classes/ViewEmber.html">
                         ViewEmber
@@ -243,9 +243,9 @@ layout: default
         </ul>    </aside>
 
     <article>
-        <h1>ViewAbstract Class</h1>
+        <h1>AbstractRow Class</h1>
         <div class="description">
-            <p>The ViewAbstract object can be used as template for any extra formats.</p>
+            <p>The AbstractRow class can be used when not using a table, and thus can contain your own functions.</p>
         
         </div>
         
@@ -254,7 +254,7 @@ layout: default
             </div>
         
             <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/abstract.js#L6" target="_blank"><code>lib&#x2F;view&#x2F;abstract.js:6</code></a>
+                Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L6" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:6</code></a>
             </div>
         
         <div class="methods">
@@ -275,9 +275,12 @@ layout: default
                     
                     
                         <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_clone">ObjectManager</a>:
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L93" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:93</code></a>
+                            <p>Inherited from
+                                <a href="../classes/ObjectManager.html#method_clone">
+                                    ObjectManager
+                                </a>
+                                    but overwritten in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L72" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:72</code></a>
                         </p>
                     
                     
@@ -285,8 +288,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This function will be available for every object,
-                    this will clone the current object.</p>
+                            <p>This method will clone the object and return a new AbstractRow object.</p>
                     
                         </div>
                     
@@ -294,8 +296,8 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">Object</span>:
-                                    <p>An exact copy of the current object</p>
+                                        <span class="type"><a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a></span>:
+                                    <p>The newly created AbstractRow</p>
                     
                             </div>
                     </div>            <div id="method_extendConfig" class="method item">
@@ -332,9 +334,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is a private function to allow for config extending
-                    This method takes two parameters the first is the original config and the second will be appeneded to this one.</p>
-                    
+                            This is a private function to allow for config extending
+                    This method takes two parameters the first is the original config and the second will be appeneded to this one.
                         </div>
                     
                             <h3>Parameters</h3>
@@ -362,8 +363,7 @@ layout: default
                                                 Object
                                             </td>
                                             <td>
-                                                <p>The config object.</p>
-                    
+                                                The config object.
                                             </td>
                                         </tr>
                                         <tr>
@@ -374,8 +374,7 @@ layout: default
                                                 Object
                                             </td>
                                             <td>
-                                                <p>The object to extend the config object.</p>
-                    
+                                                The object to extend the config object.
                                             </td>
                                         </tr>
                                 </tbody>
@@ -405,8 +404,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Return the command chain to run behaviors.</p>
-                    
+                            Return the command chain to run behaviors.
                         </div>
                     
                     
@@ -414,8 +412,7 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type"><a href="../classes/CommandChain.html" class="crosslink">CommandChain</a></span>:
-                                    <p>CommandChain object.</p>
-                    
+                                    CommandChain object.
                             </div>
                     </div>            <div id="method_getConfig" class="method item">
                         <h3 class="title">getConfig</h3>
@@ -447,8 +444,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Use this function to acquire a variable from config.js</p>
-                    
+                            Use this function to acquire a variable from config.js
                         </div>
                     
                             <h3>Parameters</h3>
@@ -476,8 +472,7 @@ layout: default
                                                 String
                                             </td>
                                             <td>
-                                                <p>Key to specify the config to return</p>
-                    
+                                                Key to specify the config to return
                                             </td>
                                         </tr>
                                 </tbody>
@@ -486,8 +481,43 @@ layout: default
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type"></span>:
-                                    <p>The requested config value.</p>
+                                        <span class="type">Object</span>:
+                                    The requested config value.
+                            </div>
+                    </div>            <div id="method_getData" class="method item">
+                        <h3 class="title">getData</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L52" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:52</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return only the data from the Row object</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>The data of the Row object</p>
                     
                             </div>
                     </div>            <div id="method_getIdentifier" class="method item">
@@ -514,17 +544,15 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>Use this function to acquire the identifier object</p>
-                    
+                            Use this function to acquire the identifier object
                         </div>
                     
                     
                             <div class="returns">
                                 <h4>Returns:</h4>
                     
-                                        <span class="type">RObjectdentifier</span>:
-                                    <p>Identifier object.</p>
-                    
+                                        <span class="type"><a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a></span>:
+                                    Identifier object.
                             </div>
                     </div>            <div id="method_getObject" class="method item">
                         <h3 class="title">getObject</h3>
@@ -559,8 +587,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.</p>
-                    
+                            This is a alias of ObjectManager.getObject to use in the "this" context.
                         </div>
                     
                             <h3>Parameters</h3>
@@ -588,8 +615,7 @@ layout: default
                                                 String
                                             </td>
                                             <td>
-                                                <p>Identifier of the object to load</p>
-                    
+                                                Identifier of the object to load
                                             </td>
                                         </tr>
                                         <tr>
@@ -600,8 +626,7 @@ layout: default
                                                 Object|null
                                             </td>
                                             <td>
-                                                <p>Config to push to the object</p>
-                    
+                                                Config to push to the object
                                             </td>
                                         </tr>
                                 </tbody>
@@ -611,8 +636,7 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>call &quot;.then&quot; to use the object when ready.</p>
-                    
+                                    call ".then" to use the object when ready.
                             </div>
                     </div>            <div id="method_initialize" class="method item">
                         <h3 class="title">initialize</h3>
@@ -634,12 +658,9 @@ layout: default
                     
                     
                         <div class="meta">
-                            <p>Inherited from
-                                <a href="../classes/ObjectManager.html#method_initialize">
-                                    ObjectManager
-                                </a>
-                                    but overwritten in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/abstract.js#L22" target="_blank"><code>lib&#x2F;view&#x2F;abstract.js:22</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/ObjectManager.html#method_initialize">ObjectManager</a>:
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L25" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:25</code></a>
                         </p>
                     
                     
@@ -647,9 +668,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>The initialize method will set the mimetype which is set in the override.
-                    along with other information.</p>
-                    
+                            Every object called through getObject will go through this function.
+                    This will set the identifier and adds the behaviors (if any).
                         </div>
                     
                             <h3>Parameters</h3>
@@ -677,7 +697,7 @@ layout: default
                                                 Object
                                             </td>
                                             <td>
-                                                <p>The config object for the layout</p>
+                                                <p>Object with config values</p>
                     
                                             </td>
                                         </tr>
@@ -688,7 +708,43 @@ layout: default
                                 <h4>Returns:</h4>
                     
                                         <span class="type">Promise</span>:
-                                    <p>The promise containing the view</p>
+                                    <p>call &quot;.then&quot; to use the object when ready.</p>
+                    
+                            </div>
+                    </div>            <div id="method_isNew" class="method item">
+                        <h3 class="title">isNew</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L62" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:62</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will check if the row object is new or not</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Boolean</span>:
+                                    <p>True if new, False if exists</p>
                     
                             </div>
                     </div>            <div id="method_mixin" class="method item">
@@ -721,8 +777,7 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This is the handler which will try to mixin functions from another object.</p>
-                    
+                            This is the handler which will try to mixin functions from another object.
                         </div>
                     
                             <h3>Parameters</h3>
@@ -750,8 +805,7 @@ layout: default
                                                 Object
                                             </td>
                                             <td>
-                                                <p>The object to mix into the current object.</p>
-                    
+                                                The object to mix into the current object.
                                             </td>
                                         </tr>
                                 </tbody>
@@ -779,7 +833,7 @@ layout: default
                         <div class="meta">
                                 <p>
                                         Defined in
-                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/view/abstract.js#L45" target="_blank"><code>lib&#x2F;view&#x2F;abstract.js:45</code></a>
+                                <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L23" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:23</code></a>
                         </p>
                     
                     
@@ -787,7 +841,8 @@ layout: default
                         </div>
                     
                         <div class="description">
-                            <p>This method will set the data to the Object.</p>
+                            <p>This method will set the data in the Row object,
+                    when there is data present it will add data to the modified array and set this in the data as well.</p>
                     
                         </div>
                     
@@ -816,12 +871,19 @@ layout: default
                                                 Object
                                             </td>
                                             <td>
-                                                <p>The data for the view object</p>
+                                                <p>The data to set on the object</p>
                     
                                             </td>
                                         </tr>
                                 </tbody>
                             </table>
                     
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">Promise</span>:
+                                    <p>Returns the Row object with filled data</p>
+                    
+                            </div>
                     </div></div>    </article>
 </div>
