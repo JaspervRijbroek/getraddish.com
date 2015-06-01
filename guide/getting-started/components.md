@@ -7,8 +7,10 @@ layout: guide
 Components are the heart of raddish, these will connect to data sources and return the formatted data as json or other object back to you.
 However a component is separated into a few smaller pieces. All of these we will cover in its own section.
 
-**Be advised, all the files which fall under a component are for overrides and extensions only!**
-**Except for the component file itself!**
+<p class="warning">
+    <strong>Be advised, all the files which fall under a component are for overrides and extensions only!</strong>
+    <strong>Except for the component file itself!</strong>
+</p>
 
 ## The component file
 The first thing we will start out with is the component file itself. This file needs to be added for the system to know that your application is there.

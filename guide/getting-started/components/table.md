@@ -2,6 +2,7 @@
 title: Table
 author: Jasper van Rijbroek
 layout: guide
+override_only: true
 ---
 
 The table is called by the model to get all the data from the adapter(server).

@@ -2,6 +2,7 @@
 title: Model
 author: Jasper van Rijbroek
 layout: guide
+override_only: true
 ---
 
 Within Raddish the model is responsible for getting all the data. The data layer is therefore separated into a few layers with the model as the primary layer.  

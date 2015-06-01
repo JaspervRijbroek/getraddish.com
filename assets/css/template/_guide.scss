@@ -50,6 +50,11 @@
     @extend .col10;
     
     p {
+      &.warning {
+        font-weight: bold;
+        color: $japonica;
+      }
+
       margin-bottom: 10px;
     }
     

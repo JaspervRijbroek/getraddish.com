@@ -116,8 +116,14 @@ layout: default
     <article itemscope itemtype="http://schema.org/Article">
         <meta itemprop="author" content="{{page.author}}"/>
         <meta itemprop="url" content="{{page.url}}"/>
-        
+
         <h1 itemprop="name">{{page.title}}</h1>
+        {% if page.override_only %}
+            <p class="override-only warning">
+                Notice! It is only required to add this code when creating an override <br/>
+                or when adding specialized code. Thus the system can operate without it.
+            </p>
+        {% endif %}
         
         <div itemprop="articleBody"></div>
         {{content}}

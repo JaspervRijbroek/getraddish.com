@@ -2,6 +2,7 @@
 title: Controller
 author: Jasper van Rijbroek
 layout: guide
+override_only: true
 ---
 
 The controller will handle the request received from the dispatcher.
