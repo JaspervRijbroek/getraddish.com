@@ -19,8 +19,11 @@ The ID of the column als has a specific naming convention. This has to be: ```<c
 Also this column needs to to be the primary key and auto increment.
 
 # Default Behavior
-If no config values are given for the table name of the identity_column, these values are assumed as explained above.
+If no config values are given for the table name or the identity_column, these values are assumed as explained above.
 Next to this the filters for the columns in the table are assumed based on the value of the column.
+
+The columns available in the table are used in the row and rowset objects.  
+Also the parsed data will present these values. The only exception is the ```identity column``` this column will be presented as ```id```.
 
 ## Changing the filters
 Filters can be changed on two levels. The table level itself as a comment on the column like ```@Filter('<filter_value>')``` of in the filter object in the table.

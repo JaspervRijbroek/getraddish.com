@@ -6,7 +6,7 @@ override_only: true
 ---
 
 The controller will handle the request received from the dispatcher.
-In most situations you will only use behaviors to extend the functionality of the requests, the other actions are mostly enough.
+In most situations you will only use behaviors to extend the functionality of the controller, the default actions in most occasions are enough.
 
 ## Default behavior
 The default behavior of then controller is that it assumes the needed action you need for a certain request.
