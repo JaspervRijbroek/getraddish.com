@@ -3,6 +3,23 @@ title: Blog
 layout: default
 ---
 
-<h1>
-    Blog
-</h1>
+<div class="blog">
+    {% for post in site.categories.blog %}
+        <div class="entry">
+            <h2>
+                {{post.title}}
+            </h2>
+
+            <p class="text-info">
+                {{post.date | date: "%d %B %Y"}} by {{post.author}}
+            </p>
+
+            <div class="content">
+                {{post.content | split:"<!-- more -->" | first %}}
+            </div>
+
+            <a href="{{post.url}}" class="read-more">Read More</a>
+            <hr/>
+        </div>
+    {% endfor %}
+</div>

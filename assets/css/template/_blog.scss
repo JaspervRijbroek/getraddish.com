@@ -1,0 +1,50 @@
+.blog {
+  @extend .row;
+
+  .entry {
+    @extend .col12;
+
+    .text-info {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      display: block;
+      margin: 10px 0;
+    }
+
+    &:last-child {
+      hr {
+        display: none;
+      }
+    }
+  }
+}
+
+.blog-entry {
+  @extend .row;
+
+  .page-title {
+    @extend .col12;
+
+    margin-bottom: 20px;
+  }
+
+  .content {
+    @extend .col12;
+
+    h3 {
+      margin: 10px 0 15px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+  }
+}
