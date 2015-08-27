@@ -12,45 +12,43 @@
     </head>
 
     <body>
-        <div class="navigation">
-            <div class="brand">
-                <a href="/">
-                    <img src="/assets/images/logo.svg" alt="Raddish Architecture">
-                </a>
-            </div>
-            <ul class="menu">
-                <li {% if page.url == '/features.html' %} class="active" {% endif %}>
-                    <a href="/features.html" itemprop="url">
+        <nav class="navbar">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/logo.svg" alt="Raddish Architecture">
+            </a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item {% if page.url == '/features.html' %} active {% endif %}">
+                    <a class="nav-link" href="/features.html" itemprop="url">
                         <span itemprop="name">Features</span>
                     </a>
                 </li>
-                <li {% if page.url contains 'guide' %} class="active" {% endif %}>
-                    <a href="/guide/" itemprop="url">
+                <li class="nav-item {% if page.url contains 'guide' %} active {% endif %}">
+                    <a class="nav-link" href="/guide/" itemprop="url">
                         <span itemprop="name">Guide</span>
                     </a>
                 </li>
-                <li {% if page.url contains 'api' %} class="active" {% endif %}>
-                    <a href="/api/" itemprop="url">
+                <li class="nav-item {% if page.url contains 'api' %} active {% endif %}">
+                    <a class="nav-link" href="/api/" itemprop="url">
                         <span itemprop="name">APIs</span>
                     </a>
                 </li>
-                <li {% if page.url contains 'changelog' %} class="active" {% endif %}>
-                    <a href="/changelog.html"itemprop="url">
+                <li class="nav-item {% if page.url contains 'changelog' %} active {% endif %}">
+                    <a class="nav-link" href="/changelog.html"itemprop="url">
                         <span itemprop="name">Changelog</span>
                     </a>
                 </li>
-                <li {% if page.url contains 'blog' %} class="active" {% endif %}>
-                    <a href="/blog.html" itemprop="url">
+                <li class="nav-item {% if page.url contains 'blog' %} active {% endif %}">
+                    <a class="nav-link" href="/blog.html" itemprop="url">
                         <span itemprop="name">Blog</span>
                     </a>
                 </li>
-                <li {% if page.url == '/support.html' %} class="active" {% endif %}>
-                    <a href="/support.html" itemprop="url">
+                <li class="nav-item {% if page.url == '/support.html' %} active {% endif %}">
+                    <a class="nav-link" href="/support.html" itemprop="url">
                         <span itemprop="name">Support</span>
                     </a>
                 </li>
-                <li class="{% if page.url == '/search.html' %} active {% endif %} dropdown">
-                    <a href="/search.html" itemprop="url">
+                <li class="nav-item {% if page.url == '/search.html' %} active {% endif %}">
+                    <a class="nav-link" href="/search.html" itemprop="url">
                         <i class="icon-search"></i>
                     </a>
                 </li>
@@ -60,18 +58,20 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
         
         <div class="content">
             {{content}}
         </div>
 
         <footer class="row">
-            <p>
-                Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
-                <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>
-                <br/> Brought to you by <a href="http://jvar.nl" target="_blank">Jvar.nl</a>.
-            </p>
+            <div class="col-md-12">
+                <p class="text-center">
+                    Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+                    <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>
+                    <br/> Brought to you by <a href="http://jvar.nl" target="_blank">Jvar.nl</a>.
+                </p>
+            </div>
         </footer>
     </body>
 </html>

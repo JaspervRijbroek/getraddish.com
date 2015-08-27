@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="guide">
-    <aside class="sidebar">
+<div class="row">
+    <aside class="col-md-3 sidebar">
         <ul>
             <li class="{% if page.url == '/guide/index.html' %}active{% endif %}">
                 <a href="/guide/">Introduction</a>
@@ -113,7 +113,7 @@ layout: default
             </li>
         </ul>
     </aside>
-    <article itemscope itemtype="http://schema.org/Article">
+    <article class="col-md-9" itemscope itemtype="http://schema.org/Article">
         <meta itemprop="author" content="{{page.author}}"/>
         <meta itemprop="url" content="{{page.url}}"/>
 
