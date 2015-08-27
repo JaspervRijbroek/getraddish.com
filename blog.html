@@ -14,9 +14,9 @@ layout: default
                 {{post.date | date: "%d %B %Y"}} by {{post.author}}
             </p>
 
-            <div class="content">
+            <p>
                 {{post.content | split:"<!-- more -->" | first %}}
-            </div>
+            </p>
 
             <a href="{{post.url}}" class="read-more">Read More</a>
             <hr/>
