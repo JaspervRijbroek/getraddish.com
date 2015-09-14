@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="api">
-    <aside class=" sidebar">
+<div class="row api">
+    <div class="col-md-3 sidebar">
         <ul>
                 <li {% if page.url == './classes/AbstractBuilder.html' %} class="active" {% endif %}>
                     <a href="./classes/AbstractBuilder.html">
@@ -40,9 +40,9 @@ layout: default
                         UpdateQuery
                     </a>
                 </li>
-        </ul>    </aside>
+        </ul>    </div>
 
-    <article>
+    <article class="col-md-9">
             <div class="apidocs">
                 <div id="docs-main" class="content">
                     <p>

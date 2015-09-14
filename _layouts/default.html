@@ -28,10 +28,14 @@
                         <span itemprop="name">Guide</span>
                     </a>
                 </li>
-                <li class="nav-item {% if page.url contains 'api' %} active {% endif %}">
-                    <a class="nav-link" href="/api/" itemprop="url">
+                <li class="nav-item dropdown {% if page.url contains 'api' %} active {% endif %}">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" itemprop="url">
                         <span itemprop="name">APIs</span>
                     </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/api/raddish">Raddish</a>
+                        <a class="dropdown-item" href="/api/universal-query">Universal-Query</a>
+                    </div>
                 </li>
                 <li class="nav-item {% if page.url contains 'changelog' %} active {% endif %}">
                     <a class="nav-link" href="/changelog.html"itemprop="url">
