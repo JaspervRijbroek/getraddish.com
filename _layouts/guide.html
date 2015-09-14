@@ -3,8 +3,12 @@ layout: default
 ---
 
 <div class="row">
-    <aside class="col-md-3 sidebar">
-        <ul>
+    <aside class="col-md-3 sidebar" role="navigation">
+        <button data-toggle="collapse" data-target="#sidebar">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <ul class="collapse in" id="sidebar">
             <li class="{% if page.url == '/guide/index.html' %}active{% endif %}">
                 <a href="/guide/">Introduction</a>
             </li>
