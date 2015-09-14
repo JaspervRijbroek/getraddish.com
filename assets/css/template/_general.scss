@@ -16,7 +16,9 @@ h1, h2, h3, h4 {
 }
 
 .content {
-  margin: 10px 20px 0;
+  @extend .container-fluid;
+
+  margin: 10px 10px 0;
 }
 
 footer {
