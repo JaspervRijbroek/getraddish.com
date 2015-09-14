@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="api">
-    <aside class="sidebar">
+<div class="row api">
+    <div class="col-md-3">
         <ul>
                 <li {% if page.url == '/api/raddish/classes/AbstractAdapter.html' %} class="active" {% endif %}>
                     <a href="/api/raddish/classes/AbstractAdapter.html">
@@ -245,9 +245,9 @@ layout: default
                         ViewJson
                     </a>
                 </li>
-        </ul>    </aside>
+        </ul>    </div>
 
-    <article>
+    <article class="col-md-9">
         <h1>Dispatcher Class</h1>
         <div class="description">
             <p>Dispatcher class which will dispatch the http request to the appropriate controller.</p>
