@@ -6,7 +6,7 @@
     margin-top: 5px;
 
     .nav-link {
-      color: $veridian;
+      color: lighten($veridian, 10%);
     }
   }
 }

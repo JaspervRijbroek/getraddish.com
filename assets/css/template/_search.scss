@@ -1,0 +1,30 @@
+.results {
+  .gsc-control-cse {
+    padding: 0;
+
+    .gsc-search-button {
+      box-sizing: initial;
+    }
+
+    .gsc-input-box-hover,
+    .gsc-input-box-focus {
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+
+    .gsc-url-top,
+    .gsc-thumbnail-inside,
+    .gsc-result-info {
+      padding: 0 !important;
+    }
+
+    .gcsc-branding {
+      display: none !important;
+    }
+
+    #gsc-i-id1 {
+      background: none !important;
+    }
+  }
+}
