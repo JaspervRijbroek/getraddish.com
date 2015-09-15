@@ -89,7 +89,7 @@ These follow the same pattern and have the methods ```onInitialize```, ```onBefo
 Within the controller some parts can be controlled by component config and object override.
 
 <div class="row">
-    <div class="col6">
+    <div class="col-md-6">
 {% highlight javascript %}
 var Controller  = require('raddish').Controller;
 var util        = require('util');
@@ -123,7 +123,7 @@ module.exports = DemoController;
 {% endhighlight %}
     </div>
     
-    <div class="col6">
+    <div class="col-md-6">
 {% highlight json %}
 {
     "controller": {

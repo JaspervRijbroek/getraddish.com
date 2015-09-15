@@ -55,7 +55,7 @@ Here you can add DCI or your own reusable code. [More on behaviors](/guide/getti
 In this example we will set some values and we will show the component config values.
 
 <div class="row">
-    <div class="col6">
+    <div class="col-md-6">
 {% highlight javascript %}
 var Table = require('raddish').Table,
     util = require('util');
@@ -92,7 +92,7 @@ util.inherits(FooTable, Table);
 module.exports = FooTable;
 {% endhighlight %}
     </div>
-    <div class="col6">
+    <div class="col-md-6">
 {% highlight json %}
 {
     "table": {

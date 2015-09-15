@@ -17,7 +17,7 @@ This as well can be overridden in an object override or a component config value
 An example of an object override and component config:
 
 <div class="row">
-    <div class="col6">
+    <div class="col-md-6">
 {% highlight javascript %}
 var Dispatcher  = require('raddish').Dispatcher;
 var util        = require('util');
@@ -38,7 +38,7 @@ DemoDispatcher.prototype.initialize = function(config) {
 module.exports = DemoDispatcher;
 {% endhighlight %}
     </div>
-    <div class="col6">
+    <div class="col-md-6">
 {% highlight json %}
 {
     "dispatcher": {
