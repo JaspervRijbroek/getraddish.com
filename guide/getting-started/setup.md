@@ -12,7 +12,7 @@ In the app.js file you will need to require raddish, register your applications,
  
 The app.js file could look like this.
 
-``` javascript
+{% highlight javascript linenos %}
 var raddish = require('raddish');
 
 raddish.setConfig(<path to config file>);
@@ -20,7 +20,7 @@ raddish.setApplication('home', 'apps/home/app');
 raddish.checkUpdate();
 
 raddish.start();
-```
+{% endhighlight %}
 
 The ```setConfig``` has a single parameter, this can be a string to a file
 which will then be included, or this can be an object.  

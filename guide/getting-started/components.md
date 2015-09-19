@@ -20,7 +20,7 @@ The thing we do in this file is starting the dispatcher of the component, after 
 
 An example of how this file could be:
 
-```javascript
+{% highlight javascript linenos %}
 function ComponentFoo(request, response) {
     ObjectManager.get('com://demo/foo.dispatcher.http')
         .then(function(dispatcher) {
@@ -29,7 +29,7 @@ function ComponentFoo(request, response) {
 }
 
 module.exports = ComponentMenu;
-```
+{% endhighlight %}
 
 ### Explanation:  
 In this file we create a function which accepts request and response as parameters,

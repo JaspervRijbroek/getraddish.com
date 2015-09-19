@@ -37,7 +37,7 @@ Within here you can add the permissions per action with your own logic.
 
 This is an example:
 
-```javascript
+{% highlight javascript linenos %}
 var Permission  = require('raddish').Permission;
 var util        = require('util');
 
@@ -56,7 +56,7 @@ DefaultPermission.prototype.canAdd = function(context) {
 };
 
 module.exports = DefaultPermission;
-```
+{% endhighlight %}
 
 ## Behaviors
 Within Raddish it is possible to add extra behaviors to the controller.
@@ -90,7 +90,7 @@ Within the controller some parts can be controlled by component config and objec
 
 <div class="row">
     <div class="col-md-6">
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var Controller  = require('raddish').Controller;
 var util        = require('util');
 
@@ -124,7 +124,7 @@ module.exports = DemoController;
     </div>
     
     <div class="col-md-6">
-{% highlight json %}
+{% highlight json linenos %}
 {
     "controller": {
         "demo": {

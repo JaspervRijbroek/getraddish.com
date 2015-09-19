@@ -18,7 +18,7 @@ An example of an object override and component config:
 
 <div class="row">
     <div class="col-md-6">
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var Dispatcher  = require('raddish').Dispatcher;
 var util        = require('util');
 
@@ -39,7 +39,7 @@ module.exports = DemoDispatcher;
 {% endhighlight %}
     </div>
     <div class="col-md-6">
-{% highlight json %}
+{% highlight json linenos %}
 {
     "dispatcher": {
         "controller": "foo",
