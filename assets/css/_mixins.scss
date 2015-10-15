@@ -1,0 +1,7 @@
+@mixin transition($which, $type, $timing) {
+  -webkit-transition: prop time;
+  -moz-transition: prop time;
+  -ms-transition: prop time;
+  -o-transition: prop time;
+  transition: prop time;
+}
