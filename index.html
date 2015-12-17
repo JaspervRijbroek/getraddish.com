@@ -1,48 +1,52 @@
 ---
-title: Home
-layout: article
-keywords: nodejs framework, sockets, threads, raddish, RAD
-name: Raddish the NodeJS Framework
-description: Homepage of Raddish the NodeJS Framework
+title: Raddish Web Framework
+layout: default
 ---
 
-<div class="row">
-    <div class="col-md-12">
-        <dl>
-            <dd>
-                <p>
-                    Letting you write less code to reach the same goal, <br/>
-                    By using a fallback system your application will function without a huge amount of code. <br/>
-                    Meaning that you only have to code when you want to override certain functionality.
-                </p>
-            </dd>
-        </dl>
+<script src="assets/js/moment.js"></script>
+<script src="assets/js/raddish.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        var raddish = new Raddish();
+        raddish.getDownloads($('.downloads'));
+        raddish.getLatestVersion($('.version'));
+    });
+</script>
 
-        <hr/>
+<div class="row">
+    <div class="col12 text-center">
+        <h1>A new backend framework for solid applications.</h1>
+        
+        <p class="subtitle">
+            Raddish is a backend framework which incorporates MVC and DCI together amongst other design patterns.
+        </p>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h3>What is Raddish</h3>
-
-        <p>
-            Raddish is a new type of framework which will allow freedom and the structure of MVC
-            extended with the power of DCI.
-        </p>
+    <div class="install push4 col4">
+        $ npm install --save raddish
     </div>
-    <div class="col-md-4">
-        <h3>Ridiculous speeds</h3>
+</div>
 
-        <p>
-            Powered by Promises and Threads the framework is amazingly fast, and endlessly scalable for huge projects which require power above all.
-        </p>
+<div class="row">
+    <div class="col12 text-center">
+        <ul class="information">
+            <li>Total Downloads: <span class="downloads"></span></li>
+            <li>Latest Version: <span class="version"></span></li>
+        </ul>
     </div>
-    <div class="col-md-4">
-        <h3>Data centered</h3>
+</div>
+
+<hr class="small"/>
+
+<div class="row text-center">
+    <div class="col12">
+        <h1>Community</h1>
 
         <p>
-            The API will only return data therefore greatly based for an API of a frontend framework like Angular or Ember, even a mobile app.
+            Supported with an open community developers can ask questions and support from the team, <br/>
+            and in turn give support to others.
         </p>
     </div>
 </div>

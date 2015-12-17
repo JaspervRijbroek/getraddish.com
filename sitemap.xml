@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -11,15 +11,16 @@ layout: nil
         <priority>1.0</priority>
     </url>
     {% for page in site.html_pages %}
-        {% unless page.url contains 'docs' %}
+        {% if page.sitemap != false %}
             <url>
                 <loc>http://getraddish.com{{ page.url }}</loc>
                 <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
                 <changefreq>weekly</changefreq>
                 <priority>0.7</priority>
             </url>
-        {% endunless %}
+        {% endif %}
     {% endfor %}
+
     {% for page in site.posts %}
         {% if page.category != 'changelog' %}
             <url>

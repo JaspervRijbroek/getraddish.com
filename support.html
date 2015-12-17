@@ -1,60 +1,32 @@
 ---
-layout: default
 title: Support
-permalink: /support.html
+layout: default
 ---
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#support').bootstrapValidator({
-            message: 'This value is not valid',
-            feedbackIcons: {
-                valid: 'glyphicon glyphicon-ok',
-                invalid: 'glyphicon glyphicon-remove',
-                validating: 'glyphicon glyphicon-refresh'
-            },
-            fields: {
-                email: {
-                    validators: {
-                        notEmpty: {
-                            message: 'The email is required and cannot be empty'
-                        },
-                        emailAddress: {
-                            message: 'The input is not a valid email address'
-                        }
-                    }
-                }
-            }
-        });
-    });
-</script>
+<div class="row">
+    <div class="col-md-12">
+        <h1>Support</h1>
 
-<div class="page-header">
-    <h1>Support</h1>
+        <p>
+            Support can be requested a couple of ways. Every support question will be explained to you in full detail
+        </p>
+    </div>
 </div>
 
-<p>
-    For those of you looking for support. Please feel free to create a ticket in GitHub. <br/>
-    Or fill in the following form.
-</p>
+<div class="row">
+    <div class="col-md-6">
+        <h2>Slack Channel</h2>
 
-<form id="support" action="http://getsimpleform.com/messages?form_api_token=ee3201d5d75ba02b30d3a6cd561d67d2" method="post">
-    <input type='hidden' name='redirect_to' value='https://jaspervrijbroek.github.io/raddish/thanks.html' />
-
-    <div class="form-group">
-        <label>Email Address</label>
-        <input type="text" placeholder="Email" name="email" class="form-control">
+        <p>
+            Within the Raddish community support can be requested in a few manners. <br/>
+            One is the <a href="https://groups.google.com/forum/#!forum/raddish-community" target="_blank">Raddish Google Group</a>.
+        </p>
     </div>
-    
-    <div class="form-group">
-        <label>Subject</label>
-        <input type="text" placeholder="Subject" name="subject" class="form-control">
-    </div>
+    <div class="col-md-6">
+        <h2>Github</h2>
 
-    <div class="form-group">
-        <label>Email Address</label>
-        <textarea name="question" placeholder="Question" class="form-control" rows="15"></textarea>
+        <p>
+            The second way is by opening an issue in the <a href="https://github.com/JaspervRijbroek/raddish/issues" target="_blank">Raddish Repo</a>.
+        </p>
     </div>
-
-    <button type="submit" class="btn btn-default">Submit</button>
-</form>
+</div>

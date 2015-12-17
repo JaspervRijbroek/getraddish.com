@@ -1,0 +1,861 @@
+---
+layout: default
+---
+
+<div class="row api">
+    <div class="col-md-3 sidebar">
+        <ul>
+                <li {% if page.url == '../classes/AbstractBuilder.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractBuilder.html">
+                        AbstractBuilder
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/AbstractMysqlQuery.html' %} class="active" {% endif %}>
+                    <a href="../classes/AbstractMysqlQuery.html">
+                        AbstractMysqlQuery
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/DeleteQuery.html' %} class="active" {% endif %}>
+                    <a href="../classes/DeleteQuery.html">
+                        DeleteQuery
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/InsertQuery.html' %} class="active" {% endif %}>
+                    <a href="../classes/InsertQuery.html">
+                        InsertQuery
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/MysqlQueryBuilder.html' %} class="active" {% endif %}>
+                    <a href="../classes/MysqlQueryBuilder.html">
+                        MysqlQueryBuilder
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/SelectQuery.html' %} class="active" {% endif %}>
+                    <a href="../classes/SelectQuery.html">
+                        SelectQuery
+                    </a>
+                </li>
+                <li {% if page.url == '../classes/UpdateQuery.html' %} class="active" {% endif %}>
+                    <a href="../classes/UpdateQuery.html">
+                        UpdateQuery
+                    </a>
+                </li>
+        </ul>    </div>
+
+    <article class="col-md-9">
+        <h1>SelectQuery Class</h1>
+        <div class="description">
+            <p>The SelectQuery object defines all the method available to the select queury.</p>
+        
+        </div>
+        
+            <div class="extends">
+                Extends <a href="../classes/AbstractMysqlQuery.html" class="crosslink">AbstractMysqlQuery</a>
+            </div>
+        
+            <div class="foundat">
+                Defined in: <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L4" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:4</code></a>
+            </div>
+        
+        <div class="methods">
+                <hr/>
+                <h2>Methods</h2>
+        
+                    <div id="method_columns" class="method item">
+                        <h3 class="title">columns</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                columns
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L73" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:73</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will add the columns to select.
+                    This can be a string or and array.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                columns
+                                            </td>
+                                            <td>
+                                                String/ Array
+                                            </td>
+                                            <td>
+                                                <p>The columns to select</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                    <p>The current object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_count" class="method item">
+                        <h3 class="title">count</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L61" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:61</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will force the query to be a COUNT query.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                    <p>The current object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_having" class="method item">
+                        <h3 class="title">having</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                column
+                                            </li>
+                                            <li class="arg">
+                                                constraint
+                                            </li>
+                                            <li class="arg">
+                                                value
+                                            </li>
+                                            <li class="arg">
+                                                condition
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/AbstractMysqlQuery.html#method_having">AbstractMysqlQuery</a>:
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/abstract.js#L53" target="_blank"><code>lib&#x2F;mysql&#x2F;abstract.js:53</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            This method adds a having clause to the query
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                column
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                The column on which to filter
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                constraint
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                The constraint to use (e.g.: =, <, >)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                value
+                                            </td>
+                                            <td>
+                                                String/ Integer
+                                            </td>
+                                            <td>
+                                                The value on which to filter
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                condition
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                The condition for the where clause (e.g.: AND, OR)
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/AbstractMysqlQuery.html" class="crosslink">AbstractMysqlQuery</a></span>:
+                                    The current query builder object used for chaining
+                            </div>
+                    </div>            <div id="method_join" class="method item">
+                        <h3 class="title">join</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                type
+                                            </li>
+                                            <li class="arg">
+                                                table
+                                            </li>
+                                            <li class="arg">
+                                                condition
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L96" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:96</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will try to join tables.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                type
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>The type of join to preform</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                table
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>The name of the table to join</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                condition
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>The join condition</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                    <p>The current object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_limit" class="method item">
+                        <h3 class="title">limit</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                limit
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L115" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:115</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method sets the limit for the returned objects.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                limit
+                                            </td>
+                                            <td>
+                                                Integer
+                                            </td>
+                                            <td>
+                                                <p>The limit for the current query</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                    <p>The current object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_offset" class="method item">
+                        <h3 class="title">offset</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                offset
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L128" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:128</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method sets the offset for the returned objects.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                offset
+                                            </td>
+                                            <td>
+                                                Integer
+                                            </td>
+                                            <td>
+                                                <p>The offset for the current query</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                    <p>The current object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_order" class="method item">
+                        <h3 class="title">order</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                column
+                                            </li>
+                                            <li class="arg">
+                                                direction
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L141" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:141</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method adds an order clause to the query.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                column
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>The column on which to order</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                direction
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>The direction of the ordering</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                    <p>The current object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_table" class="method item">
+                        <h3 class="title">table</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                table
+                                            </li>
+                                            <li class="arg">
+                                                alias
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L29" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:29</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>The table method will add a table to the FROM clause.
+                    This method can be called multiple times.</p>
+                    
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                table
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>The table name</p>
+                    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                alias
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                <p>An optiobal alias</p>
+                    
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                    <p>The current object used for chaining.</p>
+                    
+                            </div>
+                    </div>            <div id="method_toQuery" class="method item">
+                        <h3 class="title">toQuery</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">()</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>
+                                        Defined in
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/select.js#L159" target="_blank"><code>lib&#x2F;mysql&#x2F;select.js:159</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>This method will return the formatted query.</p>
+                    
+                        </div>
+                    
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type">String</span>:
+                                    <p>The complete query.</p>
+                    
+                            </div>
+                    </div>            <div id="method_where" class="method item">
+                        <h3 class="title">where</h3>
+                    
+                            <div class="arguments">
+                                <span class="paren">(</span>
+                                <ul class="args-list inline commas">
+                                            <li class="arg">
+                                                column
+                                            </li>
+                                            <li class="arg">
+                                                constraint
+                                            </li>
+                                            <li class="arg">
+                                                value
+                                            </li>
+                                            <li class="arg">
+                                                condition
+                                            </li>
+                                </ul>
+                                <span class="paren">)</span>
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/AbstractMysqlQuery.html#method_where">AbstractMysqlQuery</a>:
+                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/mysql/abstract.js#L30" target="_blank"><code>lib&#x2F;mysql&#x2F;abstract.js:30</code></a>
+                        </p>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            This method will format a where clause for the query.
+                        </div>
+                    
+                            <h3>Parameters</h3>
+                    
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>
+                                                column
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                The column on which to filter
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                constraint
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                The constraint to use (e.g.: =, <, >)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                value
+                                            </td>
+                                            <td>
+                                                String/ Integer
+                                            </td>
+                                            <td>
+                                                The value on which to filter
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                condition
+                                            </td>
+                                            <td>
+                                                String
+                                            </td>
+                                            <td>
+                                                The condition for the where clause (e.g.: AND, OR)
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    
+                            <div class="returns">
+                                <h4>Returns:</h4>
+                    
+                                        <span class="type"><a href="../classes/AbstractMysqlQuery.html" class="crosslink">AbstractMysqlQuery</a></span>:
+                                    The current query builder object used for chaining
+                            </div>
+                    </div></div>    </article>
+</div>
