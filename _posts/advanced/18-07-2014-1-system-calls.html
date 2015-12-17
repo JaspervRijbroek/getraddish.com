@@ -1,0 +1,53 @@
+---
+title: 1. System Calls
+permalink: /advanced/system-calls.html
+category: advanced
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>System Calls</h1>
+        </div>
+
+        <p>
+            Within the system of Raddish you can always call component and core objects. <br/>
+            Using the object <code>ObjectManager</code> you can this object has a method <code>get</code> which accepts an identifier string or an identifier object.
+        </p>
+        <p>
+            This will return the object related to the identifier.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            It is also available to use the ObjectLoader to require files. <br/>
+            The ObjectLoader object is also like the <code>ObjectManager</code> object available everywhere
+            (also outside of objects) and can be used to require an identifier to extend from.
+        </p>
+        <p>
+            The methods <code>ObjectLoader.require</code> returns an uninitialized object. <br/>
+            Almost identical to the require method, the only difference is that this method will respect the loader sequence.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+{% highlight javascript %}
+var Model   = ObjectLoader.require('com://admin/core.model.core');
+var util    = require('util');
+
+function DemoModel(config) {
+    Model.call(this, config);
+}
+
+util.inherits(DemoModel, Model);
+
+module.exports = DemoModel;
+{% endhighlight %}
+    </div>
+</div>

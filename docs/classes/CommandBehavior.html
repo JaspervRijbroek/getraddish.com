@@ -1,0 +1,440 @@
+---
+title: CommandBehavior - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('.method').find('.show-params').click(function(event) {
+                    event.preventDefault();
+        
+                    $(this).parent().find('.params').toggleClass('hidden');
+                });
+            });
+        </script>
+        
+        <h1>
+            Class CommandBehavior
+        </h1>
+        
+            <p class="text-info">
+                Extends: <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a>
+            </p>
+        
+            <p class="text-info">
+                Defined in: <a href="../files/lib_command_behavior_behavior.js.html#l5">lib/command/behavior/behavior.js:5</a>
+            </p>
+        
+        
+        <p>This is the base class every behavior needs.
+        This has the basic functions to let your behavior function properly.</p>
+        
+        
+            <h3>Methods</h3>
+        
+                <div class="method">
+                    <h4>
+                        clone ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l122">lib/object/manager.js:122</a>
+                        </p>
+        
+                    <p>
+                        <p>This function will be available for every object,
+        this will clone the current object.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        execute ( <ul class="commas"><li><code>method</code></li><li><code>context</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_command_behavior_behavior.js.html#l76">lib/command/behavior/behavior.js:76</a>
+                        </p>
+        
+                    <p>
+                        <p>Execute the action.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>method</code> <p>The method name to execute, this is dot-separated</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>context</code> <p>The context object to use in the method call.</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getCommandChain ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l92">lib/object/manager.js:92</a>
+                        </p>
+        
+                    <p>
+                        <p>Return the command chain to run behaviors.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getConfig ( <ul class="commas"><li><code>key</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l71">lib/object/manager.js:71</a>
+                        </p>
+        
+                    <p>
+                        <p>Use this function to acquire a variable from config.js</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>key</code> <p>Key to specify the config to return</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getIdentifier ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l82">lib/object/manager.js:82</a>
+                        </p>
+        
+                    <p>
+                        <p>Use this function to acquire the identifier object</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getMethod ( <ul class="commas"><li><code>method</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_command_behavior_behavior.js.html#l98">lib/command/behavior/behavior.js:98</a>
+                        </p>
+        
+                    <p>
+                        <p>Convert the action name to a function name.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>method</code> <p>The dot-separated name of the behavior</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getObject ( <ul class="commas"><li><code>identifier</code></li><li><code>config</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l210">lib/object/manager.js:210</a>
+                        </p>
+        
+                    <p>
+                        <p>This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>identifier</code> <p>Identifier of the object to load</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>config</code> <p>Config to push to the object</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        hasMethod ( <ul class="commas"><li><code>method</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_command_behavior_behavior.js.html#l56">lib/command/behavior/behavior.js:56</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will check if the function exists in the current behavior, if so it will return true,</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>method</code> <p>The method name to check on.</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        initialize ( <ul class="commas"><li><code>config</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_command_behavior_behavior.js.html#l23">lib/command/behavior/behavior.js:23</a>
+                        </p>
+        
+                    <p>
+                        <p>Add the config to the global object.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>config</code> <p>The complete config object</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        mixin ( <ul class="commas"><li><code>object</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l133">lib/object/manager.js:133</a>
+                        </p>
+        
+                    <p>
+                        <p>This is the handler which will try to mixin functions from another object.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>object</code> <p>The object to mix into the current object.</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        registerMethod ( <ul class="commas"><li><code>action</code></li><li><code>method</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_command_behavior_behavior.js.html#l37">lib/command/behavior/behavior.js:37</a>
+                        </p>
+        
+                    <p>
+                        <p>With the help of this method you can register methods to a specific call.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>action</code> <p>The action or collection of actions to bind your method to.</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>method</code> <p>The function to call on the specified action(s).</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+        
+    </div>
+</div>

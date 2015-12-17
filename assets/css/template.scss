@@ -1,7 +1,53 @@
 ---
 ---
 
-@import "variables",
-        "mixins",
-        "grid",
-        "base";
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+
+$chestnut-roze: #cb625f;
+$japonica: #d86865;
+$alizarin-crimson: #e91c28;
+$white: #ffffff;
+$conifer: #b0d45c;
+$dusty-gray: #989898;
+$dove-gray: #6e6d6d;
+$silver: #bbbbbb;
+$mercury: #e6e6e6;
+$veridian: #3B8F6E;
+
+.navbar-raddish {
+  border-bottom: 2px solid $alizarin-crimson;
+
+  .navbar-nav {
+    padding-top: 5px;
+  }
+}
+
+#slider {
+  height: 305px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  .item {
+    .container {
+      height: 305px;
+      padding: 40px 50px 10px;
+      color: $white;
+
+      h1 {
+        text-transform: none;
+      }
+
+      img {
+        float: right;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+footer {
+  background: $white;
+  border-top: 2px solid $alizarin-crimson;
+  padding: 15px 0px;
+}

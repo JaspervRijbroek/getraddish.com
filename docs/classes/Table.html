@@ -1,0 +1,703 @@
+---
+title: Table - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('.method').find('.show-params').click(function(event) {
+                    event.preventDefault();
+        
+                    $(this).parent().find('.params').toggleClass('hidden');
+                });
+            });
+        </script>
+        
+        <h1>
+            Class Table
+        </h1>
+        
+            <p class="text-info">
+                Extends: <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a>
+            </p>
+        
+            <p class="text-info">
+                Defined in: <a href="../files/lib_database_table_default.js.html#l8">lib/database/table/default.js:8</a>
+            </p>
+        
+        
+        <p>Default table class</p>
+        
+        
+            <h3>Methods</h3>
+        
+                <div class="method">
+                    <h4>
+                        clone ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l122">lib/object/manager.js:122</a>
+                        </p>
+        
+                    <p>
+                        <p>This function will be available for every object,
+        this will clone the current object.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        delete ( <ul class="commas"><li><code>query</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l263">lib/database/table/default.js:263</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will try to delete a row in the database</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>query</code> <p>The query string for the database</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        filter ( <ul class="commas"><li><code>adapter</code></li><li><code>columns</code></li><li><code>data</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l457">lib/database/table/default.js:457</a>
+                        </p>
+        
+                    <p>
+                        <p>This function will filter the data based on the columns.
+        And will check if the value is correct.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>adapter</code> <p>The adapter object.</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>columns</code> <p>The object containing all the columns.</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>data</code> <p>The data object.</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getAdapter ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l329">lib/database/table/default.js:329</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will return the adapter associated with the current table object</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getColumns ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l376">lib/database/table/default.js:376</a>
+                        </p>
+        
+                    <p>
+                        <p>Returns all the columns of the table</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getCommandChain ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l92">lib/object/manager.js:92</a>
+                        </p>
+        
+                    <p>
+                        <p>Return the command chain to run behaviors.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getConfig ( <ul class="commas"><li><code>key</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l71">lib/object/manager.js:71</a>
+                        </p>
+        
+                    <p>
+                        <p>Use this function to acquire a variable from config.js</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>key</code> <p>Key to specify the config to return</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getIdentifier ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l82">lib/object/manager.js:82</a>
+                        </p>
+        
+                    <p>
+                        <p>Use this function to acquire the identifier object</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getIdentityColumn ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l418">lib/database/table/default.js:418</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will return the single identity column, identified by the auto_increment value.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getName ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l71">lib/database/table/default.js:71</a>
+                        </p>
+        
+                    <p>
+                        <p>This method returns the name of the table.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getObject ( <ul class="commas"><li><code>identifier</code></li><li><code>config</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l210">lib/object/manager.js:210</a>
+                        </p>
+        
+                    <p>
+                        <p>This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>identifier</code> <p>Identifier of the object to load</p>
+        
+                                    </li>
+                                    <li>
+                                        <code>config</code> <p>Config to push to the object</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getQuery ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l480">lib/database/table/default.js:480</a>
+                        </p>
+        
+                    <p>
+                        <p>The getQuery method returns the query received from the associated adapter (default: mysql).</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getRow ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l345">lib/database/table/default.js:345</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will return an empty Row object
+        Here we will also cache the Row object for later use.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getRowset ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l361">lib/database/table/default.js:361</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will return an empty Rowset object</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getSchema ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l442">lib/database/table/default.js:442</a>
+                        </p>
+        
+                    <p>
+                        <p>This Method will check if the table exists or not, if not, it will return an error.</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        getUniqueColumns ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l396">lib/database/table/default.js:396</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will return the unique columns of the table</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        initialize ( <ul class="commas"><li><code>config</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l54">lib/object/manager.js:54</a>
+                        </p>
+        
+                    <p>
+                        <p>Every object called through getObject will go through this function.
+        This will set the identifier and adds the behaviors (if any).</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>config</code> <p>Object with config values</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        initialze ( <ul class="commas"><li><code>config</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l24">lib/database/table/default.js:24</a>
+                        </p>
+        
+                    <p>
+                        <p>Initialize function to initialize the Table model</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>config</code> <p>Config object for the Table object</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        insert ( <ul class="commas"><li><code>query</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l145">lib/database/table/default.js:145</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will try to insert a row in the database</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>query</code> <p>The query string for the database</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        isConnected ( <ul class="commas"></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l316">lib/database/table/default.js:316</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will check if the database is connected,
+        if it is it will return the connection</p>
+        
+                    </p>
+        
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        mapColumns ( <ul class="commas"><li><code>object</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l493">lib/database/table/default.js:493</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will translate table columns to their original values, or visa versa.
+        This will work on the column_map variable.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>object</code>  
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        mixin ( <ul class="commas"><li><code>object</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_object_manager.js.html#l133">lib/object/manager.js:133</a>
+                        </p>
+        
+                    <p>
+                        <p>This is the handler which will try to mixin functions from another object.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>object</code> <p>The object to mix into the current object.</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        select ( <ul class="commas"><li><code>query</code></li><li><code>mode</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l81">lib/database/table/default.js:81</a>
+                        </p>
+        
+                    <p>
+                        <p>This method tries to get get a row or rowset from the table.</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>query</code>  
+                                    </li>
+                                    <li>
+                                        <code>mode</code> <p>Mode to get from the table.</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+                <div class="method">
+                    <h4>
+                        update ( <ul class="commas"><li><code>query</code></li></ul> )
+                    </h4>
+        
+                        <p class="text-info">
+                            Defined at: <a href="../files/lib_database_table_default.js.html#l201">lib/database/table/default.js:201</a>
+                        </p>
+        
+                    <p>
+                        <p>This method will try to update a row in the database</p>
+        
+                    </p>
+        
+                        <a href="#" class="show-params">Show Parameters <span class="caret"></span></a>
+        
+                        <div class="params hidden">
+                            <strong>Params</strong>
+        
+                            <ul>
+                                    <li>
+                                        <code>query</code> <p>The query string for the database</p>
+        
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+        
+                <hr/>
+        
+    </div>
+</div>

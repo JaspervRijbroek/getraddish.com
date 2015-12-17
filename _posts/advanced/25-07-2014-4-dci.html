@@ -1,0 +1,220 @@
+---
+title: 4. DCI
+permalink: /advanced/dci.html
+category: advanced
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>DCI</h1>
+        </div>
+
+        <p>
+            Together with <a href="https://github.com/ciscoheat">@siscoheat</a> the DCI implementation has been perfected.
+            <br/> Complete with roles and initialization methods for the context. For those who don't know the details of DCI <a href="http://vimeo.com/8235574" target="_blank">this is a good place to start</a>.
+        </p>
+        <p>
+            In our system DCI comes in the form of behaviors. <br/>
+            The behaviors in our system can incorporate DCI as well as reusable code. <br/>
+            The behaviors work on two levels, the table and the controller.
+        </p>
+        <p>
+            Each behavior has its own unique methods. But all behaviors have the same naming conventions.
+            <br/> Namely: <code>onInitialize</code>, <code>onBefore</code> and <code>onAfter</code>.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Controller Behaviors</h2>
+
+        <p>
+            The controller behaviors have a few default values.
+        </p>
+        <ul>
+            <li>auth: The authentication data (username/ password or an object)</li>
+            <li>caller: The object calling the bahavior</li>
+            <li>data: The data in the request (fields and files)</li>
+            <li>request: The data in the request (get variables)</li>
+            <li>result: The resulting data from the behavior (only available in "onAfter" methods)</li>
+        </ul>
+
+        <p>
+            The controller has the following methods.
+        </p>
+        <ul>
+            <li>onInitializeBrowse</li>
+            <li>onBeforeBrowse</li>
+            <li>onAfterBrowse</li>
+            <li>onInitializeRead</li>
+            <li>onBeforeRead</li>
+            <li>onAfterRead</li>
+            <li>onInitializeEdit</li>
+            <li>onBeforeEdit</li>
+            <li>onAfterEdit</li>
+            <li>onInitializeAdd</li>
+            <li>onBeforeAdd</li>
+            <li>onAfterAdd</li>
+            <li>onInitializeDelete</li>
+            <li>onBeforeDelete</li>
+            <li>onAfterDelete</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Table Behaviors</h2>
+
+        <p>
+            The table behaviors have a few default values.
+        </p>
+        <ul>
+            <li>caller: The object calling the bahavior</li>
+            <li>data: The data in the request (data received from the database, only available in "onAfter" methods)</li>
+            <li>table: The name of the current qeury</li>
+            <li>query: The current query object</li>
+        </ul>
+
+        <p>
+            The table has the following methods.
+        </p>
+        <ul>
+            <li>onInitializeSelect</li>
+            <li>onBeforeSelect</li>
+            <li>onAfterSelect</li>
+            <li>onInitializeInsert</li>
+            <li>onBeforeInsert</li>
+            <li>onAfterInsert</li>
+            <li>onInitializeUpdate</li>
+            <li>onBeforeUpdate</li>
+            <li>onAfterUpdate</li>
+            <li>onInitializeDelete</li>
+            <li>onBeforeDelete</li>
+            <li>onAfterDelete</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            Below is an example of a simple bank transaction complete with roles. <br/>
+            This is also a controller behavior. In this case it is no problem adding this as a table behavior.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+{% highlight javascript %}
+/**
+ * This will be a concept behavior
+ * As is known a context has a predefined set of roles and are only for that context.
+ *
+ * These will be used in a context (behavior).
+ * The context will be an intent/ user model for an operation.
+ *
+ * In this behavior we will handle a bank transaction.
+ *
+ * Next to that we don't have the context in the initialize function.
+ * So in fact we need to have a special function that will be called before the calling of a method.
+ */
+var util        = require('util');
+var Behavior    = ObjectLoader.require('core:command.behavior.behavior');
+
+function Transactionable(config) {
+    Behavior.call(this, config);
+}
+
+util.inherits(Transactionable, Behavior);
+
+/**
+ * The onInitializeGet method is called before the real behavior methods
+ * and is used to setup the context. However the context still holds some default values received from the
+ * controller/ dispatcher.
+ *
+ * The values are the same in every function called in the behavior.
+ *
+ * The values are:
+ * auth:    The authentication data (username/ password or an object).
+ * caller:  The object calling the behavior.
+ * data:    The data in the request (fields and files)
+ * request: The data in the request (get variables)
+ * result:  The resulting data from the behavior (only available in "onAfter" methods)
+ */
+Transactionable.prototype.onInitializeGet = function(context) {
+    var self    = this;
+    var objects = [];
+
+
+    var object = ObjectManager.get('com://home/bank.model.account')
+        .then(function(model) {
+            return model.set('id', 1).getItem();
+        })
+        .then(function(source) {
+            // Add the source role to the context.
+            context.addRole('source', source);
+        });
+    objects.push(object);
+
+
+    object = ObjectManager.get('com://home/bank.model.account')
+        .then(function(model) {
+            return model.set('id', 1).getItem();
+        })
+        .then(function(destination) {
+            // Add the destination role to the context.
+            context.addRole('destination', destination, function() {
+                // Add the transfer method to the destination.
+                this.transfer = function(amount) {
+                    var self = this;
+                    var source = context.getRole('source');
+
+                    // Get the amount off from the source
+                    source.setData({
+                        amount: source.data.amount -= amount
+                    });
+
+                    return source.save()
+                        .then(function() {
+                            // Append the data to the destination.
+                            return self.setData({
+                                amount: self.data.amount += amount
+                            })
+                            .save();
+                        });
+                }
+            });
+        });
+    objects.push(object);
+
+    return Promise.all(objects)
+        .then(function() {
+            return context;
+        });
+};
+
+Transactionable.prototype.onBeforeBrowse = function(context) {
+    return context.getRole('destination')
+        .transfer(context.data.amount)
+        .then(function() {
+            return context;
+        });
+};
+
+module.exports = Transactionable;
+{% endhighlight %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            This ofcourse is one example of DCI but you can easily create our own.
+        </p>
+    </div>
+</div>

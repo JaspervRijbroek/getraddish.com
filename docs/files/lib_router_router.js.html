@@ -1,0 +1,316 @@
+---
+title: lib/router/router.js - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <h1>File: lib/router/router.js</h1>
+        
+        
+        {% highlight javascript linenos %}
+        "use strict";
+        
+        var fs          = require('fs');
+        var zlib        = require('zlib');
+        var url         = require('url');
+        var mime        = require('mime');
+        var Inflector   = require('../inflector/inflector');
+        var Application = require('../application/application');
+        
+        /**
+         * Router object, this will route the request to the application.
+         *
+         * @class Router
+         * @constructor
+         */
+        function Router () {
+        
+        }
+        
+        /**
+         * This method will check if the request is a file, if so it will return the file,
+         * if not it will try to find an application and will try to run the component.
+         *
+         * When a file is found and the gzip option in the config is true it will send a gzipped response.
+         *
+         * @method route
+         * @param {Object} req NodeJS request object
+         * @param {Object} res NodeJS response object
+         */
+        Router.prototype.route = function(req, res) {
+            var self = this;
+        
+            Promise.cast([req, res])
+                .spread(this.getRoute)
+                .spread(this.checkCors)
+                .spread(this.checkFile)
+                .spread(this.parseRequest)
+                .spread(this.request);
+        };
+        
+        /**
+         * This method will try to match a route to the current request.
+         *
+         * @method getRoute
+         * @param req
+         * @param res
+         * @returns {*[]}
+         */
+        Router.prototype.getRoute = function(req, res) {
+            var routes  = Raddish.getConfig('router.routes');
+        
+            if(routes[req.url]) {
+                req.url = routes[req.url];
+            }
+        
+            if (req.url === '/') {
+                req.url = '/index.html';
+            }
+        
+            return [req, res];
+        };
+        
+        /**
+         * This method will set the CORS headers to the response.
+         *
+         * @method checkCors
+         * @param {Object} req Nodejs Request Object
+         * @param {Object} res Nodejs Response Object
+         * @returns {*[]}
+         */
+        Router.prototype.checkCors = function(req, res) {
+            var cors = Raddish.getConfig('router.cors');
+        
+            if(cors) {
+                if(cors.origin.join) {
+                    cors.origin = cors.origin.join(',');
+                }
+        
+                if(cors.methods.join) {
+                    cors.methods = cors.methods.join(',');
+                }
+        
+                if(cors.credentials) {
+                    res.setHeader('Access-Control-Allow-Credentials', 'true');
+                }
+        
+                if(cors.headers.join) {
+                    cors.headers = cors.headers.join(',');
+                }
+        
+                res.setHeader('Access-Control-Allow-Origin', cors.origin);
+                res.setHeader('Access-Control-Allow-Methods', cors.methods);
+                res.setHeader('Access-Control-Allow-Headers', cors.headers);
+            }
+        
+            return [req, res];
+        };
+        
+        /**
+         * This method will check if the request is going to a direct file, if so return it.
+         * If gzip is enabled and supported it will gzip the response.
+         *
+         * @method checkFile
+         * @param {Object} req Nodejs Request Object
+         * @param {Object} res Nodejs Response Object
+         * @returns {Promise}
+         */
+        Router.prototype.checkFile = function(req, res) {
+            var self = this;
+        
+            return new Promise(function(resolve, reject) {
+                fs.readFile(process.cwd() + Raddish.getConfig('public') + req.url, function(err, data) {
+                    if(err) {
+                        resolve([req, res]);
+                    } else {
+                        res.setHeader('Content-Type', mime.lookup(process.cwd() + Raddish.getConfig('public') + req.url));
+        
+                        if(Router._checkGZip(req) && Raddish.getConfig('gzip')) {
+                            res.setHeader('Content-Encoding', 'gzip');
+        
+                            zlib.gzip(data, function(err, data) {
+                                res.end(data);
+                            });
+                        } else {
+                            res.end(data);
+                        }
+                    }
+                });
+            });
+        };
+        
+        /**
+         * This method will try to parse the request if the request a an API request.
+         * By default the app and component parameters must be passed in the request.
+         *
+         * @method parseRequest
+         * @param {Object} req Nodejs Request Object
+         * @returns {Object} The parsed request object.
+         */
+        Router.prototype.parseRequest = function (req, res) {
+            req.url = url.parse(req.url, true);
+            var pathparts = req.url.pathname.split('/');
+            pathparts.shift();
+        
+            if (pathparts[0]) {
+                req.url.query['app'] = pathparts[0];
+            }
+        
+            if (pathparts[1]) {
+                req.url.query['component'] = pathparts[1];
+            }
+        
+            if (pathparts[2]) {
+                req.url.query['view'] = pathparts[2];
+            }
+        
+            return [req, res];
+        };
+        
+        /**
+         * This method will do the request to the framework to receive the data.
+         *
+         * @param {Object} req Nodejs Request Object
+         * @param {Object} res Nodejs Response Object
+         */
+        Router.prototype.request = function(req, res) {
+            try {
+                var app = Application.matchApplication(req.url);
+                app.runComponent(req.url.query.component, req, res);
+            } catch(error) {
+                if(error instanceof RaddishError) {
+                    res.statusCode = error.code;
+                    res.end(JSON.stringify({
+                        'code': error.code,
+                        'message': error.message,
+                        'stack': error.stack
+                    }));
+                }
+            }
+        };
+        
+        /**
+         * This method will check if the gzip value is in the request accept-encoding header,
+         * if so return true else return false.
+         *
+         * @private
+         * @param {Object} req NodeJS request object.
+         * @returns {Boolean}
+         */
+        Router._checkGZip = function (req) {
+            if(req.headers['accept-encoding']) {
+                return (req.headers['accept-encoding'].search('gzip') !== false ? true : false)
+            } else {
+                return false;
+            }
+        };
+        
+        module.exports = Router;
+        {% endhighlight %}    </div>
+</div>

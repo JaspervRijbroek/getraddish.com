@@ -1,0 +1,54 @@
+---
+title: 2. Plugins
+permalink: /advanced/plugins.html
+category: advanced
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>Plugins</h1>
+        </div>
+
+        <p>
+            Plugins give you another level of extensibility. <br/>
+            There are two types of plugins system plugins and application plugins.
+        </p>
+
+        <dl>
+            <dt>System plugins</dt>
+            <dd>
+                <p>
+                    System plugins work on system events and these are only called in the system. <br/>
+                    They extend certain parts of the system. <br/><br/>
+
+                    <b>Usable events:</b> <br/>
+                    onBeforeStart, onAfterStart
+                </p>
+            </dd>
+
+            <br/>
+            <dt>Application plugins</dt>
+            <dd>
+                <p>
+                    Application plugins will be called when an application is being registred. <br/>
+                    And can change how an application is handled or extend certain functionality.<br/><br/>
+
+                    <b>Usable events:</b> <br/>
+                    onBeforeRegister, onAfterRegister
+                </p>
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            When in the <a href="/basics/config.html">config</a> a different plugins path is defined the system will check this path to require the plugins.
+            <br/> You can place the <code>system plugins</code> in the <code>system folder</code> and the <code>application plugins</code> in the <code>application folder</code>.
+            <br/> The system will loop though all the folders it will find an use the plugins available.
+        </p>
+    </div>
+</div>

@@ -1,0 +1,302 @@
+---
+title: lib/raddish/raddish.js - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <h1>File: lib/raddish/raddish.js</h1>
+        
+        
+        {% highlight javascript linenos %}
+        "use strict";
+        
+        var Application     = require('../application/application');
+        var http            = require('http');
+        var https           = require('https');
+        var Router          = require('../router/router');
+        var config          = {};
+        var cluster         = require('cluster');
+        var fs              = require('fs');
+        var Notifier        = require('update-notifier');
+        var Plugin          = require('../plugin/plugin');
+        
+        
+        /**
+         * The main class of our framework. This object will help with registring our applications.
+         * @constructor
+         */
+        function Raddish() {
+            this.server = undefined;
+        };
+        
+        /**
+         * This will set an application handler.
+         *
+         * @method setApplication
+         * @param {String} alias The alias of the application
+         * @param {String} path The path to the application.
+         * @returns {*}
+         */
+        Raddish.prototype.setApplication = function(alias, path) {
+            var plugins = new Plugin();
+            var self    = this;
+        
+            return plugins.get('application')
+                .then(function(plugins) {
+                    return plugins.execute('before.register', alias, path);;
+                })
+                .then(function(plugins) {
+                    var app = Application.setApplication(alias, path)
+                    app = app.getApplication(alias);
+        
+                    return [plugins, app];
+                })
+                .spread(function(plugins, app) {
+                    return plugins.execute('after.register', app);;
+                })
+                .then(function(plugins) {
+                    return self;
+                });
+        };
+        
+        /**
+         * This function will set the config of Raddish which is located in a JSON file..
+         *
+         * @method setConfig
+         * @param config
+         */
+        Raddish.prototype.setConfig = function(cnf) {
+            var tmp = fs.readFileSync(cnf);
+        
+            config = JSON.parse(tmp);
+        };
+        
+        /**
+         * This function will get a single config value,
+         * if there is no key given it will return the complete config.
+         *
+         * @method getConfig
+         * @param {Name} key The key of the config value
+         * @returns {*}
+         */
+        Raddish.prototype.getConfig = function(key) {
+            if(key) {
+                key = key.split('.');
+        
+                var base = config;
+                for(var index in key) {
+                    if(base[key[index]]) {
+                        base = base[key[index]];
+                    } else {
+                        return false;
+                    }
+                }
+        
+                return base;
+            } else {
+                return config;
+            }
+        };
+        
+        /**
+         * This will start the listener for http traffic, and will route it to the correct application (if there it isn't a file)
+         *
+         * @param {Int} port A override for the port given in the config.
+         */
+        Raddish.prototype.start = function(port) {
+            var Threads = require('../threads/threads');
+            var plugins = new Plugin();
+            var self    = this;
+        
+            plugins.get('system')
+                .then(function(plugins) {
+                    return plugins.execute('before.start');
+                })
+                .then(function(plugins) {
+                    if(!port && !config.port) {
+                        throw new Error('No port found to start on!');
+                    }
+        
+                    if(config.threads) {
+                        if(!cluster.isMaster) {
+                            self.startWebServer(port);
+                        } else {
+                            console.log('Server started on port: ' + (port || config.port));
+                        }
+                    } else {
+                        self.startWebServer(port);
+                        console.log('Server started on port: ' + (port || config.port));
+                    }
+        
+                    if(config.threads) {
+                        if(config.socketio && !cluster.isMaster) {
+                            Socket.start();
+                        } else if(config.socketio && cluster.isMaster) {
+                            console.log('Socket.io started on port: ' + (config.socketio.port || 1338));
+                        }
+                    } else {
+                        if(config.socketio) {
+                            Socket.start();
+                            console.log('Socket.io started on port: ' + (config.socketio.port || 1338));
+                        }
+                    }
+        
+                    return plugins;
+                })
+                .then(function() {
+                    plugins.execute('after.start');
+                });
+        };
+        
+        /**
+         * This function will start the webserver
+         * with the right specification.
+         *
+         * @method startWebServer
+         * @param {Int} port The late port of the server.
+         */
+        Raddish.prototype.startWebServer = function(port) {
+            var cnf     = undefined;
+            var route   = function(req, res) {
+                new Router().route(req, res);
+            }
+        
+            if(config.ssl) {
+                cnf = {
+                    key: fs.readFileSync(config.ssl.key),
+                    cert: fs.readFileSync(config.ssl.cert)
+                };
+            }
+        
+            this.server = cnf ? https.createServer(cnf, route) : http.createServer(route);
+            this.server.listen(port || config.port);
+        };
+        
+        /**
+         * This function will check if there is an update available from NPM.
+         * If there is an update, then the user should update manually.
+         *
+         * @method checkUpdate
+         */
+        Raddish.prototype.checkUpdate = function() {
+            if(!config.threads || cluster.isMaster) {
+                var notifier = Notifier({
+                    packageName: 'raddish',
+                    packageVersion: '2.2.1'
+                });
+        
+                if (notifier.update) {
+                    notifier.notify();
+                }
+            }
+        }
+        
+        module.exports = new Raddish();
+        {% endhighlight %}    </div>
+</div>

@@ -1,0 +1,371 @@
+---
+title: lib/database/adapter/mongo.js - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <h1>File: lib/database/adapter/mongo.js</h1>
+        
+        
+        {% highlight javascript linenos %}
+        var Abstract    = require('./abstract');
+        var util        = require('util');
+        var query       = require('universal-query');
+        var mongo       = Promise.promisifyAll(require('mongodb').MongoClient);
+        var Filter      = require('../../filter/filter');
+        var instances   = {};
+        
+        /**
+         * The MongoDB database adapter.
+         * This adapter will create a connection with the MongoDB server
+         *
+         * @class MongoAdapter
+         * @extends AbstractAdapter
+         * @param {Object} config This is the config object for the adapter
+         * @param {Object} connection The connection to the server
+         * @constructor
+         */
+        function MongoAdapter(config, connection) {
+            MongoAdapter.super_.call(this, config);
+        
+            this.connection = connection;
+            this.strictColumns = false;
+        
+            this.types = {
+        
+            };
+        
+            this.queryBuilder = query.getType('mongo');
+        };
+        
+        util.inherits(MongoAdapter, Abstract);
+        
+        /**
+         * This function will return a single instance of a server connection.
+         * If the connection does not exists it will try to create it.
+         *
+         * @method getInstance
+         * @param {String} name The instance name
+         * @param {Object} config The config object for the connection.
+         * @returns {Promise} The server connection to use.
+         */
+        MongoAdapter.prototype.getInstance = function(name, config) {
+            var auth = '';
+            var self = this;
+        
+            if(instances[name]) {
+                return Promise.resolve(instances[name]);
+            } else {
+                // We will create our auth string.
+                if(config.user && config.password) {
+                    auth = config.user + ':' + config.password + '@';
+                }
+        
+                return mongo.connectAsync('mongodb://' + auth + config.host + ':' + (config.port || 27017) + '/' + config.database)
+                    .then(function(connection) {
+                        instances[name] = new MongoAdapter({
+                            identifier: self.getIdentifier()
+                        }, connection);
+        
+                        return instances[name];
+                    });
+        
+            }
+        };
+        
+        /**
+         * This method will execute a query on the server,
+         * the received data is then returned.
+         *
+         * @param {Object} query The query to be executed
+         * @returns {Promise} The promise with the received data
+         */
+        MongoAdapter.prototype.execute = function(query) {
+            // select the collection.
+            var collection = Promise.promisifyAll(this.connection.collection(query.getTable()));
+        
+            // Function
+            var method = query.getMethod() + 'Async';
+        
+            return collection[method](query.toQuery())
+                .then(function(result) {
+                    result = Promise.promisifyAll(result);
+        
+                    if(typeof result.toArrayAsync == 'function') {
+                        if(query.getLimit() > 0) {
+                            result.limit(query.getLimit());
+        
+                            if(query.getOffset()) {
+                                result.skip(query.getOffset());
+                            }
+                        }
+        
+                        return result.toArrayAsync();
+                    } else {
+                        return result;
+                    }
+                })
+                .catch(function(error) {
+                    throw new RaddishError(500, error.message);
+                });
+        
+        };
+        
+        /**
+         * This method will create the schema to use.
+         *
+         * @method getSchema
+         * @param {String} name The name of the table to get the schema from.
+         * @returns {Promise} The promise containing the schema.
+         */
+        MongoAdapter.prototype.getSchema = function(name) {
+            var result = {};
+            var self = this;
+        
+            return this._fetchInfo(name)
+                .then(function(info) {
+                    result.info = info;
+        
+                    return self._fetchIndexes(name);
+                })
+                .then(function(indexes) {
+                    result.indexes = indexes;
+        
+                    return self._fetchColumns(name);
+                })
+                .then(function(columns) {
+                    result.columns = columns;
+        
+                    return result;
+                });
+        };
+        
+        /**
+         * This method will receive various information of the server.
+         *
+         * @method _fetchInfo
+         * @param {String} name The table name from which to return the data.
+         * @returns {Promise} The promise with the server information.
+         * @private
+         */
+        MongoAdapter.prototype._fetchInfo = function(name) {
+            return Promise.resolve({
+                name: name
+            });
+        };
+        
+        /**
+         * This function will return the indexes on the selected table.
+         *
+         * @method _fetchIndexes
+         * @param {String} name The table name to get the indexed from
+         * @returns {Promse} The promise with all the information.
+         * @private
+         */
+        MongoAdapter.prototype._fetchIndexes = function(name) {
+            var collection = Promise.promisifyAll(this.connection.collection(name));
+        
+            return collection.indexesAsync()
+                .then(function(indexes) {
+                    if(indexes.length <= 0) {
+                        return [
+                            '_id'
+                        ];
+                    } else {
+                        return indexes;
+                    }
+                });
+        };
+        
+        /**
+         * This method will return the column layout.
+         * This column layout will be used in the data responses.
+         *
+         * @param {String} name The name of the table to get the columns from.
+         * @returns {Promise} The promise with the table columns.
+         * @private
+         */
+        MongoAdapter.prototype._fetchColumns = function(name) {
+            var collection  = Promise.promisifyAll(this.connection.collection(name));
+            var self        =  this;
+        
+            return collection.findAsync()
+                .then(function(rows) {
+                    rows = Promise.promisifyAll(rows);
+        
+                    return rows.toArrayAsync();
+                })
+                .then(function(rows) {
+                    var columns = {};
+        
+                    // Always add _id
+                    columns['_id'] = {
+                        name: '_id',
+                        unique: true,
+                        autoinc: true,
+                        value: null,
+                        type: 'mongo-id',
+                        filter: Filter.getFilter('mongo-id')
+                    };
+        
+                    for(var index in rows) {
+                        var row = rows[index];
+        
+                        for(var key in row) {
+                            var type = getType(row[key]);
+                            if(!columns[key]) {
+                                columns[key] = {
+                                    name: key,
+                                    unique: false,
+                                    autoinc: false,
+                                    value: null,
+                                    type: type,
+                                    filter: Filter.getFilter(type)
+                                };
+                            }
+                        }
+                    }
+        
+                    return columns;
+                });
+        };
+        
+        /**
+         * This function will define the type of the column data.
+         *
+         * @param {Object} item the item to get the type from.
+         * @returns {String} The object type.
+         */
+        function getType(item) {
+            if (Object.prototype.toString.call(item) === "[object Number]") {
+                return "number";
+        
+            } else if (Object.prototype.toString.call(item) === "[object String]") {
+                return "string";
+        
+            } else if (Object.prototype.toString.call(item) === "[object Date]") {
+                return "date";
+        
+            } else if(Object.prototype.toString.call(item) === '[object Array]' ) {
+                return "array";
+        
+            } else if(typeof(item)=="object") {
+                for(var index in item) {
+                    return index[index];
+                }
+        
+            } else{
+                return (typeof item)[0].toUpperCase() + (typeof item).slice(1);
+        
+            }
+        }
+        
+        module.exports = MongoAdapter;
+        {% endhighlight %}    </div>
+</div>

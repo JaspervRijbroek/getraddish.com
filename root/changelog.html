@@ -1,0 +1,14 @@
+---
+title: Changelog
+layout: default
+header: Changelog
+permalink: /changelog.html
+---
+
+{% for post in site.categories.changelog %}
+	<h2>{{post.title}}</h2>
+
+	{{post.content}}
+
+	<hr/>
+{% endfor %}

@@ -1,0 +1,298 @@
+---
+title: lib/object/loader/loader.js - Raddish API
+category: api
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-3">
+        <h1>Classes</h1>
+        
+        <ul class="nav nav-pills nav-stacked">
+                <li {% if page.url == '/docs/classes/AbstractAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractAdapter.html">AbstractAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/AbstractDispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/AbstractDispatcher.html">AbstractDispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Application.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Application.html">Application</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandBehavior.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandBehavior.html">CommandBehavior</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandChain.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandChain.html">CommandChain</a>
+                </li>
+                <li {% if page.url == '/docs/classes/CommandContext.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/CommandContext.html">CommandContext</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Controller.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Controller.html">Controller</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ControllerAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ControllerAbstract.html">ControllerAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/DefaultAuthenticator.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/DefaultAuthenticator.html">DefaultAuthenticator</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Dispatcher.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Dispatcher.html">Dispatcher</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Inflector.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Inflector.html">Inflector</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Mixin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Mixin.html">Mixin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Model.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Model.html">Model</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ModelAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ModelAbstract.html">ModelAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MongoAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MongoAdapter.html">MongoAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/MysqlAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/MysqlAdapter.html">MysqlAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectIdentifier.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectIdentifier.html">ObjectIdentifier</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectLoader.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectLoader.html">ObjectLoader</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ObjectManager.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ObjectManager.html">ObjectManager</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Plugin.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Plugin.html">Plugin</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RaddishError.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RaddishError.html">RaddishError</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Role.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Role.html">Role</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Router.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Router.html">Router</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Row.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Row.html">Row</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowAbstract.html">RowAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Rowset.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Rowset.html">Rowset</a>
+                </li>
+                <li {% if page.url == '/docs/classes/RowsetAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/RowsetAbstract.html">RowsetAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Socket.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Socket.html">Socket</a>
+                </li>
+                <li {% if page.url == '/docs/classes/SqliteAdapter.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/SqliteAdapter.html">SqliteAdapter</a>
+                </li>
+                <li {% if page.url == '/docs/classes/States.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/States.html">States</a>
+                </li>
+                <li {% if page.url == '/docs/classes/Table.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/Table.html">Table</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewAbstract.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewAbstract.html">ViewAbstract</a>
+                </li>
+                <li {% if page.url == '/docs/classes/ViewJson.html' %} class="active" {% endif %}>
+                    <a href="/docs/classes/ViewJson.html">ViewJson</a>
+                </li>
+        </ul>    </div>
+    <div class="col-md-9">
+        <h1>File: lib/object/loader/loader.js</h1>
+        
+        
+        {% highlight javascript linenos %}
+        "use strict";
+        
+        /**
+         * This is a complete loader for objects.
+         * This will be handeling the identifiers as well.
+         */
+        
+        // The cache placeholder.
+        // This is a variable which will be used by all the instances.
+        var cache               = {};
+        var clone               = require('clone');
+        var Raddish             = require('../../raddish/raddish');
+        var ObjectIdentifier    = require('../identifier/identifier');
+        var locators            = {};
+        
+        /**
+         * ObjectLoader object which handles all the loading of the requested objects.
+         *
+         * @class ObjectLoader
+         * @constructor
+         */
+        function ObjectLoader() {
+            this.sequence = undefined;
+        }
+        
+        /**
+         * Load a specific object.
+         * By default it will be checking in the applications folder.
+         *
+         * @method resolve
+         * @param {String} identifier The identifier of the object which needs to be resolved.
+         * @param {Function} callback The callback function to be called when the object is resolved.
+         */
+        ObjectLoader.prototype.resolve = function (identifier) {
+            var sequence = this.getSequence();
+        
+            for(var index in sequence) {
+                var ident = this.parseSequence(sequence[index], identifier);
+        
+                var object = this.receive(ident);
+                if(object !== false) {
+                    return object;
+                }
+            }
+        
+            return false;
+        };
+        
+        /**
+         * Parse the sequence identifier
+         * This will result in a usable identifier
+         *
+         * @method parseSequence
+         * @param {Sring} string The sequence string to parse
+         * @param identifier
+         * @returns {ObjectIdentifier}
+         */
+        ObjectLoader.prototype.parseSequence = function(string, identifier) {
+            string = string.replace('<Type>', identifier.getType());
+            string = string.replace('<App>', identifier.getApplication());
+            string = string.replace('<Package>', identifier.getPackage());
+            string = string.replace('<Path>', identifier.getPath().join('.'));
+            string = string.replace('<Name>', identifier.getName());
+        
+            return new ObjectIdentifier(string);
+        };
+        
+        /**
+         * This method will check if there is a custom loader sequence, if not return the default.
+         *
+         * @method getSequence
+         * @returns {Array} The complete sequence
+         */
+        ObjectLoader.prototype.getSequence = function() {
+            if(this.sequence) {
+                return this.sequence;
+            } else {
+                if(Raddish.getConfig('loader.sequence')) {
+                    this.sequence = Raddish.getConfig('loader.sequence');
+                } else {
+                    this.sequence = [
+                        '<Type>://<App>/<Package>.<Path>.<Name>',
+                        '<Type>://<App>/<Package>.<Path>.default',
+                        '<Type>://<App>/default.<Path>.<Name>',
+                        '<Type>://<App>/default.<Path>.default',
+                        'core:<Package>.<Path>.<Name>',
+                        'core:<Package>.<Path>.default',
+                        'core:<Path>.<Name>',
+                        'core:<Path>.default'
+                    ];
+                }
+        
+                return this.sequence;
+            }
+        };
+        
+        /**
+         * Receive method will triy to return the requested file.
+         *
+         * @method receive
+         * @param {String} path The path to the filename.
+         * @returns {Object|false} Result of the call when the file isn't found it will return false.
+         */
+        ObjectLoader.prototype.receive = function (identifier) {
+            return locators[identifier.getType()].locate(identifier);
+        };
+        
+        /**
+         * This method will act like the require method, but instead of a path it accepts an identifier.
+         *
+         * @param {String|ObjectIdentifier} identifier The identifier of the required object
+         * @returns {Object} Returns the uninstanciated object.
+         */
+        ObjectLoader.require = function (identifier) {
+            if(typeof identifier === 'string') {
+                identifier = new ObjectIdentifier(identifier);
+            }
+        
+            return this.prototype.resolve(identifier);
+        };
+        
+        /**
+         * Add a locator for a specific type.
+         *
+         * @param {String} path The path to the locator.
+         */
+        ObjectLoader.addLocator = function (path) {
+            var locator = new (require(path))();
+        
+            if(!locators[locator._type]) {
+                locators[locator._type] = locator;
+            }
+        };
+        
+        /**
+         * The load method will check if the object has been cached.
+         * If this is not the case it will try to resolve the object.
+         *
+         * When an object has been loaded for the first time it is cached for reuse in a later request.
+         *
+         * @method load
+         * @param {String} identifier The identifier of the object to be loaded
+         * @return {Promise} This will hold the uninitialized object.
+         */
+        ObjectLoader.load = function (identifier, config) {
+            var self = this.prototype;
+            var orgIdentifier = identifier.clone();
+        
+            if (cache[orgIdentifier.toString()]) {
+                var obj = clone(cache[orgIdentifier.toString()], false, 4);
+        
+                return Promise.resolve(obj);
+            } else {
+                return Promise.resolve(self.resolve(identifier))
+                    .then(function (Obj) {
+                        if(typeof Obj === 'boolean') {
+                            throw new RaddishError(500, 'Identifier "' + identifier.toString() + '" is not a correct resource identifier');
+                        }
+        
+                        var obj = new Obj({
+                            identifier: orgIdentifier
+                        });
+        
+                        return (typeof obj.initialize === 'function') ? obj.initialize(config) : obj;
+                    })
+                    .then(function(object) {
+                        if(object.cache !== false && Raddish.getConfig('cache')) {
+                            cache[orgIdentifier.toString()] = object;
+                        }
+        
+                        return clone(object, false, 4);
+                    });
+            }
+        };
+        
+        // When we start the system, we also set the locators.
+        ObjectLoader.addLocator('../locator/core');
+        ObjectLoader.addLocator('../locator/component');
+        
+        module.exports = ObjectLoader;
+        {% endhighlight %}    </div>
+</div>

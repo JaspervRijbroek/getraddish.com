@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<div class="blog-entry">
-    <h1 class="page-title">{{page.title}}</h1>
+<h2>
+    {{page.title}}
+</h2>
 
-    <div class="content">
-        {{content}}
-    </div>
-</div>
+<p class="text-info">
+    {{page.date | date: "%d %B %Y"}} by {{page.author}}
+</p>
+
+{{content}}
