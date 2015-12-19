@@ -2,6 +2,7 @@
 title: Logging
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 The logging object in the config has a few options.  

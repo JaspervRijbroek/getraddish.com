@@ -2,6 +2,7 @@
 title: Essentials
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 In this section we will cover everything to get you up and running with Raddish  

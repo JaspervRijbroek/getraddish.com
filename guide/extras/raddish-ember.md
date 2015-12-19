@@ -2,6 +2,7 @@
 title: Raddish-Ember
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Raddish-Ember is the Raddish plugin/ library for <a href="http://emberjs.com/" target="_blank">Ember</a>.

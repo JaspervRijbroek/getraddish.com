@@ -2,6 +2,7 @@
 title: Universal Query
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 The universal query module has been created as a separate query builder to use in other projects.

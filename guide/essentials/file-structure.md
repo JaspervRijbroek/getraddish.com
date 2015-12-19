@@ -2,6 +2,7 @@
 title: File Structure
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Raddish is a system based on the file structure. Which in turn create clarity among different projects.

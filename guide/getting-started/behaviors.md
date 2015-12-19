@@ -2,6 +2,7 @@
 title: Behaviors
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Behaviors are the part where reusable code and DCI lays. The behaviors at this moment are living in two separate parts in Raddish  

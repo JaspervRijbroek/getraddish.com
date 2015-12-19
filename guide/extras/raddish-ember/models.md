@@ -2,6 +2,7 @@
 title: Models
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Because Raddish does its work based on components the models within Ember need to follow a specific naming convention.

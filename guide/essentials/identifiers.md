@@ -2,6 +2,7 @@
 title: Identifiers
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Before you start to read this section, please make sure you have read: [URLs](/guide/essentials/urls.html).

@@ -2,6 +2,7 @@
 title: URLs
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Within raddish almost everything is based on URLs. That is why in raddish it is a must to understand the urls,

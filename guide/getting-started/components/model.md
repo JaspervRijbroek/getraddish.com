@@ -3,6 +3,7 @@ title: Model
 author: Jasper van Rijbroek
 layout: guide
 override_only: true
+navigation: guide
 ---
 
 Within Raddish the model is responsible for getting all the data. The data layer is therefore separated into a few layers with the model as the primary layer.  
@@ -46,7 +47,7 @@ When talking to external API's or applications this is the place to do this. In 
 ### Example
 In the following example we will show a little about the query builder, the states and how they relate to each other.
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 var Model = require('raddish').Model,
     util = require('util');
     

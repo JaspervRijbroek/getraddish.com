@@ -3,6 +3,7 @@ title: Rowset
 author: Jasper van Rijbroek
 layout: guide
 override_only: true
+navigation: guide
 ---
 
 The rowset object is a collection of row objects.

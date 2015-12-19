@@ -2,6 +2,7 @@
 title: Advanced
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 In the advanced section we will go through some more advanced topics.  

@@ -2,6 +2,7 @@
 title: Sockets
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Within Raddish it is possible to use sockets. Also in Raddish-Ember the possibility for sockets has been added.  

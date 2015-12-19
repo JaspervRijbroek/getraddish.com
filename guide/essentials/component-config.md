@@ -2,6 +2,7 @@
 title: Component Config
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Within raddish it is possible to have certain config files.

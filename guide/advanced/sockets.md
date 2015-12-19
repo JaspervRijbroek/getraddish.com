@@ -2,6 +2,7 @@
 title: Sockets
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 [Socket.io](http://socket.io) is also supported right out-of-the-box and with this you can also use all its functions,  

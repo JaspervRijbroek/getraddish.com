@@ -52,7 +52,7 @@
                 <ul class="nav navbar-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
                     <li class="nav-item {% if page.url == '/features.html' %}active{% endif %}"><a href="/features.html" class="nav-link" itemprop="url"><span itemprop="name">Features</span></a></li>
                     <li class="nav-item {% if page.url contains 'getting-started' %}active{% endif %}">
-                        <a href="/getting-started/" class="nav-link" itemprop="url"><span itemprop="name">Getting Started</span></a>
+                        <a href="/guide/" class="nav-link" itemprop="url"><span itemprop="name">Guide</span></a>
                     </li>
                     <li class="nav-item {% if page.url contains 'api' %}active{% endif %}">
                         <a href="/api/" class="nav-link" itemprop="url"><span itemprop="name">API</span></a>
@@ -81,15 +81,6 @@
 
         <div class="container content">
             <div class="row">
-                {% if page.navigation %}
-                    <div class="col-md-3">
-                        {% include navigation/{{page.navigation}}.html %}
-                    </div>
-                    <div class="col-md-9">
-                {% else %}
-                    <div class="col-md-12">
-                {% endif %}
-
                     {% if page.header %}
                         <div class="page-header">
                             <h1>{{page.header}}</h1>

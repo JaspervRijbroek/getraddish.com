@@ -3,6 +3,7 @@ title: Component Dispatcher
 author: Jasper van Rijbroek
 layout: guide
 override_only: true
+navigation: guide
 ---
 
 The dispatcher is responsible for handling request and response, next to this, in raddish the dispatcher will also send the needed data to the controller.
@@ -18,7 +19,7 @@ An example of an object override and component config:
 
 <div class="row">
     <div class="col-md-6">
-{% highlight javascript linenos %}
+{% highlight javascript %}
 var Dispatcher  = require('raddish').Dispatcher;
 var util        = require('util');
 
@@ -39,7 +40,7 @@ module.exports = DemoDispatcher;
 {% endhighlight %}
     </div>
     <div class="col-md-6">
-{% highlight json linenos %}
+{% highlight json %}
 {
     "dispatcher": {
         "controller": "foo",

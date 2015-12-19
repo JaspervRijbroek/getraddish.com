@@ -2,6 +2,7 @@
 title: Mixins
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Raddish also allows use of mixins, the basics behind mixins is the getMixableMethods method.  

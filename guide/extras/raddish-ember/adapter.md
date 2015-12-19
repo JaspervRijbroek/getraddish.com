@@ -2,6 +2,7 @@
 title: Adapter
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Within Raddish you can have a few applications, Raddish-Ember allows you to specify these applications,

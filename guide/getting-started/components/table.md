@@ -3,6 +3,7 @@ title: Table
 author: Jasper van Rijbroek
 layout: guide
 override_only: true
+navigation: guide
 ---
 
 The table is called by the model to get all the data from the adapter(server).
@@ -56,7 +57,7 @@ In this example we will set some values and we will show the component config va
 
 <div class="row">
     <div class="col-md-6">
-{% highlight javascript linenos %}
+{% highlight javascript %}
 var Table = require('raddish').Table,
     util = require('util');
     
@@ -93,7 +94,7 @@ module.exports = FooTable;
 {% endhighlight %}
     </div>
     <div class="col-md-6">
-{% highlight json linenos %}
+{% highlight json %}
 {
     "table": {
         "foo": {

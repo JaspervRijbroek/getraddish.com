@@ -2,6 +2,7 @@
 title: Components
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Components are the heart of raddish, these will connect to data sources and return the formatted data as json or other object back to you.
@@ -20,7 +21,7 @@ The thing we do in this file is starting the dispatcher of the component, after 
 
 An example of how this file could be:
 
-{% highlight javascript linenos %}
+```javascript
 function ComponentFoo(request, response) {
     ObjectManager.get('com://demo/foo.dispatcher.http')
         .then(function(dispatcher) {
@@ -29,7 +30,7 @@ function ComponentFoo(request, response) {
 }
 
 module.exports = ComponentMenu;
-{% endhighlight %}
+```
 
 ### Explanation:  
 In this file we create a function which accepts request and response as parameters,

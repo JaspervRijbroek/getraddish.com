@@ -2,6 +2,7 @@
 title: Config
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Applications written with Raddish are required to create a config.json which needs to be send to Raddish before starting.

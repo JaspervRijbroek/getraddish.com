@@ -3,6 +3,7 @@ title: Row
 author: Jasper van Rijbroek
 layout: guide
 override_only: true
+navigation: guide
 ---
 
 The row object is basically a single entity of the data source.

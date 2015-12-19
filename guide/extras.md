@@ -2,6 +2,7 @@
 title: Extras
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Within Raddish we are giving some extras as well.

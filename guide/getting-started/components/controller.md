@@ -3,6 +3,7 @@ title: Controller
 author: Jasper van Rijbroek
 layout: guide
 override_only: true
+navigation: guide
 ---
 
 The controller will handle the request received from the dispatcher.
@@ -37,7 +38,7 @@ Within here you can add the permissions per action with your own logic.
 
 This is an example:
 
-{% highlight javascript linenos %}
+```jacascript
 var Permission  = require('raddish').Permission;
 var util        = require('util');
 
@@ -56,7 +57,7 @@ DefaultPermission.prototype.canAdd = function(context) {
 };
 
 module.exports = DefaultPermission;
-{% endhighlight %}
+```
 
 ## Behaviors
 Within Raddish it is possible to add extra behaviors to the controller.
@@ -90,7 +91,7 @@ Within the controller some parts can be controlled by component config and objec
 
 <div class="row">
     <div class="col-md-6">
-{% highlight javascript linenos %}
+{% highlight javascript %}
 var Controller  = require('raddish').Controller;
 var util        = require('util');
 
@@ -124,7 +125,7 @@ module.exports = DemoController;
     </div>
     
     <div class="col-md-6">
-{% highlight json linenos %}
+{% highlight json %}
 {
     "controller": {
         "demo": {

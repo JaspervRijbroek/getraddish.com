@@ -2,6 +2,7 @@
 title: Plugins
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Within Raddish it is possible to let the system do certain action upon certain events.  

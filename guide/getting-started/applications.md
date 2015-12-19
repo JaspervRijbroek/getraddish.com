@@ -2,6 +2,7 @@
 title: Applications
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 The application will search for the component and if present it will start your components when requested.  
@@ -10,7 +11,7 @@ For this to happen a component holds a few values, where it can find the compone
 Before this all works you must create an application file.  
 Which can look like this:
 
-{% highlight javascript linenos %}
+```javascript
 var Application = require('raddish').Application;
 var util        = require('util');
 
@@ -26,7 +27,7 @@ function HomeApp() {
 util.inherits(HomeApp, Application);
 
 module.exports = HomeApp;
-{% endhighlight %}
+```
 
 The application has quite some functions which we have added the basics in the Application object.
 This is the object we will require next to ```util```.

@@ -2,6 +2,7 @@
 title: System calls
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 Within Raddish it is possible to call all kind of files. This goes with the ```ObjectManager```.  

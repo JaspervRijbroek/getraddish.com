@@ -2,6 +2,7 @@
 title: Introduction
 author: Jasper van Rijbroek
 layout: guide
+navigation: guide
 ---
 
 This guide is meant for the beginners and more advanced with Raddish, please beare in mind that when you are starting out with Raddish you need a basic understanding about:
