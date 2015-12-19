@@ -1,7 +1,8 @@
 ---
 title: Introduction
 author: Jasper van Rijbroek
-layout: guide
+layout: default
+header: Introduction
 navigation: guide
 ---
 

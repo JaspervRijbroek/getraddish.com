@@ -6,16 +6,20 @@ permalink: /blog.html
 ---
 
 {% for post in site.posts %}
-    <h2>
-        {{post.title}}
-    </h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>
+                {{post.title}}
+            </h2>
 
-    <p class="text-info">
-        {{post.date | date: "%d %B %Y"}} by {{post.author}}
-    </p>
+            <p class="text-info">
+                {{post.date | date: "%d %B %Y"}} by {{post.author}}
+            </p>
 
-    {{post.content | split:"<!-- more -->" | first %}}
+            {{post.content | split:"<!-- more -->" | first %}}
 
-    <a href="{{post.url}}">Read More</a>
+            <a href="{{post.url}}">Read More</a>
+        </div>
+    </div>
     <hr/>
 {% endfor %}

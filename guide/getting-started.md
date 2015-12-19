@@ -1,7 +1,8 @@
 ---
 title: Getting Started
-layout: guide
+layout: default
 author: Jasper van Rijbroek
+header: Getting Started
 navigation: guide
 ---
 

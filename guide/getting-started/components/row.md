@@ -1,7 +1,7 @@
 ---
 title: Row
 author: Jasper van Rijbroek
-layout: guide
+layout: default
 override_only: true
 navigation: guide
 ---

@@ -57,9 +57,6 @@
                     <li class="nav-item {% if page.url contains 'api' %}active{% endif %}">
                         <a href="/api/" class="nav-link" itemprop="url"><span itemprop="name">API</span></a>
                     </li>
-                    <li class="nav-item {% if page.url contains 'changelog' %}active{% endif %}">
-                        <a href="/changelog.html"  class="nav-link" itemprop="url"><span itemprop="name">Changelog</span></a>
-                    </li>
                     <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
                         <a href="/blog.html" class="nav-link" itemprop="url"><span itemprop="name">Blog</span></a>
                     </li>
@@ -79,16 +76,37 @@
             {% include slider.html %}
         {% endif %}
 
-        <div class="container content">
+        <div class="container">
             <div class="row">
+                {% if page.navigation %}
+                    {% include navigation/{{page.navigation}}.html %}
+                    <article class="col-md-9" itemscope itemtype="http://schema.org/Article">
+                {% else %}
+                    <article class="col-md-12" itemscope itemtype="http://schema.org/Article">
+                {% endif %}
+
                     {% if page.header %}
                         <div class="page-header">
                             <h1>{{page.header}}</h1>
                         </div>
                     {% endif %}
 
-                    {{content}}
-                </div>
+                    <meta itemprop="name" content="{{page.title}}">
+                    {% if page.description %}<meta itemprop="description" content="{{page.description}}">{% endif %}
+                    <meta itemprop="author" content="{{page.author}}"/>
+                    <meta itemprop="url" content="{{page.url}}"/>
+
+                    {% if page.override_only %}
+                    <p class="override-only warning">
+                        Notice! It is only required to add this code when creating an override <br/>
+                        or when adding specialized code. Thus the system can operate without it.
+                    </p>
+                    {% endif %}
+
+                    <div itemprop="articleBody">
+                        {{content}}
+                    </div>
+                </article>
             </div>
         </div>
 
