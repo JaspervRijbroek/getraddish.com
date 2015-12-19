@@ -5,10 +5,10 @@ header: File Structure
 navigation: guide
 ---
 
-Below I will show the complete file structure for a component, ofcourse when there are no file overrides the folders don't have to be created.
-It is ofcourse possible to add own custom folders if needed. Also the config.json is optional and used for component config.
+The components in Raddish are heavily dependent on a file structure. When a part of the component isn't found its likely to be an issue here.
 
-The component_name.js must have the same name as the component and is the file which is first called when requesting a component.
+However, most of the component files are created when overriding.
+The only file required is the [component file]({{site.baseurl}}getting-started/setup/component-file.html) defined here as ```<component_name>.js``` this file must have the same name as the component itself.
 
 {% highlight bash %}
 <component_name>

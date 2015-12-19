@@ -1,6 +1,5 @@
 name: Raddish Docs
-markdown: kramdown
-highlighter: true
+markdown: redcarpet
 baseurl: /
 sass:
   sass_dir: assets/css
