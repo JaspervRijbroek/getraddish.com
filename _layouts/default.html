@@ -79,7 +79,9 @@
         <div class="container">
             <div class="row">
                 {% if page.navigation %}
-                    {% include navigation/{{page.navigation}}.html %}
+                    <div class="sidebar">
+                        {% include navigation/{{page.navigation}}.html %}
+                    </div>
                     <article class="col-md-9" itemscope itemtype="http://schema.org/Article">
                 {% else %}
                     <article class="col-md-12" itemscope itemtype="http://schema.org/Article">

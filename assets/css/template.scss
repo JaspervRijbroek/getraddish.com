@@ -53,3 +53,19 @@ footer {
 .text-center {
   text-align: center;
 }
+
+aside {
+  &.height {
+    ul {
+      height: 250px;
+      overflow: hidden;
+    }
+
+    &::after {
+      height: 25px;
+      width: 100%;
+      background: #FFFFFF;
+      content: "...";
+    }
+  }
+}
