@@ -15,6 +15,9 @@ This default behavior can be overridden with an object override or a component c
 Also by default the dispatcher handles the user authentication. and it will search to the authenticator with the name default.
 This as well can be overridden in an object override or a component config value.
 
+When for the controller and the authenticator only an name is given instead of a complete identifier,
+it will search for the object using the the identifier of the dispatcher.
+
 An example of an object override and component config:
 
 <div class="row">
