@@ -2,6 +2,7 @@
 title: File Structure
 author: Jasper van Rijbroek
 layout: default
+header: File Structure
 navigation: guide
 ---
 

@@ -1,6 +1,7 @@
 ---
 ---
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu:400,700&subset=latin,greek,latin-ext);
 @import "bootstrap/bootstrap";
 @import "font-awesome/font-awesome";
 
@@ -15,8 +16,21 @@ $silver: #bbbbbb;
 $mercury: #e6e6e6;
 $veridian: #3B8F6E;
 
+body {
+  font-family: 'Open Sans';
+  line-height: 1.7em;
+  word-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu';
+}
+
 .navbar-raddish {
   border-bottom: 2px solid $alizarin-crimson;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 
   .navbar-nav {
     padding-top: 5px;
@@ -68,4 +82,54 @@ aside {
       content: "...";
     }
   }
+}
+
+.method {
+  .title,
+  .arguments,
+  .paren,
+  .args-list {
+    display: inline-block;
+  }
+
+  .args-list {
+    .arg {
+      display: inline-block;
+
+      &::after {
+        content: ",";
+      }
+
+      &:last-of-type {
+        &::after {
+          content: "";
+        }
+      }
+    }
+
+    padding-left: 0;
+    list-style: none;
+  }
+
+  table {
+    &.table {
+      td {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .returns {
+    p {
+      display: initial;
+    }
+  }
+}
+
+.header-icon {
+  font-size: 36px;
+  display: block;
+  text-align: center;
 }

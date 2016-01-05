@@ -2,6 +2,7 @@
 title: Components
 author: Jasper van Rijbroek
 layout: default
+header: Components
 navigation: guide
 ---
 

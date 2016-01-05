@@ -2,6 +2,7 @@
 title: Logging
 author: Jasper van Rijbroek
 layout: default
+header: Logging
 navigation: guide
 ---
 

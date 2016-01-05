@@ -16,12 +16,3 @@
 ga('create', 'UA-32550863-5', 'auto');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
-
-Zepto(function($) {
-    $(document).on('mouseenter', '.dropdown', function() {
-        $(this).addClass('open');
-    });
-    $(document).on('mouseout', '.dropdown', function() {
-        $(this).removeClass('open');
-    });
-});

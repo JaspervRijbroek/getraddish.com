@@ -2,6 +2,7 @@
 title: Adapter
 author: Jasper van Rijbroek
 layout: default
+header: Adapter
 navigation: guide
 ---
 

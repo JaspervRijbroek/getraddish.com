@@ -3,8 +3,8 @@ layout: default
 title: Universal Query API  - AbstractBuilder 
 ---
 
-<div class="api">
-    <aside class="sidebar">
+<div class="row api">
+    <div class="col-md-3 sidebar">
         <ul class="nav nav-stacked">
                 <li class="nav-item {% if page.url == '/api/universal-query/classes/AbstractBuilder.html' %}active{% endif %}">
                     <a href="../classes/AbstractBuilder.html">
@@ -41,241 +41,267 @@ title: Universal Query API  - AbstractBuilder
                         UpdateQuery
                     </a>
                 </li>
-        </ul>    </aside>
+        </ul>    </div>
 
-    <article>
-        <h1>AbstractBuilder Class</h1>
-        <div class="description">
-            <p>This object holds the basics to create a query builder.</p>
+    <article class="col-md-9">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>AbstractBuilder Class</h1>
+                <div class="description">
+                    <p>This object holds the basics to create a query builder.</p>
         
+                </div>
+        
+        
+                    <div class="foundat">
+                        Defined in: <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L1" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:1</code></a>
+                    </div>
+            </div>
         </div>
         
+            <hr/>
         
-            <div class="foundat">
-                Defined in: <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L1" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:1</code></a>
-            </div>
+            <h2>Methods</h2>
+            <div class="row">
         
-        <div class="methods">
-                <hr/>
-                <h2>Methods</h2>
-        
-                    <div id="method_delete" class="method item">
-                        <h3 class="title">delete</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
+                    <div class="col-md-12 method">
+                        <div id="method_delete" class="method item">
+                            <h3 class="title">delete</h3>
+                        
+                                <div class="arguments">
+                                    <span class="paren">()</span>
+                                </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L48" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:48</code></a>
+                            </p>
+                        
+                        
+                        
                             </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L48" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:48</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method returns the DeleteQuery builder.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type"><a href="../classes/DeleteQuery.html" class="crosslink">DeleteQuery</a></span>:
-                                    <p>The DeleteQuery builder.</p>
-                    
+                        
+                            <div class="description">
+                                <p>This method returns the DeleteQuery builder.</p>
+                        
                             </div>
-                    </div>            <div id="method_getBuilder" class="method item">
-                        <h3 class="title">getBuilder</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">(</span>
-                                <ul class="args-list inline commas">
-                                            <li class="arg">
-                                                type
-                                            </li>
-                                </ul>
-                                <span class="paren">)</span>
+                        
+                        
+                                <div class="returns">
+                                    <h4>Returns:</h4>
+                        
+                                            <span class="type"><a href="../classes/DeleteQuery.html" class="crosslink">DeleteQuery</a></span>:
+                                        <p>The DeleteQuery builder.</p>
+                        
+                                </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="col-md-12 method">
+                        <div id="method_getBuilder" class="method item">
+                            <h3 class="title">getBuilder</h3>
+                        
+                                <div class="arguments">
+                                    <span class="paren">(</span>
+                                    <ul class="args-list inline commas">
+                                                <li class="arg">
+                                                    type
+                                                </li>
+                                    </ul>
+                                    <span class="paren">)</span>
+                                </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L60" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:60</code></a>
+                            </p>
+                        
+                        
+                        
                             </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L60" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:60</code></a>
-                        </p>
-                    
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            <p>This method will return a query builder object based on which type of builder to select.
-                    Only when this builder is supported it will be returned, ready for use.</p>
-                    
-                        </div>
-                    
-                            <h3>Parameters</h3>
-                    
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                        
+                            <div class="description">
+                                <p>This method will return a query builder object based on which type of builder to select.
+                        Only when this builder is supported it will be returned, ready for use.</p>
+                        
+                            </div>
+                        
+                                <h3>Parameters</h3>
+                        
+                                <table class="table">
+                                    <thead>
                                         <tr>
-                                            <td>
-                                                type
-                                            </td>
-                                            <td>
-                                                String
-                                            </td>
-                                            <td>
-                                                <p>The type of QueryBuilder to return.</p>
-                    
-                                            </td>
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>
+                                                Type
+                                            </th>
+                                            <th>
+                                                Description
+                                            </th>
                                         </tr>
-                                </tbody>
-                            </table>
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type">Object</span>:
-                                    <p>The requested query builder object.</p>
-                    
-                            </div>
-                    </div>            <div id="method_insert" class="method item">
-                        <h3 class="title">insert</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
-                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L24" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:24</code></a>
-                        </p>
-                    
-                    
-                    
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>
+                                                    type
+                                                </td>
+                                                <td>
+                                                    String
+                                                </td>
+                                                <td>
+                                                    <p>The type of QueryBuilder to return.</p>
+                        
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        
+                                <div class="returns">
+                                    <h4>Returns:</h4>
+                        
+                                            <span class="type">Object</span>:
+                                        <p>The requested query builder object.</p>
+                        
+                                </div>
                         </div>
-                    
-                        <div class="description">
-                            <p>This method returns the InsertQuery builder.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type"><a href="../classes/InsertQuery.html" class="crosslink">InsertQuery</a></span>:
-                                    <p>The InsertQuery builder.</p>
-                    
+                        <hr />
+                    </div>
+                    <div class="col-md-12 method">
+                        <div id="method_insert" class="method item">
+                            <h3 class="title">insert</h3>
+                        
+                                <div class="arguments">
+                                    <span class="paren">()</span>
+                                </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L24" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:24</code></a>
+                            </p>
+                        
+                        
+                        
                             </div>
-                    </div>            <div id="method_select" class="method item">
-                        <h3 class="title">select</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
+                        
+                            <div class="description">
+                                <p>This method returns the InsertQuery builder.</p>
+                        
                             </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L12" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:12</code></a>
-                        </p>
-                    
-                    
-                    
+                        
+                        
+                                <div class="returns">
+                                    <h4>Returns:</h4>
+                        
+                                            <span class="type"><a href="../classes/InsertQuery.html" class="crosslink">InsertQuery</a></span>:
+                                        <p>The InsertQuery builder.</p>
+                        
+                                </div>
                         </div>
-                    
-                        <div class="description">
-                            <p>This method returns the SelectQuery builder.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
-                                    <p>The SelectQuery builder.</p>
-                    
+                        <hr />
+                    </div>
+                    <div class="col-md-12 method">
+                        <div id="method_select" class="method item">
+                            <h3 class="title">select</h3>
+                        
+                                <div class="arguments">
+                                    <span class="paren">()</span>
+                                </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L12" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:12</code></a>
+                            </p>
+                        
+                        
+                        
                             </div>
-                    </div>            <div id="method_update" class="method item">
-                        <h3 class="title">update</h3>
-                    
-                            <div class="arguments">
-                                <span class="paren">()</span>
+                        
+                            <div class="description">
+                                <p>This method returns the SelectQuery builder.</p>
+                        
                             </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="meta">
-                                <p>
-                                        Defined in
-                                <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L36" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:36</code></a>
-                        </p>
-                    
-                    
-                    
+                        
+                        
+                                <div class="returns">
+                                    <h4>Returns:</h4>
+                        
+                                            <span class="type"><a href="../classes/SelectQuery.html" class="crosslink">SelectQuery</a></span>:
+                                        <p>The SelectQuery builder.</p>
+                        
+                                </div>
                         </div>
-                    
-                        <div class="description">
-                            <p>This method returns the UpdateQuery builder.</p>
-                    
-                        </div>
-                    
-                    
-                            <div class="returns">
-                                <h4>Returns:</h4>
-                    
-                                        <span class="type"><a href="../classes/UpdateQuery.html" class="crosslink">UpdateQuery</a></span>:
-                                    <p>The UpdateQuery builder.</p>
-                    
+                        <hr />
+                    </div>
+                    <div class="col-md-12 method">
+                        <div id="method_update" class="method item">
+                            <h3 class="title">update</h3>
+                        
+                                <div class="arguments">
+                                    <span class="paren">()</span>
+                                </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/universal-query/tree/master/lib/abstract/builder.js#L36" target="_blank"><code>lib&#x2F;abstract&#x2F;builder.js:36</code></a>
+                            </p>
+                        
+                        
+                        
                             </div>
-                    </div></div>    </article>
+                        
+                            <div class="description">
+                                <p>This method returns the UpdateQuery builder.</p>
+                        
+                            </div>
+                        
+                        
+                                <div class="returns">
+                                    <h4>Returns:</h4>
+                        
+                                            <span class="type"><a href="../classes/UpdateQuery.html" class="crosslink">UpdateQuery</a></span>:
+                                        <p>The UpdateQuery builder.</p>
+                        
+                                </div>
+                        </div>
+                        <hr />
+                    </div>
+            </div>
+    </article>
 </div>

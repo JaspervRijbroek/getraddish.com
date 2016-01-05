@@ -3,6 +3,7 @@ title: Component Dispatcher
 author: Jasper van Rijbroek
 layout: default
 override_only: true
+header: Dispatcher
 navigation: guide
 ---
 

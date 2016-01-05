@@ -2,6 +2,7 @@
 title: Config
 author: Jasper van Rijbroek
 layout: default
+header: Config
 navigation: guide
 ---
 

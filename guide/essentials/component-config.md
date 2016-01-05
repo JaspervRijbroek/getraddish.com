@@ -2,6 +2,7 @@
 title: Component Config
 author: Jasper van Rijbroek
 layout: default
+header: Component Config
 navigation: guide
 ---
 
