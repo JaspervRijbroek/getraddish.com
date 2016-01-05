@@ -15,4 +15,4 @@ This guide is meant for the beginners and more advanced with Raddish, please bea
 In here you will find how to get started using Raddish.
 Also in here the documentation for <a href="https://github.com/JaspervRijbroek/raddish-ember" target="_blank">Raddish-Ember</a> and <a href="https://github.com/JaspervRijbroek/universal-query" target="_blank">Universal Query</a> can be found.
 
-If you are new to Raddish please read the section [Getting Started](/guide/getting-started.html).
+If you are new to Raddish please read the [Getting Started](/guide/getting-started.html) guide.
