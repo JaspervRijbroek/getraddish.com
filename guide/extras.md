@@ -1,8 +1,7 @@
 ---
-title: Extras
+title: Extra's
 author: Jasper van Rijbroek
 layout: default
-header: Extra's
 navigation: guide
 ---
 

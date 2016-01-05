@@ -2,7 +2,6 @@
 title: Setup
 layout: default
 author: Jasper van Rijbroek
-headers: Setup
 navigation: guide
 ---
 

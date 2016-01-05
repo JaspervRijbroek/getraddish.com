@@ -3,7 +3,6 @@ title: Model
 author: Jasper van Rijbroek
 layout: default
 override_only: true
-header: Model
 navigation: guide
 ---
 

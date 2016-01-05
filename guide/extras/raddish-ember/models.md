@@ -2,7 +2,6 @@
 title: Models
 author: Jasper van Rijbroek
 layout: default
-header: Models
 navigation: guide
 ---
 

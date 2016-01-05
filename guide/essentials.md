@@ -2,7 +2,6 @@
 title: Essentials
 author: Jasper van Rijbroek
 layout: default
-header: Essentials
 navigation: guide
 ---
 

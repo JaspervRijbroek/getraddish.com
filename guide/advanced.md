@@ -2,7 +2,6 @@
 title: Advanced
 author: Jasper van Rijbroek
 layout: default
-header: Advanced
 navigation: guide
 ---
 

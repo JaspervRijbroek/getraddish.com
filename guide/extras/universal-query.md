@@ -2,7 +2,6 @@
 title: Universal Query
 author: Jasper van Rijbroek
 layout: default
-header: Universal Query
 navigation: guide
 ---
 

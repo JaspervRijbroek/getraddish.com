@@ -1,9 +1,8 @@
 ---
-title: Component Dispatcher
+title: Dispatcher
 author: Jasper van Rijbroek
 layout: default
 override_only: true
-header: Dispatcher
 navigation: guide
 ---
 

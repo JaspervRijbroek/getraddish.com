@@ -2,7 +2,6 @@
 title: Raddish-Ember
 author: Jasper van Rijbroek
 layout: default
-header: Raddish-Ember
 navigation: guide
 ---
 

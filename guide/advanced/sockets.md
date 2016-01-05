@@ -2,7 +2,6 @@
 title: Sockets
 author: Jasper van Rijbroek
 layout: default
-header: Sockets
 navigation: guide
 ---
 

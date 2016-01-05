@@ -2,7 +2,6 @@
 title: Mixins
 author: Jasper van Rijbroek
 layout: default
-header: Mixins
 navigation: guide
 ---
 

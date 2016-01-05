@@ -1,7 +1,6 @@
 ---
 title: Features
 layout: default
-header: Features
 permalink: /features.html
 ---
 

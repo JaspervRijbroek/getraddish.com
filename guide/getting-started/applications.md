@@ -2,7 +2,6 @@
 title: Applications
 author: Jasper van Rijbroek
 layout: default
-header: Appliations
 navigation: guide
 ---
 

@@ -2,7 +2,6 @@
 title: System calls
 author: Jasper van Rijbroek
 layout: default
-header: System Calls
 navigation: guide
 ---
 

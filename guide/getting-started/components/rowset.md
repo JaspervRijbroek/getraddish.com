@@ -3,7 +3,6 @@ title: Rowset
 author: Jasper van Rijbroek
 layout: default
 override_only: true
-header: Rowset
 navigation: guide
 ---
 
