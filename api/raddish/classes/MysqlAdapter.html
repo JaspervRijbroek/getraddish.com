@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Raddish API  - MysqlAdapter 
+header: MysqlAdapter
 ---
 
 <div class="row api">
@@ -131,11 +132,6 @@ title: Raddish API  - MysqlAdapter
                         Md5Filter
                     </a>
                 </li>
-                <li class="nav-item {% if page.url == '/api/raddish/classes/MingoIDFilter.html' %}active{% endif %}">
-                    <a href="/api/raddish/classes/MingoIDFilter.html">
-                        MingoIDFilter
-                    </a>
-                </li>
                 <li class="nav-item {% if page.url == '/api/raddish/classes/Mixin.html' %}active{% endif %}">
                     <a href="/api/raddish/classes/Mixin.html">
                         Mixin
@@ -149,6 +145,11 @@ title: Raddish API  - MysqlAdapter
                 <li class="nav-item {% if page.url == '/api/raddish/classes/MongoAdapter.html' %}active{% endif %}">
                     <a href="/api/raddish/classes/MongoAdapter.html">
                         MongoAdapter
+                    </a>
+                </li>
+                <li class="nav-item {% if page.url == '/api/raddish/classes/MongoIDFilter.html' %}active{% endif %}">
+                    <a href="/api/raddish/classes/MongoIDFilter.html">
+                        MongoIDFilter
                     </a>
                 </li>
                 <li class="nav-item {% if page.url == '/api/raddish/classes/MysqlAdapter.html' %}active{% endif %}">
@@ -251,7 +252,6 @@ title: Raddish API  - MysqlAdapter
     <article class="col-md-9">
         <div class="row">
             <div class="col-md-12">
-                <h1>MysqlAdapter Class</h1>
                 <div class="description">
                     <p>The MysqlAdapter is the default adapter in this framework,
         this sets the queryBuilder object with the &quot;universal-query&quot; module which is a query builder for mysql.</p>
