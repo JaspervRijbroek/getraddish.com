@@ -1,0 +1,12 @@
+.logo {
+    position: absolute;
+    background: url(../images/logo_tshirt.svg) no-repeat;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+}
+
+.reveal .progress span {
+    background: #CE202F;
+}

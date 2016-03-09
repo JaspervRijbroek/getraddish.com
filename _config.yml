@@ -4,3 +4,4 @@ baseurl: /
 sass:
   sass_dir: assets/css
   style: compressed
+exclude: [node_modules, overview.md, Gruntfile.js, package.json, sass]
