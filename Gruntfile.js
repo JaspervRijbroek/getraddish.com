@@ -1,20 +1,18 @@
 'use strict';
+
 module.exports = function (grunt) {
-
 	var gulp 	   = require('gulp'),
-		styleguide = require('sc5-styleguide');
-
-	var buildPath = './';
-	var styleguideAppRoot = '/styleguide';
-	var styleguideBuildPath = buildPath + styleguideAppRoot;
-
+		styleguide = require('sc5-styleguide'),
+        buildPath = './',
+        styleguideAppRoot = '/styleguide',
+        styleguideBuildPath = buildPath + styleguideAppRoot;
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-gulp');
-	grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	grunt.registerTask('default', ['postcss:dist', 'clean:customjsmin','concat', 'uglify', 'clean:customjs']);
@@ -30,7 +28,7 @@ module.exports = function (grunt) {
 			dist: {
 				options: {
 					sassDir: './sass',
-					cssDir: './stylesheets',
+					cssDir: './assets/css',
 					environment: 'production',
 					outputStyle: 'compact'
 				}
@@ -39,10 +37,10 @@ module.exports = function (grunt) {
 
         clean: {
             customjs: {
-                src: ['./js/custom/custom.js']
+                src: ['./assets/js/raddish.js']
             },
             customjsmin: {
-                src: ['./js/custom/custom.min.js']
+                src: ['./assets/js/raddish.min.js']
             }
         },
 
@@ -51,15 +49,15 @@ module.exports = function (grunt) {
                 separator: ''
             },
             dist: {
-                src: ['./js/custom/*.js'],
-                dest: './js/custom/custom.js'
+                src: ['./assets/js/*.js'],
+                dest: './assets/js/raddish.js'
             }
         },
 
         uglify: {
             my_target: {
                 files: {
-                    './js/custom/custom.min.js': ['./js/custom/custom.js']
+                    './assets/js/raddish.min.js': ['./assets/js/raddish.js']
                 }
             }
         },
@@ -78,40 +76,39 @@ module.exports = function (grunt) {
 					expand: false,
 					flatten: true,
 					// src: './stylesheets',
-					src: 'stylesheets/**/*.css',
-					dest: 'stylesheets'
+					src: 'assets/css/*.css',
+					dest: 'assets/css'
 				}
 			},
 			dist: {
-				src: './stylesheets/**/*.css'
+				src: './assets/css/*.css'
 			}
 		},
 
 		gulp: {
-			'styleguide-generate': function() {
-				return gulp.src(['./sass/**/*.scss'])
-					.pipe(styleguide.generate({
-						title: 'Raddish Styleguide',
-						rootPath: styleguideBuildPath, // This is where resources are loaded from
-						appRoot: styleguideAppRoot, // This is where the styleguide is rendered
-						overviewPath: 'overview.md',
-						disableEncapsulation: true,
-						disableHtml5Mode: true,
-						previousSection: true,
-						nextSection: true,
-						extraHead: []
-					}))
-					.pipe(gulp.dest(styleguideBuildPath)); // This is where the styleguide source files get rendered
-			},
-			'styleguide-applystyles': function() {
-				return gulp.src([
-						'./stylesheets/screen.css'
-					])
-					.pipe(styleguide.applyStyles([
-					]))
-					.pipe(gulp.dest(styleguideBuildPath));
-			}
-		},
+            "styleguide-generate": function () {
+                return gulp.src(['./sass/**/*.scss'])
+                    .pipe(styleguide.generate({
+                        title: 'Raddish Styleguide',
+                        rootPath: '/', // This is where resources are loaded from
+                        appRoot: styleguideAppRoot, // This is where the styleguide is rendered
+                        overviewPath: 'overview.md',
+                        disableEncapsulation: true,
+                        disableHtml5Mode: true,
+                        previousSection: true,
+                        nextSection: true,
+                        extraHead: []
+                    }))
+                    .pipe(gulp.dest(styleguideBuildPath)); // This is where the styleguide source files get rendered
+            },
+            "styleguide-applystyles": function () {
+                return gulp.src([
+                        './assets/css/raddish.css'
+                    ])
+                    .pipe(styleguide.applyStyles([]))
+                    .pipe(gulp.dest(styleguideBuildPath));
+            }
+        },
 
 		watch: {
 			scss: {
@@ -119,7 +116,5 @@ module.exports = function (grunt) {
 				tasks: ['compass', 'gulp:styleguide-generate', 'gulp:styleguide-applystyles']
 			}
 		}
-
 	});
 };
-
