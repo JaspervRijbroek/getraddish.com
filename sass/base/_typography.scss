@@ -1,0 +1,75 @@
+// Typography
+//
+//Styleguide 1.4
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:400,500,700);
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+// Headers
+//
+// markup:
+// <h1>
+//    Hello World
+//    <small>
+//        Its me
+//    </small>
+// </h1>
+// <h2>
+//    Hello World
+//    <small>
+//        Its me
+//    </small>
+// </h2>
+// <h3>
+//    Hello World
+//    <small>
+//        Its me
+//    </small>
+// </h3>
+//
+// Styleguide 1.4.1
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 3px solid $japonica;
+
+  & > small {
+    @extend .text--subtle;
+    font-size: 50%;
+    font-weight: normal;
+  }
+}
+
+@for $i from 1 to 4 {
+  h#{$i} {
+    font-size: 48px - ($i * 6);
+  }
+}
+
+// Text
+//
+// .text - Default text
+// .text--subtle - Subtle text
+// .text--green - Green text
+// .text--red - Red text
+//
+// markup:
+// <p class="{$modifiers}">Hello World</p>
+//
+// Styleguide 1.4.2
+
+.text {
+  &--subtle {
+    color: $silver;
+  }
+
+  &--green {
+    color: $conifer;
+  }
+
+  &--red {
+    color: $japonica;
+  }
+}
