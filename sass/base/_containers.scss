@@ -1,19 +1,47 @@
 // Containers
 //
 // .container           - Default container
-// .container--sidenav  - Container leaving room for a sidenav
+// .container--sidebar  - Container leaving room for a sidenav
 //
 // markup:
 // <div class="{$modifiers}">
-//    Container
+//    <div class="container__sidebar">
+//      Sidebar
+//    </div><!--
+//    --><div class="container__content">
+//      Container
+//    </div>
 // </div>
 //
 // Styleguide 1.5
 .container {
   width: 100%;
-  padding: 15px 0;
+  padding: 0 15px;
 
-  &--sidenav {
-    // Leave some space for the rest of the content.
+  &__content {
+    width: 100%;
+  }
+
+  &__sidebar {
+    padding: 15px;
+    display: none;
+  }
+
+  &--sidebar {
+    @extend .container;
+    padding: 0;
+
+    &> * {
+      display: inline-block;
+    }
+
+    .container__content {
+      padding: 15px;
+      width: 75%;
+    }
+
+    .container__sidebar {
+      width: 25%;
+    }
   }
 }

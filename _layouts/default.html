@@ -43,86 +43,14 @@
             <div class="header__logo"></div>
         </div>
 
-        <div class="navbar navbar-raddish">
-	        <div class="container-fluid">
-		        <div class="navbar-header">
-			        <div class="navbar-brand">
-                        <a href="/">
-                            <img src="/assets/images/logo.svg" alt=""/>
-                        </a>
-			        </div>
-		        </div>
 
-                <ul class="nav navbar-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                    <li class="nav-item {% if page.url == '/features.html' %}active{% endif %}"><a href="/features.html" class="nav-link" itemprop="url"><span itemprop="name">Features</span></a></li>
-                    <li class="nav-item {% if page.url contains 'getting-started' %}active{% endif %}">
-                        <a href="/guide/" class="nav-link" itemprop="url"><span itemprop="name">Guide</span></a>
-                    </li>
-                    <li class="nav-item {% if page.url contains 'api' %}active{% endif %}">
-                        <a href="/api/" class="nav-link" itemprop="url"><span itemprop="name">API</span></a>
-                    </li>
-                    <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                        <a href="/blog.html" class="nav-link" itemprop="url"><span itemprop="name">Blog</span></a>
-                    </li>
-                    <li class="nav-item {% if page.url == '/support.html' %}active{% endif %}">
-                        <a href="/support.html"  class="nav-link" itemprop="url"><span itemprop="name">Support</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/JaspervRijbroek/raddish" target="_blank">
-                            <i class="icon-github"></i>
-                        </a>
-                    </li>
-                </ul>
-	        </div>
+        {{content}}
+
+        <div class="footer">
+            <p class="footer__text">
+                Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+                <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
+            </p>
         </div>
-
-        {% if page.url == '/index.html' %}
-            {% include slider.html %}
-        {% endif %}
-
-        <div class="container">
-            <div class="row">
-                {% if page.navigation %}
-                    <div class="sidebar">
-                        {% include navigation/{{page.navigation}}.html %}
-                    </div>
-                    <article class="col-md-9" itemscope itemtype="http://schema.org/Article">
-                {% else %}
-                    <article class="col-md-12" itemscope itemtype="http://schema.org/Article">
-                {% endif %}
-                    {{ post.ignore_title }}
-                    {% if post.ignore_title %}
-                        <div class="page-header">
-                            <h1>{{page.title}}</h1>
-                        </div>
-                    {% endif %}
-
-                    <meta itemprop="name" content="{{page.title}}">
-                    {% if page.description %}<meta itemprop="description" content="{{page.description}}">{% endif %}
-                    <meta itemprop="author" content="{{page.author}}"/>
-                    <meta itemprop="url" content="{{page.url}}"/>
-
-                    {% if page.override_only %}
-                        <p class="override-only warning">
-                            Notice! It is only required to add this code when creating an override <br/>
-                            or when adding specialized code. Thus the system can operate without it.
-                        </p>
-                    {% endif %}
-
-                    <div itemprop="articleBody">
-                        {{content}}
-                    </div>
-                </article>
-            </div>
-        </div>
-
-        <footer>
-            <div class="container">
-                <p class="text-center">
-                    Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
-                    <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
-                </p>
-            </div>
-        </footer>
     </body>
 </html>

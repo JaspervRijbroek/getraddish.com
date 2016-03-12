@@ -9,9 +9,12 @@
 //
 // Styleguide 3.2
 .footer {
+  margin-top: 20px;
   border-top: 3px solid $japonica;
 
   &__text {
+    @extend .text--center;
+
     padding-top: 5px;
   }
 }
