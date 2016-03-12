@@ -48,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Text
+// Text Colors
 //
-// .text - Default text
-// .text--subtle - Subtle text
-// .text--green - Green text
-// .text--red - Red text
+// .text          - Default text
+// .text--subtle  - Subtle text
+// .text--success - Green text
+// .text--error   - Red text
 //
 // markup:
 // <p class="{$modifiers}">Hello World</p>
@@ -65,11 +65,35 @@ h1, h2, h3, h4, h5, h6 {
     color: $silver;
   }
 
-  &--green {
+  &--success {
     color: $conifer;
   }
 
-  &--red {
+  &--error {
     color: $japonica;
+  }
+}
+
+// Text alignment
+//
+// .text--left   - Align text on the left (default)
+// .text--center - Align text in the center
+// .text--right  - Align text on the right
+//
+// markup:
+// <p class="{$modifiers}">{$modifiers}</p>
+//
+// Styleguide 1.4.3
+.text {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
   }
 }

@@ -1,0 +1,18 @@
+// Links
+//
+// .link            - Default link.
+// .link:disabled   - Default visited link
+//
+// markup:
+// <a class="{$modifiers}" href="#">{$modifiers}</a>
+//
+// Styleguide 2.2
+.link {
+  color: $conifer;
+  text-decoration: underline;
+
+  &:visited,
+  &:disabled {
+    @extend .text--subtle;
+  }
+}

@@ -90,7 +90,6 @@ module.exports = function (grunt) {
                 return gulp.src(['./sass/**/*.scss'])
                     .pipe(styleguide.generate({
                         title: 'Raddish Styleguide',
-                        rootPath: '/', // This is where resources are loaded from
                         appRoot: styleguideAppRoot, // This is where the styleguide is rendered
                         overviewPath: 'overview.md',
                         disableEncapsulation: true,
@@ -103,9 +102,9 @@ module.exports = function (grunt) {
             },
             "styleguide-applystyles": function () {
                 return gulp.src([
-                        './assets/css/raddish.css'
+                        'assets/css/raddish.css'
                     ])
-                    .pipe(styleguide.applyStyles([]))
+                    .pipe(styleguide.applyStyles())
                     .pipe(gulp.dest(styleguideBuildPath));
             }
         },

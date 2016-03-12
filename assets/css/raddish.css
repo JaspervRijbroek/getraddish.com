@@ -1,6 +1,5 @@
-/* Styleguide 1.0 Settings */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:400,500,700);
-* { padding: 0; margin: 0; }
+* { padding: 0; margin: 0; box-sizing: border-box; font-size: 1em; }
 
 body { font-family: 'Ubuntu', sans-serif; }
 
@@ -13,6 +12,25 @@ h2 { font-size: 36px; }
 
 h3 { font-size: 30px; }
 
-.text--subtle, h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small { color: #bbbbbb; }
-.text--green { color: #b0d45c; }
-.text--red { color: #d86865; }
+.text--subtle, h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small, .input:disabled, .link:visited, .link:disabled { color: #bbbbbb; }
+.text--success { color: #b0d45c; }
+.text--error { color: #d86865; }
+
+.text--left { text-align: left; }
+.text--center { text-align: center; }
+.text--right { text-align: right; }
+
+.input { border: 1px solid #d86865; padding: 5px; }
+.input--block { display: block; width: 100%; }
+.input:disabled { border: 1px solid #bbbbbb; }
+
+.link { color: #b0d45c; text-decoration: underline; }
+
+.control__label { margin: 0 0 5px 0; display: block; }
+.control--inline .control__label { margin: 0 5px 0 0; display: initial; }
+
+.header { position: relative; height: 250px; width: 100%; content: " "; background: url(/assets/images/pattern.png) center center no-repeat; }
+.header__logo { position: relative; height: 100%; background: url(/assets/images/logo.svg) center center no-repeat; background-size: 25%; }
+
+.footer { border-top: 3px solid #d86865; }
+.footer__text { padding-top: 5px; }
