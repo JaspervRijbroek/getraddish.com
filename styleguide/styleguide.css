@@ -20,6 +20,8 @@ h3 { font-size: 30px; }
 .text--center { text-align: center; }
 .text--right { text-align: right; }
 
+.container { width: 100%; padding: 15px 0; }
+
 .input { border: 1px solid #d86865; padding: 5px; }
 .input--block { display: block; width: 100%; }
 .input:disabled { border: 1px solid #bbbbbb; }

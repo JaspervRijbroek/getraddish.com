@@ -1,0 +1,19 @@
+// Containers
+//
+// .container           - Default container
+// .container--sidenav  - Container leaving room for a sidenav
+//
+// markup:
+// <div class="{$modifiers}">
+//    Container
+// </div>
+//
+// Styleguide 1.5
+.container {
+  width: 100%;
+  padding: 15px 0;
+
+  &--sidenav {
+    // Leave some space for the rest of the content.
+  }
+}
