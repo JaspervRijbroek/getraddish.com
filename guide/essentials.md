@@ -1,7 +1,7 @@
 ---
-title: Essentials
+title_extra: Essentials
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

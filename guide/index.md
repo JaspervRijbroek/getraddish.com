@@ -1,7 +1,7 @@
 ---
-title: Introduction
+title_extra: Introduction
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

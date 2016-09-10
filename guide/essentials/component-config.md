@@ -1,7 +1,7 @@
 ---
-title: Component Config
+title_extra: Component Config
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

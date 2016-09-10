@@ -1,7 +1,7 @@
 ---
-title: Behaviors
+title_extra: Behaviors
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

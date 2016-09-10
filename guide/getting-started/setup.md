@@ -1,6 +1,6 @@
 ---
-title: Setup
-layout: default
+title_extra: Setup
+layout: guide
 author: Jasper van Rijbroek
 navigation: guide
 ---

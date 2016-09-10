@@ -1,7 +1,7 @@
 ---
-title: Components
+title_extra: Components
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

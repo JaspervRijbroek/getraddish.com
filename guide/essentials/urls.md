@@ -1,7 +1,7 @@
 ---
-title: URLs
+title_extra: URLs
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

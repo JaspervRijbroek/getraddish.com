@@ -1,7 +1,7 @@
 ---
-title: Mixins
+title_extra: Mixins
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

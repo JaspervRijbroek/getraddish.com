@@ -1,7 +1,7 @@
 ---
-title: Applications
+title_extra: Applications
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

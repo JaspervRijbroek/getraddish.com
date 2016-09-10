@@ -1,7 +1,7 @@
 ---
-title: Config
+title_extra: Config
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: File Structure
+title_extra: File Structure
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

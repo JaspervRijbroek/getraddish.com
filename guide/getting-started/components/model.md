@@ -1,7 +1,7 @@
 ---
-title: Model
+title_extra: Model
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 override_only: true
 navigation: guide
 ---

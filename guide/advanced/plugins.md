@@ -1,7 +1,7 @@
 ---
-title: Plugins
+title_extra: Plugins
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

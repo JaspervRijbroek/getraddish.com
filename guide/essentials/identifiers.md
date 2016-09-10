@@ -1,7 +1,7 @@
 ---
-title: Identifiers
+title_extra: Identifiers
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

@@ -1,56 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <title>{{page.title}}</title>
+
+        <link rel="stylesheet" href="/assets/css/style.css" />
+
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="canonical" href="http://getraddish.com{{page.url}}" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-        {% if page.keywords %}<meta name="keywords" content="{{page.keywords}}">{% endif %}
-        {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
-
-        <title>Raddish - {{ page.title }}</title>
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{site.baseurl}}assets/css/raddish.css">
-	    <link rel="stylesheet" href="{{site.baseurl}}assets/css/highlight.css">
-
-        <!-- Custom JS -->
-        <script src="{{site.baseurl}}assets/js/zepto.min.js"></script>
-        <script src="{{site.baseurl}}assets/js/custom.js"></script>
-        <script src="//www.google-analytics.com/analytics.js" async="true"></script>
-
-        {% if page.url == '/index.html' %}
-            <script type="application/ld+json">
-            {
-               "@context": "http://schema.org",
-               "@type": "WebSite",
-               "url": "https://www.getraddish.com/",
-               "potentialAction": {
-                 "@type": "SearchAction",
-                 "target": "https://getraddish.com/search?q={search_term_string}",
-                 "query-input": "required name=search_term_string"
-               }
-            }
-            </script>
-        {% endif %}
     </head>
     <body>
-        <div class="header">
-            <div class="header__logo"></div>
+        <div class="header header-over large">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-5">
+                        <a href="/index.html" class="logo-image"><img src="/assets/img/logos/raddish.svg" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-xs-7">
+                        <nav class="right helper">
+                            <ul class="menu sf-menu js-menu">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="/features.html">Features</a></li>
+                                <li><a href="/guide/index.html">Guide</a></li>
+                                <li><a href="/api/index.html">API</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="header-back {% if page.url == "/index.html" || page.url == "/" %} header-back-default header-back-full-page js-full-page{% else %} header-back-simple header-back-small{% endif %}"  style="background-image: url(/assets/img/backgrounds/pattern.svg);">
+            {% if page.url == "/index.html" || page.url == "/" %}
+                <canvas id="spiders" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></canvas>
+            {% endif %}
+            <div class="header-back-container">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="{% if page.url == "/index.html" || page.url == "/" %}page-info helper center{% else %}page-info page-info-simple{% endif %}">
+                                {% if page.title %}
+                                    <h1 class="page-title">
+                                        {{page.title}}
+                                        {% if page.title_extra %}<small>- {{page.title_extra}}</small>{% endif %}
+                                    </h1>
+                                {% endif %}
+                                {% if page.subtitle %}<h2 class="page-description">{{page.subtitle}}</h2>{% endif %}
 
-        {{content}}
-
-        <div class="footer">
-            <p class="footer__text">
-                Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
-                <br/> Logo & design by <a href="http://karasu-d.nl/" target="_blank">Karasu Design</a>.
-            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div id="content">
+            <div class="container-fluid container-spaced">
+                {{content}}
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-logo-wrapper">
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.svg" alt="logo"></a>
+                                <br>
+
+                                <p class="slogan">
+                                    Let's cook software!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="footer-wrapper">
+                                <span class="scroll-top js-scroll-top"><i class="fa fa-angle-up"></i></span>
+
+                                <div class="docs-version js-docs-version">
+                                    <span class="docs-current-version js-docs-current-version">v2.4</span>
+                                </div>
+
+                                <p class="copyright helper right">
+                                    <a href="http://vsart.me">Jvar</a>, all rights reserved. 2014 - 2016 ©
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/assets/js/all.js"></script>
+        {% if page.url == "/index.html" || page.url == "/" %}
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+            <script src="/assets/js/spiders.js"></script>
+        {% endif %}
     </body>
 </html>

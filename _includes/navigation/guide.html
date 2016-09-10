@@ -1,110 +1,48 @@
-<aside class="col-md-3" role="navigation">
-    <ul class="nav nav-stacked">
-        <li class="nav-item {% if page.url == '/guide/index.html' %}active{% endif %}">
-            <a href="/guide/">Introduction</a>
-        </li>
-        <li class="nav-item {% if page.url == '/guide/essentials.html' or page.url contains '/guide/essentials/' %}active{% endif %}">
-            <a href="/guide/essentials.html">Essentials</a>
-
-            <ul>
-                <li class="nav-item {% if page.url == '/guide/essentials/file-structure.html' %}active{% endif %}">
-                    <a href="/guide/essentials/file-structure.html">File Structure</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/essentials/urls.html' %}active{% endif %}">
-                    <a href="/guide/essentials/urls.html">URLs</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/essentials/identifiers.html' %}active{% endif %}">
-                    <a href="/guide/essentials/identifiers.html">Identifiers</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/essentials/config.html' %}active{% endif %}">
-                    <a href="/guide/essentials/config.html">Config</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/essentials/component-config.html' %}active{% endif %}">
-                    <a href="/guide/essentials/component-config.html">Component Config</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item {% if page.url == '/guide/getting-started.html' or page.url contains '/guide/getting-started/' %}active{% endif %}">
-            <a href="/guide/getting-started.html">Getting Started</a>
-
-            <ul>
-                <li class="nav-item {% if page.url == '/guide/getting-started/setup.html' %}active{% endif %}">
-                    <a href="/guide/getting-started/setup.html">Setup</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/getting-started/applications.html' %}active{% endif %}">
-                    <a href="/guide/getting-started/applications.html">Applications</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/getting-started/components.html' or page.url contains '/guide/getting-started/components/' %}active{% endif %}">
-                    <a href="/guide/getting-started/components.html">Components</a>
+<div class="js-sidebar-wrapper">
+    <div class="sidebar">
+        <nav class="menu-vertical-wrapper">
+            <ul class="menu-vertical  js-menu-vertical tendina" data-prepend-to=".js-layout" data-select="Menu">
+                <li><a href="/guide/index.html">Introduction</a></li>
+                <li class="has-children">
+                    <a href="/guide/essentials.html">Essentials</a>
                     <ul>
-                        <li class="nav-item {% if page.url == '/guide/getting-started/components/dispatcher.html' %}active{% endif %}">
-                            <a href="/guide/getting-started/components/dispatcher.html">Dispatcher</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/guide/getting-started/components/controller.html' %}active{% endif %}">
-                            <a href="/guide/getting-started/components/controller.html">Controller</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/guide/getting-started/components/model.html' %}active{% endif %}">
-                            <a href="/guide/getting-started/components/model.html">Model</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/guide/getting-started/components/table.html' %}active{% endif %}">
-                            <a href="/guide/getting-started/components/table.html">Table</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/guide/getting-started/components/row.html' %}active{% endif %}">
-                            <a href="/guide/getting-started/components/row.html">Row</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/guide/getting-started/components/rowset.html' %}active{% endif %}">
-                            <a href="/guide/getting-started/components/rowset.html">Rowset</a>
-                        </li>
+                        <li><a href="/guide/essentials/file-structure.html">File Structure</a></li>
+                        <li><a href="/guide/essentials/urls.html">URLs</a></li>
+                        <li><a href="/guide/essentials/identifiers.html">Identifiers</a></li>
+                        <li><a href="/guide/essentials/config.html">Config</a></li>
+                        <li><a href="/guide/essentials/component-config.html">Component Config</a></li>
                     </ul>
                 </li>
-                <li class="nav-item {% if page.url == '/guide/getting-started/behaviors.html' %}active{% endif %}">
-                    <a href="/guide/getting-started/behaviors.html">Behaviors</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item {% if page.url == '/guide/advanced.html' or page.url contains '/guide/advanced/' %}active{% endif %}">
-            <a href="/guide/advanced.html">Advanced</a>
-            <ul>
-                <li class="nav-item {% if page.url == '/guide/advanced/system-calls.html' %}active{% endif %}">
-                    <a href="/guide/advanced/system-calls.html">System calls</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/advanced/plugins.html' %}active{% endif %}">
-                    <a href="/guide/advanced/plugins.html">Plugins</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/advanced/mixins.html' %}active{% endif %}">
-                    <a href="/guide/advanced/mixins.html">Mixins</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/advanced/sockets.html' %}active{% endif %}">
-                    <a href="/guide/advanced/sockets.html">Sockets</a>
-                </li>
-                <li class="nav-item {% if page.url == '/guide/advanced/logging.html' %}active{% endif %}">
-                    <a href="/guide/advanced/logging.html">Logging</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item {% if page.url == '/guide/extras.html' or page.url contains '/guide/extras/' %}active{% endif %}">
-            <a href="/guide/extras.html">Extras</a>
-
-            <ul>
-                <li class="nav-item {% if page.url == '/guide/extras/raddish-ember.html' or page.url contains '/guide/extras/raddish-ember/' %}active{% endif %}">
-                    <a href="/guide/extras/raddish-ember.html">Raddish-Ember</a>
-
+                <li class="has-children">
+                    <a href="/guide/getting-started.html">Getting Started</a>
                     <ul>
-                        <li class="nav-item {% if page.url == '/guide/extras/raddish-ember/adapter.html' %}active{% endif %}">
-                            <a href="/guide/extras/raddish-ember/adapter.html">Adapter</a>
+                        <li><a href="/guide/getting-started/setup.html">Setup</a></li>
+                        <li><a href="/guide/getting-started/applications.html">Applications</a></li>
+                        <li>
+                            <a href="/guide/getting-started/components.html">Components</a>
+                            <ul>
+                                <li><a href="/guide/getting-started/components/dispatcher.html">Dispatcher</a></li>
+                                <li><a href="/guide/getting-started/components/controller.html">Controller</a></li>
+                                <li><a href="/guide/getting-started/components/model.html">Model</a></li>
+                                <li><a href="/guide/getting-started/components/table.html">Table</a></li>
+                                <li><a href="/guide/getting-started/components/row.html">Row</a></li>
+                                <li><a href="/guide/getting-started/components/rowset.html">Rowset</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item {% if page.url == '/guide/extras/raddish-ember/models.html' %}active{% endif %}">
-                            <a href="/guide/extras/raddish-ember/models.html">Models</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/guide/extras/raddish-ember/sockets.html' %}active{% endif %}">
-                            <a href="/guide/extras/raddish-ember/sockets.html">Sockets</a>
-                        </li>
+                        <li><a href="/guide/getting-started/behaviors.html">Behaviors</a></li>
                     </ul>
                 </li>
-                <li class="nav-item {% if page.url == '/guide/extras/universal-query.html' %}active{% endif %}">
-                    <a href="/guide/extras/universal-query.html">Universal Query</a>
+                <li class="has-children">
+                    <a href="/guide/advanced.html">Advanced</a>
+                    <ul>
+                        <li><a href="/guide/advanced/system-calls.html">System calls</a></li>
+                        <li><a href="/guide/advanced/plugins.html">Plugins</a></li>
+                        <li><a href="/guide/advanced/mixins.html">Mixins</a></li>
+                        <li><a href="/guide/advanced/sockets.html">Sockets</a></li>
+                        <li><a href="/guide/advanced/logging.html">Logging</a></li>
+                    </ul>
                 </li>
             </ul>
-        </li>
-    </ul>
-</aside>
+        </nav>
+    </div>
+</div>

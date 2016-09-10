@@ -1,7 +1,7 @@
 ---
-title: System calls
+title_extra: System calls
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

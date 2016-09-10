@@ -1,7 +1,7 @@
 ---
-title: Sockets
+title_extra: Sockets
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 

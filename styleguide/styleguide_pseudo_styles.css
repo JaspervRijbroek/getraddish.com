@@ -1,9 +1,0 @@
-.input.pseudo-class-disabled,
-.link.pseudo-class-visited,
-.link.pseudo-class-disabled {
-  color: #bbbbbb;
-}
-
-.input.pseudo-class-disabled {
-  border: 1px solid #bbbbbb;
-}

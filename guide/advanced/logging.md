@@ -1,7 +1,7 @@
 ---
-title: Logging
+title_extra: Logging
 author: Jasper van Rijbroek
-layout: default
+layout: guide
 navigation: guide
 ---
 
