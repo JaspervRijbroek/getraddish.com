@@ -2,6 +2,7 @@
 title: Raddish at the Nooku Jam 2014
 layout: default
 author: Jasper van Rijbroek
+category: blog
 ---
 
 This year we went to Nooku Jam 2014 event for 2 days. <br/>
