@@ -38,7 +38,8 @@ Within here you can add the permissions per action with your own logic.
 
 This is an example:
 
-```jacascript
+<div class="code-highlight">
+    {% highlight javascript %}
 var Permission  = require('raddish').Permission;
 var util        = require('util');
 
@@ -56,8 +57,8 @@ DefaultPermission.prototype.canAdd = function(context) {
     return Promise.resolve(true);
 };
 
-module.exports = DefaultPermission;
-```
+module.exports = DefaultPermission;{% endhighlight %}
+</div>
 
 ## Behaviors
 Within Raddish it is possible to add extra behaviors to the controller.
@@ -91,7 +92,8 @@ Within the controller some parts can be controlled by component config and objec
 
 <div class="row">
     <div class="col-md-6">
-{% highlight javascript %}
+        <div class="code-highlight">
+            {% highlight javascript %}
 var Controller  = require('raddish').Controller;
 var util        = require('util');
 
@@ -120,12 +122,13 @@ DemoController.prototype.getRequest = function() {
     return request;
 };
 
-module.exports = DemoController;
-{% endhighlight %}
+module.exports = DemoController;{% endhighlight %}
+        </div>
     </div>
     
     <div class="col-md-6">
-{% highlight json %}
+        <div class="code-highlight">
+            {% highlight javascript %}
 {
     "controller": {
         "demo": {
@@ -135,7 +138,7 @@ module.exports = DemoController;
             }
         }
     }
-}
-{% endhighlight %}
+}{% endhighlight %}
+        </div>
     </div>
 </div>

@@ -13,15 +13,16 @@ In the app.js file you will need to require raddish, register your applications,
  
 The app.js file could look like this.
 
-```javascript
+<div class="code-highlight">
+    {% highlight javascript %}
 var raddish = require('raddish');
 
 raddish.setConfig(<path to config file>);
 raddish.setApplication('home', 'apps/home/app');
 raddish.checkUpdate();
 
-raddish.start();
-```
+raddish.start();{% endhighlight %}
+</div>
 
 The ```setConfig``` has a single parameter, this can be a string to a file
 which will then be included, or this can be an object.  

@@ -23,9 +23,9 @@
                                 <li><a href="/features.html">Features</a></li>
                                 <li><a href="/guide/index.html">Guide</a></li>
                                 <li><a href="/api/index.html">API</a></li>
-                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/blog.html">Blog</a></li>
                                 <li><a href="/changelog.html">Changelog</a></li>
-                                <li><a href="https://github.com/getraddished/raddish" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://github.com/getraddished/raddish" target="_blank" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -35,7 +35,7 @@
 
         <div class="header-back {% if page.url == "/index.html" || page.url == "/" %} header-back-default header-back-full-page js-full-page{% else %} header-back-simple header-back-small{% endif %}"  style="background-image: url(/assets/img/backgrounds/pattern.svg);">
             {% if page.url == "/index.html" || page.url == "/" %}
-                <canvas id="spiders" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></canvas>
+                <canvas id="spiders" class="hidden-xs hidden-sm" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></canvas>
             {% endif %}
             <div class="header-back-container">
                 <div class="container-fluid container-spaced">

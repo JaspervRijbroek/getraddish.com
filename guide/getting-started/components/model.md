@@ -47,7 +47,8 @@ When talking to external API's or applications this is the place to do this. In 
 ### Example
 In the following example we will show a little about the query builder, the states and how they relate to each other.
 
-{% highlight javascript %}
+<div class="code-highlight">
+    {% highlight javascript %}
 var Model = require('raddish').Model,
     util = require('util');
     
@@ -69,8 +70,8 @@ FooModel.prototype.buildQueryWhere = function(query) {
     }
     
     return Model.prototype.buildQueryWhere.call(this, query);
-};
-{% endhighlight %}
+};{% endhighlight %}
+</div>
 
 ## Component Config
 At this point the model object doesn't support any component config values.

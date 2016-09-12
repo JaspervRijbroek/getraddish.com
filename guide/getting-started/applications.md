@@ -11,7 +11,8 @@ For this to happen a component holds a few values, where it can find the compone
 Before this all works you must create an application file.  
 Which can look like this:
 
-```javascript
+<div class="code-highlight">
+    {% highlight javascript %}
 var Application = require('raddish').Application;
 var util        = require('util');
 
@@ -26,8 +27,8 @@ function HomeApp() {
 
 util.inherits(HomeApp, Application);
 
-module.exports = HomeApp;
-```
+module.exports = HomeApp;{% endhighlight %}
+</div>
 
 The application has quite some functions which we have added the basics in the Application object.
 This is the object we will require next to ```util```.

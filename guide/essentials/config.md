@@ -8,7 +8,8 @@ navigation: guide
 Applications written with Raddish are required to create a config.json which needs to be send to Raddish before starting.
 Below I will give an example config file, with more detail underneath.
 
-~~~ json
+<div class="code-highlight">
+    {% highlight javascript %}
 {
     "db": {
         "default": {
@@ -58,8 +59,8 @@ Below I will give an example config file, with more detail underneath.
     "plugins": "/plugins",
     "port": 1337,
     "public": "/public"
-}
-~~~
+}{% endhighlight %}
+</pre>
 
 <dl>
     <dt>

@@ -33,7 +33,8 @@ In her you can add extra functions which need to be called at these start events
 Within the system it is possible for you to call your own events.  
 I will give an example below:
 
-```javascript
+<div class="code-highlight">
+    {% highlight javascript %}
 var Plugin = require('raddish').Plugin,
     plugin = new Plugin();
     
@@ -41,8 +42,8 @@ plugin.get('custom.foo')
     .execute('before.bar', 'any', 'number', 'of', 'parameters')
     .then(function(data_from_plugin) {
         ...
-    });
-```
+    });{% endhighlight %}
+</div>
 
 The ```get``` method will be able to handle a dot separated value.  
 The last value can be a file or a folder, when a folder is presented all the files in this folder will be loaded  

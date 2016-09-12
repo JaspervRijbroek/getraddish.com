@@ -18435,3 +18435,7 @@ input.changelog-input {
     max-width: 250%;
   }
 }
+
+.code-highlight > figure {
+  margin: 0;
+}

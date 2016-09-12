@@ -57,7 +57,8 @@ In this example we will set some values and we will show the component config va
 
 <div class="row">
     <div class="col-md-6">
-{% highlight javascript %}
+        <div class="code-highlight">
+            {% highlight javascript %}
 var Table = require('raddish').Table,
     util = require('util');
     
@@ -90,11 +91,12 @@ function FooTable(config) {
 
 util.inherits(FooTable, Table);
 
-module.exports = FooTable;
-{% endhighlight %}
+module.exports = FooTable;{% endhighlight %}
+        </div>
     </div>
     <div class="col-md-6">
-{% highlight json %}
+        <div class="code-highlight">
+            {% highlight javascript %}
 {
     "table": {
         "foo": {
@@ -112,7 +114,7 @@ module.exports = FooTable;
             }
         }
     }
-}
-{% endhighlight %}
+}{% endhighlight %}
+        </div>
     </div>
 </div>
