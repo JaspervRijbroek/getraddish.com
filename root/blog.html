@@ -18,6 +18,7 @@ permalink: /blog.html
         {{post.content | split:"<!-- more -->" | first %}}
 
         <a href="{{post.url}}">Read More</a>
+
+        {% if forloop.last == false %}<hr />{% endif %}
     </div>
-    <hr/>
 {% endfor %}

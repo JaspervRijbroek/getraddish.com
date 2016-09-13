@@ -1,5 +1,5 @@
 ---
-title: Raddish at the Nooku Jam 2014
+title: New template and revised content
 layout: default
 author: Jasper van Rijbroek
 category: blog
