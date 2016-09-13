@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Controller
 author: Jasper van Rijbroek
 layout: guide

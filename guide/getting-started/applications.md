@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Applications
 author: Jasper van Rijbroek
 layout: guide

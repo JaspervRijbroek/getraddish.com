@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Setup
 layout: guide
 author: Jasper van Rijbroek

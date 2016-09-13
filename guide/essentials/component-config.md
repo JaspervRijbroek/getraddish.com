@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Component Config
 author: Jasper van Rijbroek
 layout: guide

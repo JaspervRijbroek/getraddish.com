@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Identifiers
 author: Jasper van Rijbroek
 layout: guide

@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Sockets
 author: Jasper van Rijbroek
 layout: guide

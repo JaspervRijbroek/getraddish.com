@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Model
 author: Jasper van Rijbroek
 layout: guide
@@ -48,7 +49,7 @@ When talking to external API's or applications this is the place to do this. In 
 In the following example we will show a little about the query builder, the states and how they relate to each other.
 
 <div class="code-highlight">
-    <span class="js-copy-to-clipboard copy-code">copy</span>
+    <span class="js-copy-to-clipboard copy-code">copy</span>``
     {% highlight javascript %}
 var Model = require('raddish').Model,
     util = require('util');

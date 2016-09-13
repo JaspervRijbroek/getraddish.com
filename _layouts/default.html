@@ -45,15 +45,15 @@
             </div>
         </div>
 
-        <div class="header-back {% if page.url == "/index.html" || page.url == "/" %} header-back-default header-back-full-page js-full-page{% else %} header-back-simple header-back-small{% endif %}"  style="background-image: url(/assets/img/backgrounds/pattern.png);">
-            {% if page.url == "/index.html" || page.url == "/" %}
+        <div class="header-back {% if page.url == "/index.html" %} header-back-default header-back-full-page js-full-page{% else %} header-back-simple header-back-small{% endif %}"  style="background-image: url(/assets/img/backgrounds/pattern.png);">
+            {% if page.url == "/index.html" %}
                 <canvas id="spiders" class="hidden-xs hidden-sm" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></canvas>
             {% endif %}
             <div class="header-back-container">
                 <div class="container-fluid container-spaced">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="{% if page.url == "/index.html" || page.url == "/" %}page-info helper center{% else %}page-info page-info-simple{% endif %}">
+                            <div class="{% if page.url == "/index.html" %}page-info helper center{% else %}page-info page-info-simple{% endif %}">
                                 {% if page.title %}
                                     <h1 class="page-title">
                                         {{page.title}}

@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: File Structure
 author: Jasper van Rijbroek
 layout: guide

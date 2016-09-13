@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Table
 author: Jasper van Rijbroek
 layout: guide

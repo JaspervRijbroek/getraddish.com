@@ -1,4 +1,5 @@
 ---
+title: Docs
 title_extra: Getting Started
 layout: guide
 author: Jasper van Rijbroek
