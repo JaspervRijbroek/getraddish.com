@@ -40,7 +40,7 @@ This are all the folders there are basically supported within Raddish, of course
                         </li>
                     </ul>
                 </li>
-                <li class="is-folder contains-items">database
+                <li class="is-folder contains-items">dispatcher
                     <ul>
                         <li class="is-folder">authenticator</li>
                     </ul>

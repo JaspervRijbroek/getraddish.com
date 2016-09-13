@@ -23,6 +23,7 @@ An example of an object override and component config:
 <div class="row">
     <div class="col-md-6">
         <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 var Dispatcher  = require('raddish').Dispatcher;
 var util        = require('util');
@@ -45,6 +46,7 @@ module.exports = DemoDispatcher;{% endhighlight %}
     </div>
     <div class="col-md-6">
         <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
         {% highlight javascript %}
 {
     "dispatcher": {

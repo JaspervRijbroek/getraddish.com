@@ -39,6 +39,7 @@ Within here you can add the permissions per action with your own logic.
 This is an example:
 
 <div class="code-highlight">
+    <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 var Permission  = require('raddish').Permission;
 var util        = require('util');
@@ -93,6 +94,7 @@ Within the controller some parts can be controlled by component config and objec
 <div class="row">
     <div class="col-md-6">
         <div class="code-highlight">
+        <span class="js-copy-to-clipboard copy-code">copy</span>
             {% highlight javascript %}
 var Controller  = require('raddish').Controller;
 var util        = require('util');
@@ -128,6 +130,7 @@ module.exports = DemoController;{% endhighlight %}
     
     <div class="col-md-6">
         <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
             {% highlight javascript %}
 {
     "controller": {

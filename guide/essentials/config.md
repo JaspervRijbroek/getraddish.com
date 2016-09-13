@@ -9,6 +9,7 @@ Applications written with Raddish are required to create a config.json which nee
 Below I will give an example config file, with more detail underneath.
 
 <div class="code-highlight">
+    <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 {
     "db": {
@@ -60,7 +61,7 @@ Below I will give an example config file, with more detail underneath.
     "port": 1337,
     "public": "/public"
 }{% endhighlight %}
-</pre>
+</div>
 
 <dl>
     <dt>

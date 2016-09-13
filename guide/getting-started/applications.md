@@ -11,7 +11,8 @@ For this to happen a component holds a few values, where it can find the compone
 Before this all works you must create an application file.  
 Which can look like this:
 
-<div class="code-highlight">
+<div class="js-copy code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 var Application = require('raddish').Application;
 var util        = require('util');

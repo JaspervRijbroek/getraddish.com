@@ -58,6 +58,7 @@ In this example we will set some values and we will show the component config va
 <div class="row">
     <div class="col-md-6">
         <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
             {% highlight javascript %}
 var Table = require('raddish').Table,
     util = require('util');
@@ -96,6 +97,7 @@ module.exports = FooTable;{% endhighlight %}
     </div>
     <div class="col-md-6">
         <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
             {% highlight javascript %}
 {
     "table": {

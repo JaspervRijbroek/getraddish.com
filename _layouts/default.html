@@ -3,7 +3,7 @@
     <head>
         <title>{{page.title}}{% if page.title_extra %} - {{page.title_extra}}{% endif %}</title>
 
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/style.min.css" />
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
             <div class="container-fluid container-spaced">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-5">
-                        <a href="/index.html" class="logo-image"><img src="/assets/img/logos/raddish.svg" alt="logo"></a>
+                        <a href="/index.html" class="logo-image"><img src="/assets/img/logos/raddish.png" alt="logo"></a>
                     </div>
                     <div class="col-md-9 col-sm-6 col-xs-7">
                         <nav class="right helper">
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="header-back {% if page.url == "/index.html" || page.url == "/" %} header-back-default header-back-full-page js-full-page{% else %} header-back-simple header-back-small{% endif %}"  style="background-image: url(/assets/img/backgrounds/pattern.svg);">
+        <div class="header-back {% if page.url == "/index.html" || page.url == "/" %} header-back-default header-back-full-page js-full-page{% else %} header-back-simple header-back-small{% endif %}"  style="background-image: url(/assets/img/backgrounds/pattern.png);">
             {% if page.url == "/index.html" || page.url == "/" %}
                 <canvas id="spiders" class="hidden-xs hidden-sm" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></canvas>
             {% endif %}
@@ -69,7 +69,7 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-3 col-xs-12">
                             <div class="footer-logo-wrapper">
-                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.svg" alt="logo"></a>
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.png" alt="logo"></a>
                                 <br>
 
                                 <p class="slogan">
@@ -95,11 +95,6 @@
             </div>
         </footer>
 
-        <script src="/assets/js/all.js"></script>
-        {% if page.url == "/index.html" || page.url == "/" %}
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
-            <script src="/assets/js/spiders.js"></script>
-        {% endif %}
+        <script src="/assets/js/all.min.js"></script>
     </body>
 </html>

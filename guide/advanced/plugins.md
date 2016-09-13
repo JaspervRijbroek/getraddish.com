@@ -34,6 +34,7 @@ Within the system it is possible for you to call your own events.
 I will give an example below:
 
 <div class="code-highlight">
+    <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 var Plugin = require('raddish').Plugin,
     plugin = new Plugin();

@@ -14,6 +14,7 @@ In the app.js file you will need to require raddish, register your applications,
 The app.js file could look like this.
 
 <div class="code-highlight">
+    <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 var raddish = require('raddish');
 
