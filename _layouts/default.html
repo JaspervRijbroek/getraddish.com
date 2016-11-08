@@ -20,7 +20,7 @@
         </script>
     </head>
     <body>
-        <div class="header header-over large">
+        <div class="header {% if page.url == "/index.html" %}header-over large{% endif %}" {% if page.url != "/index.html" %}style="background-image: url(/assets/img/backgrounds/pattern.png);"{% endif %}>
             <div class="container-fluid container-spaced">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-5">
@@ -43,29 +43,34 @@
             </div>
         </div>
 
-        <div class="header-back {% if page.url == "/index.html" %} header-back-default header-back-full-page js-full-page{% else %} header-back-simple header-back-small{% endif %}"  style="background-image: url(/assets/img/backgrounds/pattern.png);">
-            {% if page.url == "/index.html" %}
+        {% if page.url == "/index.html" %}
+            <div class="header-back-default header-back-full-page js-full-page" style="background-image: url(/assets/img/backgrounds/pattern.png);">
                 <canvas id="spiders" class="hidden-xs hidden-sm" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></canvas>
-            {% endif %}
-            <div class="header-back-container">
-                <div class="container-fluid container-spaced">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="{% if page.url == "/index.html" %}page-info helper center{% else %}page-info page-info-simple{% endif %}">
-                                {% if page.title %}
-                                    <h1 class="page-title">
-                                        {{page.title}}
-                                    </h1>
-                                {% endif %}
-                                {% if page.date %}<h2 class="page-description">{{page.date | date: "%d %B %Y"}} by {{page.author}}</h2>{% endif %}
-                                {% if page.subtitle %}<h2 class="page-description">{{page.subtitle}}</h2>{% endif %}
 
+                <span class="next-section js-scroll-to" data-target="#content">
+                    <i class="fa-angle-down fa" style="color: white;"></i>
+                </span>
+
+                <div class="header-back-container">
+                    <div class="container-fluid container-spaced">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="page-info helper center page-info page-info-simple">
+                                    {% if page.title %}
+                                        <h1 class="page-title">
+                                            {{page.title}}
+                                        </h1>
+                                    {% endif %}
+                                    {% if page.date %}<h2 class="page-description">{{page.date | date: "%d %B %Y"}} by {{page.author}}</h2>{% endif %}
+                                    {% if page.subtitle %}<h2 class="page-description">{{page.subtitle}}</h2>{% endif %}
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        {% endif %}
 
         <div id="content">
             <div class="container-fluid container-spaced">
@@ -96,7 +101,7 @@
                                 </div>
 
                                 <p class="copyright helper right">
-                                    <a href="http://vsart.me">Jvar</a>, all rights reserved. 2014 - 2016 ©
+                                    <a href="http://jvar.nl">Jvar</a>, all rights reserved. 2013 - 2016 ©
                                 </p>
                             </div>
                         </div>

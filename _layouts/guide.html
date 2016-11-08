@@ -1,14 +1,21 @@
 ---
-title: Docs
 layout: default
 ---
-<div class="layout with-left-sidebar js-layout">
-    <div class="col-md-4 hidden-xs">
-        {% include navigation/{{page.navigation}}.html %}
-    </div>
-    <div class="col-md-8">
-        <h1>{{page.title_extra}}</h1>
 
-        {{content}}
+<div class="layout with-left-sidebar js-layout">
+    <div class="row">
+        <div class="col-md-4 hidden-xs">
+            {% include navigation/{{page.navigation}}.html %}
+        </div>
+        <div class="col-md-8">
+            <h2 class="article-title">
+                Docs
+                <small>
+                    - {{page.title_extra}}
+                </small>
+            </h2>
+
+            {{content}}
+        </div>
     </div>
 </div>
