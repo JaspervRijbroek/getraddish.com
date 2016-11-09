@@ -1,6 +1,6 @@
 ---
 title: Raddish at the Nooku Jam 2014
-layout: default
+layout: blog
 author: Jasper van Rijbroek
 category: blog
 ---

@@ -5,20 +5,38 @@ layout: default
 permalink: /blog.html
 ---
 
-{% for post in site.categories.blog %}
+<div class="row">
     <div class="col-md-12">
-        <h2>
-            {{post.title}}
+        <h2 class="article-title" style="margin-bottom: 0;">
+            Blog
         </h2>
-
-        <p class="text-info">
-            {{post.date | date: "%d %B %Y"}} by {{post.author}}
+        <p class="muted" style="margin-bottom: 40px;">
+            All the latest news
         </p>
-
-        {{post.content | split:"<!-- more -->" | first }}
-
-        <a href="{{post.url}}">Read More</a>
-
-        {% if forloop.last == false %}<hr />{% endif %}
     </div>
-{% endfor %}
+</div>
+
+<div class="blog">
+    {% for post in site.categories.blog %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-grid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="blog-grid-title"><a href="{{post.url}}">{{post.title}}</a></h3>
+
+                            <p class="blog-grid-excerpt">
+                                {{post.content | split:"<!-- more -->" | first }}
+                            </p>
+
+                            <div class="blog-grid-meta">
+                                <div class="blog-grid-date">{{post.date | date: "%B %d, %Y"}}</div>
+                                <span class="blog-grid-author">by {{post.author}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,6 +1,6 @@
 ---
 title: New template and revised content
-layout: default
+layout: blog
 author: Jasper van Rijbroek
 category: blog
 ---

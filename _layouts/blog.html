@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="article">
+    <h2 class="article-title">
+        {{page.title}}
+    </h2>
+
+    <ul class="article-meta">
+        <li>
+            <span class="article-meta-date article-meta-item">{{page.date | date: "%B %d, %Y"}}</span>
+        </li>
+        <li>
+            <span class="article-meta-author article-meta-item"><a href="#">{{page.author}}</a></span>
+        </li>
+    </ul>
+
+    <div class="article-content">
+        {{content}}
+    </div>
+</article>
