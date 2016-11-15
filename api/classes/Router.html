@@ -258,63 +258,40 @@ ignore_title: true
             </div>        </div>
 
         <div class="col-md-9">
-            <h2 class="article-title">
-                API
-                    <small>
-                        - Router
-                    </small>
-            </h2>
+            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L9" target="_blank" style="text-decoration: none;">
+                <h3 class="category-title">
+                    API
+                        <small>
+                            - Router
+                        </small>
+                </h3>
+            </a>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="description">
-                        <p>Router object, this will route the request to the application.</p>
             
-                    </div>
+            <p>Router object, this will route the request to the application.</p>
             
             
-                        <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L9" target="_blank"><code>lib&#x2F;router&#x2F;router.js:9</code></a>
-                        </div>
+                <div class="category-info">
+                    <h3 class="category-title">Methods</h3>
                 </div>
-            </div>
             
-                <hr/>
-            
-                <h2>Methods</h2>
-                <div class="row">
-            
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                checkCors
-                                (<small>res</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L89" target="_blank"><code>lib&#x2F;router&#x2F;router.js:89</code></a>
-                            </p>
-                            
-                            
-                            
+                <div class="list-view">
+                        <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L89" target="_blank">
+                                        checkCors (<small>res</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
                             </div>
-                            
-                            <p class="description">
+                            <div class="list-item-content">
                                 <p>This method will set the CORS headers to the response.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -326,52 +303,34 @@ ignore_title: true
                                             <tr>
                                                 <td>res</td>
                                                 <td>Object</td>
-                                                <td><p>Nodejs Response Object</p>
-                            </td>
+                                                <td>&lt;p&gt;Nodejs Response Object&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"></span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                checkFile
-                                (<small>req, res</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L124" target="_blank"><code>lib&#x2F;router&#x2F;router.js:124</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will set the CORS headers to the response.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L124" target="_blank">
+                                        checkFile (<small>req, res</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will check if the request is going to a direct file, if so return it.
-                            If gzip is enabled and supported it will gzip the response.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        If gzip is enabled and supported it will gzip the response.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -383,91 +342,63 @@ ignore_title: true
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td><p>Nodejs Request Object</p>
-                            </td>
+                                                <td>&lt;p&gt;Nodejs Request Object&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>res</td>
                                                 <td>Object</td>
-                                                <td><p>Nodejs Response Object</p>
-                            </td>
+                                                <td>&lt;p&gt;Nodejs Response Object&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                checkUpdate
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L163" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:163</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will check if the request is going to a direct file, if so return it.
+                        If gzip is enabled and supported it will gzip the response.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L163" target="_blank">
+                                        checkUpdate ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This function will check if there is an update available from NPM.
-                            If there is an update, then the user should update manually.</p>
-                            
-                            </p>
-                            
-                            
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getConfig
-                                (<small>key</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L62" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:62</code></a>
-                            </p>
-                            
-                            
-                            
+                        If there is an update, then the user should update manually.</p>
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This function will check if there is an update available from NPM.
+                        If there is an update, then the user should update manually.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L62" target="_blank">
+                                        getConfig (<small>key</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This function will get a single config value,
-                            if there is no key given it will return the complete config.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        if there is no key given it will return the complete config.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -479,51 +410,34 @@ ignore_title: true
                                             <tr>
                                                 <td>key</td>
                                                 <td>Name</td>
-                                                <td><p>The key of the config value</p>
-                            </td>
+                                                <td>&lt;p&gt;The key of the config value&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"></span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getRoute
-                                (<small>req</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L37" target="_blank"><code>lib&#x2F;router&#x2F;router.js:37</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This function will get a single config value,
+                        if there is no key given it will return the complete config.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L37" target="_blank">
+                                        getRoute (<small>req</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will try to match a route to the current request.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -539,47 +453,29 @@ ignore_title: true
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"></span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                parseRequest
-                                (<small>req</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L155" target="_blank"><code>lib&#x2F;router&#x2F;router.js:155</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will try to match a route to the current request.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L155" target="_blank">
+                                        parseRequest (<small>req</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will try to parse the request if the request a an API request.
-                            By default the app and component parameters must be passed in the request.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        By default the app and component parameters must be passed in the request.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -591,55 +487,36 @@ ignore_title: true
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td><p>Nodejs Request Object</p>
-                            </td>
+                                                <td>&lt;p&gt;Nodejs Request Object&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Object</span>:
-                                        <p>The parsed request object.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                route
-                                (<small>req, res</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L19" target="_blank"><code>lib&#x2F;router&#x2F;router.js:19</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will try to parse the request if the request a an API request.
+                        By default the app and component parameters must be passed in the request.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/router/router.js#L19" target="_blank">
+                                        route (<small>req, res</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will check if the request is a file, if so it will return the file,
-                            if not it will try to find an application and will try to run the component.</p>
-                            <p>When a file is found and the gzip option in the config is true it will send a gzipped response.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        if not it will try to find an application and will try to run the component.</p>
+                        <p>When a file is found and the gzip option in the config is true it will send a gzipped response.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -651,52 +528,41 @@ ignore_title: true
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td><p>NodeJS request object</p>
-                            </td>
+                                                <td>&lt;p&gt;NodeJS request object&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>res</td>
                                                 <td>Object</td>
-                                                <td><p>NodeJS response object</p>
-                            </td>
+                                                <td>&lt;p&gt;NodeJS response object&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                setApplication
-                                (<small>alias, path</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L23" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:23</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will check if the request is a file, if so it will return the file,
+                        if not it will try to find an application and will try to run the component.&lt;/p&gt;
+                        &lt;p&gt;When a file is found and the gzip option in the config is true it will send a gzipped response.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L23" target="_blank">
+                                        setApplication (<small>alias, path</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This will set an application handler.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -708,57 +574,39 @@ ignore_title: true
                                             <tr>
                                                 <td>alias</td>
                                                 <td>String</td>
-                                                <td><p>The alias of the application</p>
-                            </td>
+                                                <td>&lt;p&gt;The alias of the application&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>path</td>
                                                 <td>String</td>
-                                                <td><p>The path to the application.</p>
-                            </td>
+                                                <td>&lt;p&gt;The path to the application.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"></span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                setConfig
-                                (<small>config</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L50" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:50</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This will set an application handler.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L50" target="_blank">
+                                        setConfig (<small>config</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This function will set the config of Raddish which is located in a JSON file..</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -774,42 +622,29 @@ ignore_title: true
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                startWebServer
-                                (<small>port</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L139" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:139</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This function will set the config of Raddish which is located in a JSON file..&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L139" target="_blank">
+                                        startWebServer (<small>port</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This function will start the webserver
-                            with the right specification.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        with the right specification.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -821,16 +656,19 @@ ignore_title: true
                                             <tr>
                                                 <td>port</td>
                                                 <td>Int</td>
-                                                <td><p>The late port of the server.</p>
-                            </td>
+                                                <td>&lt;p&gt;The late port of the server.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                </div>
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This function will start the webserver
+                        with the right specification.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>    </div>
         </div>
     </div>
 </div>

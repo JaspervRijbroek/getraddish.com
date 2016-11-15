@@ -258,70 +258,45 @@ ignore_title: true
             </div>        </div>
 
         <div class="col-md-9">
-            <h2 class="article-title">
-                API
-                    <small>
-                        - Controller
-                    </small>
-            </h2>
+            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L7" target="_blank" style="text-decoration: none;">
+                <h3 class="category-title">
+                    API
+                        <small>
+                            - Controller
+                        </small>
+                </h3>
+            </a>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="description">
-                        <p>Controller class
+                <p><strong>Extends</strong> <a href="../classes/AbstractController.html" class="crosslink">AbstractController</a></p>
+            
+            <p>Controller class
             This is the default called on every request,
             when overwritten a controller object will inherit from this object or the abstract.</p>
             
-                    </div>
             
-                        <div class="extends">
-                            Extends <a href="../classes/AbstractController.html" class="crosslink">AbstractController</a>
-                        </div>
-            
-                        <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L7" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:7</code></a>
-                        </div>
+                <div class="category-info">
+                    <h3 class="category-title">Methods</h3>
                 </div>
-            </div>
             
-                <hr/>
-            
-                <h2>Methods</h2>
-                <div class="row">
-            
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionAdd
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                                <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L150" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:150</code></a>
-                            </p>
-                            
-                            
-                            
+                <div class="list-view">
+                        <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L150" target="_blank">
+                                        _actionAdd (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                    <a href="javascript:void(true);">private</a>
+                                </span>
                             </div>
-                            
-                            <p class="description">
+                            <div class="list-item-content">
                                 <p>_actionAdd will add a new record to the database.
-                            After this is done the data is returned to _actionPost.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        After this is done the data is returned to _actionPost.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -333,55 +308,36 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The promise with the context to use afterwards</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionBrowse
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                                <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L78" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:78</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;_actionAdd will add a new record to the database.
+                        After this is done the data is returned to _actionPost.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L78" target="_blank">
+                                        _actionBrowse (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                    <a href="javascript:void(true);">private</a>
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>_actionBrowse will return a list of items,
-                            after this action has been called it will return the data to _actionGet.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        after this action has been called it will return the data to _actionGet.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -393,54 +349,35 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The promise with the context to use afterwards</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionDelete
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L209" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:209</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;_actionBrowse will return a list of items,
+                        after this action has been called it will return the data to _actionGet.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L209" target="_blank">
+                                        _actionDelete (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method is called on a DELETE method,
-                            this will remove an item from the database.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        this will remove an item from the database.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -452,55 +389,36 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data.</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The data of the removed item.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionEdit
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                                <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L178" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:178</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method is called on a DELETE method,
+                        this will remove an item from the database.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L178" target="_blank">
+                                        _actionEdit (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                    <a href="javascript:void(true);">private</a>
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>_actionEdit will update an record in the database.
-                            After this is done the data is returned to _actionPost.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        After this is done the data is returned to _actionPost.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -512,55 +430,36 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The promise with the context to use afterwards</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionGet
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L22" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:22</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;_actionEdit will update an record in the database.
+                        After this is done the data is returned to _actionPost.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L22" target="_blank">
+                                        _actionGet (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will react on a GET request.
-                            This method will check if the view is singular if it is than _actionRead is called, else _actionBrowse is called,
-                            else the getList function is called.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This method will check if the view is singular if it is than _actionRead is called, else _actionBrowse is called,
+                        else the getList function is called.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -572,55 +471,37 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data.</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The data of the model.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionPatch
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                                <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L65" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:65</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will react on a GET request.
+                        This method will check if the view is singular if it is than _actionRead is called, else _actionBrowse is called,
+                        else the getList function is called.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L65" target="_blank">
+                                        _actionPatch (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                    <a href="javascript:void(true);">private</a>
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This action will react on a PATCH request,
-                            The complete context of this action will be forwarded to _actionPost</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        The complete context of this action will be forwarded to _actionPost</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -632,55 +513,36 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The promise with the context to use afterwards</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionPost
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L121" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:121</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This action will react on a PATCH request,
+                        The complete context of this action will be forwarded to _actionPost&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L121" target="_blank">
+                                        _actionPost (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method is called on a POST request,
-                            When the state is unique _actionEdit is called else _actionAdd will be called.
-                            The returned data for these actions will be handled afterwards.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        When the state is unique _actionEdit is called else _actionAdd will be called.
+                        The returned data for these actions will be handled afterwards.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -692,55 +554,37 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data.</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The data of the update/ inserted item.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionPut
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                                <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L52" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:52</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method is called on a POST request,
+                        When the state is unique _actionEdit is called else _actionAdd will be called.
+                        The returned data for these actions will be handled afterwards.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L52" target="_blank">
+                                        _actionPut (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                    <a href="javascript:void(true);">private</a>
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This action will react on a PUT request,
-                            The complete context of this action will be forwarded to _actionPost</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        The complete context of this action will be forwarded to _actionPost</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -752,55 +596,36 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The promise with the context to use afterwards</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                _actionRead
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                                <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L100" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:100</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This action will react on a PUT request,
+                        The complete context of this action will be forwarded to _actionPost&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L100" target="_blank">
+                                        _actionRead (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                    <a href="javascript:void(true);">private</a>
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>_actionBrowse will return a single item,
-                            after this action has been called it will return the data to _actionGet.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        after this action has been called it will return the data to _actionGet.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -812,53 +637,34 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>Context object with the request data</p>
-                            </td>
+                                                <td>&lt;p&gt;Context object with the request data&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The promise with the context to use afterwards</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canAdd
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canAdd">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L39" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:39</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;_actionBrowse will return a single item,
+                        after this action has been called it will return the data to _actionGet.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L39" target="_blank">
+                                        canAdd (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Only when a user is authenticated return true else return false.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -870,53 +676,33 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The complete context from the controller</p>
-                            </td>
+                                                <td>&lt;p&gt;The complete context from the controller&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>Containing true by default</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canBrowse
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canBrowse">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L17" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:17</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Only when a user is authenticated return true else return false.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L17" target="_blank">
+                                        canBrowse (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Return true by default on a browse request.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -928,53 +714,33 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The complete context from the controller</p>
-                            </td>
+                                                <td>&lt;p&gt;The complete context from the controller&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>Containing true by default</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canDelete
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canDelete">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L73" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:73</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Return true by default on a browse request.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L73" target="_blank">
+                                        canDelete (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Only when a user is authenticated return true else return false.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -986,53 +752,33 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The complete context from the controller</p>
-                            </td>
+                                                <td>&lt;p&gt;The complete context from the controller&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>Containing true by default</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canEdit
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canEdit">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L56" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:56</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Only when a user is authenticated return true else return false.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L56" target="_blank">
+                                        canEdit (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Only when a user is authenticated return true else return false.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1044,54 +790,34 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The complete context from the controller</p>
-                            </td>
+                                                <td>&lt;p&gt;The complete context from the controller&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>Containing true by default</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canGet
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canGet">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L21" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:21</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Only when a user is authenticated return true else return false.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L21" target="_blank">
+                                        canGet (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Basic permissions for a GET request,
-                            This function is here for basic purposes.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This function is here for basic purposes.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1103,52 +829,35 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The context object with authentication information.</p>
-                            </td>
+                                                <td>&lt;p&gt;The context object with authentication information.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canPatch
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canPatch">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L57" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:57</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Basic permissions for a GET request,
+                        This function is here for basic purposes.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L57" target="_blank">
+                                        canPatch (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Basic permissions for a PATCH request,
-                            This function is here for basic purposes.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This function is here for basic purposes.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1160,52 +869,35 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The context object with authentication information.</p>
-                            </td>
+                                                <td>&lt;p&gt;The context object with authentication information.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canPost
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canPost">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L33" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:33</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Basic permissions for a PATCH request,
+                        This function is here for basic purposes.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L33" target="_blank">
+                                        canPost (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Basic permissions for a POST request,
-                            This function is here for basic purposes.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This function is here for basic purposes.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1217,52 +909,35 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The context object with authentication information.</p>
-                            </td>
+                                                <td>&lt;p&gt;The context object with authentication information.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canPut
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canPut">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L45" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;abstract.js:45</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Basic permissions for a POST request,
+                        This function is here for basic purposes.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/abstract.js#L45" target="_blank">
+                                        canPut (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Basic permissions for a PUT request,
-                            This function is here for basic purposes.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This function is here for basic purposes.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1274,51 +949,34 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The context object with authentication information.</p>
-                            </td>
+                                                <td>&lt;p&gt;The context object with authentication information.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                canRead
-                                (<small>context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_canRead">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L28" target="_blank"><code>lib&#x2F;controller&#x2F;permission&#x2F;default.js:28</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Basic permissions for a PUT request,
+                        This function is here for basic purposes.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/permission/default.js#L28" target="_blank">
+                                        canRead (<small>context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Return true by default on a browse request.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1330,92 +988,54 @@ ignore_title: true
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The complete context from the controller</p>
-                            </td>
+                                                <td>&lt;p&gt;The complete context from the controller&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>Containing true by default</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                clone
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/ObjectManager.html#method_clone">ObjectManager</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L92" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:92</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Return true by default on a browse request.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L92" target="_blank">
+                                        clone ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 This function will be available for every object,
-                            this will clone the current object.
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Object</span>:
-                                        An exact copy of the current object
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                execute
-                                (<small>method, context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_execute">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L50" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:50</code></a>
-                            </p>
-                            
-                            
-                            
+                        this will clone the current object.
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : This function will be available for every object,
+                        this will clone the current object.
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L50" target="_blank">
+                                        execute (<small>method, context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Execute function will execute a command given the method.
-                            This command will use the context for the behaviors.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This command will use the context for the behaviors.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1427,53 +1047,41 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td><p>Name of the action to execute.</p>
-                            </td>
+                                                <td>&lt;p&gt;Name of the action to execute.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>context</td>
                                                 <td>Object</td>
-                                                <td><p>Data got from the request.</p>
-                            </td>
+                                                <td>&lt;p&gt;Data got from the request.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                extendConfig
-                                (<small>target, source</small>)
-                            </h3>
-                            
-                            
-                            
-                                <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/ObjectManager.html#method_extendConfig">ObjectManager</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L194" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:194</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Execute function will execute a command given the method.
+                        This command will use the context for the behaviors.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L194" target="_blank">
+                                        extendConfig (<small>target, source</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                    <a href="javascript:void(true);">private</a>
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 This is a private function to allow for config extending
-                            This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1494,42 +1102,29 @@ ignore_title: true
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                forward
-                                (<small>method, context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_forward">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L90" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:90</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : This is a private function to allow for config extending
+                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L90" target="_blank">
+                                        forward (<small>method, context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>The forward method forwards the complete context to another action.
-                            THis will return the promise for that specific action.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        THis will return the promise for that specific action.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1541,95 +1136,57 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td><p>The method to forward to.</p>
-                            </td>
+                                                <td>&lt;p&gt;The method to forward to.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>context</td>
                                                 <td>Object</td>
-                                                <td><p>The context specified for that method.</p>
-                            </td>
+                                                <td>&lt;p&gt;The context specified for that method.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The promise for the specified method.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getCommandChain
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/ObjectManager.html#method_getCommandChain">ObjectManager</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L62" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:62</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;The forward method forwards the complete context to another action.
+                        THis will return the promise for that specific action.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L62" target="_blank">
+                                        getCommandChain ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 Return the command chain to run behaviors.
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/CommandChain.html" class="crosslink">CommandChain</a></span>:
-                                        CommandChain object.
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getConfig
-                                (<small>key</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/ObjectManager.html#method_getConfig">ObjectManager</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L41" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:41</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L41" target="_blank">
+                                        getConfig (<small>key</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 Use this function to acquire a variable from config.js
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1645,162 +1202,86 @@ ignore_title: true
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Object</span>:
-                                        The requested config value.
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getContext
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_getContext">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L124" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:124</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L124" target="_blank">
+                                        getContext ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This function will return the context of the current controller.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></span>:
-                                        <p>Context object.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getIdentifier
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/ObjectManager.html#method_getIdentifier">ObjectManager</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L52" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:52</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This function will return the context of the current controller.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L52" target="_blank">
+                                        getIdentifier ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 Use this function to acquire the identifier object
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a></span>:
-                                        Identifier object.
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getModel
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_getModel">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L103" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:103</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L103" target="_blank">
+                                        getModel ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This function returns the model matching the controller name.
-                            Also this method will automatically set the states.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The initialized model object with set states</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getObject
-                                (<small>identifier, config</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/ObjectManager.html#method_getObject">ObjectManager</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L182" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:182</code></a>
-                            </p>
-                            
-                            
-                            
+                        Also this method will automatically set the states.</p>
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This function returns the model matching the controller name.
+                        Also this method will automatically set the states.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L182" target="_blank">
+                                        getObject (<small>identifier, config</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1821,168 +1302,88 @@ ignore_title: true
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        call ".then" to use the object when ready.
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getPermissions
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_getPermissions">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L173" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:173</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                </p>
                             </div>
-                            
-                            <p class="description">
-                                <p>This method returns the permission set of the current controller.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The complete permissions set</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getRequest
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_getRequest">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L134" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:134</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method returns the complete request.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Object</span>:
-                                        <p>The states in the request</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getView
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/AbstractController.html#method_getView">AbstractController</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L144" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:144</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method will return the initialize view matching the format given in the request or on the default.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The initialized view object</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                initialize
-                                (<small>config</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                <p>Inherited from
-                                    <a href="../classes/ObjectManager.html#method_initialize">
-                                        ObjectManager
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L173" target="_blank">
+                                        getPermissions ()
                                     </a>
-                                        but overwritten in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L26" target="_blank"><code>lib&#x2F;controller&#x2F;abstract.js:26</code></a>
-                            </p>
-                            
-                            
-                            
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
                             </div>
-                            
-                            <p class="description">
+                            <div class="list-item-content">
+                                <p>This method returns the permission set of the current controller.</p>
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method returns the permission set of the current controller.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L134" target="_blank">
+                                        getRequest ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
+                                <p>This method returns the complete request.</p>
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method returns the complete request.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L144" target="_blank">
+                                        getView ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
+                                <p>This method will return the initialize view matching the format given in the request or on the default.</p>
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will return the initialize view matching the format given in the request or on the default.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/abstract.js#L26" target="_blank">
+                                        initialize (<small>config</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This function will initialize the controller,
-                            it will set the request and response got from the dispatcher.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        it will set the request and response got from the dispatcher.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -1994,52 +1395,33 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object|null</td>
-                                                <td><p>Config object for extra configuration.</p>
-                            </td>
+                                                <td>&lt;p&gt;Config object for extra configuration.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The initialized controller object.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                mixin
-                                (<small>object</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>Inherited from
-                                        <a href="../classes/ObjectManager.html#method_mixin">ObjectManager</a>:
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L103" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:103</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This function will initialize the controller,
+                        it will set the request and response got from the dispatcher.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L103" target="_blank">
+                                        mixin (<small>object</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 This is the handler which will try to mixin functions from another object.
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -2055,11 +1437,12 @@ ignore_title: true
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                </div>
+                        
+                                <p>
+                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
+                                </p>
+                            </div>
+                        </div>    </div>
         </div>
     </div>
 </div>

@@ -258,66 +258,43 @@ ignore_title: true
             </div>        </div>
 
         <div class="col-md-9">
-            <h2 class="article-title">
-                API
-                    <small>
-                        - RaddishStream
-                    </small>
-            </h2>
+            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L6" target="_blank" style="text-decoration: none;">
+                <h3 class="category-title">
+                    API
+                        <small>
+                            - RaddishStream
+                        </small>
+                </h3>
+            </a>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="description">
-                        <p>This object is a wrapper around streams and promises,
+            
+            <p>This object is a wrapper around streams and promises,
             this makes it easy to cast a value to a Stream and cast a stream to a promise.</p>
             <p>Also it adds a convenient transform method.</p>
             
-                    </div>
             
-            
-                        <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L6" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:6</code></a>
-                        </div>
+                <div class="category-info">
+                    <h3 class="category-title">Methods</h3>
                 </div>
-            </div>
             
-                <hr/>
-            
-                <h2>Methods</h2>
-                <div class="row">
-            
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                cast
-                                (<small>object</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L78" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:78</code></a>
-                            </p>
-                            
-                            
-                            
+                <div class="list-view">
+                        <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L78" target="_blank">
+                                        cast (<small>object</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
                             </div>
-                            
-                            <p class="description">
+                            <div class="list-item-content">
                                 <p>The cast method will cast any value to a Stream,
-                            after this a RaddishStream object will be returned.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        after this a RaddishStream object will be returned.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -329,54 +306,35 @@ ignore_title: true
                                             <tr>
                                                 <td>object</td>
                                                 <td>*</td>
-                                                <td><p>The value to be cast to a stream.</p>
-                            </td>
+                                                <td>&lt;p&gt;The value to be cast to a stream.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
-                                        <p>The RaddishStream object used for chaining.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                on
-                                (<small>event, action</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L109" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:109</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;The cast method will cast any value to a Stream,
+                        after this a RaddishStream object will be returned.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L109" target="_blank">
+                                        on (<small>event, action</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method is a proxy between the RaddishStream object and it containing stream.
-                            This method therefor works the same as any other .on method.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This method therefor works the same as any other .on method.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -388,60 +346,41 @@ ignore_title: true
                                             <tr>
                                                 <td>event</td>
                                                 <td>String</td>
-                                                <td><p>The event which to listen to.</p>
-                            </td>
+                                                <td>&lt;p&gt;The event which to listen to.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>action</td>
                                                 <td>Function</td>
-                                                <td><p>The action to do in the event.</p>
-                            </td>
+                                                <td>&lt;p&gt;The action to do in the event.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
-                                        <p>The RaddishStream object used for chaining.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                pipe
-                                (<small>destination</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L37" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:37</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method is a proxy between the RaddishStream object and it containing stream.
+                        This method therefor works the same as any other .on method.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L37" target="_blank">
+                                        pipe (<small>destination</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method is a proxy for the pipe method,
-                            this will bind its destination to the contained stream.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        this will bind its destination to the contained stream.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -453,93 +392,55 @@ ignore_title: true
                                             <tr>
                                                 <td>destination</td>
                                                 <td>Object</td>
-                                                <td><p>The destination stream to pipe to.</p>
-                            </td>
+                                                <td>&lt;p&gt;The destination stream to pipe to.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
-                                        <p>The RaddishStream object used for chaining.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                promise
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L124" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:124</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method is a proxy for the pipe method,
+                        this will bind its destination to the contained stream.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L124" target="_blank">
+                                        promise ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method converts the stream to a promise.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>The resolved or rejected promise.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                setSource
-                                (<small>stream</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L19" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:19</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method converts the stream to a promise.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L19" target="_blank">
+                                        setSource (<small>stream</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method adds a stream as its source.
-                            If the source is a RaddishStream its containing stream will be used.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        If the source is a RaddishStream its containing stream will be used.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -551,53 +452,34 @@ ignore_title: true
                                             <tr>
                                                 <td>stream</td>
                                                 <td>*</td>
-                                                <td><p>The stream to use as the source.</p>
-                            </td>
+                                                <td>&lt;p&gt;The stream to use as the source.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
-                                        <p>The RaddishStream object itself.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                transform
-                                (<small>transform, flush, objectMode</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L51" target="_blank"><code>lib&#x2F;stream&#x2F;stream.js:51</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method adds a stream as its source.
+                        If the source is a RaddishStream its containing stream will be used.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/stream/stream.js#L51" target="_blank">
+                                        transform (<small>transform, flush, objectMode</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>The transform method is a convenient wrapper for a transformation.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -609,35 +491,30 @@ ignore_title: true
                                             <tr>
                                                 <td>transform</td>
                                                 <td>Function</td>
-                                                <td><p>The function which to execute on each chunk for its transformation.</p>
-                            </td>
+                                                <td>&lt;p&gt;The function which to execute on each chunk for its transformation.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>flush</td>
                                                 <td>Function</td>
-                                                <td><p>The last chunk to send after all the transformations.</p>
-                            </td>
+                                                <td>&lt;p&gt;The last chunk to send after all the transformations.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>objectMode</td>
                                                 <td>Boolean</td>
-                                                <td><p>To force objectMode.</p>
-                            </td>
+                                                <td>&lt;p&gt;To force objectMode.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a></span>:
-                                        <p>The RaddishStream object itself used for chaining.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                </div>
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;The transform method is a convenient wrapper for a transformation.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>    </div>
         </div>
     </div>
 </div>

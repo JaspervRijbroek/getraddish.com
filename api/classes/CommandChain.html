@@ -258,105 +258,63 @@ ignore_title: true
             </div>        </div>
 
         <div class="col-md-9">
-            <h2 class="article-title">
-                API
-                    <small>
-                        - CommandChain
-                    </small>
-            </h2>
+            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/chain/chain.js#L3" target="_blank" style="text-decoration: none;">
+                <h3 class="category-title">
+                    API
+                        <small>
+                            - CommandChain
+                        </small>
+                </h3>
+            </a>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="description">
-                        <p>CommandChain class for the behaviors.
+            
+            <p>CommandChain class for the behaviors.
             This object when created will process the behaviors.
             This will be done in the way of Chain of Responsibility.</p>
             
-                    </div>
             
-            
-                        <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/chain/chain.js#L3" target="_blank"><code>lib&#x2F;command&#x2F;chain&#x2F;chain.js:3</code></a>
-                        </div>
+                <div class="category-info">
+                    <h3 class="category-title">Methods</h3>
                 </div>
-            </div>
             
-                <hr/>
-            
-                <h2>Methods</h2>
-                <div class="row">
-            
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                processBehaviors
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/chain/chain.js#L81" target="_blank"><code>lib&#x2F;command&#x2F;chain&#x2F;chain.js:81</code></a>
-                            </p>
-                            
-                            
-                            
+                <div class="list-view">
+                        <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/chain/chain.js#L81" target="_blank">
+                                        processBehaviors ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
                             </div>
-                            
-                            <p class="description">
+                            <div class="list-item-content">
                                 <p>This method will run in the background and map all the behavior till they are ready to run.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>Return the CommandChain object when the behaviors have been processed.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                run
-                                (<small>method, context</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/chain/chain.js#L46" target="_blank"><code>lib&#x2F;command&#x2F;chain&#x2F;chain.js:46</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will run in the background and map all the behavior till they are ready to run.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/chain/chain.js#L46" target="_blank">
+                                        run (<small>method, context</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will run a method in all the behaviors,
-                            however this will only be done when the CommandChain is enabled.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        however this will only be done when the CommandChain is enabled.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -368,29 +326,25 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td><p>The name of the behavior method to run (eg: before.run)</p>
-                            </td>
+                                                <td>&lt;p&gt;The name of the behavior method to run (eg: before.run)&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td><p>The context of the behavior in which it has to run. (DCI)</p>
-                            </td>
+                                                <td>&lt;p&gt;The context of the behavior in which it has to run. (DCI)&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>When all the behaviors have ran we will return a resolve of the context.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                </div>
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will run a method in all the behaviors,
+                        however this will only be done when the CommandChain is enabled.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>    </div>
         </div>
     </div>
 </div>

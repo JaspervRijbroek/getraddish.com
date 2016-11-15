@@ -258,64 +258,41 @@ ignore_title: true
             </div>        </div>
 
         <div class="col-md-9">
-            <h2 class="article-title">
-                API
-                    <small>
-                        - Application
-                    </small>
-            </h2>
+            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L6" target="_blank" style="text-decoration: none;">
+                <h3 class="category-title">
+                    API
+                        <small>
+                            - Application
+                        </small>
+                </h3>
+            </a>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="description">
-                        <p>The Application object holds the information about every application,
+            
+            <p>The Application object holds the information about every application,
             including the config for the component and config directories.</p>
             
-                    </div>
             
-            
-                        <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L6" target="_blank"><code>lib&#x2F;application&#x2F;application.js:6</code></a>
-                        </div>
+                <div class="category-info">
+                    <h3 class="category-title">Methods</h3>
                 </div>
-            </div>
             
-                <hr/>
-            
-                <h2>Methods</h2>
-                <div class="row">
-            
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getApplication
-                                (<small>alias</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L67" target="_blank"><code>lib&#x2F;application&#x2F;application.js:67</code></a>
-                            </p>
-                            
-                            
-                            
+                <div class="list-view">
+                        <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L67" target="_blank">
+                                        getApplication (<small>alias</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
                             </div>
-                            
-                            <p class="description">
+                            <div class="list-item-content">
                                 <p>This method will teturn application instance bound to the given object.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -327,55 +304,35 @@ ignore_title: true
                                             <tr>
                                                 <td>alias</td>
                                                 <td>String</td>
-                                                <td><p>The alias of the application.</p>
-                            </td>
+                                                <td>&lt;p&gt;The alias of the application.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/Application.html" class="crosslink">Application</a></span>:
-                                        <p>The application registred to the alias.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                matchApplication
-                                (<small>url</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L78" target="_blank"><code>lib&#x2F;application&#x2F;application.js:78</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will teturn application instance bound to the given object.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L78" target="_blank">
+                                        matchApplication (<small>url</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will try to match an application to the url,
-                            If no application is found an error will be fired.
-                            If the application isn't found it will throw a RaddishError.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        If no application is found an error will be fired.
+                        If the application isn't found it will throw a RaddishError.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -387,47 +344,36 @@ ignore_title: true
                                             <tr>
                                                 <td>url</td>
                                                 <td>Object</td>
-                                                <td><p>The url object of the (parsed) request.</p>
-                            </td>
+                                                <td>&lt;p&gt;The url object of the (parsed) request.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                runComponent
-                                (<small>component, req, res</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L30" target="_blank"><code>lib&#x2F;application&#x2F;application.js:30</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will try to match an application to the url,
+                        If no application is found an error will be fired.
+                        If the application isn&#x27;t found it will throw a RaddishError.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L30" target="_blank">
+                                        runComponent (<small>component, req, res</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will try to find the component and will run it.
-                            If the component isn't found it will throw a RaddishError.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        If the component isn't found it will throw a RaddishError.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -439,58 +385,46 @@ ignore_title: true
                                             <tr>
                                                 <td>component</td>
                                                 <td>String</td>
-                                                <td><p>The component to search for.</p>
-                            </td>
+                                                <td>&lt;p&gt;The component to search for.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td><p>NodeJS request object.</p>
-                            </td>
+                                                <td>&lt;p&gt;NodeJS request object.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>res</td>
                                                 <td>Object</td>
-                                                <td><p>NodeJS response object.</p>
-                            </td>
+                                                <td>&lt;p&gt;NodeJS response object.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                setApplication
-                                (<small>alias, path</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L52" target="_blank"><code>lib&#x2F;application&#x2F;application.js:52</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will try to find the component and will run it.
+                        If the component isn&#x27;t found it will throw a RaddishError.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L52" target="_blank">
+                                        setApplication (<small>alias, path</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>This method will try to get the application module and add this to the applications registry.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -502,59 +436,39 @@ ignore_title: true
                                             <tr>
                                                 <td>alias</td>
                                                 <td>String</td>
-                                                <td><p>The alias of the Application.</p>
-                            </td>
+                                                <td>&lt;p&gt;The alias of the Application.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>path</td>
                                                 <td>String</td>
-                                                <td><p>The path to the Application file.</p>
-                            </td>
+                                                <td>&lt;p&gt;The path to the Application file.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/Application.html" class="crosslink">Application</a></span>:
-                                        <p>The application object for chaining purposes.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                setConfig
-                                (<small>config</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L17" target="_blank"><code>lib&#x2F;application&#x2F;application.js:17</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will try to get the application module and add this to the applications registry.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/application/application.js#L17" target="_blank">
+                                        setConfig (<small>config</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>The setConfig method will set the config for the current Application object.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -566,23 +480,18 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td><p>The config object for the Application</p>
-                            </td>
+                                                <td>&lt;p&gt;The config object for the Application&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/Application.html" class="crosslink">Application</a></span>:
-                                        <p>The application object for chaning purposes.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                </div>
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;The setConfig method will set the config for the current Application object.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>    </div>
         </div>
     </div>
 </div>

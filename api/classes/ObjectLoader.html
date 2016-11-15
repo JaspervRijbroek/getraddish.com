@@ -258,104 +258,62 @@ ignore_title: true
             </div>        </div>
 
         <div class="col-md-9">
-            <h2 class="article-title">
-                API
-                    <small>
-                        - ObjectLoader
-                    </small>
-            </h2>
+            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L16" target="_blank" style="text-decoration: none;">
+                <h3 class="category-title">
+                    API
+                        <small>
+                            - ObjectLoader
+                        </small>
+                </h3>
+            </a>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="description">
-                        <p>ObjectLoader object which handles all the loading of the requested objects.</p>
             
-                    </div>
+            <p>ObjectLoader object which handles all the loading of the requested objects.</p>
             
             
-                        <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L16" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:16</code></a>
-                        </div>
+                <div class="category-info">
+                    <h3 class="category-title">Methods</h3>
                 </div>
-            </div>
             
-                <hr/>
-            
-                <h2>Methods</h2>
-                <div class="row">
-            
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                getSequence
-                                ()
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L67" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:67</code></a>
-                            </p>
-                            
-                            
-                            
+                <div class="list-view">
+                        <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L67" target="_blank">
+                                        getSequence ()
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
                             </div>
-                            
-                            <p class="description">
+                            <div class="list-item-content">
                                 <p>This method will check if there is a custom loader sequence, if not return the default.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Array</span>:
-                                        <p>The complete sequence</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                load
-                                (<small>identifier, config</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L134" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:134</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                        
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;This method will check if there is a custom loader sequence, if not return the default.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L134" target="_blank">
+                                        load (<small>identifier, config</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>The load method will check if the object has been cached.
-                            If this is not the case it will try to resolve the object.</p>
-                            <p>When an object has been loaded for the first time it is cached for reuse in a later request.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        If this is not the case it will try to resolve the object.</p>
+                        <p>When an object has been loaded for the first time it is cached for reuse in a later request.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -367,60 +325,42 @@ ignore_title: true
                                             <tr>
                                                 <td>identifier</td>
                                                 <td>String</td>
-                                                <td><p>The identifier of the object to be loaded.</p>
-                            </td>
+                                                <td>&lt;p&gt;The identifier of the object to be loaded.&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td><p>This is the config object to send loaded object.</p>
-                            </td>
+                                                <td>&lt;p&gt;This is the config object to send loaded object.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Promise</span>:
-                                        <p>This will hold the uninitialized object.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                parseSequence
-                                (<small>string, identifier</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L48" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:48</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;The load method will check if the object has been cached.
+                        If this is not the case it will try to resolve the object.&lt;/p&gt;
+                        &lt;p&gt;When an object has been loaded for the first time it is cached for reuse in a later request.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L48" target="_blank">
+                                        parseSequence (<small>string, identifier</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Parse the sequence identifier
-                            This will result in a usable identifier</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        This will result in a usable identifier</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -432,8 +372,8 @@ ignore_title: true
                                             <tr>
                                                 <td>string</td>
                                                 <td>Sring</td>
-                                                <td><p>The sequence string to parse</p>
-                            </td>
+                                                <td>&lt;p&gt;The sequence string to parse&lt;/p&gt;
+                        </td>
                                             </tr>
                                             <tr>
                                                 <td>identifier</td>
@@ -442,46 +382,29 @@ ignore_title: true
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type"><a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a></span>:
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                receive
-                                (<small>identifier</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L96" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:96</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Parse the sequence identifier
+                        This will result in a usable identifier&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L96" target="_blank">
+                                        receive (<small>identifier</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Receive method will triy to return the requested file.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -493,54 +416,34 @@ ignore_title: true
                                             <tr>
                                                 <td>identifier</td>
                                                 <td>String</td>
-                                                <td><p>The identifier of the object to load.</p>
-                            </td>
+                                                <td>&lt;p&gt;The identifier of the object to load.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value:</h4>
-                            
-                                            <span class="type">Object | False</span>:
-                                        <p>Result of the call when the file isn't found it will return false.</p>
-                            
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">
-                                resolve
-                                (<small>identifier</small>)
-                            </h3>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L26" target="_blank"><code>lib&#x2F;object&#x2F;loader&#x2F;loader.js:26</code></a>
-                            </p>
-                            
-                            
-                            
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Receive method will triy to return the requested file.&lt;/p&gt;
+                        
+                                </p>
                             </div>
-                            
-                            <p class="description">
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/loader/loader.js#L26" target="_blank">
+                                        resolve (<small>identifier</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
                                 <p>Load a specific object.
-                            By default it will be checking in the applications folder.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
+                        By default it will be checking in the applications folder.</p>
+                        
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -552,16 +455,19 @@ ignore_title: true
                                             <tr>
                                                 <td>identifier</td>
                                                 <td>String</td>
-                                                <td><p>The identifier of the object which needs to be resolved.</p>
-                            </td>
+                                                <td>&lt;p&gt;The identifier of the object which needs to be resolved.&lt;/p&gt;
+                        </td>
                                             </tr>
                                     </tbody>
                                 </table>
-                            
-            
-                            <hr />
-                        </div>
-                </div>
+                        
+                                <p>
+                                    <strong>Returns</strong> : &lt;p&gt;Load a specific object.
+                        By default it will be checking in the applications folder.&lt;/p&gt;
+                        
+                                </p>
+                            </div>
+                        </div>    </div>
         </div>
     </div>
 </div>
