@@ -268,10 +268,12 @@ ignore_title: true
             </a>
 
             
-            <p>This object is a wrapper around streams and promises,
-            this makes it easy to cast a value to a Stream and cast a stream to a promise.</p>
-            <p>Also it adds a convenient transform method.</p>
+            <p>
+            This object is a wrapper around streams and promises,
+            this makes it easy to cast a value to a Stream and cast a stream to a promise.
+            Also it adds a convenient transform method.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -289,9 +291,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The cast method will cast any value to a Stream,
-                        after this a RaddishStream object will be returned.</p>
+                                <p>
+                                The cast method will cast any value to a Stream,
+                        after this a RaddishStream object will be returned.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -306,15 +310,14 @@ ignore_title: true
                                             <tr>
                                                 <td>object</td>
                                                 <td>*</td>
-                                                <td>&lt;p&gt;The value to be cast to a stream.&lt;/p&gt;
+                                                <td>The value to be cast to a stream.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The cast method will cast any value to a Stream,
-                        after this a RaddishStream object will be returned.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a>: The RaddishStream object used for chaining.
                         
                                 </p>
                             </div>
@@ -329,9 +332,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method is a proxy between the RaddishStream object and it containing stream.
-                        This method therefor works the same as any other .on method.</p>
+                                <p>
+                                This method is a proxy between the RaddishStream object and it containing stream.
+                        This method therefor works the same as any other .on method.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -346,21 +351,20 @@ ignore_title: true
                                             <tr>
                                                 <td>event</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The event which to listen to.&lt;/p&gt;
+                                                <td>The event which to listen to.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>action</td>
                                                 <td>Function</td>
-                                                <td>&lt;p&gt;The action to do in the event.&lt;/p&gt;
+                                                <td>The action to do in the event.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method is a proxy between the RaddishStream object and it containing stream.
-                        This method therefor works the same as any other .on method.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a>: The RaddishStream object used for chaining.
                         
                                 </p>
                             </div>
@@ -375,9 +379,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method is a proxy for the pipe method,
-                        this will bind its destination to the contained stream.</p>
+                                <p>
+                                This method is a proxy for the pipe method,
+                        this will bind its destination to the contained stream.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -392,15 +398,14 @@ ignore_title: true
                                             <tr>
                                                 <td>destination</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The destination stream to pipe to.&lt;/p&gt;
+                                                <td>The destination stream to pipe to.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method is a proxy for the pipe method,
-                        this will bind its destination to the contained stream.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a>: The RaddishStream object used for chaining.
                         
                                 </p>
                             </div>
@@ -415,12 +420,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method converts the stream to a promise.</p>
+                                <p>
+                                This method converts the stream to a promise.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method converts the stream to a promise.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The resolved or rejected promise.
                         
                                 </p>
                             </div>
@@ -435,9 +442,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method adds a stream as its source.
-                        If the source is a RaddishStream its containing stream will be used.</p>
+                                <p>
+                                This method adds a stream as its source.
+                        If the source is a RaddishStream its containing stream will be used.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -452,15 +461,14 @@ ignore_title: true
                                             <tr>
                                                 <td>stream</td>
                                                 <td>*</td>
-                                                <td>&lt;p&gt;The stream to use as the source.&lt;/p&gt;
+                                                <td>The stream to use as the source.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method adds a stream as its source.
-                        If the source is a RaddishStream its containing stream will be used.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a>: The RaddishStream object itself.
                         
                                 </p>
                             </div>
@@ -475,8 +483,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The transform method is a convenient wrapper for a transformation.</p>
+                                <p>
+                                The transform method is a convenient wrapper for a transformation.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -491,26 +501,26 @@ ignore_title: true
                                             <tr>
                                                 <td>transform</td>
                                                 <td>Function</td>
-                                                <td>&lt;p&gt;The function which to execute on each chunk for its transformation.&lt;/p&gt;
+                                                <td>The function which to execute on each chunk for its transformation.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>flush</td>
                                                 <td>Function</td>
-                                                <td>&lt;p&gt;The last chunk to send after all the transformations.&lt;/p&gt;
+                                                <td>The last chunk to send after all the transformations.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>objectMode</td>
                                                 <td>Boolean</td>
-                                                <td>&lt;p&gt;To force objectMode.&lt;/p&gt;
+                                                <td>To force objectMode.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The transform method is a convenient wrapper for a transformation.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/RaddishStream.html" class="crosslink">RaddishStream</a>: The RaddishStream object itself used for chaining.
                         
                                 </p>
                             </div>

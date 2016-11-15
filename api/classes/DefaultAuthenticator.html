@@ -269,8 +269,10 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a></p>
             
-            <p>This authenticator will do a basic auth check on the headers.</p>
+            <p>
+            This authenticator will do a basic auth check on the headers.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -288,10 +290,12 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This authenticator will check for a basic auth header
-                        and when it is available it will authenticate the user.</p>
-                        <p>This behavior can be overwritten with your own authenticator.</p>
+                                <p>
+                                This authenticator will check for a basic auth header
+                        and when it is available it will authenticate the user.
+                        This behavior can be overwritten with your own authenticator.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -306,16 +310,14 @@ ignore_title: true
                                             <tr>
                                                 <td>request</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The NodeJS request object.&lt;/p&gt;
+                                                <td>The NodeJS request object.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This authenticator will check for a basic auth header
-                        and when it is available it will authenticate the user.&lt;/p&gt;
-                        &lt;p&gt;This behavior can be overwritten with your own authenticator.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promise containing the username and password
                         
                                 </p>
                             </div>
@@ -330,13 +332,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This function will be available for every object,
                         this will clone the current object.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : This function will be available for every object,
-                        this will clone the current object.
+                                    <strong>Returns</strong> Object: An exact copy of the current object
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -351,8 +355,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a private function to allow for config extending
                         This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -377,10 +383,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -393,11 +395,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Return the command chain to run behaviors.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -411,7 +415,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire a variable from config.js
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -432,7 +438,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                    <strong>Returns</strong> Object: The requested config value.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -446,11 +452,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire the identifier object
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -464,7 +472,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -490,7 +500,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -504,8 +514,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Every object called through getObject will go through this function.
                         This will set the identifier and adds the behaviors (if any).
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -520,15 +532,15 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;Object with config values&lt;/p&gt;
+                                                <td>Object with config values
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Every object called through getObject will go through this function.
-                        This will set the identifier and adds the behaviors (if any).
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -542,7 +554,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the handler which will try to mixin functions from another object.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -562,9 +576,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
-                                </p>
                             </div>
                         </div>    </div>
         </div>

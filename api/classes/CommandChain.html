@@ -268,10 +268,12 @@ ignore_title: true
             </a>
 
             
-            <p>CommandChain class for the behaviors.
+            <p>
+            CommandChain class for the behaviors.
             This object when created will process the behaviors.
-            This will be done in the way of Chain of Responsibility.</p>
+            This will be done in the way of Chain of Responsibility.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -289,12 +291,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will run in the background and map all the behavior till they are ready to run.</p>
+                                <p>
+                                This method will run in the background and map all the behavior till they are ready to run.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will run in the background and map all the behavior till they are ready to run.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: Return the CommandChain object when the behaviors have been processed.
                         
                                 </p>
                             </div>
@@ -309,9 +313,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will run a method in all the behaviors,
-                        however this will only be done when the CommandChain is enabled.</p>
+                                <p>
+                                This method will run a method in all the behaviors,
+                        however this will only be done when the CommandChain is enabled.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -326,21 +332,20 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The name of the behavior method to run (eg: before.run)&lt;/p&gt;
+                                                <td>The name of the behavior method to run (eg: before.run)
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td>&lt;p&gt;The context of the behavior in which it has to run. (DCI)&lt;/p&gt;
+                                                <td>The context of the behavior in which it has to run. (DCI)
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will run a method in all the behaviors,
-                        however this will only be done when the CommandChain is enabled.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: When all the behaviors have ran we will return a resolve of the context.
                         
                                 </p>
                             </div>

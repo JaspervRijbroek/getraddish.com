@@ -268,8 +268,10 @@ ignore_title: true
             </a>
 
             
-            <p>ObjectLoader object which handles all the loading of the requested objects.</p>
+            <p>
+            ObjectLoader object which handles all the loading of the requested objects.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -287,12 +289,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will check if there is a custom loader sequence, if not return the default.</p>
+                                <p>
+                                This method will check if there is a custom loader sequence, if not return the default.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will check if there is a custom loader sequence, if not return the default.&lt;/p&gt;
+                                    <strong>Returns</strong> Array: The complete sequence
                         
                                 </p>
                             </div>
@@ -307,10 +311,12 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The load method will check if the object has been cached.
-                        If this is not the case it will try to resolve the object.</p>
-                        <p>When an object has been loaded for the first time it is cached for reuse in a later request.</p>
+                                <p>
+                                The load method will check if the object has been cached.
+                        If this is not the case it will try to resolve the object.
+                        When an object has been loaded for the first time it is cached for reuse in a later request.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -325,22 +331,20 @@ ignore_title: true
                                             <tr>
                                                 <td>identifier</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The identifier of the object to be loaded.&lt;/p&gt;
+                                                <td>The identifier of the object to be loaded.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;This is the config object to send loaded object.&lt;/p&gt;
+                                                <td>This is the config object to send loaded object.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The load method will check if the object has been cached.
-                        If this is not the case it will try to resolve the object.&lt;/p&gt;
-                        &lt;p&gt;When an object has been loaded for the first time it is cached for reuse in a later request.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: This will hold the uninitialized object.
                         
                                 </p>
                             </div>
@@ -355,9 +359,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Parse the sequence identifier
-                        This will result in a usable identifier</p>
+                                <p>
+                                Parse the sequence identifier
+                        This will result in a usable identifier
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -372,7 +378,7 @@ ignore_title: true
                                             <tr>
                                                 <td>string</td>
                                                 <td>Sring</td>
-                                                <td>&lt;p&gt;The sequence string to parse&lt;/p&gt;
+                                                <td>The sequence string to parse
                         </td>
                                             </tr>
                                             <tr>
@@ -384,9 +390,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Parse the sequence identifier
-                        This will result in a usable identifier&lt;/p&gt;
-                        
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: 
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -400,8 +404,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Receive method will triy to return the requested file.</p>
+                                <p>
+                                Receive method will triy to return the requested file.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -416,14 +422,14 @@ ignore_title: true
                                             <tr>
                                                 <td>identifier</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The identifier of the object to load.&lt;/p&gt;
+                                                <td>The identifier of the object to load.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Receive method will triy to return the requested file.&lt;/p&gt;
+                                    <strong>Returns</strong> Object | False: Result of the call when the file isn't found it will return false.
                         
                                 </p>
                             </div>
@@ -438,9 +444,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Load a specific object.
-                        By default it will be checking in the applications folder.</p>
+                                <p>
+                                Load a specific object.
+                        By default it will be checking in the applications folder.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -455,17 +463,12 @@ ignore_title: true
                                             <tr>
                                                 <td>identifier</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The identifier of the object which needs to be resolved.&lt;/p&gt;
+                                                <td>The identifier of the object which needs to be resolved.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Load a specific object.
-                        By default it will be checking in the applications folder.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>    </div>
         </div>

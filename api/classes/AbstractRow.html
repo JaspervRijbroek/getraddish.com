@@ -269,8 +269,10 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a></p>
             
-            <p>The AbstractRow class can be used when not using a table, and thus can contain your own functions.</p>
+            <p>
+            The AbstractRow class can be used when not using a table, and thus can contain your own functions.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -288,12 +290,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will clone and reset the object, after this is done it will be returned.</p>
+                                <p>
+                                This method will clone and reset the object, after this is done it will be returned.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will clone and reset the object, after this is done it will be returned.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a>: The newly created AbstractRow
                         
                                 </p>
                             </div>
@@ -309,8 +313,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a private function to allow for config extending
                         This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -335,10 +341,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -351,11 +353,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Return the command chain to run behaviors.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -369,7 +373,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire a variable from config.js
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -390,7 +396,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                    <strong>Returns</strong> Object: The requested config value.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -404,12 +410,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return only the data from the Row object</p>
+                                <p>
+                                This method will return only the data from the Row object
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return only the data from the Row object&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The data of the Row object
                         
                                 </p>
                             </div>
@@ -424,11 +432,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire the identifier object
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -442,7 +452,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -468,7 +480,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -482,8 +494,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Every object called through getObject will go through this function.
                         This will set the identifier and adds the behaviors (if any).
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -498,15 +512,15 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;Object with config values&lt;/p&gt;
+                                                <td>Object with config values
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Every object called through getObject will go through this function.
-                        This will set the identifier and adds the behaviors (if any).
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -520,12 +534,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will check if the row object is new or not</p>
+                                <p>
+                                This method will check if the row object is new or not
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will check if the row object is new or not&lt;/p&gt;
+                                    <strong>Returns</strong> Boolean: True if new, False if exists
                         
                                 </p>
                             </div>
@@ -540,7 +556,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the handler which will try to mixin functions from another object.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -560,9 +578,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -575,9 +590,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will set the data in the Row object,
-                        when there is data present it will add data to the modified array and set this in the data as well.</p>
+                                <p>
+                                This method will set the data in the Row object,
+                        when there is data present it will add data to the modified array and set this in the data as well.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -592,15 +609,14 @@ ignore_title: true
                                             <tr>
                                                 <td>data</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The data to set on the object&lt;/p&gt;
+                                                <td>The data to set on the object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will set the data in the Row object,
-                        when there is data present it will add data to the modified array and set this in the data as well.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: Returns the Row object with filled data
                         
                                 </p>
                             </div>

@@ -269,8 +269,10 @@ ignore_title: true
 
                 <p><strong>Extends</strong> TableAbstract</p>
             
-            <p>Default table class</p>
+            <p>
+            Default table class
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -288,8 +290,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will try to delete a row in the database.</p>
+                                <p>
+                                This method will try to delete a row in the database.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -304,14 +308,14 @@ ignore_title: true
                                             <tr>
                                                 <td>row</td>
                                                 <td>Row</td>
-                                                <td>&lt;p&gt;The row object to delete.&lt;/p&gt;
+                                                <td>The row object to delete.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will try to delete a row in the database.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The deleted data.
                         
                                 </p>
                             </div>
@@ -327,9 +331,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This function will filter the data based on the columns.
-                        And will check if the value is correct.</p>
+                                <p>
+                                This function will filter the data based on the columns.
+                        And will check if the value is correct.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -344,29 +350,24 @@ ignore_title: true
                                             <tr>
                                                 <td>adapter</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The adapter object.&lt;/p&gt;
+                                                <td>The adapter object.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>columns</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The object containing all the columns.&lt;/p&gt;
+                                                <td>The object containing all the columns.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>data</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The data object.&lt;/p&gt;
+                                                <td>The data object.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This function will filter the data based on the columns.
-                        And will check if the value is correct.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -379,12 +380,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The getQuery method returns the query received from the associated adapter (default: mysql).</p>
+                                <p>
+                                The getQuery method returns the query received from the associated adapter (default: mysql).
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The getQuery method returns the query received from the associated adapter (default: mysql).&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The queryBuilder object.
                         
                                 </p>
                             </div>
@@ -399,8 +402,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Initialize method to initialize the Table model</p>
+                                <p>
+                                Initialize method to initialize the Table model
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -415,14 +420,14 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object|null</td>
-                                                <td>&lt;p&gt;Config object for the Table object&lt;/p&gt;
+                                                <td>Config object for the Table object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Initialize method to initialize the Table model&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The initialized Table object
                         
                                 </p>
                             </div>
@@ -437,8 +442,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will try to insert a row in the database</p>
+                                <p>
+                                This method will try to insert a row in the database
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -453,14 +460,14 @@ ignore_title: true
                                             <tr>
                                                 <td>row</td>
                                                 <td>Row</td>
-                                                <td>&lt;p&gt;The row object to insert in the database.&lt;/p&gt;
+                                                <td>The row object to insert in the database.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will try to insert a row in the database&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The inserted data.
                         
                                 </p>
                             </div>
@@ -475,8 +482,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method tries to get get a row or rowset from the table.</p>
+                                <p>
+                                This method tries to get get a row or rowset from the table.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -496,14 +505,14 @@ ignore_title: true
                                             <tr>
                                                 <td>mode</td>
                                                 <td>Int</td>
-                                                <td>&lt;p&gt;Mode to get from the table.&lt;/p&gt;
+                                                <td>Mode to get from the table.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method tries to get get a row or rowset from the table.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The data requested from the database.
                         
                                 </p>
                             </div>
@@ -518,8 +527,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will try to update a row in the database.</p>
+                                <p>
+                                This method will try to update a row in the database.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -534,14 +545,14 @@ ignore_title: true
                                             <tr>
                                                 <td>row</td>
                                                 <td>Row</td>
-                                                <td>&lt;p&gt;The row object to update.&lt;/p&gt;
+                                                <td>The row object to update.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will try to update a row in the database.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The updated data.
                         
                                 </p>
                             </div>

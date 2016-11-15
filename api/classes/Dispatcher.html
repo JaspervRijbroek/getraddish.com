@@ -269,8 +269,10 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/AbstractDispatcher.html" class="crosslink">AbstractDispatcher</a></p>
             
-            <p>Dispatcher class which will dispatch the http request to the appropriate controller.</p>
+            <p>
+            Dispatcher class which will dispatch the http request to the appropriate controller.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -288,13 +290,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This function will be available for every object,
                         this will clone the current object.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : This function will be available for every object,
-                        this will clone the current object.
+                                    <strong>Returns</strong> Object: An exact copy of the current object
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -308,8 +312,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will dispatch the request to the correct controller.</p>
+                                <p>
+                                This method will dispatch the request to the correct controller.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -324,20 +330,20 @@ ignore_title: true
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;NodeJS Request Object&lt;/p&gt;
+                                                <td>NodeJS Request Object
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>res</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;NodeJS Response Object&lt;/p&gt;
+                                                <td>NodeJS Response Object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will dispatch the request to the correct controller.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promise with the parsed content.
                         
                                 </p>
                             </div>
@@ -353,8 +359,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a private function to allow for config extending
                         This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -379,10 +387,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -395,12 +399,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Get the authenticator belonging to the current dispatcher.</p>
+                                <p>
+                                Get the authenticator belonging to the current dispatcher.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Get the authenticator belonging to the current dispatcher.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promised authenticator
                         
                                 </p>
                             </div>
@@ -415,11 +421,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Return the command chain to run behaviors.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -433,7 +441,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire a variable from config.js
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -454,7 +464,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                    <strong>Returns</strong> Object: The requested config value.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -468,8 +478,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return the Controller object for the request.</p>
+                                <p>
+                                This method will return the Controller object for the request.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -484,20 +496,20 @@ ignore_title: true
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;NodeJS Request Object&lt;/p&gt;
+                                                <td>NodeJS Request Object
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>res</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;NodeJS Response Object&lt;/p&gt;
+                                                <td>NodeJS Response Object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return the Controller object for the request.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: Return the Controller object.
                         
                                 </p>
                             </div>
@@ -512,11 +524,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire the identifier object
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -530,7 +544,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -556,7 +572,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -571,8 +587,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will check if gzip is enabled and supported, if both are true it will gzip the data and send it to the response.</p>
+                                <p>
+                                This method will check if gzip is enabled and supported, if both are true it will gzip the data and send it to the response.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -587,26 +605,26 @@ ignore_title: true
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The NodeJS request object&lt;/p&gt;
+                                                <td>The NodeJS request object
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>res</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The NodeJS response object&lt;/p&gt;
+                                                <td>The NodeJS response object
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>data</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The data object which needs GZipping.&lt;/p&gt;
+                                                <td>The data object which needs GZipping.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will check if gzip is enabled and supported, if both are true it will gzip the data and send it to the response.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The encoded response.
                         
                                 </p>
                             </div>
@@ -621,9 +639,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will handle the exceptions thrown in the framework,
-                        if it is an instance of RaddishError it will return it to the browser.</p>
+                                <p>
+                                This method will handle the exceptions thrown in the framework,
+                        if it is an instance of RaddishError it will return it to the browser.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -638,23 +658,18 @@ ignore_title: true
                                             <tr>
                                                 <td>response</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;NodeJS request object.&lt;/p&gt;
+                                                <td>NodeJS request object.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>error</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The error object.&lt;/p&gt;
+                                                <td>The error object.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will handle the exceptions thrown in the framework,
-                        if it is an instance of RaddishError it will return it to the browser.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -667,8 +682,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Every object called through getObject will go through this function.
                         This will set the identifier and adds the behaviors (if any).
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -683,15 +700,15 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;Object with config values&lt;/p&gt;
+                                                <td>Object with config values
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Every object called through getObject will go through this function.
-                        This will set the identifier and adds the behaviors (if any).
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -705,7 +722,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the handler which will try to mixin functions from another object.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -725,9 +744,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -740,8 +756,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will parse the request and returns the fields and files send in the request.</p>
+                                <p>
+                                This method will parse the request and returns the fields and files send in the request.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -756,14 +774,14 @@ ignore_title: true
                                             <tr>
                                                 <td>req</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;NodeJS Request Object&lt;/p&gt;
+                                                <td>NodeJS Request Object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will parse the request and returns the fields and files send in the request.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: Return the POST data and Files
                         
                                 </p>
                             </div>

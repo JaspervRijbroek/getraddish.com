@@ -269,9 +269,11 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/AbstractAdapter.html" class="crosslink">AbstractAdapter</a></p>
             
-            <p>The MongoDB database adapter.
-            This adapter will create a connection with the MongoDB server</p>
+            <p>
+            The MongoDB database adapter.
+            This adapter will create a connection with the MongoDB server
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -290,8 +292,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will delete an existing row.</p>
+                                <p>
+                                This method will delete an existing row.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -306,20 +310,20 @@ ignore_title: true
                                             <tr>
                                                 <td>collection</td>
                                                 <td>Collection</td>
-                                                <td>&lt;p&gt;The MongoDB Collection.&lt;/p&gt;
+                                                <td>The MongoDB Collection.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>query</td>
                                                 <td>DeleteQuery</td>
-                                                <td>&lt;p&gt;The query to execute.&lt;/p&gt;
+                                                <td>The query to execute.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will delete an existing row.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: A promise containing the deleted row.
                         
                                 </p>
                             </div>
@@ -335,8 +339,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will insert one single item into the database.</p>
+                                <p>
+                                This method will insert one single item into the database.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -351,20 +357,20 @@ ignore_title: true
                                             <tr>
                                                 <td>collection</td>
                                                 <td>Collection</td>
-                                                <td>&lt;p&gt;The MongoDB Collection.&lt;/p&gt;
+                                                <td>The MongoDB Collection.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>query</td>
                                                 <td>InsertQuery</td>
-                                                <td>&lt;p&gt;The query to execute.&lt;/p&gt;
+                                                <td>The query to execute.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will insert one single item into the database.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: A promise containing the inserted row.
                         
                                 </p>
                             </div>
@@ -380,8 +386,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will hold all the logic for the select query.</p>
+                                <p>
+                                This method will hold all the logic for the select query.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -396,22 +404,18 @@ ignore_title: true
                                             <tr>
                                                 <td>collection</td>
                                                 <td>Collection</td>
-                                                <td>&lt;p&gt;The MongoDB Collection&lt;/p&gt;
+                                                <td>The MongoDB Collection
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>query</td>
                                                 <td>SelectQuery</td>
-                                                <td>&lt;p&gt;The query to execute.&lt;/p&gt;
+                                                <td>The query to execute.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will hold all the logic for the select query.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -425,8 +429,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will update an existing object.</p>
+                                <p>
+                                This method will update an existing object.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -441,20 +447,20 @@ ignore_title: true
                                             <tr>
                                                 <td>collection</td>
                                                 <td>Collection</td>
-                                                <td>&lt;p&gt;The MongoDB Collection.&lt;/p&gt;
+                                                <td>The MongoDB Collection.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>query</td>
                                                 <td>UpdateQuery</td>
-                                                <td>&lt;p&gt;The query to execute.&lt;/p&gt;
+                                                <td>The query to execute.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will update an existing object.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: A promise containing the updated row.
                         
                                 </p>
                             </div>
@@ -470,8 +476,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This function will return the indexes on the selected table.</p>
+                                <p>
+                                This function will return the indexes on the selected table.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -486,14 +494,14 @@ ignore_title: true
                                             <tr>
                                                 <td>name</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The table name to get the indexed from&lt;/p&gt;
+                                                <td>The table name to get the indexed from
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This function will return the indexes on the selected table.&lt;/p&gt;
+                                    <strong>Returns</strong> Promse: The promise with all the information.
                         
                                 </p>
                             </div>
@@ -509,8 +517,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will receive various information of the server.</p>
+                                <p>
+                                This method will receive various information of the server.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -525,14 +535,14 @@ ignore_title: true
                                             <tr>
                                                 <td>name</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The table name from which to return the data.&lt;/p&gt;
+                                                <td>The table name from which to return the data.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will receive various information of the server.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promise with the server information.
                         
                                 </p>
                             </div>
@@ -547,13 +557,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This function will be available for every object,
                         this will clone the current object.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : This function will be available for every object,
-                        this will clone the current object.
+                                    <strong>Returns</strong> Object: An exact copy of the current object
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -567,8 +578,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This is an intermediary method that will check your query and send it through to the correct method.</p>
+                                <p>
+                                This is an intermediary method that will check your query and send it through to the correct method.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -583,14 +596,14 @@ ignore_title: true
                                             <tr>
                                                 <td>query</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The query to be executed&lt;/p&gt;
+                                                <td>The query to be executed
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This is an intermediary method that will check your query and send it through to the correct method.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promise with the received data
                         
                                 </p>
                             </div>
@@ -606,8 +619,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a private function to allow for config extending
                         This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -632,10 +647,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -648,11 +659,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Return the command chain to run behaviors.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -666,7 +679,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire a variable from config.js
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -687,7 +702,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                    <strong>Returns</strong> Object: The requested config value.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -701,11 +716,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire the identifier object
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -719,9 +736,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return a single instance of a server connection.
-                        If the connection does not exists it will try to create it.</p>
+                                <p>
+                                This method will return a single instance of a server connection.
+                        If the connection does not exists it will try to create it.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -736,21 +755,20 @@ ignore_title: true
                                             <tr>
                                                 <td>name</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The instance name&lt;/p&gt;
+                                                <td>The instance name
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The config object for the connection.&lt;/p&gt;
+                                                <td>The config object for the connection.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return a single instance of a server connection.
-                        If the connection does not exists it will try to create it.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The server connection to use.
                         
                                 </p>
                             </div>
@@ -765,7 +783,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -791,7 +811,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -805,13 +825,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This function must return a query builder object, or sele when overridden.</p>
+                                <p>
+                                This function must return a query builder object, or sele when overridden.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This function must return a query builder object, or sele when overridden.&lt;/p&gt;
-                        
+                                    <strong>Returns</strong> Undefined | : 
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -825,8 +846,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will create the schema to use.</p>
+                                <p>
+                                This method will create the schema to use.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -841,14 +864,14 @@ ignore_title: true
                                             <tr>
                                                 <td>name</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The name of the table to get the schema from.&lt;/p&gt;
+                                                <td>The name of the table to get the schema from.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will create the schema to use.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promise containing the schema.
                         
                                 </p>
                             </div>
@@ -863,8 +886,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Every object called through getObject will go through this function.
                         This will set the identifier and adds the behaviors (if any).
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -879,15 +904,15 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;Object with config values&lt;/p&gt;
+                                                <td>Object with config values
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Every object called through getObject will go through this function.
-                        This will set the identifier and adds the behaviors (if any).
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -901,7 +926,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the handler which will try to mixin functions from another object.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -921,9 +948,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
-                                </p>
                             </div>
                         </div>    </div>
         </div>

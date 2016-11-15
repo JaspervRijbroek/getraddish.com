@@ -269,10 +269,12 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a></p>
             
-            <p>This is an abstract model, used when using a model without table,
-            or creating your own model.</p>
-            <p>This will create the states and set some predefined states which can be used at will.</p>
+            <p>
+            This is an abstract model, used when using a model without table,
+            or creating your own model.
+            This will create the states and set some predefined states which can be used at will.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -290,13 +292,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This function will be available for every object,
                         this will clone the current object.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : This function will be available for every object,
-                        this will clone the current object.
+                                    <strong>Returns</strong> Object: An exact copy of the current object
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -311,8 +315,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a private function to allow for config extending
                         This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -337,10 +343,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -353,11 +355,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Return the command chain to run behaviors.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -371,7 +375,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire a variable from config.js
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -392,7 +398,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                    <strong>Returns</strong> Object: The requested config value.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -406,11 +412,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire the identifier object
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -424,12 +432,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>getItem method which you need to override when you are fetching your own data.</p>
+                                <p>
+                                getItem method which you need to override when you are fetching your own data.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;getItem method which you need to override when you are fetching your own data.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The retreived data from the data object.
                         
                                 </p>
                             </div>
@@ -444,12 +454,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>getList method which you need to override when you are fetching your own data.</p>
+                                <p>
+                                getList method which you need to override when you are fetching your own data.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;getList method which you need to override when you are fetching your own data.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The retreived data from the data object.
                         
                                 </p>
                             </div>
@@ -464,7 +476,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -490,7 +504,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -504,12 +518,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return the table connected to the current model.</p>
+                                <p>
+                                This method will return the table connected to the current model.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return the table connected to the current model.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promise holding the table object as content.
                         
                                 </p>
                             </div>
@@ -524,12 +540,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>getTotal which has the basic behavior of counting the rows in the current list.</p>
+                                <p>
+                                getTotal which has the basic behavior of counting the rows in the current list.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;getTotal which has the basic behavior of counting the rows in the current list.&lt;/p&gt;
+                                    <strong>Returns</strong> Number: The total amount of rows.
                         
                                 </p>
                             </div>
@@ -544,8 +562,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Every object called through getObject will go through this function.
                         This will set the identifier and adds the behaviors (if any).
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -560,15 +580,15 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;Object with config values&lt;/p&gt;
+                                                <td>Object with config values
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Every object called through getObject will go through this function.
-                        This will set the identifier and adds the behaviors (if any).
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -582,7 +602,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the handler which will try to mixin functions from another object.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -602,9 +624,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -617,10 +636,12 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method is used to set the states.
+                                <p>
+                                This method is used to set the states.
                         This method accepts an array or a string as the first parameter.
-                        When the first parameter is a string the second parameter will be the value of this state.</p>
+                        When the first parameter is a string the second parameter will be the value of this state.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -635,22 +656,20 @@ ignore_title: true
                                             <tr>
                                                 <td>name</td>
                                                 <td>Object|string</td>
-                                                <td>&lt;p&gt;The state/ array of states to set&lt;/p&gt;
+                                                <td>The state/ array of states to set
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>value</td>
                                                 <td>*</td>
-                                                <td>&lt;p&gt;The value of the state&lt;/p&gt;
+                                                <td>The value of the state
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method is used to set the states.
-                        This method accepts an array or a string as the first parameter.
-                        When the first parameter is a string the second parameter will be the value of this state.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/AbstractModel.html" class="crosslink">AbstractModel</a>: The current model with set states.
                         
                                 </p>
                             </div>

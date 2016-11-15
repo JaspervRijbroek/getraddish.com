@@ -269,9 +269,11 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a></p>
             
-            <p>This is the base class for every behavior,
-            this holds the basic methods to let your behavior function properly.</p>
+            <p>
+            This is the base class for every behavior,
+            this holds the basic methods to let your behavior function properly.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -289,13 +291,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This function will be available for every object,
                         this will clone the current object.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : This function will be available for every object,
-                        this will clone the current object.
+                                    <strong>Returns</strong> Object: An exact copy of the current object
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -309,9 +312,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will execute the given method,
-                        and will also give the given context over to the called method.</p>
+                                <p>
+                                This method will execute the given method,
+                        and will also give the given context over to the called method.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -326,21 +331,20 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The method name to execute, this is dot-separated&lt;/p&gt;
+                                                <td>The method name to execute, this is dot-separated
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>context</td>
                                                 <td>CommandContext</td>
-                                                <td>&lt;p&gt;The context object to use in the method call.&lt;/p&gt;
+                                                <td>The context object to use in the method call.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will execute the given method,
-                        and will also give the given context over to the called method.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/CommandContext.html" class="crosslink">CommandContext</a>: The context object, which has gone through all the behaviors.
                         
                                 </p>
                             </div>
@@ -356,8 +360,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a private function to allow for config extending
                         This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -382,10 +388,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -398,11 +400,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Return the command chain to run behaviors.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -416,7 +420,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire a variable from config.js
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -437,7 +443,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                    <strong>Returns</strong> Object: The requested config value.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -451,11 +457,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire the identifier object
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -470,8 +478,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Convert the action name to a function name.</p>
+                                <p>
+                                Convert the action name to a function name.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -486,14 +496,14 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The dot-separated name of the behavior&lt;/p&gt;
+                                                <td>The dot-separated name of the behavior
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Convert the action name to a function name.&lt;/p&gt;
+                                    <strong>Returns</strong> String: The behavior name as function name.
                         
                                 </p>
                             </div>
@@ -508,7 +518,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -534,7 +546,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -548,8 +560,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will check if the function exists in the current behavior, if so it will return true,</p>
+                                <p>
+                                This method will check if the function exists in the current behavior, if so it will return true,
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -564,14 +578,14 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The method name to check on.&lt;/p&gt;
+                                                <td>The method name to check on.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will check if the function exists in the current behavior, if so it will return true,&lt;/p&gt;
+                                    <strong>Returns</strong> Boolean: The function exists or not.
                         
                                 </p>
                             </div>
@@ -587,8 +601,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Initialize override to allow the config to be used globally.</p>
+                                <p>
+                                Initialize override to allow the config to be used globally.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -603,14 +619,14 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The complete config object&lt;/p&gt;
+                                                <td>The complete config object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Initialize override to allow the config to be used globally.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The complete initialized object
                         
                                 </p>
                             </div>
@@ -625,7 +641,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the handler which will try to mixin functions from another object.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -645,9 +663,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -660,9 +675,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method accepts an array or string as action parameter and will
-                        connect this action to a given method.</p>
+                                <p>
+                                This method accepts an array or string as action parameter and will
+                        connect this action to a given method.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -677,23 +694,18 @@ ignore_title: true
                                             <tr>
                                                 <td>action</td>
                                                 <td>Array|String</td>
-                                                <td>&lt;p&gt;The action or collection of actions to bind your method to.&lt;/p&gt;
+                                                <td>The action or collection of actions to bind your method to.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>method</td>
                                                 <td>Function</td>
-                                                <td>&lt;p&gt;The function to call on the specified action(s).&lt;/p&gt;
+                                                <td>The function to call on the specified action(s).
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method accepts an array or string as action parameter and will
-                        connect this action to a given method.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>    </div>
         </div>

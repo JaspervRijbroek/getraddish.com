@@ -268,8 +268,10 @@ ignore_title: true
             </a>
 
             
-            <p>Plugin object which will discover and run specific plugins.</p>
+            <p>
+            Plugin object which will discover and run specific plugins.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -287,9 +289,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This function will execute a function in the plugins.
-                        This will bind the provided parameters to the function.</p>
+                                <p>
+                                This function will execute a function in the plugins.
+                        This will bind the provided parameters to the function.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -304,15 +308,14 @@ ignore_title: true
                                             <tr>
                                                 <td>method</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The name of the function to execute&lt;/p&gt;
+                                                <td>The name of the function to execute
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This function will execute a function in the plugins.
-                        This will bind the provided parameters to the function.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The plugin object itself, used to run more plugins.
                         
                                 </p>
                             </div>
@@ -327,14 +330,16 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will get the requested plugin(s).
-                        The plugins are for a global system. Because the affect system behaviors.</p>
-                        <p>When the type has a &quot;.&quot; in the name it is split.
+                                <p>
+                                This method will get the requested plugin(s).
+                        The plugins are for a global system. Because the affect system behaviors.
+                        When the type has a "." in the name it is split.
                         First we will check if the single plugin exists which is path ( + name ) + name.
-                        if this file doesn't exist then we will check all the files in the directory. (if it is a directory).</p>
-                        <p>then we will return everything (file or array).
-                        Everything will be cast to a promise.</p>
+                        if this file doesn't exist then we will check all the files in the directory. (if it is a directory).
+                        then we will return everything (file or array).
+                        Everything will be cast to a promise.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -349,21 +354,14 @@ ignore_title: true
                                             <tr>
                                                 <td>type</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;The type of plugins to receive.&lt;/p&gt;
+                                                <td>The type of plugins to receive.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will get the requested plugin(s).
-                        The plugins are for a global system. Because the affect system behaviors.&lt;/p&gt;
-                        &lt;p&gt;When the type has a &amp;quot;.&amp;quot; in the name it is split.
-                        First we will check if the single plugin exists which is path ( + name ) + name.
-                        if this file doesn&#x27;t exist then we will check all the files in the directory. (if it is a directory).&lt;/p&gt;
-                        &lt;p&gt;then we will return everything (file or array).
-                        Everything will be cast to a promise.&lt;/p&gt;
-                        
+                                    <strong>Returns</strong> Array: 
                                 </p>
                             </div>
                         </div>    </div>

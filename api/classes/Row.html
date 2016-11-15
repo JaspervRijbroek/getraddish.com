@@ -269,10 +269,12 @@ ignore_title: true
 
                 <p><strong>Extends</strong> RowAbstract</p>
             
-            <p>This class is a helper to structure data of the table,
-            this will only hold one table row.</p>
-            <p>Also when extended the extra functions can be used.</p>
+            <p>
+            This class is a helper to structure data of the table,
+            this will only hold one table row.
+            Also when extended the extra functions can be used.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -290,13 +292,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method tries to remove an entity from the database.</p>
+                                <p>
+                                This method tries to remove an entity from the database.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method tries to remove an entity from the database.&lt;/p&gt;
-                        
+                                    <strong>Returns</strong> Promise: 
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -310,12 +313,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Return the table assiciated to the Row.</p>
+                                <p>
+                                Return the table assiciated to the Row.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Return the table assiciated to the Row.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: Return the table of the current row.
                         
                                 </p>
                             </div>
@@ -330,8 +335,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will intialize the Row object.</p>
+                                <p>
+                                This method will intialize the Row object.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -346,15 +353,14 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The configuration of the Row object&lt;/p&gt;
+                                                <td>The configuration of the Row object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will intialize the Row object.&lt;/p&gt;
-                        
+                                    <strong>Returns</strong> Promise: 
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -368,12 +374,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The load method will try to load the row from the database.</p>
+                                <p>
+                                The load method will try to load the row from the database.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The load method will try to load the row from the database.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The promise with the row object, or an empty row object.
                         
                                 </p>
                             </div>
@@ -388,9 +396,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will map the table columns to the values of the row object.
-                        Default table column values are supported.</p>
+                                <p>
+                                This method will map the table columns to the values of the row object.
+                        Default table column values are supported.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -405,15 +415,14 @@ ignore_title: true
                                             <tr>
                                                 <td>columns</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;All the columns from the table.&lt;/p&gt;
+                                                <td>All the columns from the table.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will map the table columns to the values of the row object.
-                        Default table column values are supported.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/Row.html" class="crosslink">Row</a>: The current row object for chaining.
                         
                                 </p>
                             </div>
@@ -428,14 +437,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method tries to save the object to the database,
-                        when it is new the object is inerted into the database if it exists the row is updated.</p>
+                                <p>
+                                This method tries to save the object to the database,
+                        when it is new the object is inerted into the database if it exists the row is updated.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method tries to save the object to the database,
-                        when it is new the object is inerted into the database if it exists the row is updated.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: Returns the returned data.
                         
                                 </p>
                             </div>

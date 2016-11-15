@@ -269,9 +269,11 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a></p>
             
-            <p>The AbstractRowset class can be used without a table,
-            you can use this when using an external API.</p>
+            <p>
+            The AbstractRowset class can be used without a table,
+            you can use this when using an external API.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -289,13 +291,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This function will be available for every object,
                         this will clone the current object.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : This function will be available for every object,
-                        this will clone the current object.
+                                    <strong>Returns</strong> Object: An exact copy of the current object
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -309,12 +313,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return the total length of the rows.</p>
+                                <p>
+                                This method will return the total length of the rows.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return the total length of the rows.&lt;/p&gt;
+                                    <strong>Returns</strong> Number: The total rows in this rowset object.
                         
                                 </p>
                             </div>
@@ -329,14 +335,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will delete all the rows in the current rowset.
-                        This however is only done when the row isn't new.</p>
+                                <p>
+                                This method will delete all the rows in the current rowset.
+                        This however is only done when the row isn't new.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will delete all the rows in the current rowset.
-                        This however is only done when the row isn&#x27;t new.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: All the removed rows.
                         
                                 </p>
                             </div>
@@ -352,8 +359,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a private function to allow for config extending
                         This method takes two parameters the first is the original config and the second will be appeneded to this one.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -378,10 +387,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -394,12 +399,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return the first row object in the rowset.</p>
+                                <p>
+                                This method will return the first row object in the rowset.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return the first row object in the rowset.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/Row.html" class="crosslink">Row</a>: The first row object in the rowset
                         
                                 </p>
                             </div>
@@ -414,11 +421,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Return the command chain to run behaviors.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Return the command chain to run behaviors.
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -432,7 +441,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire a variable from config.js
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -453,7 +464,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire a variable from config.js
+                                    <strong>Returns</strong> Object: The requested config value.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -467,12 +478,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return only the data from the Rowset object</p>
+                                <p>
+                                This method will return only the data from the Rowset object
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return only the data from the Rowset object&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: The data of the Rowset object
                         
                                 </p>
                             </div>
@@ -487,11 +500,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Use this function to acquire the identifier object
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : Use this function to acquire the identifier object
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -505,7 +520,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is a alias of ObjectManager.getObject to use in the "this" context.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -531,7 +548,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -545,13 +562,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The AbstractRowset will expect no database so it will try to get its sibling Row object.</p>
+                                <p>
+                                The AbstractRowset will expect no database so it will try to get its sibling Row object.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The AbstractRowset will expect no database so it will try to get its sibling Row object.&lt;/p&gt;
-                        
+                                    <strong>Returns</strong> Promise: 
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -565,8 +583,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 Every object called through getObject will go through this function.
                         This will set the identifier and adds the behaviors (if any).
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -581,15 +601,15 @@ ignore_title: true
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;Object with config values&lt;/p&gt;
+                                                <td>Object with config values
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : Every object called through getObject will go through this function.
-                        This will set the identifier and adds the behaviors (if any).
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
+                        
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -603,12 +623,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will return the last row object in the rowset.</p>
+                                <p>
+                                This method will return the last row object in the rowset.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will return the last row object in the rowset.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/Row.html" class="crosslink">Row</a>: The last row object in the rowset
                         
                                 </p>
                             </div>
@@ -623,7 +645,9 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the handler which will try to mixin functions from another object.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -643,9 +667,6 @@ ignore_title: true
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : This is the handler which will try to mixin functions from another object.
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -658,14 +679,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will save all the rows in the rowset.
-                        If one of the rows already exists, it will be updated.</p>
+                                <p>
+                                This method will save all the rows in the rowset.
+                        If one of the rows already exists, it will be updated.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will save all the rows in the rowset.
-                        If one of the rows already exists, it will be updated.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: All the saved rows.
                         
                                 </p>
                             </div>
@@ -680,9 +702,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will set the data in the Rowset object,
-                        This accepts a array, for every entry it will create Row object and add it to the rows array</p>
+                                <p>
+                                This method will set the data in the Rowset object,
+                        This accepts a array, for every entry it will create Row object and add it to the rows array
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -697,15 +721,14 @@ ignore_title: true
                                             <tr>
                                                 <td>data</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The data to set on the object&lt;/p&gt;
+                                                <td>The data to set on the object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will set the data in the Rowset object,
-                        This accepts a array, for every entry it will create Row object and add it to the rows array&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: Returns the Rowset object with filled data
                         
                                 </p>
                             </div>

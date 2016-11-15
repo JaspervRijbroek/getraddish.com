@@ -269,8 +269,10 @@ ignore_title: true
 
                 <p><strong>Extends</strong> <a href="../classes/ViewJson.html" class="crosslink">ViewJson</a></p>
             
-            <p>The ViewEmber object makes sure an EmberJS response object is returned.</p>
+            <p>
+            The ViewEmber object makes sure an EmberJS response object is returned.
             
+            </p>
             
                 <div class="category-info">
                     <h3 class="category-title">Methods</h3>
@@ -289,8 +291,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The _viewSingle method presents a list of EmberJS JSON Object together with the provided states.</p>
+                                <p>
+                                The _viewSingle method presents a list of EmberJS JSON Object together with the provided states.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -305,14 +309,14 @@ ignore_title: true
                                             <tr>
                                                 <td>data</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The data to convert to a string.&lt;/p&gt;
+                                                <td>The data to convert to a string.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The _viewSingle method presents a list of EmberJS JSON Object together with the provided states.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The JSON string containing a list objects.
                         
                                 </p>
                             </div>
@@ -328,8 +332,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>The _viewSingle method presents a single EmberJS JSON Object together with the provided states.</p>
+                                <p>
+                                The _viewSingle method presents a single EmberJS JSON Object together with the provided states.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -344,14 +350,14 @@ ignore_title: true
                                             <tr>
                                                 <td>data</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The data to convert to a string.&lt;/p&gt;
+                                                <td>The data to convert to a string.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;The _viewSingle method presents a single EmberJS JSON Object together with the provided states.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The JSON string containing a single object.
                         
                                 </p>
                             </div>
@@ -366,14 +372,15 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This function will be available for every object,
-                        this will clone the current object.</p>
+                                <p>
+                                This function will be available for every object,
+                        this will clone the current object.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This function will be available for every object,
-                        this will clone the current object.&lt;/p&gt;
+                                    <strong>Returns</strong> Object: An exact copy of the current object
                         
                                 </p>
                             </div>
@@ -388,11 +395,13 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This is the overridden display method which will format our data and return it to the controller when done.
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : This is the overridden display method which will format our data and return it to the controller when done.
+                                    <strong>Returns</strong> Promise: The promise containing the json as a string.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -407,9 +416,11 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.</p>
+                                <p>
+                                This is a private function to allow for config extending
+                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -424,23 +435,18 @@ ignore_title: true
                                             <tr>
                                                 <td>target</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The config object.&lt;/p&gt;
+                                                <td>The config object.
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>source</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The object to extend the config object.&lt;/p&gt;
+                                                <td>The object to extend the config object.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -453,12 +459,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Return the command chain to run behaviors.</p>
+                                <p>
+                                Return the command chain to run behaviors.
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Return the command chain to run behaviors.&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
                         
                                 </p>
                             </div>
@@ -473,8 +481,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Use this function to acquire a variable from config.js</p>
+                                <p>
+                                Use this function to acquire a variable from config.js
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -489,14 +499,14 @@ ignore_title: true
                                             <tr>
                                                 <td>key</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;Key to specify the config to return&lt;/p&gt;
+                                                <td>Key to specify the config to return
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Use this function to acquire a variable from config.js&lt;/p&gt;
+                                    <strong>Returns</strong> Object: The requested config value.
                         
                                 </p>
                             </div>
@@ -511,12 +521,14 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>Use this function to acquire the identifier object</p>
+                                <p>
+                                Use this function to acquire the identifier object
                         
+                                </p>
                         
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;Use this function to acquire the identifier object&lt;/p&gt;
+                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
                         
                                 </p>
                             </div>
@@ -531,8 +543,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This is a alias of ObjectManager.getObject to use in the &quot;this&quot; context.</p>
+                                <p>
+                                This is a alias of ObjectManager.getObject to use in the "this" context.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -547,20 +561,20 @@ ignore_title: true
                                             <tr>
                                                 <td>identifier</td>
                                                 <td>String</td>
-                                                <td>&lt;p&gt;Identifier of the object to load&lt;/p&gt;
+                                                <td>Identifier of the object to load
                         </td>
                                             </tr>
                                             <tr>
                                                 <td>config</td>
                                                 <td>Object|null</td>
-                                                <td>&lt;p&gt;Config to push to the object&lt;/p&gt;
+                                                <td>Config to push to the object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This is a alias of ObjectManager.getObject to use in the &amp;quot;this&amp;quot; context.&lt;/p&gt;
+                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
                         
                                 </p>
                             </div>
@@ -575,8 +589,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
+                                <p>
                                 This method will receive a model object and will set it locally.
                         Also it will set the mimetype of the response.
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -597,8 +613,7 @@ ignore_title: true
                                 </table>
                         
                                 <p>
-                                    <strong>Returns</strong> : This method will receive a model object and will set it locally.
-                        Also it will set the mimetype of the response.
+                                    <strong>Returns</strong> Promise: The initialized object.
                                 </p>
                             </div>
                         </div>            <div class="list-item">
@@ -612,8 +627,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This is the handler which will try to mixin functions from another object.</p>
+                                <p>
+                                This is the handler which will try to mixin functions from another object.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -628,16 +645,12 @@ ignore_title: true
                                             <tr>
                                                 <td>object</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The object to mix into the current object.&lt;/p&gt;
+                                                <td>The object to mix into the current object.
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This is the handler which will try to mixin functions from another object.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>            <div class="list-item">
                             <div class="list-item-header">
@@ -650,8 +663,10 @@ ignore_title: true
                                 </span>
                             </div>
                             <div class="list-item-content">
-                                <p>This method will set the data to the Object.</p>
+                                <p>
+                                This method will set the data to the Object.
                         
+                                </p>
                         
                                 <strong>Parameters</strong>
                                 <table class="table table-condensed">
@@ -666,16 +681,12 @@ ignore_title: true
                                             <tr>
                                                 <td>data</td>
                                                 <td>Object</td>
-                                                <td>&lt;p&gt;The data for the view object&lt;/p&gt;
+                                                <td>The data for the view object
                         </td>
                                             </tr>
                                     </tbody>
                                 </table>
                         
-                                <p>
-                                    <strong>Returns</strong> : &lt;p&gt;This method will set the data to the Object.&lt;/p&gt;
-                        
-                                </p>
                             </div>
                         </div>    </div>
         </div>
