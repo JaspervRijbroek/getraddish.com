@@ -16,22 +16,22 @@ permalink: /blog.html
     </div>
 </div>
 
-<div class="blog">
+<div class="blog" itemscope itemtype="http://schema.org/Blog">
     {% for post in site.categories.blog %}
         <div class="row">
             <div class="col-md-12">
                 <div class="blog-grid">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="blog-grid-title"><a href="{{post.url}}">{{post.title}}</a></h3>
+                        <div class="col-md-12" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+                            <h3 class="blog-grid-title" itemprop="name headline"><a href="{{post.url}}">{{post.title}}</a></h3>
 
-                            <p class="blog-grid-excerpt">
+                            <p class="blog-grid-excerpt" itemprop="articleSection">
                                 {{post.content | split:"<!-- more -->" | first }}
                             </p>
 
                             <div class="blog-grid-meta">
-                                <div class="blog-grid-date">{{post.date | date: "%B %d, %Y"}}</div>
-                                <span class="blog-grid-author">by {{post.author}}</span>
+                                <div class="blog-grid-date" itemprop="datePublished">{{post.date | date: "%B %d, %Y"}}</div>
+                                <span class="blog-grid-author" itemprop="author publisher" itemscope itemtype="http://schema.org/Person">by <span itemprop="name">{{post.author}}</span></span>
                             </div>
                         </div>
                     </div>
