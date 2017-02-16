@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Docs - Table</title>
+
+        <link rel="stylesheet" href="/2.4/assets/css/style.min.css" />
+        <link rel="canonical" href="https://getraddish.com/guide/getting-started/components/table.html" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-32550863-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="header " style="background-image: url(/assets/img/backgrounds/pattern.png);">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-5">
+                        <a href="/2.4/index.html" class="logo-image"><img src="/assets/img/logos/raddish.png" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-xs-7">
+                        <nav class="right helper">
+                            <ul class="menu sf-menu js-menu">
+                                <li><a href="/2.4/index.html">Home</a></li>
+                                <li><a href="/2.4/features.html">Features</a></li>
+                                <li><a href="/2.4/guide/index.html">Guide</a></li>
+                                <li><a href="/2.4/api/index.html">API</a></li>
+                                <li><a href="/2.4/blog.html">Blog</a></li>
+                                <!--<li><a href="/2.4/community.html">Community</a></li>-->
+                                <li><a href="/2.4/changelog.html">Changelog</a></li>
+                                <li><a href="https://github.com/getraddished/raddish" target="_blank" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="content">
+            <div class="container-fluid container-spaced">
+                <div class="layout with-left-sidebar js-layout">
+    <div class="row">
+        <div class="col-md-4 hidden-xs">
+            <div class="js-sidebar-wrapper">
+    <div class="sidebar">
+        <nav class="menu-vertical-wrapper">
+            <ul class="menu-vertical  js-menu-vertical tendina" data-prepend-to=".js-layout" data-select="Menu">
+                <li><a href="/2.4/guide/index.html">Introduction</a></li>
+                <li class="has-children">
+                    <a href="/2.4/guide/essentials.html">Essentials</a>
+                    <ul>
+                        <li><a href="/2.4/guide/essentials/file-structure.html">File Structure</a></li>
+                        <li><a href="/2.4/guide/essentials/urls.html">URLs</a></li>
+                        <li><a href="/2.4/guide/essentials/identifiers.html">Identifiers</a></li>
+                        <li><a href="/2.4/guide/essentials/config.html">Config</a></li>
+                        <li><a href="/2.4/guide/essentials/component-config.html">Component Config</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/getting-started.html">Getting Started</a>
+                    <ul>
+                        <li><a href="/2.4/guide/getting-started/setup.html">Setup</a></li>
+                        <li><a href="/2.4/guide/getting-started/applications.html">Applications</a></li>
+                        <li>
+                            <a href="/2.4/guide/getting-started/components.html">Components</a>
+                            <ul>
+                                <li><a href="/2.4/guide/getting-started/components/dispatcher.html">Dispatcher</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/controller.html">Controller</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/model.html">Model</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/table.html">Table</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/row.html">Row</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/rowset.html">Rowset</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/2.4/guide/getting-started/behaviors.html">Behaviors</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/advanced.html">Advanced</a>
+                    <ul>
+                        <li><a href="/2.4/guide/advanced/system-calls.html">System calls</a></li>
+                        <li><a href="/2.4/guide/advanced/plugins.html">Plugins</a></li>
+                        <li><a href="/2.4/guide/advanced/mixins.html">Mixins</a></li>
+                        <li><a href="/2.4/guide/advanced/sockets.html">Sockets</a></li>
+                        <li><a href="/2.4/guide/advanced/logging.html">Logging</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="article-title">
+                Docs
+                <small>
+                    - Table
+                </small>
+            </h2>
+
+            <p>The table is called by the model to get all the data from the adapter(server).
+However this isn’t the only thing the controller will/ can do.</p>
+
+<p>Within the table object it is possible to override the default identity_column and to provide a column map more on this later.</p>
+
+<h2 id="naming-conventions">Naming conventions</h2>
+<p>Raddish is based on naming conventions. This goes as well for the database tables.
+The basic name for the tables are <code class="highlighter-rouge">&lt;component_name&gt;_&lt;plural_view_name&gt;</code> eg: articles_articles. This is without the optional prefix,<br />
+if you have a prefix this has to be prepended.</p>
+
+<p>The ID of the column als has a specific naming convention. This has to be: <code class="highlighter-rouge">&lt;component_name&gt;_&lt;singular_view_name&gt;_id</code>.<br />
+Also this column needs to to be the primary key and auto increment.</p>
+
+<h1 id="default-behavior">Default Behavior</h1>
+<p>If no config values are given for the table name or the identity_column, these values are assumed as explained above.
+Next to this the filters for the columns in the table are assumed based on the value of the column.</p>
+
+<p>The columns available in the table are used in the row and rowset objects.<br />
+Also the parsed data will present these values. The only exception is the <code class="highlighter-rouge">identity column</code> this column will be presented as <code class="highlighter-rouge">id</code>.</p>
+
+<h2 id="changing-the-filters">Changing the filters</h2>
+<p>Filters can be changed on two levels. The table level itself as a comment on the column like <code class="highlighter-rouge">@Filter('&lt;filter_value&gt;')</code> of in the filter object in the table.</p>
+
+<h1 id="behaviors">Behaviors</h1>
+<p>Within Raddish it is possible to add behaviors to the table object.<br />
+The behaviors are added in a special subfolder in the table folder called behavior.</p>
+
+<p>In a behavior object you can bind on before and after methods.
+In the table the following methods are available:</p>
+
+<ul>
+  <li>onInitializeSelect</li>
+  <li>onBeforeSelect</li>
+  <li>onAfterSelect</li>
+  <li>onInitializeInsert</li>
+  <li>onBeforeInsert</li>
+  <li>onAfterInsert</li>
+  <li>onInitializeUpdate</li>
+  <li>onBeforeUpdate</li>
+  <li>onAfterUpdate</li>
+  <li>onInitializeDelete</li>
+  <li>onBeforeDelete</li>
+  <li>onAfterDelete</li>
+</ul>
+
+<p>All of these methods will get an context. onBefore methods have an query object and onAfter methods will have the raw data from the database.<br />
+Here you can add DCI or your own reusable code. <a href="/2.4/guide/getting-started/behaviors.html">More on behaviors</a>.</p>
+
+<h2 id="example">Example</h2>
+<p>In this example we will set some values and we will show the component config values.</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
+            
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">Table</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'raddish'</span><span class="p">).</span><span class="nx">Table</span><span class="p">,</span>
+    <span class="nx">util</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'util'</span><span class="p">);</span>
+    
+<span class="kd">function</span> <span class="nx">FooTable</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Force the database connection to mongo, this database has to be defined in the config file.</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">db</span> <span class="o">=</span> <span class="s1">'mongo'</span><span class="p">;</span>
+    
+    <span class="c1">// Force the table to foo_bar</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">'foo_bar'</span><span class="p">;</span>
+    
+    <span class="c1">// Force the identity column to id</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">identity_column</span> <span class="o">=</span> <span class="s1">'id'</span><span class="p">;</span>
+    
+    <span class="c1">// Force part of the column map.</span>
+    <span class="c1">// This will be like, destination: origin</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">column_map</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"title"</span><span class="p">,</span>
+        <span class="na">user</span><span class="p">:</span> <span class="s2">"complicated_table_column_name"</span>
+    <span class="p">};</span>
+    
+    <span class="c1">// Behaviors will accept name only. But it is also possible to add the complete identifier.</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">behaviors</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">'creatable'</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s1">'modifiable'</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s1">'com://demo/foo.database.table.barable'</span><span class="p">:</span> <span class="p">{}</span>
+    <span class="p">}</span>
+
+    <span class="nx">Table</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">config</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="nx">util</span><span class="p">.</span><span class="nx">inherits</span><span class="p">(</span><span class="nx">FooTable</span><span class="p">,</span> <span class="nx">Table</span><span class="p">);</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">FooTable</span><span class="p">;</span></code></pre></figure>
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
+            
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+    <span class="s2">"table"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"foo"</span><span class="err">:</span> <span class="p">{</span>
+            <span class="s2">"db"</span><span class="err">:</span> <span class="s2">"mongo"</span><span class="p">,</span>
+            <span class="s2">"name"</span><span class="err">:</span> <span class="s2">"foo_bar"</span><span class="p">,</span>
+            <span class="s2">"identity_column"</span><span class="err">:</span> <span class="s2">"id"</span><span class="p">,</span>
+            <span class="s2">"column_map"</span><span class="err">:</span> <span class="p">{</span>
+                <span class="s2">"name"</span><span class="err">:</span> <span class="s2">"title"</span><span class="p">,</span>
+                <span class="s2">"user"</span><span class="err">:</span> <span class="s2">"complicated_table_column_name"</span>
+            <span class="p">},</span>
+            <span class="s2">"behaviors"</span><span class="err">:</span> <span class="p">{</span>
+                <span class="s2">"creatable"</span><span class="err">:</span> <span class="p">{},</span>
+                <span class="s2">"modifiable"</span><span class="err">:</span> <span class="p">{},</span>
+                <span class="s2">"com://demo/foo.database.table.barable"</span><span class="err">:</span> <span class="p">{}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-logo-wrapper">
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.png" alt="logo"></a>
+                                <br>
+
+                                <p class="slogan">
+                                    Let's cook software!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="footer-wrapper">
+                                <span class="scroll-top js-scroll-top"><i class="fa fa-angle-up"></i></span>
+
+                                <div class="docs-version js-docs-version">
+                                    <span class="docs-current-version js-docs-current-version">v2.4</span>
+                                </div>
+
+                                <p class="copyright helper right">
+                                    <a href="https://jvar.nl" target="_blank">Jvar</a>, all rights reserved. 2013 - 2016 ©
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/assets/js/all.min.js"></script>
+    </body>
+</html>

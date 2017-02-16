@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Docs - Controller</title>
+
+        <link rel="stylesheet" href="/2.4/assets/css/style.min.css" />
+        <link rel="canonical" href="https://getraddish.com/guide/getting-started/components/controller.html" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-32550863-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="header " style="background-image: url(/assets/img/backgrounds/pattern.png);">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-5">
+                        <a href="/2.4/index.html" class="logo-image"><img src="/assets/img/logos/raddish.png" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-xs-7">
+                        <nav class="right helper">
+                            <ul class="menu sf-menu js-menu">
+                                <li><a href="/2.4/index.html">Home</a></li>
+                                <li><a href="/2.4/features.html">Features</a></li>
+                                <li><a href="/2.4/guide/index.html">Guide</a></li>
+                                <li><a href="/2.4/api/index.html">API</a></li>
+                                <li><a href="/2.4/blog.html">Blog</a></li>
+                                <!--<li><a href="/2.4/community.html">Community</a></li>-->
+                                <li><a href="/2.4/changelog.html">Changelog</a></li>
+                                <li><a href="https://github.com/getraddished/raddish" target="_blank" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="content">
+            <div class="container-fluid container-spaced">
+                <div class="layout with-left-sidebar js-layout">
+    <div class="row">
+        <div class="col-md-4 hidden-xs">
+            <div class="js-sidebar-wrapper">
+    <div class="sidebar">
+        <nav class="menu-vertical-wrapper">
+            <ul class="menu-vertical  js-menu-vertical tendina" data-prepend-to=".js-layout" data-select="Menu">
+                <li><a href="/2.4/guide/index.html">Introduction</a></li>
+                <li class="has-children">
+                    <a href="/2.4/guide/essentials.html">Essentials</a>
+                    <ul>
+                        <li><a href="/2.4/guide/essentials/file-structure.html">File Structure</a></li>
+                        <li><a href="/2.4/guide/essentials/urls.html">URLs</a></li>
+                        <li><a href="/2.4/guide/essentials/identifiers.html">Identifiers</a></li>
+                        <li><a href="/2.4/guide/essentials/config.html">Config</a></li>
+                        <li><a href="/2.4/guide/essentials/component-config.html">Component Config</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/getting-started.html">Getting Started</a>
+                    <ul>
+                        <li><a href="/2.4/guide/getting-started/setup.html">Setup</a></li>
+                        <li><a href="/2.4/guide/getting-started/applications.html">Applications</a></li>
+                        <li>
+                            <a href="/2.4/guide/getting-started/components.html">Components</a>
+                            <ul>
+                                <li><a href="/2.4/guide/getting-started/components/dispatcher.html">Dispatcher</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/controller.html">Controller</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/model.html">Model</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/table.html">Table</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/row.html">Row</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/rowset.html">Rowset</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/2.4/guide/getting-started/behaviors.html">Behaviors</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/advanced.html">Advanced</a>
+                    <ul>
+                        <li><a href="/2.4/guide/advanced/system-calls.html">System calls</a></li>
+                        <li><a href="/2.4/guide/advanced/plugins.html">Plugins</a></li>
+                        <li><a href="/2.4/guide/advanced/mixins.html">Mixins</a></li>
+                        <li><a href="/2.4/guide/advanced/sockets.html">Sockets</a></li>
+                        <li><a href="/2.4/guide/advanced/logging.html">Logging</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="article-title">
+                Docs
+                <small>
+                    - Controller
+                </small>
+            </h2>
+
+            <p>The controller will handle the request received from the dispatcher.
+In most situations you will only use behaviors to extend the functionality of the controller, the default actions in most occasions are enough.</p>
+
+<h2 id="default-behavior">Default behavior</h2>
+<p>The default behavior of then controller is that it assumes the needed action you need for a certain request.</p>
+
+<p>When a <code class="highlighter-rouge">GET</code> request is received with a plural view name the controller will return a list of results, however when the view name is singular it will return a single item.
+When this item does not exist, it will return an empty item.</p>
+
+<p>With a <code class="highlighter-rouge">POST</code> request the controller will first check if the item exists or not, if not the item will be created and returned with a 201 status.
+Whenever the item does exist it will update the existing item with the data in the request.</p>
+
+<p>A <code class="highlighter-rouge">DELETE</code> request will remove the item specified, when no unique states are given the action is omitted.</p>
+
+<p>When a request is started, the controller will get the model for the request.
+The model the gets the data which is then returned.</p>
+
+<h2 id="custom-actions">Custom actions</h2>
+<p>Within Raddish it is possible to add your own custom actions. However these actions will only respond on a <code class="highlighter-rouge">POST</code> request.<br />
+To trigger the action, it must be send as the <code class="highlighter-rouge">POST</code> value <code class="highlighter-rouge">action</code>. Otherwise the action will not be called.</p>
+
+<p>The method for the action must be placed in the controller with the name: <code class="highlighter-rouge">_action&lt;Action_name&gt;</code>.<br />
+The action name must have a capital first letter.</p>
+
+<p>Be sure to add the permissions and the action you want to call to the controller or else you will encounter an error.</p>
+
+<h2 id="permissions">Permissions</h2>
+<p>The permissions are handled per controller. Within the controller directory a <code class="highlighter-rouge">permissions</code> can be created with files having the same name as the controller itself.
+Within here you can add the permissions per action with your own logic.</p>
+
+<p>This is an example:</p>
+
+<div class="code-highlight">
+    <span class="js-copy-to-clipboard copy-code">copy</span>
+    
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">Permission</span>  <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'raddish'</span><span class="p">).</span><span class="nx">Permission</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">util</span>        <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'util'</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">DefaultPermission</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">Permission</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">config</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">util</span><span class="p">.</span><span class="nx">inherits</span><span class="p">(</span><span class="nx">DefaultPermission</span><span class="p">,</span> <span class="nx">Permission</span><span class="p">);</span>
+
+<span class="nx">DefaultPermission</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">canAdd</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">context</span><span class="p">.</span><span class="nx">auth</span><span class="p">.</span><span class="nx">isAdmin</span> <span class="o">==</span> <span class="s1">'function'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">context</span><span class="p">.</span><span class="nx">auth</span><span class="p">.</span><span class="nx">isAdmin</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">DefaultPermission</span><span class="p">;</span></code></pre></figure>
+
+</div>
+
+<h2 id="behaviors">Behaviors</h2>
+<p>Within Raddish it is possible to add extra behaviors to the controller.
+By default on the controller level there are no behaviors, so any behaviors you want you need to add yourself.</p>
+
+<p>The methods that behaviors can have on the controller level are al follows:</p>
+
+<ul>
+  <li>onInitializeBrowse</li>
+  <li>onBeforeBrowse</li>
+  <li>onAfterBrowse</li>
+  <li>onInitializeRead</li>
+  <li>onBeforeRead</li>
+  <li>onAfterRead</li>
+  <li>onInitializeAdd</li>
+  <li>onBeforeAdd</li>
+  <li>onAfterAdd</li>
+  <li>onInitializeEdit</li>
+  <li>onBeforeEdit</li>
+  <li>onAfterEdit</li>
+  <li>onInitializeDelete</li>
+  <li>onBeforeDelete</li>
+  <li>onAfterDelete</li>
+</ul>
+
+<p>The behaviors also allow for custom defined actions.<br />
+These follow the same pattern and have the methods <code class="highlighter-rouge">onInitialize</code>, <code class="highlighter-rouge">onBefore</code> and <code class="highlighter-rouge">onAfter</code>.</p>
+
+<p><a href="/2.4/guide/getting-started/behaviors.html">More on behaviors</a>.</p>
+
+<h2 id="component-config">Component Config</h2>
+<p>Within the controller some parts can be controlled by component config and object override.</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="code-highlight">
+        <span class="js-copy-to-clipboard copy-code">copy</span>
+            
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">Controller</span>  <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'raddish'</span><span class="p">).</span><span class="nx">Controller</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">util</span>        <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'util'</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">DemoController</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">Controller</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">config</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">util</span><span class="p">.</span><span class="nx">inherits</span><span class="p">(</span><span class="nx">DemoController</span><span class="p">,</span> <span class="nx">Controller</span><span class="p">);</span>
+
+<span class="nx">DemoController</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">initialize</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// When a behavior is in this component you can just give the behavior name</span>
+    <span class="c1">// but when it is in another component you must give the full identifier.</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">behaviors</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">'uploadable'</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s1">'com://demo/menu.controller.behavior.itemable'</span><span class="p">:</span> <span class="p">{}</span>
+    <span class="p">};</span>
+
+    <span class="k">return</span> <span class="nx">Controller</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">initialize</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">config</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="nx">DemoController</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getRequest</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">Controller</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getRequest</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+    <span class="nx">request</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="nx">request</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">DemoController</span><span class="p">;</span></code></pre></figure>
+
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="code-highlight">
+            <span class="js-copy-to-clipboard copy-code">copy</span>
+            
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+    <span class="s2">"controller"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"demo"</span><span class="err">:</span> <span class="p">{</span>
+            <span class="s2">"behaviors"</span><span class="err">:</span> <span class="p">{</span>
+                <span class="s2">"uploadable"</span><span class="err">:</span> <span class="p">{},</span>
+                <span class="s2">"com://demo.menu.controller.behavior.itemable"</span><span class="err">:</span> <span class="p">{}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-logo-wrapper">
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.png" alt="logo"></a>
+                                <br>
+
+                                <p class="slogan">
+                                    Let's cook software!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="footer-wrapper">
+                                <span class="scroll-top js-scroll-top"><i class="fa fa-angle-up"></i></span>
+
+                                <div class="docs-version js-docs-version">
+                                    <span class="docs-current-version js-docs-current-version">v2.4</span>
+                                </div>
+
+                                <p class="copyright helper right">
+                                    <a href="https://jvar.nl" target="_blank">Jvar</a>, all rights reserved. 2013 - 2016 ©
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/assets/js/all.min.js"></script>
+    </body>
+</html>

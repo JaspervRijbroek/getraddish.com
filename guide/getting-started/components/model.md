@@ -21,6 +21,7 @@ Within the models you have the query methods
 - buildQueryWhere
 - buildQueryGroup
 - buildQueryOrder
+- buildQueryLimit
 
 Which might look like a sql query, this is used for the building of the queries.  
 Although the query builder doesn't care where the code is, it is advised to place the code in its respective place.
@@ -51,27 +52,26 @@ In the following example we will show a little about the query builder, the stat
 <div class="code-highlight">
     <span class="js-copy-to-clipboard copy-code">copy</span>``
     {% highlight javascript %}
-var Model = require('raddish').Model,
-    util = require('util');
-    
-function FooModel(config) {
-    Model.call(this, config);
-    
-    this.states.insert('bar_id', 'int');
-}
+var Model = require('raddish').Model;
 
-util.inherits(FooModel, Model);
-
-FooModel.prototype.buildQueryWhere = function(query) {
-    if(this.states.get('bar_id').value) {
-        query.where('tbl.bar_id', '=', this.states.get('bar_id').value);
+class FooModel extends Model {
+    constructor(config) {
+        super(config);
+        
+        this.states.insert('bar_id', 'int');
     }
     
-    if(this.states.get('search').value) {
-        query.where('tbl.title', 'LIKE', '%' + this.states.get('search').value + '%');
-    }
+    buildQueryWhere(query) {
+        if(this.states.get('bar_id')) {
+            query.where('tbl.bar_id').is(this.states.get('bar_id'));
+        }
+        
+        if(this.states.get('search')) {
+            query.where('tbl.title').like(this.states.get('search'));
+        }
     
-    return Model.prototype.buildQueryWhere.call(this, query);
+        return super.buildQueryWhere(query);
+    }
 };{% endhighlight %}
 </div>
 

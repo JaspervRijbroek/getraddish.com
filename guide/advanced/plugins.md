@@ -37,11 +37,8 @@ I will give an example below:
 <div class="code-highlight">
     <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
-var Plugin = require('raddish').Plugin,
-    plugin = new Plugin();
-    
-plugin.get('custom.foo')
-    .execute('before.bar', 'any', 'number', 'of', 'parameters')
+require('raddish').Plugin
+    .execute('custom.foo', 'before.bar', 'any', 'number', 'of', 'parameters')
     .then(function(data_from_plugin) {
         ...
     });{% endhighlight %}

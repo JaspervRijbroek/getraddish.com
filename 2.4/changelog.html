@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <link rel="stylesheet" href="/2.4/assets/css/style.min.css" />
+        <link rel="canonical" href="https://getraddish.com/changelog.html" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-32550863-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="header " style="background-image: url(/assets/img/backgrounds/pattern.png);">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-5">
+                        <a href="/2.4/index.html" class="logo-image"><img src="/assets/img/logos/raddish.png" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-xs-7">
+                        <nav class="right helper">
+                            <ul class="menu sf-menu js-menu">
+                                <li><a href="/2.4/index.html">Home</a></li>
+                                <li><a href="/2.4/features.html">Features</a></li>
+                                <li><a href="/2.4/guide/index.html">Guide</a></li>
+                                <li><a href="/2.4/api/index.html">API</a></li>
+                                <li><a href="/2.4/blog.html">Blog</a></li>
+                                <!--<li><a href="/2.4/community.html">Community</a></li>-->
+                                <li><a href="/2.4/changelog.html">Changelog</a></li>
+                                <li><a href="https://github.com/getraddished/raddish" target="_blank" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="content">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+	<div class="col-md-12">
+		<h2 class="article-title" style="margin-bottom: 0;">
+			Changelog
+		</h2>
+		<p class="muted" style="margin-bottom: 40px;">
+			All the changes together
+		</p>
+	</div>
+</div>
+<div class="changelog-wrapper-fluid js-changelog">
+	<div class="changelog-filters">
+		<input type="text" class="changelog-input js-changelog-input">
+		<input id="changelog-filter-feature" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="feature"><label class="changelog-checkbox-label" for="changelog-filter-feature">features</label>
+		<input id="changelog-filter-improvement" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="improvement"><label class="changelog-checkbox-label" for="changelog-filter-improvement">improvements</label>
+		<input id="changelog-filter-bug-fix" class="js-changelog-checkbox changelog-checkbox" type="checkbox" value="bug-fix"><label class="changelog-checkbox-label" for="changelog-filter-bug-fix">fixes</label>
+
+		<div class="changelog-scroll-to">
+			scroll to <i class="pe-7s-angle-down"></i>
+			<ul class="changelog-scroll-to-list">
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V2.4.0" class="js-scroll-to" data-target="#V2.4.0">V2.4.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V2.3.0" class="js-scroll-to" data-target="#V2.3.0">V2.3.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V2.2.0" class="js-scroll-to" data-target="#V2.2.0">V2.2.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V2.1.0" class="js-scroll-to" data-target="#V2.1.0">V2.1.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V2.0.0" class="js-scroll-to" data-target="#V2.0.0">V2.0.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V1.1.0" class="js-scroll-to" data-target="#V1.1.0">V1.1.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V1.0.0" class="js-scroll-to" data-target="#V1.0.0">V1.0.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V0.6.0" class="js-scroll-to" data-target="#V0.6.0">V0.6.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V0.5.0" class="js-scroll-to" data-target="#V0.5.0">V0.5.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V0.3.0" class="js-scroll-to" data-target="#V0.3.0">V0.3.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V0.2.0" class="js-scroll-to" data-target="#V0.2.0">V0.2.0</a></li>
+				
+					<li class="changelog-scroll-to-list-item"><a href="#V0.1.0" class="js-scroll-to" data-target="#V0.1.0">V0.1.0</a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<div class="changelog-items">
+		
+			<div id="V2.4.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V2.4.0">V2.4.0</a></h3>
+					<p class="changelog-date">18 April 2016</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Support for iojs and nodejs 0.12
+</p>
+
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">bug-fix</span>
+    Improved Router
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V2.3.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V2.3.0">V2.3.0</a></h3>
+					<p class="changelog-date">13 February 2015</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    EmberJS view
+</p>
+
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    Rewritten Table object
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V2.2.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V2.2.0">V2.2.0</a></h3>
+					<p class="changelog-date">12 October 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Separated query builder <a href="http://npmjs.org/package/universal-query">(universal query)</a>
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    SQLite database adapter
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    More core behaviors
+</p>
+
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    Test coverage
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V2.1.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V2.1.0">V2.1.0</a></h3>
+					<p class="changelog-date">03 September 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    ObjectLoader.require to require files through an identifier
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Logging layer
+</p>
+
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    DCI Implementation
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V2.0.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V2.0.0">V2.0.0</a></h3>
+					<p class="changelog-date">20 July 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    System and Application plugins
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Object Locators
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Filters
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Unified query builder
+</p>
+
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    Changed identifiers
+</p>
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    Removed request and response flowing through the entire system
+</p>
+
+<p class="changelog-update-description changelog-bug-fix js-changelog-update-description" data-instafilta-category="bug-fix">
+    <span class="changelog-type">bug-fix</span>
+    Service is renamed to ObjectManager
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V1.1.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V1.1.0">V1.1.0</a></h3>
+					<p class="changelog-date">01 July 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Cache control
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    MongoDB database adapter
+</p>
+
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    Speed improvement
+</p>
+
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V1.0.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V1.0.0">V1.0.0</a></h3>
+					<p class="changelog-date">18 June 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Socketio Integration
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Component Config
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Behavior Config
+</p>
+
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V0.6.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V0.6.0">V0.6.0</a></h3>
+					<p class="changelog-date">13 May 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Mixin Object
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V0.5.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V0.5.0">V0.5.0</a></h3>
+					<p class="changelog-date">07 May 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Improved readability
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Cleanup code
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Improved speed
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V0.3.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V0.3.0">V0.3.0</a></h3>
+					<p class="changelog-date">24 April 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Threads object
+</p>
+
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    Base object renamed to Service and changes
+</p>
+<p class="changelog-update-description changelog-improvement js-changelog-update-description" data-instafilta-category="improvement">
+    <span class="changelog-type">improvement</span>
+    Speed improvements
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V0.2.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V0.2.0">V0.2.0</a></h3>
+					<p class="changelog-date">07 April 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Application layer
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Application detection
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Component detection
+</p>
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Speed improvements
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+			<div id="V0.1.0" class="changelog-item js-changelog-item">
+				<header class="changelog-header">
+					<h3 class="changelog-version"><a href="#V0.1.0">V0.1.0</a></h3>
+					<p class="changelog-date">18 March 2014</p>
+				</header>
+				<div class="changelog-update-descriptions">
+					<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Behaviours(DCI) to the controller
+</p>
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    Basic routing between files and framework requests
+</p>
+
+<p class="changelog-update-description changelog-feature js-changelog-update-description" data-instafilta-category="feature">
+    <span class="changelog-type">feature</span>
+    MVC component structure
+</p>
+				</div>
+				<div class="changelog-link"></div>
+			</div>
+		
+	</div>
+</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-logo-wrapper">
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.png" alt="logo"></a>
+                                <br>
+
+                                <p class="slogan">
+                                    Let's cook software!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="footer-wrapper">
+                                <span class="scroll-top js-scroll-top"><i class="fa fa-angle-up"></i></span>
+
+                                <div class="docs-version js-docs-version">
+                                    <span class="docs-current-version js-docs-current-version">v2.4</span>
+                                </div>
+
+                                <p class="copyright helper right">
+                                    <a href="https://jvar.nl" target="_blank">Jvar</a>, all rights reserved. 2013 - 2016 ©
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/assets/js/all.min.js"></script>
+    </body>
+</html>

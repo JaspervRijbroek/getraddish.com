@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Docs - Config</title>
+
+        <link rel="stylesheet" href="/2.4/assets/css/style.min.css" />
+        <link rel="canonical" href="https://getraddish.com/guide/essentials/config.html" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-32550863-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="header " style="background-image: url(/assets/img/backgrounds/pattern.png);">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-5">
+                        <a href="/2.4/index.html" class="logo-image"><img src="/assets/img/logos/raddish.png" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-xs-7">
+                        <nav class="right helper">
+                            <ul class="menu sf-menu js-menu">
+                                <li><a href="/2.4/index.html">Home</a></li>
+                                <li><a href="/2.4/features.html">Features</a></li>
+                                <li><a href="/2.4/guide/index.html">Guide</a></li>
+                                <li><a href="/2.4/api/index.html">API</a></li>
+                                <li><a href="/2.4/blog.html">Blog</a></li>
+                                <!--<li><a href="/2.4/community.html">Community</a></li>-->
+                                <li><a href="/2.4/changelog.html">Changelog</a></li>
+                                <li><a href="https://github.com/getraddished/raddish" target="_blank" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="content">
+            <div class="container-fluid container-spaced">
+                <div class="layout with-left-sidebar js-layout">
+    <div class="row">
+        <div class="col-md-4 hidden-xs">
+            <div class="js-sidebar-wrapper">
+    <div class="sidebar">
+        <nav class="menu-vertical-wrapper">
+            <ul class="menu-vertical  js-menu-vertical tendina" data-prepend-to=".js-layout" data-select="Menu">
+                <li><a href="/2.4/guide/index.html">Introduction</a></li>
+                <li class="has-children">
+                    <a href="/2.4/guide/essentials.html">Essentials</a>
+                    <ul>
+                        <li><a href="/2.4/guide/essentials/file-structure.html">File Structure</a></li>
+                        <li><a href="/2.4/guide/essentials/urls.html">URLs</a></li>
+                        <li><a href="/2.4/guide/essentials/identifiers.html">Identifiers</a></li>
+                        <li><a href="/2.4/guide/essentials/config.html">Config</a></li>
+                        <li><a href="/2.4/guide/essentials/component-config.html">Component Config</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/getting-started.html">Getting Started</a>
+                    <ul>
+                        <li><a href="/2.4/guide/getting-started/setup.html">Setup</a></li>
+                        <li><a href="/2.4/guide/getting-started/applications.html">Applications</a></li>
+                        <li>
+                            <a href="/2.4/guide/getting-started/components.html">Components</a>
+                            <ul>
+                                <li><a href="/2.4/guide/getting-started/components/dispatcher.html">Dispatcher</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/controller.html">Controller</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/model.html">Model</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/table.html">Table</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/row.html">Row</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/rowset.html">Rowset</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/2.4/guide/getting-started/behaviors.html">Behaviors</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/advanced.html">Advanced</a>
+                    <ul>
+                        <li><a href="/2.4/guide/advanced/system-calls.html">System calls</a></li>
+                        <li><a href="/2.4/guide/advanced/plugins.html">Plugins</a></li>
+                        <li><a href="/2.4/guide/advanced/mixins.html">Mixins</a></li>
+                        <li><a href="/2.4/guide/advanced/sockets.html">Sockets</a></li>
+                        <li><a href="/2.4/guide/advanced/logging.html">Logging</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="article-title">
+                Docs
+                <small>
+                    - Config
+                </small>
+            </h2>
+
+            <p>Applications written with Raddish are required to create a config.json which needs to be send to Raddish before starting.
+Below I will give an example config file, with more detail underneath.</p>
+
+<div class="code-highlight">
+    <span class="js-copy-to-clipboard copy-code">copy</span>
+    
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+    <span class="s2">"db"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"default"</span><span class="err">:</span> <span class="p">{</span>
+            <span class="s2">"host"</span><span class="err">:</span> <span class="s2">"localhost"</span><span class="p">,</span>
+            <span class="s2">"port"</span><span class="err">:</span> <span class="mi">3306</span><span class="p">,</span>
+            <span class="s2">"user"</span><span class="err">:</span> <span class="s2">"root"</span><span class="p">,</span>
+            <span class="s2">"password"</span><span class="err">:</span> <span class="s2">"root"</span><span class="p">,</span>
+            <span class="s2">"database"</span><span class="err">:</span> <span class="s2">"demo"</span><span class="p">,</span>
+            <span class="s2">"prefix"</span><span class="err">:</span> <span class="s2">"demo_"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"router"</span> <span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"cors"</span><span class="err">:</span> <span class="p">{</span>
+            <span class="s2">"origin"</span><span class="err">:</span> <span class="s2">"localhost"</span><span class="p">,</span>
+            <span class="s2">"methods"</span><span class="err">:</span> <span class="p">[</span><span class="s2">"GET"</span><span class="p">,</span> <span class="s2">"HEAD"</span><span class="p">],</span>
+            <span class="s2">"credentials"</span><span class="err">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="s2">"headers"</span><span class="err">:</span> <span class="s2">""</span>
+        <span class="p">},</span>
+        <span class="s2">"routes"</span><span class="err">:</span> <span class="p">{</span>
+            <span class="s2">"/foos"</span><span class="err">:</span> <span class="s2">"/demo/menu/items"</span><span class="p">,</span>
+            <span class="s2">"/bar/:id"</span><span class="err">:</span> <span class="s2">"/demo/menu/item"</span><span class="p">,</span>
+            <span class="s2">"/baz/*"</span><span class="err">:</span> <span class="s2">"/templates/css/"</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"ssl"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"key"</span><span class="err">:</span> <span class="s2">"./ssl.key"</span><span class="p">,</span>
+        <span class="s2">"cert"</span><span class="err">:</span> <span class="s2">"./ss.crt"</span>
+    <span class="p">},</span>
+    <span class="s2">"threads"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"maxThreads"</span><span class="err">:</span> <span class="mi">16</span><span class="p">,</span>
+        <span class="s2">"maxThreshold"</span><span class="err">:</span> <span class="mi">50</span><span class="p">,</span>
+        <span class="s2">"minThreshold"</span><span class="err">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="s2">"interval"</span><span class="err">:</span> <span class="mi">500</span>
+    <span class="p">},</span>
+    <span class="s2">"socketio"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"port"</span><span class="err">:</span> <span class="mi">1338</span>
+    <span class="p">},</span>
+    <span class="s2">"logging"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="s2">"adapter"</span><span class="err">:</span> <span class="s2">"file"</span><span class="p">,</span>
+        <span class="s2">"options"</span><span class="err">:</span> <span class="p">{</span>
+            <span class="s2">"file"</span><span class="err">:</span> <span class="s2">"/logs/raddish.log"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"cache"</span><span class="err">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">"format"</span><span class="err">:</span> <span class="s2">"json"</span><span class="p">,</span>
+    <span class="s2">"gzip"</span><span class="err">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">"plugins"</span><span class="err">:</span> <span class="s2">"/plugins"</span><span class="p">,</span>
+    <span class="s2">"port"</span><span class="err">:</span> <span class="mi">1337</span><span class="p">,</span>
+    <span class="s2">"public"</span><span class="err">:</span> <span class="s2">"/public"</span>
+<span class="p">}</span></code></pre></figure>
+
+</div>
+
+<dl>
+    <dt>
+        db
+    </dt>
+    <dd>
+        This object hold all the database connection information.
+        By default behavior the "default" connection needs to be present.
+        This one will be used when no other database connection is specified.
+    </dd>
+    
+    <dt>
+        router
+    </dt>
+    <dd>
+        <p>
+            The router object holds the values for CORS requests, and hold custom defined routers.
+            May the CORS values be clear for them selves otherwise you can check here: <a href="http://www.w3.org/TR/cors/" target="_blank">CORS Specification</a>.
+        </p>
+        
+        <p>
+            The routes however are something different. There are redirects and state urls, I will try to explain.
+        </p>
+        
+        <p>
+            Simple complete url redirects: 
+            This is as simple as doing: <code>"/foos": "/demo/menu/items"</code>
+        </p>
+        
+        <p>
+            For automatic dynamic states you can do: 
+            <code>"/bar/:id": "/demo/menu/item"</code> In this case the state id will automatically be set when available.
+        </p>
+        
+        <p>
+            For complete redirects you can add: 
+            <code>"/baz/*": "/templates/css/"</code> This will redirect everything with <code>"/baz/"</code> to <code>/templates/css/</code>.
+        </p>
+    </dd>
+    
+    <dt>
+        ssl
+    </dt>
+    <dd>
+        This setting can only be false or an object.<br />
+        When false (or not defined) ssl will not be started.<br /> 
+        When it is an object key and cert are required and must point to the of the ssl key and ssl certificate files.
+    </dd>
+    
+    <dt>
+        Threads
+    </dt>
+    <dd>
+        <p>
+            Can be true, false, not defined or an object,<br /> 
+            when true it will start threads with the default values.<br /> 
+            When an object it will override the default values with your custom values, displayed here are the default values.
+        </p>
+        
+        <p>
+            The <code>maxThreshold</code> and <code>minThreshold</code> is the amount of usage a process might have before an extra thread is started or removed.<br /> 
+            The <code>interval</code> is the interval in millisecond when the system must check for process usage.
+        </p>
+    <dd>
+    
+    <dt>
+        socketio    
+    </dt>
+    <dd>
+        <p>
+            The value can be true, an object, false or not defined.
+        </p>
+        
+        <p>
+            When true it will start sockets on port 1338, 
+            when an object you can manually set the <code>port</code> to start on.
+        </p>
+    </dd>
+    
+    <dt>
+        logging
+    </dt>
+    <dd>
+        <p>
+            With the logging object you can specify a logging object. 
+            Whenever an error is thrown the RaddishError object will log to this object.
+        </p>
+        
+        <p>
+            For more details read here.
+        </p>
+    </dd>
+    
+    <dt>
+        plugins
+    </dt>
+    <dd>
+        Specify the path to the plugins directory. 
+        When not defined plugins will not be used in the system.
+    </dd>
+    
+    <dt>
+        cache
+    </dt>
+    <dd>
+        This value can be true, false or not defined. 
+        When true it will cache the initialized objects resulting in a huge speed advantage. 
+        When false or not defined the system will not cache any objects.
+    </dd>
+    
+    <dt>
+        gzip
+    </dt>
+    <dd>
+        Enable gzip compression or not. 
+        When the client doesn't support gzip compression the result isn't compressed.
+    </dd>
+    
+    <dt class="required">
+        format
+    </dt>
+    <dd>
+        This value is required. 
+        Specify the default returned value.
+    </dd>
+    
+    <dt class="required">
+        port
+    </dt>
+    <dd>
+        This value is required. 
+        Specify on which port the system starts.
+    </dd>
+    
+    <dt class="required">
+        public
+    </dt>
+    <dd>
+        This value is required. 
+        Specify the folder where the public files are stored.
+    </dd>
+&lt;/dl&gt;
+
+<div class="note">
+    * = required
+</div>
+</dd></dd></dl>
+
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-logo-wrapper">
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.png" alt="logo"></a>
+                                <br>
+
+                                <p class="slogan">
+                                    Let's cook software!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="footer-wrapper">
+                                <span class="scroll-top js-scroll-top"><i class="fa fa-angle-up"></i></span>
+
+                                <div class="docs-version js-docs-version">
+                                    <span class="docs-current-version js-docs-current-version">v2.4</span>
+                                </div>
+
+                                <p class="copyright helper right">
+                                    <a href="https://jvar.nl" target="_blank">Jvar</a>, all rights reserved. 2013 - 2016 ©
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/assets/js/all.min.js"></script>
+    </body>
+</html>

@@ -19,33 +19,28 @@ This as well can be overridden in an object override or a component config value
 When for the controller and the authenticator only an name is given instead of a complete identifier,
 it will search for the object using the the identifier of the dispatcher.
 
-An example of an object override and component config:
-
 <div class="row">
     <div class="col-md-6">
+        <p><strong>Object Override</strong>:</p>
         <div class="code-highlight">
             <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 var Dispatcher  = require('raddish').Dispatcher;
-var util        = require('util');
 
-function DemoDispatcher(config) {
-    Dispatcher.call(this, config);
-};
-
-util.inherits(DemoDispatcher, Dispatcher);
-
-DemoDispatcher.prototype.initialize = function(config) {
-    config.controller = 'foo';
-    config.authenticator = 'bar';
-
-    return Dispatcher.prototype.initialize.call(this, config);
-};
+class DemoDispacher extends Dispatcher {
+    _initialize(config) {
+        config.controller = 'foo';
+        config.authenticator = 'bar';
+        
+        super._initialize(config);
+    }
+}
 
 module.exports = DemoDispatcher;{% endhighlight %}
         </div>
     </div>
     <div class="col-md-6">
+        <p>Component Config:</p>
         <div class="code-highlight">
             <span class="js-copy-to-clipboard copy-code">copy</span>
         {% highlight javascript %}

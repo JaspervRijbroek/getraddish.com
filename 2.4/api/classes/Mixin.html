@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Raddish API  - Mixin</title>
+
+        <link rel="stylesheet" href="/2.4/assets/css/style.min.css" />
+        <link rel="canonical" href="https://getraddish.com/api/classes/Mixin.html" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-32550863-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="header " style="background-image: url(/assets/img/backgrounds/pattern.png);">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-5">
+                        <a href="/2.4/index.html" class="logo-image"><img src="/assets/img/logos/raddish.png" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-xs-7">
+                        <nav class="right helper">
+                            <ul class="menu sf-menu js-menu">
+                                <li><a href="/2.4/index.html">Home</a></li>
+                                <li><a href="/2.4/features.html">Features</a></li>
+                                <li><a href="/2.4/guide/index.html">Guide</a></li>
+                                <li><a href="/2.4/api/index.html">API</a></li>
+                                <li><a href="/2.4/blog.html">Blog</a></li>
+                                <!--<li><a href="/2.4/community.html">Community</a></li>-->
+                                <li><a href="/2.4/changelog.html">Changelog</a></li>
+                                <li><a href="https://github.com/getraddished/raddish" target="_blank" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="content">
+            <div class="container-fluid container-spaced">
+                <div class="layout with-left-sidebar js-layout">
+    <div class="row">
+        <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="js-sidebar-wrapper">
+                <div class="sidebar">
+                    <nav class="menu-vertical-wrapper">
+                        <ul class="menu-vertical js-menu-vertical tendina" data-prepend-to=".js-layout">
+                            <li>
+                                <a href="/2.4/api/classes/AbstractAdapter.html">
+                                    AbstractAdapter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractController.html">
+                                    AbstractController
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractDispatcher.html">
+                                    AbstractDispatcher
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractFilter.html">
+                                    AbstractFilter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractModel.html">
+                                    AbstractModel
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractRow.html">
+                                    AbstractRow
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractRowset.html">
+                                    AbstractRowset
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractTable.html">
+                                    AbstractTable
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AbstractView.html">
+                                    AbstractView
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Application.html">
+                                    Application
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/AsciiFilter.html">
+                                    AsciiFilter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/BooleanFilter.html">
+                                    BooleanFilter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/CommandBehavior.html">
+                                    CommandBehavior
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/CommandChain.html">
+                                    CommandChain
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/CommandContext.html">
+                                    CommandContext
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ComponentLocator.html">
+                                    ComponentLocator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ConsoleAdapter.html">
+                                    ConsoleAdapter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Controller.html">
+                                    Controller
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/CoreLocator.html">
+                                    CoreLocator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/DefaultAuthenticator.html">
+                                    DefaultAuthenticator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Dispatcher.html">
+                                    Dispatcher
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Inflector.html">
+                                    Inflector
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/IntFilter.html">
+                                    IntFilter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/JsonFilter.html">
+                                    JsonFilter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Md5Filter.html">
+                                    Md5Filter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Mixin.html">
+                                    Mixin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Model.html">
+                                    Model
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/MongoAdapter.html">
+                                    MongoAdapter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/MongoIDFilter.html">
+                                    MongoIDFilter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/MysqlAdapter.html">
+                                    MysqlAdapter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ObjectIdentifier.html">
+                                    ObjectIdentifier
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ObjectLoader.html">
+                                    ObjectLoader
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ObjectManager.html">
+                                    ObjectManager
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Plugin.html">
+                                    Plugin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/RaddishError.html">
+                                    RaddishError
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/RaddishStream.html">
+                                    RaddishStream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/RawFilter.html">
+                                    RawFilter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Role.html">
+                                    Role
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Router.html">
+                                    Router
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Row.html">
+                                    Row
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Rowset.html">
+                                    Rowset
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Socket.html">
+                                    Socket
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/SqliteAdapter.html">
+                                    SqliteAdapter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/States.html">
+                                    States
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/Table.html">
+                                    Table
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ViewEmber.html">
+                                    ViewEmber
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ViewFile.html">
+                                    ViewFile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/2.4/api/classes/ViewJson.html">
+                                    ViewJson
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>        </div>
+
+        <div class="col-md-9">
+            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L5" target="_blank" style="text-decoration: none;">
+                <h3 class="category-title">
+                    API
+                        <small>
+                            - Mixin
+                        </small>
+                </h3>
+            </a>
+
+            
+            <p>
+            This is the mixin object, this will help with mixing in the objects.
+            
+            </p>
+            
+                <div class="category-info">
+                    <h3 class="category-title">Methods</h3>
+                </div>
+            
+                <div class="list-view">
+                        <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L40" target="_blank">
+                                        has (<small>target</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
+                                <p>
+                                This method checks if the target has mixins defined or not.
+                        
+                                </p>
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>target</td>
+                                                <td>Object</td>
+                                                <td>The object to be checked.
+                        </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        
+                                <p>
+                                    <strong>Returns</strong> Boolean: The value of the hasMixin property.
+                        
+                                </p>
+                            </div>
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/log/adapter/file.js#L28" target="_blank">
+                                        log (<small>code, message</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
+                                <p>
+                                This method will log an error message to the defined file.
+                        
+                                </p>
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>code</td>
+                                                <td>Integer</td>
+                                                <td>The error code to use.
+                        </td>
+                                            </tr>
+                                            <tr>
+                                                <td>message</td>
+                                                <td>Message</td>
+                                                <td>The error message.
+                        </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        
+                            </div>
+                        </div>            <div class="list-item">
+                            <div class="list-item-header">
+                                <h3 class="list-item-title">
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L15" target="_blank">
+                                        mix (<small>target, source</small>)
+                                    </a>
+                                </h3>
+                                <span class="list-item-meta">
+                                </span>
+                            </div>
+                            <div class="list-item-content">
+                                <p>
+                                Mix the mixableMethods of the source into the target.
+                        This will also set the hasMixins property on the target.
+                        
+                                </p>
+                        
+                                <strong>Parameters</strong>
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>target</td>
+                                                <td>Object</td>
+                                                <td>The object receiving the methods
+                        </td>
+                                            </tr>
+                                            <tr>
+                                                <td>source</td>
+                                                <td>Object</td>
+                                                <td>The object giving the methods
+                        </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        
+                            </div>
+                        </div>    </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-logo-wrapper">
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.png" alt="logo"></a>
+                                <br>
+
+                                <p class="slogan">
+                                    Let's cook software!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="footer-wrapper">
+                                <span class="scroll-top js-scroll-top"><i class="fa fa-angle-up"></i></span>
+
+                                <div class="docs-version js-docs-version">
+                                    <span class="docs-current-version js-docs-current-version">v2.4</span>
+                                </div>
+
+                                <p class="copyright helper right">
+                                    <a href="https://jvar.nl" target="_blank">Jvar</a>, all rights reserved. 2013 - 2016 ©
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/assets/js/all.min.js"></script>
+    </body>
+</html>

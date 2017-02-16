@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://getraddish.com/</loc>
+        <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractAdapter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractController.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractDispatcher.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractFilter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractModel.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractRow.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractRowset.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractTable.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AbstractView.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Application.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/AsciiFilter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/BooleanFilter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/CommandBehavior.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/CommandChain.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/CommandContext.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ComponentLocator.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ConsoleAdapter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Controller.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/CoreLocator.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/DefaultAuthenticator.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Dispatcher.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Inflector.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/IntFilter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/JsonFilter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Md5Filter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Mixin.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Model.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/MongoAdapter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/MongoIDFilter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/MysqlAdapter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ObjectIdentifier.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ObjectLoader.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ObjectManager.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Plugin.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/RaddishError.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/RaddishStream.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/RawFilter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Role.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Router.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Row.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Rowset.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Socket.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/SqliteAdapter.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/States.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/Table.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ViewEmber.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ViewFile.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/classes/ViewJson.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/advanced.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/application.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/applications.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/behaviors.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/blog.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/changelog.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/community.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/essentials/component-config.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/basics/component-config.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/component-file.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/components.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/essentials/config.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/basics/config.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/controller.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/components/controller.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/advanced/dci.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/components/dispatcher.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/dispatcher.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/essentials.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/features.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/essentials/file-structure.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/basics/file-structure.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/essentials/identifiers.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/basics/identifiers.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/index.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/api/</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/introduction.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/advanced/logging.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/advanced/logging.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/advanced/mixins.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/components/model.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/model.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/advanced/plugins.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/advanced/plugins.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/row.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/components/row.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/components/rowset.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/rowset.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/search.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/setup.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/setup.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/advanced/sockets.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/advanced/sockets.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/advanced/system-calls.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/advanced/system-calls.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/basics/system.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/tutorial/table.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/getting-started/components/table.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/basics/url.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/guide/essentials/urls.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+    
+        
+            <url>
+                <loc>https://getraddish.com/blog/2016/12/03/upcoming-version.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/blog/2016/11/15/api-documentation.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/blog/2016/11/08/humble-beginnings.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/blog/2016/09/13/new-documentation-version.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+    
+        
+    
+        
+            <url>
+                <loc>https://getraddish.com/blog/2014/10/31/raddish-at-the-nooku-jam.html</loc>
+                <lastmod>2017-02-15T10:48:21+01:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</urlset>

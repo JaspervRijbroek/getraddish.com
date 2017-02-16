@@ -14,30 +14,33 @@ This will automatically set the target to the current object. The first paramete
 
 Below I will give an example for this function:
 
-```javascript
+<div class="code-highlight">
+    <span class="js-copy-to-clipboard copy-code">copy</span>
+{% highlight javascript %}
 var Model = require('raddish').Model,
     util = require('util');
 
-function MixableObject() {
-    getMixableMethods: function() {
+class MixableObject {
+    getMixableMethods() {
         return {
             test: this.test
         }
     },
-    test: function() {
+    test() {
         ...
     }
 }
 
-function FooModel(config) {
-    Model.call(this, config);
-    
-    // After the mixin call this object also has the method test.
-    // Also when the object is a function type it will be automatically created.
-    this.mixin(MixableObject);
+class FooModel extends Model {
+    constructor(config) {
+        super();
+        
+        // After the mixin call this object also has the method test.
+        // Also when the object is a function type it will be automatically created.
+        this.mixin(new MixableObject());
+    }
 }
 
-util.inherits(FooModel, Model);
-
 module.exports = FooModel;
-```
+{% endhighlight %}
+</div>

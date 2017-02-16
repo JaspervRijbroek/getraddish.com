@@ -16,18 +16,17 @@ Which can look like this:
 	<span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
 var Application = require('raddish').Application;
-var util        = require('util');
 
-function HomeApp() {
-    Application.call(this);
-
-    this.setConfig({
-        component: __dirname + '/components',
-        config: __dirname + '/config'
-    });
-};
-
-util.inherits(HomeApp, Application);
+class HomeApp extends Application {
+    constructor() {
+        super({
+            component: __dirname + '/components',
+            config: __dirname + '/config'
+        });
+        
+        this._alias = 'demo';
+    }
+}
 
 module.exports = HomeApp;{% endhighlight %}
 </div>

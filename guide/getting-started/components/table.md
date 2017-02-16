@@ -61,37 +61,27 @@ In this example we will set some values and we will show the component config va
         <div class="code-highlight">
             <span class="js-copy-to-clipboard copy-code">copy</span>
             {% highlight javascript %}
-var Table = require('raddish').Table,
-    util = require('util');
-    
-function FooTable(config) {
-    // Force the database connection to mongo, this database has to be defined in the config file.
-    config.db = 'mongo';
-    
-    // Force the table to foo_bar
-    config.name = 'foo_bar';
-    
-    // Force the identity column to id
-    config.identity_column = 'id';
-    
-    // Force part of the column map.
-    // This will be like, destination: origin
-    config.column_map = {
-        name: "title",
-        user: "complicated_table_column_name"
-    };
-    
-    // Behaviors will accept name only. But it is also possible to add the complete identifier.
-    config.behaviors = {
-        'creatable': {},
-        'modifiable': {},
-        'com://demo/foo.database.table.barable': {}
+var Table = require('raddish').Table;
+
+class FooTable extends Table {
+    constructor(config) {
+        config.db = 'mongo';
+        config.name = 'foo_bar';
+        config.identityColumn = 'id';
+        config.columnMap = {
+            name: 'title',
+            user: 'complicated_table_column_name'
+        }
+        
+        config.behaviors = {
+            'creatable': null,
+            'modifiable': {},
+            'com://demo/foo.database.table.barable': {}
+        }
+        
+        super(config);
     }
-
-    Table.call(this, config);
-};
-
-util.inherits(FooTable, Table);
+}
 
 module.exports = FooTable;{% endhighlight %}
         </div>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Docs - Sockets</title>
+
+        <link rel="stylesheet" href="/2.4/assets/css/style.min.css" />
+        <link rel="canonical" href="https://getraddish.com/guide/advanced/sockets.html" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-32550863-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="header " style="background-image: url(/assets/img/backgrounds/pattern.png);">
+            <div class="container-fluid container-spaced">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-5">
+                        <a href="/2.4/index.html" class="logo-image"><img src="/assets/img/logos/raddish.png" alt="logo"></a>
+                    </div>
+                    <div class="col-md-9 col-sm-6 col-xs-7">
+                        <nav class="right helper">
+                            <ul class="menu sf-menu js-menu">
+                                <li><a href="/2.4/index.html">Home</a></li>
+                                <li><a href="/2.4/features.html">Features</a></li>
+                                <li><a href="/2.4/guide/index.html">Guide</a></li>
+                                <li><a href="/2.4/api/index.html">API</a></li>
+                                <li><a href="/2.4/blog.html">Blog</a></li>
+                                <!--<li><a href="/2.4/community.html">Community</a></li>-->
+                                <li><a href="/2.4/changelog.html">Changelog</a></li>
+                                <li><a href="https://github.com/getraddished/raddish" target="_blank" style="font-size: 1.5em;"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="content">
+            <div class="container-fluid container-spaced">
+                <div class="layout with-left-sidebar js-layout">
+    <div class="row">
+        <div class="col-md-4 hidden-xs">
+            <div class="js-sidebar-wrapper">
+    <div class="sidebar">
+        <nav class="menu-vertical-wrapper">
+            <ul class="menu-vertical  js-menu-vertical tendina" data-prepend-to=".js-layout" data-select="Menu">
+                <li><a href="/2.4/guide/index.html">Introduction</a></li>
+                <li class="has-children">
+                    <a href="/2.4/guide/essentials.html">Essentials</a>
+                    <ul>
+                        <li><a href="/2.4/guide/essentials/file-structure.html">File Structure</a></li>
+                        <li><a href="/2.4/guide/essentials/urls.html">URLs</a></li>
+                        <li><a href="/2.4/guide/essentials/identifiers.html">Identifiers</a></li>
+                        <li><a href="/2.4/guide/essentials/config.html">Config</a></li>
+                        <li><a href="/2.4/guide/essentials/component-config.html">Component Config</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/getting-started.html">Getting Started</a>
+                    <ul>
+                        <li><a href="/2.4/guide/getting-started/setup.html">Setup</a></li>
+                        <li><a href="/2.4/guide/getting-started/applications.html">Applications</a></li>
+                        <li>
+                            <a href="/2.4/guide/getting-started/components.html">Components</a>
+                            <ul>
+                                <li><a href="/2.4/guide/getting-started/components/dispatcher.html">Dispatcher</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/controller.html">Controller</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/model.html">Model</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/table.html">Table</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/row.html">Row</a></li>
+                                <li><a href="/2.4/guide/getting-started/components/rowset.html">Rowset</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/2.4/guide/getting-started/behaviors.html">Behaviors</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="/2.4/guide/advanced.html">Advanced</a>
+                    <ul>
+                        <li><a href="/2.4/guide/advanced/system-calls.html">System calls</a></li>
+                        <li><a href="/2.4/guide/advanced/plugins.html">Plugins</a></li>
+                        <li><a href="/2.4/guide/advanced/mixins.html">Mixins</a></li>
+                        <li><a href="/2.4/guide/advanced/sockets.html">Sockets</a></li>
+                        <li><a href="/2.4/guide/advanced/logging.html">Logging</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="article-title">
+                Docs
+                <small>
+                    - Sockets
+                </small>
+            </h2>
+
+            <p><a href="http://socket.io">Socket.io</a> is also supported right out-of-the-box and with this you can also use all its functions,<br />
+which is available trough <code class="highlighter-rouge">Socket.io</code> this will return an initialized and connected socket.io instance.</p>
+
+<p>By default a basic socket.io is implemented in form of a database adapter called socketable,<br />
+this will emit events on add, edit and delete to certain rooms.</p>
+
+<p>Ofcourse it is also possible to add your own events and methods, this can be done in plugins or in behaviors.
+An example plugin:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">SocketPlugin</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="nx">SocketPlugin</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">onBeforeRegister</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">alias</span><span class="p">,</span> <span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// The addListener method will add an extra listener function to the sockets.</span>
+    <span class="nx">Socket</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s1">'demo'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// We only log the received message but you can do everything here.</span>
+        <span class="c1">// Even ObjectManager calls.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">};</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">SocketPlugin</span><span class="p">;</span>
+</code></pre>
+</div>
+
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid container-spaced">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="footer-logo-wrapper">
+                                <a href="./index.html" class="logo-image "><img src="/assets/img/logos/logo.png" alt="logo"></a>
+                                <br>
+
+                                <p class="slogan">
+                                    Let's cook software!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="footer-wrapper">
+                                <span class="scroll-top js-scroll-top"><i class="fa fa-angle-up"></i></span>
+
+                                <div class="docs-version js-docs-version">
+                                    <span class="docs-current-version js-docs-current-version">v2.4</span>
+                                </div>
+
+                                <p class="copyright helper right">
+                                    <a href="https://jvar.nl" target="_blank">Jvar</a>, all rights reserved. 2013 - 2016 ©
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/assets/js/all.min.js"></script>
+    </body>
+</html>

@@ -17,13 +17,13 @@ The app.js file could look like this.
 <div class="code-highlight">
     <span class="js-copy-to-clipboard copy-code">copy</span>
     {% highlight javascript %}
-var raddish = require('raddish');
+var Raddish = require('raddish');
 
-raddish.setConfig(<path to config file>);
-raddish.setApplication('home', 'apps/home/app');
-raddish.checkUpdate();
-
-raddish.start();{% endhighlight %}
+Raddish
+    .getInstance()
+    .setConfig()
+    .start()
+    .registerApplication('apps/home/app');{% endhighlight %}
 </div>
 
 The ```setConfig``` has a single parameter, this can be a string to a file

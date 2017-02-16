@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+body {
+    background: url(/assets/img/backgrounds/pattern.svg);
+}
+
+.reveal {
+    color: #000;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: #000;
+}
+.reveal h1 {
+    font-size: 4em;
+    margin: 0 0 .5em 0;
+}
+.reveal h2 {
+    font-size: 2em;
+    margin: 0 0 .5em 0;
+}
+.reveal h3 {
+    font-size: 1.5em;
+    margin: 0 0 .5em 0;
+}
+.reveal h4 {
+    font-size: 1.17em;
+    margin: 0 0 .5em 0;
+}
+.reveal h5 {
+    font-size: 1.12em;
+    margin: 0 0 .5em 0;
+}
+.reveal h6 {
+    font-size: .83em;
+    margin: 0 0 .5em 0;
+}
