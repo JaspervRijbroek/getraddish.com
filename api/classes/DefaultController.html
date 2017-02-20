@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: CommandContext
+title_extra: DefaultController
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -156,18 +156,18 @@ title_extra: CommandContext
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>CommandContext</h1>
+                        <h1>DefaultController</h1>
                     </div>
             
                     <div class="description">
-                        <p>The CommandContext method is a convenience wrapper around a simple object.
-            This object allows for setting default properties and will also be able to interact with this object.</p>
+                        <p>The DefaultController class has functions for the basic/ default behavior for the requests.
+            In most cases you will be extending form this class.</p>
             
                     </div>
             
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/context.js#L6" target="_blank"><code>lib&#x2F;command&#x2F;context.js:6</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L5" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:5</code></a>
                         </div>
                 </div>
             </div>
@@ -178,14 +178,16 @@ title_extra: CommandContext
                 <div class="row">
             
                         <div class="col-md-12 method">
-                            <h3 class="title">addRole
-                                (<small>name, object, methods</small>)
+                            <h3 class="title">_actionAdd
+                                (<small>context</small>)
                             </h3>
+                            
+                                <span class="flag private">private</span>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/context.js#L18" target="_blank"><code>lib&#x2F;command&#x2F;context.js:18</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L141" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:141</code></a>
                             </p>
                             
                             
@@ -193,8 +195,8 @@ title_extra: CommandContext
                             </div>
                             
                             <p class="description">
-                                <p>The addRole method will add a role to the current context.
-                            This role is only available for the current context, when a new one is generated/ created all the roles will be reset.</p>
+                                <p>Generic Add method
+                            This method will add a new item to the database with the data provided in the request.</p>
                             
                             </p>
                             
@@ -210,21 +212,9 @@ title_extra: CommandContext
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>name</td>
-                                                <td>String</td>
-                                                <td><p>The name of the role.</p>
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>object</td>
-                                                <td>Object</td>
-                                                <td><p>The object being presented the role.</p>
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>methods</td>
-                                                <td>Object</td>
-                                                <td><p>The custom methods for the presented role.</p>
+                                                <td>context</td>
+                                                <td>CommandContext</td>
+                                                <td><p>The context of the current request.</p>
                             </td>
                                             </tr>
                                     </tbody>
@@ -233,21 +223,23 @@ title_extra: CommandContext
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></strong>: The current context object.
+                                            <p><strong>Promise</strong>: A promise containing the result of the request.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">clearRoles
-                                ()
+                            <h3 class="title">_actionBrowse
+                                (<small>context</small>)
                             </h3>
+                            
+                                <span class="flag private">private</span>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/context.js#L57" target="_blank"><code>lib&#x2F;command&#x2F;context.js:57</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L45" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:45</code></a>
                             </p>
                             
                             
@@ -255,38 +247,8 @@ title_extra: CommandContext
                             </div>
                             
                             <p class="description">
-                                <p>The clearRoles method will clear the roles from the current context.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></strong>: The current context object.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">getProperty
-                                (<small>property</small>)
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/context.js#L92" target="_blank"><code>lib&#x2F;command&#x2F;context.js:92</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method will return a property, only when set.
-                            If the property isn't set then false will be returned.</p>
+                                <p>Generic Browse method.
+                            This method will get a list from the model based on the current request.</p>
                             
                             </p>
                             
@@ -302,9 +264,9 @@ title_extra: CommandContext
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>property</td>
-                                                <td>String</td>
-                                                <td><p>The property to return</p>
+                                                <td>context</td>
+                                                <td>CommandContext</td>
+                                                <td><p>The context of the current request.</p>
                             </td>
                                             </tr>
                                     </tbody>
@@ -313,21 +275,23 @@ title_extra: CommandContext
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong></strong>: The found property or false.
+                                            <p><strong>Promise</strong>: A promise with the rendered view.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">getRole
-                                (<small>name</small>)
+                            <h3 class="title">_actionDelete
+                                (<small>context</small>)
                             </h3>
+                            
+                                <span class="flag private">private</span>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/context.js#L41" target="_blank"><code>lib&#x2F;command&#x2F;context.js:41</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L162" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:162</code></a>
                             </p>
                             
                             
@@ -335,8 +299,9 @@ title_extra: CommandContext
                             </div>
                             
                             <p class="description">
-                                <p>The getRole method returns the requested role.
-                            When the role isn't declared it will throw an error.</p>
+                                <p>Generic Delete method.
+                            This method tries to get a list of item(s), when this list is found,
+                            all items in this list are removed.</p>
                             
                             </p>
                             
@@ -352,9 +317,9 @@ title_extra: CommandContext
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>name</td>
-                                                <td>String</td>
-                                                <td><p>The requested role.</p>
+                                                <td>context</td>
+                                                <td>CommandContext</td>
+                                                <td><p>The context of the current request.</p>
                             </td>
                                             </tr>
                                     </tbody>
@@ -363,21 +328,23 @@ title_extra: CommandContext
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Object</strong>: The requested role.
+                                            <p><strong>Promise</strong>: A promise containing the result of the request.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">setProperty
-                                (<small>property, value</small>)
+                            <h3 class="title">_actionEdit
+                                (<small>context</small>)
                             </h3>
+                            
+                                <span class="flag private">private</span>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/context.js#L69" target="_blank"><code>lib&#x2F;command&#x2F;context.js:69</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L119" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:119</code></a>
                             </p>
                             
                             
@@ -385,9 +352,9 @@ title_extra: CommandContext
                             </div>
                             
                             <p class="description">
-                                <p>The setProperty method will set a property with a value,
-                            when given an array to the property argument all the properties will be set.</p>
-                            <p>When an array is given as the property the value property will be ignored.</p>
+                                <p>Generic Edit method.
+                            This method will receive an item from the database, add the new data to this object,
+                            and update it in the database.</p>
                             
                             </p>
                             
@@ -403,15 +370,9 @@ title_extra: CommandContext
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>property</td>
-                                                <td>String| Array</td>
-                                                <td><p>The propert(y/ies) to set.</p>
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>value</td>
-                                                <td>*</td>
-                                                <td><p>The value of the property to set.</p>
+                                                <td>context</td>
+                                                <td>CommandContext</td>
+                                                <td><p>The context of the current request.</p>
                             </td>
                                             </tr>
                                     </tbody>
@@ -420,7 +381,166 @@ title_extra: CommandContext
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <span class="type"><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></span>
+                                            <p><strong>Promise</strong>: A promise containing the result of the request.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_actionGet
+                                (<small>context</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L12" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:12</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>Generic GET method.
+                            This method will check if the request is unique or not, if it is unique then a read action is excuted.
+                            else a browse function is executed.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>context</td>
+                                                <td>CommandContext</td>
+                                                <td><p>The context of the current request.</p>
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise with the rendered view.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_actionPost
+                                (<small>context</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L86" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:86</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>Generic Post method.
+                            This method will check if the next method is to be an add or edit and will forward the request as such.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>context</td>
+                                                <td>CommandContext</td>
+                                                <td><p>The context of the current request.</p>
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the result of the call.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_actionRead
+                                (<small>context</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/controller/default.js#L61" target="_blank"><code>lib&#x2F;controller&#x2F;default.js:61</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>Generic Read method.
+                            This method will get an item from the model based on the current request,
+                            if the item isn't found a 404 is returned.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>context</td>
+                                                <td>CommandContext</td>
+                                                <td><p>The context of the current request.</p>
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise with the rendered view.
+                            </p>
                                 </div>
             
                             <hr />

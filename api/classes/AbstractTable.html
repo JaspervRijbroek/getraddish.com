@@ -1,1103 +1,178 @@
 ---
+title: API
 layout: default
-title: Raddish API  - AbstractTable 
-header: AbstractTable
-ignore_title: true
+title_extra: AbstractTable
 ---
 
 <div class="layout with-left-sidebar js-layout">
+    <div class="vertical-menu-select" style="display: none;">
+        <select id="vertical-menu-dropdown1">
+            <option value="">Menu</option>
+                <option value="/api/classes/AbstractController.html">AbstractController</option>
+                <option value="/api/classes/AbstractFilter.html">AbstractFilter</option>
+                <option value="/api/classes/AbstractPermissions..html">AbstractPermissions.</option>
+                <option value="/api/classes/AbstractTable.html">AbstractTable</option>
+                <option value="/api/classes/Application.html">Application</option>
+                <option value="/api/classes/AsciiFilter.html">AsciiFilter</option>
+                <option value="/api/classes/Behavior.html">Behavior</option>
+                <option value="/api/classes/BooleanFilter.html">BooleanFilter</option>
+                <option value="/api/classes/CommandChain.html">CommandChain</option>
+                <option value="/api/classes/CommandContext.html">CommandContext</option>
+                <option value="/api/classes/CommandRole.html">CommandRole</option>
+                <option value="/api/classes/DefaultController.html">DefaultController</option>
+                <option value="/api/classes/DefaultPermissions..html">DefaultPermissions.</option>
+                <option value="/api/classes/DefaultRow.html">DefaultRow</option>
+                <option value="/api/classes/DefaultRowset.html">DefaultRowset</option>
+                <option value="/api/classes/DefaultTable.html">DefaultTable</option>
+                <option value="/api/classes/IntFilter.html">IntFilter</option>
+                <option value="/api/classes/JsonFilter.html">JsonFilter</option>
+                <option value="/api/classes/Md5Filter.html">Md5Filter</option>
+                <option value="/api/classes/Mixin.html">Mixin</option>
+                <option value="/api/classes/RawFilter.html">RawFilter</option>
+                <option value="/api/classes/Socket.html">Socket</option>
+        </select>
+    </div>
     <div class="row">
         <div class="col-md-3 hidden-sm hidden-xs">
             <div class="js-sidebar-wrapper">
                 <div class="sidebar">
                     <nav class="menu-vertical-wrapper">
-                        <ul class="menu-vertical js-menu-vertical tendina" data-prepend-to=".js-layout">
-                            <li>
-                                <a href="/api/classes/AbstractAdapter.html">
-                                    AbstractAdapter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractController.html">
-                                    AbstractController
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractDispatcher.html">
-                                    AbstractDispatcher
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractFilter.html">
-                                    AbstractFilter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractModel.html">
-                                    AbstractModel
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractRow.html">
-                                    AbstractRow
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractRowset.html">
-                                    AbstractRowset
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractTable.html">
-                                    AbstractTable
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AbstractView.html">
-                                    AbstractView
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Application.html">
-                                    Application
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/AsciiFilter.html">
-                                    AsciiFilter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/BooleanFilter.html">
-                                    BooleanFilter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/CommandBehavior.html">
-                                    CommandBehavior
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/CommandChain.html">
-                                    CommandChain
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/CommandContext.html">
-                                    CommandContext
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ComponentLocator.html">
-                                    ComponentLocator
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ConsoleAdapter.html">
-                                    ConsoleAdapter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Controller.html">
-                                    Controller
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/CoreLocator.html">
-                                    CoreLocator
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/DefaultAuthenticator.html">
-                                    DefaultAuthenticator
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Dispatcher.html">
-                                    Dispatcher
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Inflector.html">
-                                    Inflector
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/IntFilter.html">
-                                    IntFilter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/JsonFilter.html">
-                                    JsonFilter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Md5Filter.html">
-                                    Md5Filter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Mixin.html">
-                                    Mixin
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Model.html">
-                                    Model
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/MongoAdapter.html">
-                                    MongoAdapter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/MongoIDFilter.html">
-                                    MongoIDFilter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/MysqlAdapter.html">
-                                    MysqlAdapter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ObjectIdentifier.html">
-                                    ObjectIdentifier
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ObjectLoader.html">
-                                    ObjectLoader
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ObjectManager.html">
-                                    ObjectManager
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Plugin.html">
-                                    Plugin
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/RaddishError.html">
-                                    RaddishError
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/RaddishStream.html">
-                                    RaddishStream
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/RawFilter.html">
-                                    RawFilter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Role.html">
-                                    Role
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Router.html">
-                                    Router
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Row.html">
-                                    Row
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Rowset.html">
-                                    Rowset
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Socket.html">
-                                    Socket
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/SqliteAdapter.html">
-                                    SqliteAdapter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/States.html">
-                                    States
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/Table.html">
-                                    Table
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ViewEmber.html">
-                                    ViewEmber
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ViewFile.html">
-                                    ViewFile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/api/classes/ViewJson.html">
-                                    ViewJson
-                                </a>
-                            </li>
+                        <ul class="menu-vertical js-menu-vertical tendina">
+                                <li>
+                                    <a href="/api/classes/AbstractController.html">
+                                        AbstractController
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/AbstractFilter.html">
+                                        AbstractFilter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/AbstractPermissions..html">
+                                        AbstractPermissions.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/AbstractTable.html">
+                                        AbstractTable
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/Application.html">
+                                        Application
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/AsciiFilter.html">
+                                        AsciiFilter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/Behavior.html">
+                                        Behavior
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/BooleanFilter.html">
+                                        BooleanFilter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/CommandChain.html">
+                                        CommandChain
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/CommandContext.html">
+                                        CommandContext
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/CommandRole.html">
+                                        CommandRole
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/DefaultController.html">
+                                        DefaultController
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/DefaultPermissions..html">
+                                        DefaultPermissions.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/DefaultRow.html">
+                                        DefaultRow
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/DefaultRowset.html">
+                                        DefaultRowset
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/DefaultTable.html">
+                                        DefaultTable
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/IntFilter.html">
+                                        IntFilter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/JsonFilter.html">
+                                        JsonFilter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/Md5Filter.html">
+                                        Md5Filter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/Mixin.html">
+                                        Mixin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/RawFilter.html">
+                                        RawFilter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/api/classes/Socket.html">
+                                        Socket
+                                    </a>
+                                </li>
                         </ul>
                     </nav>
-                </div>
-            </div>        </div>
-
+                </div>            </div>
+        </div>
         <div class="col-md-9">
-            <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L8" target="_blank" style="text-decoration: none;">
-                <h3 class="category-title">
-                    API
-                        <small>
-                            - AbstractTable
-                        </small>
-                </h3>
-            </a>
-
-                <p><strong>Extends</strong> <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a></p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h1>AbstractTable</h1>
+                    </div>
             
-            <p>
-            This class holds the basic methods of the table object.
+                    <div class="description">
+                        <p>This is the abstract Table object.
+            This object contains all the shared methods for the table objects.</p>
+            <p>Also this object can be used as a wrapper for custom Table methods.</p>
             
-            </p>
+                    </div>
             
-                <div class="category-info">
-                    <h3 class="category-title">Methods</h3>
+            
+                        <div class="foundat">
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L6" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:6</code></a>
+                        </div>
                 </div>
+            </div>
             
-                <div class="list-view">
-                        <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L146" target="_blank">
-                                        _afterDelete (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the default _afterDelete method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L102" target="_blank">
-                                        _afterInsert (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the default _afterInsert method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L80" target="_blank">
-                                        _afterSelect (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the default _afterSelect method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L124" target="_blank">
-                                        _afterUpdate (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the defaul t_afterUpdate method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L135" target="_blank">
-                                        _beforeDelete (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the default _beforeDelete method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L91" target="_blank">
-                                        _beforeInsert (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the default _beforeInsert method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L69" target="_blank">
-                                        _beforeSelect (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the default _beforeSelect method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L113" target="_blank">
-                                        _beforeUpdate (<small>context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the default _beforeUpdate method which needs to be overridden!
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context to use in this method
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L92" target="_blank">
-                                        clone ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This function will be available for every object,
-                        this will clone the current object.
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Object: An exact copy of the current object
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L25" target="_blank">
-                                        execute (<small>method, context</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will execute a certain command combined with a context.
-                        This method will also call specialized for the selected method.
-                        The methods callable are: Select, Insert, Update and Delete.
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>method</td>
-                                                <td>String</td>
-                                                <td>The method to execute.
-                        </td>
-                                            </tr>
-                                            <tr>
-                                                <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context object to use in this call.
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L194" target="_blank">
-                                        extendConfig (<small>target, source</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is a private function to allow for config extending
-                        This method takes two parameters the first is the original config and the second will be appeneded to this one.
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>target</td>
-                                                <td>Object</td>
-                                                <td>The config object.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>source</td>
-                                                <td>Object</td>
-                                                <td>The object to extend the config object.</td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L167" target="_blank">
-                                        getAdapter ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will return the adapter associated with the current table object
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: The associated adapter.
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L214" target="_blank">
-                                        getColumns ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will return all the columns of the table.
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: The columns of the table.
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L62" target="_blank">
-                                        getCommandChain ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                Return the command chain to run behaviors.
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> <a href="../classes/CommandChain.html" class="crosslink">CommandChain</a>: CommandChain object.
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L41" target="_blank">
-                                        getConfig (<small>key</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                Use this function to acquire a variable from config.js
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>key</td>
-                                                <td>String</td>
-                                                <td>Key to specify the config to return</td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                                <p>
-                                    <strong>Returns</strong> Object: The requested config value.
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L52" target="_blank">
-                                        getIdentifier ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                Use this function to acquire the identifier object
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> <a href="../classes/ObjectIdentifier.html" class="crosslink">ObjectIdentifier</a>: Identifier object.
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L259" target="_blank">
-                                        getIdentityColumn ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will return the single identity column, identified by the auto_increment value.
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: The promise with the identity column.
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L157" target="_blank">
-                                        getName ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method returns the name of the table.
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> String: Table name
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L182" target="_blank">
-                                        getObject (<small>identifier, config</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is a alias of ObjectManager.getObject to use in the "this" context.
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>identifier</td>
-                                                <td>String</td>
-                                                <td>Identifier of the object to load</td>
-                                            </tr>
-                                            <tr>
-                                                <td>config</td>
-                                                <td>Object|null</td>
-                                                <td>Config to push to the object</td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L183" target="_blank">
-                                        getRow ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will return an empty Row object
-                        Here we will also cache the Row object for later use.
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: Returns a Row object
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L199" target="_blank">
-                                        getRowset ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will return an empty Rowset object
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: Returns a Rowset object
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L283" target="_blank">
-                                        getSchema ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will check if the table exists or not, if not, it will return an error.
-                        Else an object with its schema is returned.
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: The promise with the complete schema.
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L237" target="_blank">
-                                        getUniqueColumns ()
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will return the unique columns of the table
-                        
-                                </p>
-                        
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: The unique columns of the table.
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L24" target="_blank">
-                                        initialize (<small>config</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                Every object called through getObject will go through this function.
-                        This will set the identifier and adds the behaviors (if any).
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>config</td>
-                                                <td>Object</td>
-                                                <td>Object with config values
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                                <p>
-                                    <strong>Returns</strong> Promise: call ".then" to use the object when ready.
-                        
-                                </p>
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L303" target="_blank">
-                                        mapColumns (<small>object, reverse</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                    <a href="javascript:void(true);">private</a>
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This method will translate table columns to their original values, or visa versa.
-                        This will work on the column_map variable.
-                        
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>object</td>
-                                                <td>Object</td>
-                                                <td>The object with the column map
-                        </td>
-                                            </tr>
-                                            <tr>
-                                                <td>reverse</td>
-                                                <td>Boolean</td>
-                                                <td>Wether or not to reverse the behavior
-                        </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>            <div class="list-item">
-                            <div class="list-item-header">
-                                <h3 class="list-item-title">
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L103" target="_blank">
-                                        mixin (<small>object</small>)
-                                    </a>
-                                </h3>
-                                <span class="list-item-meta">
-                                </span>
-                            </div>
-                            <div class="list-item-content">
-                                <p>
-                                This is the handler which will try to mixin functions from another object.
-                                </p>
-                        
-                                <strong>Parameters</strong>
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>object</td>
-                                                <td>Object</td>
-                                                <td>The object to mix into the current object.</td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                        
-                            </div>
-                        </div>    </div>
         </div>
     </div>
 </div>

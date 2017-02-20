@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: Mixin
+title_extra: DefaultRow
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -156,126 +156,22 @@ title_extra: Mixin
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Mixin</h1>
+                        <h1>DefaultRow</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is the mixin object, this will help with mixing in the objects.</p>
+                        <p>This is the default row object which holds all the database related method.
+            When extending from this Object the row is granted database permissions.</p>
             
                     </div>
             
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L3" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:3</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/default.js#L5" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;default.js:5</code></a>
                         </div>
                 </div>
             </div>
             
-                <hr/>
-            
-                <h2>Methods</h2>
-                <div class="row">
-            
-                        <div class="col-md-12 method">
-                            <h3 class="title">has
-                                (<small>target</small>)
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L42" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:42</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method checks if the target has mixins defined or not.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>target</td>
-                                                <td>Object</td>
-                                                <td><p>The object to be checked.</p>
-                            </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Boolean</strong>: The value of the hasMixin property.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">mix
-                                (<small>target, source</small>)
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/mixin/mixin.js#L10" target="_blank"><code>lib&#x2F;mixin&#x2F;mixin.js:10</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>Mix the mixableMethods of the source into the target.
-                            This will also set the hasMixins property on the target.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>target</td>
-                                                <td>Object</td>
-                                                <td><p>The object receiving the methods</p>
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>source</td>
-                                                <td>Object</td>
-                                                <td><p>The object giving the methods</p>
-                            </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                            
-            
-                            <hr />
-                        </div>
-                </div>
         </div>
     </div>
 </div>
