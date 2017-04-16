@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: Socket
+title_extra: CmdFilter
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -300,18 +300,21 @@ title_extra: Socket
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Socket</h1>
+                        <h1>CmdFilter</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is a wrapper class around SocketIO,
-            it adds convenience methods and late-binding of listeners.</p>
+                        <p>This class will check if the values given is safe to be executed.
+            If not it will replace any of the unsafe characters.</p>
             
                     </div>
             
+                        <div class="extends">
+                            Extends <a href="../classes/AbstractFilter.html" class="crosslink">AbstractFilter</a>
+                        </div>
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L5" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:5</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/filter/cmd.js#L5" target="_blank"><code>lib&#x2F;filter&#x2F;cmd.js:5</code></a>
                         </div>
                 </div>
             </div>
@@ -322,14 +325,17 @@ title_extra: Socket
                 <div class="row">
             
                         <div class="col-md-12 method">
-                            <h3 class="title">addListener
-                                (<small>event, funct</small>)
+                            <h3 class="title">sanitize
+                                (<small>value</small>)
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L44" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:44</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/AbstractFilter.html#method_sanitize">
+                                        AbstractFilter
+                                    </a>
+                                        but overwritten in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/filter/cmd.js#L26" target="_blank"><code>lib&#x2F;filter&#x2F;cmd.js:26</code></a>
                             </p>
                             
                             
@@ -337,7 +343,7 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method add an event listener with custom logic.</p>
+                                <p>This method will sanitize the value, any characters no valid for a command will be stripped.</p>
                             
                             </p>
                             
@@ -353,32 +359,35 @@ title_extra: Socket
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>event</td>
-                                                <td>String</td>
-                                                <td>The event name
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>funct</td>
-                                                <td>Function</td>
-                                                <td>The function to execute on that event
+                                                <td>value</td>
+                                                <td>*</td>
+                                                <td>The value to sanitize.
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>String</strong>: The sanitized value in string form.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">start
-                                (<small>port</small>)
+                            <h3 class="title">validate
+                                (<small>value</small>)
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L16" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:16</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/AbstractFilter.html#method_validate">
+                                        AbstractFilter
+                                    </a>
+                                        but overwritten in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/filter/cmd.js#L13" target="_blank"><code>lib&#x2F;filter&#x2F;cmd.js:13</code></a>
                             </p>
                             
                             
@@ -386,19 +395,7 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method starts the SocketIO Server.
-                            When socketio is enabled this will be done automatically.</p>
-                            <p>By default there are two events:</p>
-                            <ul>
-                            <li>
-                            <p>Register
-                            Used to register to a specific room</p>
-                            </li>
-                            <li>
-                            <p>Unregister
-                            Used to unregister from a specific room</p>
-                            </li>
-                            </ul>
+                                <p>This method will check if the value given is safe to be executed.</p>
                             
                             </p>
                             
@@ -414,14 +411,20 @@ title_extra: Socket
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>port</td>
-                                                <td>Number</td>
-                                                <td>The port to start SocketIO on.
+                                                <td>value</td>
+                                                <td>*</td>
+                                                <td>The value to validate.
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Boolean</strong>: True when the value is correct otherwise false.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>

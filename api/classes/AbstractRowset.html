@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: Socket
+title_extra: AbstractRowset
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -300,18 +300,17 @@ title_extra: Socket
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Socket</h1>
+                        <h1>AbstractRowset</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is a wrapper class around SocketIO,
-            it adds convenience methods and late-binding of listeners.</p>
+                        <p>The AbstractRowset class holds the basic functionality of the rowset.</p>
             
                     </div>
             
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L5" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:5</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L5" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:5</code></a>
                         </div>
                 </div>
             </div>
@@ -322,14 +321,14 @@ title_extra: Socket
                 <div class="row">
             
                         <div class="col-md-12 method">
-                            <h3 class="title">addListener
-                                (<small>event, funct</small>)
+                            <h3 class="title">delete
+                                ()
                             </h3>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L44" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:44</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L76" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:76</code></a>
                             </p>
                             
                             
@@ -337,48 +336,29 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method add an event listener with custom logic.</p>
+                                <p>This method will delete all the contained row objects.</p>
                             
                             </p>
                             
-                                <h3>Parameters</h3>
                             
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>event</td>
-                                                <td>String</td>
-                                                <td>The event name
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>funct</td>
-                                                <td>Function</td>
-                                                <td>The function to execute on that event
-                            </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
                             
+                                            <p><strong>Promise</strong>: A promise containing the current rowset object.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">start
-                                (<small>port</small>)
+                            <h3 class="title">getData
+                                ()
                             </h3>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L16" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:16</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L122" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:122</code></a>
                             </p>
                             
                             
@@ -386,19 +366,97 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method starts the SocketIO Server.
-                            When socketio is enabled this will be done automatically.</p>
-                            <p>By default there are two events:</p>
-                            <ul>
-                            <li>
-                            <p>Register
-                            Used to register to a specific room</p>
-                            </li>
-                            <li>
-                            <p>Unregister
-                            Used to unregister from a specific room</p>
-                            </li>
-                            </ul>
+                                <p>This mehtod returns an array with all the data of the contained Row objects.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Array</strong>: The data in Array form.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getRow
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L17" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:17</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This methods creates a new row object connected to this rowset.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a> | <a href="../classes/DefaultRow.html" class="crosslink">DefaultRow</a></strong>: The row object connected to this rowset.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getRow
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L31" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:31</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This methods creates a new row object connected to this rowset.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a> | <a href="../classes/DefaultRow.html" class="crosslink">DefaultRow</a></strong>: The row object connected to this rowset.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">isNew
+                                (<small>state</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L45" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:45</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will set the isNew state on all containing Row objects.</p>
                             
                             </p>
                             
@@ -414,14 +472,101 @@ title_extra: Socket
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>port</td>
-                                                <td>Number</td>
-                                                <td>The port to start SocketIO on.
+                                                <td>state</td>
+                                                <td>Boolean</td>
+                                                <td>The is new state to set.
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/AbstractRowset.html" class="crosslink">AbstractRowset</a></strong>: The current object for chaining.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">save
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L60" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:60</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will save all the contained row objects.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the current rowset object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">setData
+                                (<small>dataset</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/rowset/abstract.js#L92" target="_blank"><code>lib&#x2F;database&#x2F;rowset&#x2F;abstract.js:92</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will set the received array on individual Row objects,
+                            which are related to the current RowSet object.</p>
+                            <p>If the dataset parameter isn't an array, the current Rowset is return without any row objects.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>dataset</td>
+                                                <td>Array</td>
+                                                <td>The data to set.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the current rowset object.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>

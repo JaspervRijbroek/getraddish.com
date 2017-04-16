@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: Behavior
+title_extra: AbstractModel
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -300,17 +300,21 @@ title_extra: Behavior
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Behavior</h1>
+                        <h1>AbstractModel</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is the abstract behavior class, every behavior in Raddish must extend from this object.</p>
+                        <p>The AbstractModel class holds all the method for the basic model.
+            By default no states are set.</p>
             
                     </div>
             
+                        <div class="extends">
+                            Extends <a href="../classes/ObjectManager.html" class="crosslink">ObjectManager</a>
+                        </div>
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior.js#L6" target="_blank"><code>lib&#x2F;command&#x2F;behavior.js:6</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L6" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:6</code></a>
                         </div>
                 </div>
             </div>
@@ -321,14 +325,148 @@ title_extra: Behavior
                 <div class="row">
             
                         <div class="col-md-12 method">
+                            <h3 class="title">_getComponentConfig
+                                (<small>identifier, config</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method__getComponentConfig">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L124" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:124</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The _getComponentConfig is an internal method to combine all the config object together.
+                            Usually you don't have to call this method manually.
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>identifier</td>
+                                                <td>Identifier</td>
+                                                <td>The identifier object of the object to load.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>The config object for the object to load.</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Object</strong>: The complete and combined config object.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_initialize
+                                (<small>config</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method__initialize">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L25" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:25</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The abstract initialize method sets the config,
+                            and when behaviors are added it will allocate them.
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>the config for this object
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the initialized object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">clone
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_clone">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L61" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:61</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The clone method will return a clone of the current object.
+                            The clone is going exactly 4 levels deep.
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Object</strong>: The cloned object.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
                             <h3 class="title">execute
                                 (<small>method, context</small>)
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior.js#L34" target="_blank"><code>lib&#x2F;command&#x2F;behavior.js:34</code></a>
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_execute">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L72" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:72</code></a>
                             </p>
                             
                             
@@ -336,8 +474,7 @@ title_extra: Behavior
                             </div>
                             
                             <p class="description">
-                                <p>This method will execute the given method of the behavior.</p>
-                            
+                                The execute method executes a method against the command chain.
                             </p>
                             
                                 <h3>Parameters</h3>
@@ -353,15 +490,13 @@ title_extra: Behavior
                                     <tbody>
                                             <tr>
                                                 <td>method</td>
-                                                <td>String</td>
-                                                <td>the method to execute.
-                            </td>
+                                                <td>Object</td>
+                                                <td>The method to execute</td>
                                             </tr>
                                             <tr>
                                                 <td>context</td>
-                                                <td>CommandContext</td>
-                                                <td>The context in which to execute the behavior.
-                            </td>
+                                                <td>Object</td>
+                                                <td>A simple object to act as the basic context.</td>
                                             </tr>
                                     </tbody>
                                 </table>
@@ -369,21 +504,20 @@ title_extra: Behavior
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong><a href="../classes/CommandContext.html" class="crosslink">CommandContext</a></strong>: The context after the method was executed.
-                            </p>
+                                            <p><strong>Promise</strong>: A promise containing the context with the result of the call.</p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">getMethod
-                                (<small>method</small>)
+                            <h3 class="title">getCommandChain
+                                ()
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior.js#L70" target="_blank"><code>lib&#x2F;command&#x2F;behavior.js:70</code></a>
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_getCommandChain">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L51" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:51</code></a>
                             </p>
                             
                             
@@ -391,7 +525,206 @@ title_extra: Behavior
                             </div>
                             
                             <p class="description">
-                                <p>This method converts a dot-separated method call to a function name.</p>
+                                The getCommandChain will return the command chain for the current object.
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/CommandChain.html" class="crosslink">CommandChain</a></strong>: The command chain object.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getIdentifier
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_getIdentifier">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L41" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:41</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The getIdentifier method will return the identifier for the current object.
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Identifier</strong>: The identifier object from Raddish-Loader</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getItem
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L85" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:85</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The getItem method will return a single item from the data layer.
+                            By default an empty Row object is returned.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise contianing an empty Row object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getList
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L99" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:99</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The getList method will return by default an empty Rowset object.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing an empty Rowset object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getObject
+                                (<small>identifier, config</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_getObject">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L103" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:103</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The getObject method will try to load the specified identifier.
+                            An optional config can be given for the identifier to load.
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>identifier</td>
+                                                <td>String|Identifier</td>
+                                                <td>An identifier string/ object.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>An optional config object.</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the initialized object.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getTable
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L61" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:61</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will return the table related to the model.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the table object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">setState
+                                (<small>key, value</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L39" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:39</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will set the states of the model.</p>
                             
                             </p>
                             
@@ -407,9 +740,15 @@ title_extra: Behavior
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>method</td>
-                                                <td>String</td>
-                                                <td>The dot-separated method name.
+                                                <td>key</td>
+                                                <td>String| Object</td>
+                                                <td>The state name/ object of states to set.
+                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>value</td>
+                                                <td>*</td>
+                                                <td>The value for the state.
                             </td>
                                             </tr>
                                     </tbody>
@@ -418,111 +757,7 @@ title_extra: Behavior
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>String</strong>: A formatted function name.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">hasMethod
-                                (<small>method</small>)
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior.js#L54" target="_blank"><code>lib&#x2F;command&#x2F;behavior.js:54</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method will check if a method exists or a method has been registred to the current call.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>method</td>
-                                                <td>String</td>
-                                                <td>The dot-separated identifier of the called method.
-                            </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Boolean</strong>: True when a method is found, else false.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">registerMethod
-                                (<small>method, target</small>)
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/command/behavior.js#L18" target="_blank"><code>lib&#x2F;command&#x2F;behavior.js:18</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method will register a function on a callable method.</p>
-                            
-                            </p>
-                            
-                                <h3>Parameters</h3>
-                            
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>method</td>
-                                                <td>String</td>
-                                                <td>The method to bind the function to.
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>target</td>
-                                                <td>Function</td>
-                                                <td>The function to execute.
-                            </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Object</strong>: The current object for chaining.
+                                            <p><strong><a href="../classes/AbstractModel.html" class="crosslink">AbstractModel</a></strong>: The current model object for chaining.
                             </p>
                                 </div>
             

@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: AbstractTable
+title_extra: DefaultModel
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -300,19 +300,20 @@ title_extra: AbstractTable
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>AbstractTable</h1>
+                        <h1>DefaultModel</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is the abstract Table object.
-            This object contains all the shared methods for the table objects.</p>
-            <p>Also this object can be used as a wrapper for custom Table methods.</p>
+                        <p>The DefaultModel class holds all the methods which relate to the database</p>
             
                     </div>
             
+                        <div class="extends">
+                            Extends <a href="../classes/AbstractModel.html" class="crosslink">AbstractModel</a>
+                        </div>
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L6" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:6</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L5" target="_blank"><code>lib&#x2F;model&#x2F;default.js:5</code></a>
                         </div>
                 </div>
             </div>
@@ -323,8 +324,8 @@ title_extra: AbstractTable
                 <div class="row">
             
                         <div class="col-md-12 method">
-                            <h3 class="title">_actionDelete
-                                (<small>The</small>)
+                            <h3 class="title">_buildQueryColumns
+                                (<small>query</small>)
                             </h3>
                             
                                 <span class="flag private">private</span>
@@ -332,7 +333,7 @@ title_extra: AbstractTable
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L253" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:253</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L130" target="_blank"><code>lib&#x2F;model&#x2F;default.js:130</code></a>
                             </p>
                             
                             
@@ -340,8 +341,7 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This is the abstract delete method.
-                            When extending from the AbstractTable object this method needs to be overridden.</p>
+                                <p>In this method the specific functions to select the columns can be added.</p>
                             
                             </p>
                             
@@ -357,9 +357,9 @@ title_extra: AbstractTable
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>The</td>
-                                                <td>CommandContext</td>
-                                                <td>context of the request.
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
                             </td>
                                             </tr>
                                     </tbody>
@@ -368,15 +368,15 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Promise</strong>: The promise containing the result.
+                                            <p><strong>Promise</strong>: A promise containing the query object.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">_actionInsert
-                                (<small>The</small>)
+                            <h3 class="title">_buildQueryFrom
+                                (<small>query</small>)
                             </h3>
                             
                                 <span class="flag private">private</span>
@@ -384,7 +384,7 @@ title_extra: AbstractTable
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L227" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:227</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L113" target="_blank"><code>lib&#x2F;model&#x2F;default.js:113</code></a>
                             </p>
                             
                             
@@ -392,8 +392,7 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This is the abstract insert method.
-                            When extending from the AbstractTable object this method needs to be overridden.</p>
+                                <p>This method is used to specify from which table the data needs to come.</p>
                             
                             </p>
                             
@@ -409,9 +408,9 @@ title_extra: AbstractTable
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>The</td>
-                                                <td>CommandContext</td>
-                                                <td>context of the request.
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
                             </td>
                                             </tr>
                                     </tbody>
@@ -420,15 +419,15 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Promise</strong>: The promise containing the result.
+                                            <p><strong>Promise</strong>: A promise containing the query object.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">_actionSelect
-                                (<small>The</small>)
+                            <h3 class="title">_buildQueryGroup
+                                (<small>query</small>)
                             </h3>
                             
                                 <span class="flag private">private</span>
@@ -436,7 +435,7 @@ title_extra: AbstractTable
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L214" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:214</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L185" target="_blank"><code>lib&#x2F;model&#x2F;default.js:185</code></a>
                             </p>
                             
                             
@@ -444,8 +443,8 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This is the abstract select method.
-                            When extending from the AbstractTable object this method needs to be overridden.</p>
+                                <p>The _buildQueryGroup method will hold all the functions to specify the group clauses.
+                            By default no group is added.</p>
                             
                             </p>
                             
@@ -461,9 +460,9 @@ title_extra: AbstractTable
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>The</td>
-                                                <td>CommandContext</td>
-                                                <td>context of the request.
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
                             </td>
                                             </tr>
                                     </tbody>
@@ -472,15 +471,15 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Promise</strong>: The promise containing the result.
+                                            <p><strong>Promise</strong>: A promise containing the query object.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">_actionUpdate
-                                (<small>The</small>)
+                            <h3 class="title">_buildQueryHaving
+                                (<small>query</small>)
                             </h3>
                             
                                 <span class="flag private">private</span>
@@ -488,7 +487,7 @@ title_extra: AbstractTable
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L240" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:240</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L198" target="_blank"><code>lib&#x2F;model&#x2F;default.js:198</code></a>
                             </p>
                             
                             
@@ -496,8 +495,8 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This is the abstract update method.
-                            When extending from the AbstractTable object this method needs to be overridden.</p>
+                                <p>The _buildQueryGroup method will hold all the functions to specify the having clauses.
+                            By default no having is added.</p>
                             
                             </p>
                             
@@ -513,9 +512,9 @@ title_extra: AbstractTable
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>The</td>
-                                                <td>CommandContext</td>
-                                                <td>context of the request.
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
                             </td>
                                             </tr>
                                     </tbody>
@@ -524,21 +523,23 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Promise</strong>: The promise containing the result.
+                                            <p><strong>Promise</strong>: A promise containing the query object.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">filterColumns
-                                (<small>data</small>)
+                            <h3 class="title">_buildQueryJoins
+                                (<small>query</small>)
                             </h3>
+                            
+                                <span class="flag private">private</span>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L175" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:175</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L144" target="_blank"><code>lib&#x2F;model&#x2F;default.js:144</code></a>
                             </p>
                             
                             
@@ -546,7 +547,7 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This method will return an object with columns which are available in the table columns.</p>
+                                <p>This method will hold the specific calls for the Join methods.</p>
                             
                             </p>
                             
@@ -562,10 +563,221 @@ title_extra: AbstractTable
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>data</td>
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the query object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_buildQueryLimit
+                                (<small>query</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L231" target="_blank"><code>lib&#x2F;model&#x2F;default.js:231</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The _buildQueryLimit method will hold all the functions to specific for the limit and offset.
+                            When the limit and offset states have been set the values will be added to the query.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the query object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_buildQueryOrder
+                                (<small>query</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L211" target="_blank"><code>lib&#x2F;model&#x2F;default.js:211</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The _buildQueryOrder method will hold all the functions to specify the ordering done on the data.
+                            When the order and direction states have been set the values will be added to the query.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the query object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_buildQueryWhere
+                                (<small>query</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L156" target="_blank"><code>lib&#x2F;model&#x2F;default.js:156</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will hold all the functionality to add the Where clause to the query.
+                            By default filled unique states are added to the query.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>query</td>
+                                                <td>SelectQuery</td>
+                                                <td>The select query from RaddishDB.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the query object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">_getComponentConfig
+                                (<small>identifier, config</small>)
+                            </h3>
+                            
+                                <span class="flag private">private</span>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method__getComponentConfig">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L124" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:124</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The _getComponentConfig is an internal method to combine all the config object together.
+                            Usually you don't have to call this method manually.
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>identifier</td>
+                                                <td>Identifier</td>
+                                                <td>The identifier object of the object to load.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>config</td>
                                                 <td>Object</td>
-                                                <td>The object to filter
-                            </td>
+                                                <td>The config object for the object to load.</td>
                                             </tr>
                                     </tbody>
                                 </table>
@@ -573,21 +785,22 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Promise</strong>: A promise containing all the columns available in the table columns
-                            </p>
+                                            <p><strong>Object</strong>: The complete and combined config object.</p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">getAdapter
-                                ()
+                            <h3 class="title">_initialize
+                                (<small>config</small>)
                             </h3>
                             
+                                <span class="flag private">private</span>
+                            
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L113" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:113</code></a>
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method__initialize">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L25" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:25</code></a>
                             </p>
                             
                             
@@ -595,69 +808,8 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This method will return the adapter connected to the table.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Database</strong>: The database object.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">getColumns
-                                ()
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L71" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:71</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method returns the columns set on the Table.
-                            By default this is an empty array.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Promise</strong>: A promise containing the table columns.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">getColumns
-                                (<small>object, reverse</small>)
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L144" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:144</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method will rename object keys to their new key when found.</p>
-                            
+                                The abstract initialize method sets the config,
+                            and when behaviors are added it will allocate them.
                             </p>
                             
                                 <h3>Parameters</h3>
@@ -672,15 +824,9 @@ title_extra: AbstractTable
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>object</td>
+                                                <td>config</td>
                                                 <td>Object</td>
-                                                <td>The object to rename the keys of.
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>reverse</td>
-                                                <td>Boolean</td>
-                                                <td>A boolean to reverse the functionality.
+                                                <td>the config for this object
                             </td>
                                             </tr>
                                     </tbody>
@@ -689,21 +835,21 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Object</strong>: The object with the renamed keys.
+                                            <p><strong>Promise</strong>: A promise containing the initialized object.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">getIdentityColumn
+                            <h3 class="title">clone
                                 ()
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L203" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:203</code></a>
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_clone">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L61" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:61</code></a>
                             </p>
                             
                             
@@ -711,8 +857,155 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This method will return the unique column,
-                            By default this is an empty string.</p>
+                                The clone method will return a clone of the current object.
+                            The clone is going exactly 4 levels deep.
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Object</strong>: The cloned object.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">execute
+                                (<small>method, context</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_execute">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L72" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:72</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The execute method executes a method against the command chain.
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>method</td>
+                                                <td>Object</td>
+                                                <td>The method to execute</td>
+                                            </tr>
+                                            <tr>
+                                                <td>context</td>
+                                                <td>Object</td>
+                                                <td>A simple object to act as the basic context.</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the context with the result of the call.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getCommandChain
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_getCommandChain">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L51" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:51</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The getCommandChain will return the command chain for the current object.
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/CommandChain.html" class="crosslink">CommandChain</a></strong>: The command chain object.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getIdentifier
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_getIdentifier">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L41" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:41</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                The getIdentifier method will return the identifier for the current object.
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Identifier</strong>: The identifier object from Raddish-Loader</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getItem
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                <p>Inherited from
+                                    <a href="../classes/AbstractModel.html#method_getItem">
+                                        AbstractModel
+                                    </a>
+                                        but overwritten in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L21" target="_blank"><code>lib&#x2F;model&#x2F;default.js:21</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The getItem method of the DefaultModel will build a query for the database.</p>
+                            <p>The methods called to build the query are:</p>
+                            <ul>
+                            <li>_buildQueryFrom</li>
+                            <li>_buildQueryColumns</li>
+                            <li>_buildQueryJoins</li>
+                            <li>_buildQueryWhere</li>
+                            <li>_buildQueryGroup</li>
+                            <li>_buildQueryHaving</li>
+                            </ul>
                             
                             </p>
                             
@@ -720,21 +1013,24 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>Promise</strong>: The unique column of the table.
+                                            <p><strong>Promise</strong>: A promise containing a row object with data from the database.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">getName
+                            <h3 class="title">getList
                                 ()
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L82" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:82</code></a>
+                                <p>Inherited from
+                                    <a href="../classes/AbstractModel.html#method_getList">
+                                        AbstractModel
+                                    </a>
+                                        but overwritten in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/default.js#L68" target="_blank"><code>lib&#x2F;model&#x2F;default.js:68</code></a>
                             </p>
                             
                             
@@ -742,7 +1038,19 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This method returns the name of the table.</p>
+                                <p>The getList method will build a query for the database.
+                            This method will always return a Rowset object with data from the database.</p>
+                            <p>The methods called to build the query are:</p>
+                            <ul>
+                            <li>_buildQueryFrom</li>
+                            <li>_buildQueryColumns</li>
+                            <li>_buildQueryJoins</li>
+                            <li>_buildQueryWhere</li>
+                            <li>_buildQueryGroup</li>
+                            <li>_buildQueryHaving</li>
+                            <li>_buildQueryOrder</li>
+                            <li>_buildQueryLimit</li>
+                            </ul>
                             
                             </p>
                             
@@ -750,21 +1058,21 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>String</strong>: The name of the table object.
+                                            <p><strong>Promise</strong>: A promise containing a Rowset object with data from the database.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">getQueryBuilder
-                                ()
+                            <h3 class="title">getObject
+                                (<small>identifier, config</small>)
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L23" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:23</code></a>
+                                    <p>Inherited from
+                                        <a href="../classes/ObjectManager.html#method_getObject">ObjectManager</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L103" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:103</code></a>
                             </p>
                             
                             
@@ -772,7 +1080,59 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This method will return the query builder object.</p>
+                                The getObject method will try to load the specified identifier.
+                            An optional config can be given for the identifier to load.
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>identifier</td>
+                                                <td>String|Identifier</td>
+                                                <td>An identifier string/ object.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>An optional config object.</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the initialized object.</p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getTable
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>Inherited from
+                                        <a href="../classes/AbstractModel.html#method_getTable">AbstractModel</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L61" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:61</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will return the table related to the model.</p>
                             
                             </p>
                             
@@ -780,21 +1140,21 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>QueryBuilder</strong>: A QueryBuilder instance of the RaddishDB query builder.
+                                            <p><strong>Promise</strong>: A promise containing the table object.
                             </p>
                                 </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">getRow
-                                ()
+                            <h3 class="title">setState
+                                (<small>key, value</small>)
                             </h3>
                             
                             <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L33" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:33</code></a>
+                                    <p>Inherited from
+                                        <a href="../classes/AbstractModel.html#method_setState">AbstractModel</a>:
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/model/abstract.js#L39" target="_blank"><code>lib&#x2F;model&#x2F;abstract.js:39</code></a>
                             </p>
                             
                             
@@ -802,97 +1162,7 @@ title_extra: AbstractTable
                             </div>
                             
                             <p class="description">
-                                <p>This method will return the Row object related to the Table object.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Promise</strong>: A promise containing the related Row object.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">getRowset
-                                ()
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L57" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:57</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method will return the Rowset object related to the Table object.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Promise</strong>: A promise containing the related Rowset object.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">getUniqueColumns
-                                ()
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L92" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:92</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This mehtod retuns an array of unique columns.</p>
-                            
-                            </p>
-                            
-                            
-                                <div class="returns">
-                                    <h4>Returned Value</h4>
-                            
-                                            <p><strong>Promise</strong>: A promise containing the unique columns of the table.
-                            </p>
-                                </div>
-            
-                            <hr />
-                        </div>
-                        <div class="col-md-12 method">
-                            <h3 class="title">mapColumn
-                                (<small>key, reverse</small>)
-                            </h3>
-                            
-                            <div class="meta">
-                                    <p>
-                                            Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/table/abstract.js#L123" target="_blank"><code>lib&#x2F;database&#x2F;table&#x2F;abstract.js:123</code></a>
-                            </p>
-                            
-                            
-                            
-                            </div>
-                            
-                            <p class="description">
-                                <p>This method check for the column name of the given key, or reversed.</p>
+                                <p>This method will set the states of the model.</p>
                             
                             </p>
                             
@@ -909,14 +1179,14 @@ title_extra: AbstractTable
                                     <tbody>
                                             <tr>
                                                 <td>key</td>
-                                                <td>String</td>
-                                                <td>The column name to return.
+                                                <td>String| Object</td>
+                                                <td>The state name/ object of states to set.
                             </td>
                                             </tr>
                                             <tr>
-                                                <td>reverse</td>
-                                                <td>Boolean</td>
-                                                <td>Reverse the method. (default: false)
+                                                <td>value</td>
+                                                <td>*</td>
+                                                <td>The value for the state.
                             </td>
                                             </tr>
                                     </tbody>
@@ -925,7 +1195,7 @@ title_extra: AbstractTable
                                 <div class="returns">
                                     <h4>Returned Value</h4>
                             
-                                            <p><strong>String</strong>: The new name of the object key.
+                                            <p><strong><a href="../classes/AbstractModel.html" class="crosslink">AbstractModel</a></strong>: The current model object for chaining.
                             </p>
                                 </div>
             

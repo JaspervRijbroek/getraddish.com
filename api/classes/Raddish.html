@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: Socket
+title_extra: Raddish
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -300,18 +300,18 @@ title_extra: Socket
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Socket</h1>
+                        <h1>Raddish</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is a wrapper class around SocketIO,
-            it adds convenience methods and late-binding of listeners.</p>
+                        <p>This is the main file.
+            This object holds the config and more data.</p>
             
                     </div>
             
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L5" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:5</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L3" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:3</code></a>
                         </div>
                 </div>
             </div>
@@ -322,14 +322,14 @@ title_extra: Socket
                 <div class="row">
             
                         <div class="col-md-12 method">
-                            <h3 class="title">addListener
-                                (<small>event, funct</small>)
+                            <h3 class="title">getConfig
+                                (<small>identifier</small>)
                             </h3>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L44" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:44</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L44" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:44</code></a>
                             </p>
                             
                             
@@ -337,7 +337,9 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method add an event listener with custom logic.</p>
+                                <p>This method returns the value of the config. When no identifier is given
+                            the complete config is returned.</p>
+                            <p>When a part of the identifier isn't found in the config false will be returned.</p>
                             
                             </p>
                             
@@ -353,20 +355,201 @@ title_extra: Socket
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>event</td>
-                                                <td>String</td>
-                                                <td>The event name
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>funct</td>
-                                                <td>Function</td>
-                                                <td>The function to execute on that event
+                                                <td>identifier</td>
+                                                <td>String/null</td>
+                                                <td>The dot-separated identifier of the config value.
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong></strong>: The data found in the config.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getInstance
+                                ()
+                            </h3>
+                            
+                                <span class="flag static">static</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L209" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:209</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method maked sure you will only and always have the single Raddish object.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <span class="type"></span>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">preStart
+                                (<small>callback</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L81" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:81</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will insert all the data for the related modules
+                            All the data inserted is loaded from the config.json file.</p>
+                            <p>Usually this method isn't called manually, however if you want a specific method
+                            to be executed before start you can do so.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>callback</td>
+                                                <td>Function</td>
+                                                <td>An optional callback for the preStart method.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/Raddish.html" class="crosslink">Raddish</a></strong>: The current object for chaining.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">registerApplication
+                                (<small>path</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L123" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:123</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method proxies the path to Application.registerApplication and returns itself.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>path</td>
+                                                <td>String</td>
+                                                <td>The absolute path to the application.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/Raddish.html" class="crosslink">Raddish</a></strong>: The current object for chaining.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">setConfig
+                                (<small>conf</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L25" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:25</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method sets the config and all of its values.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>conf</td>
+                                                <td>String/ Object/ undefined</td>
+                                                <td>The optional config for Raddish.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/Raddish.html" class="crosslink">Raddish</a></strong>: the current object for chaining.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>
@@ -378,7 +561,7 @@ title_extra: Socket
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L16" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:16</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/raddish/raddish.js#L140" target="_blank"><code>lib&#x2F;raddish&#x2F;raddish.js:140</code></a>
                             </p>
                             
                             
@@ -386,19 +569,8 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method starts the SocketIO Server.
-                            When socketio is enabled this will be done automatically.</p>
-                            <p>By default there are two events:</p>
-                            <ul>
-                            <li>
-                            <p>Register
-                            Used to register to a specific room</p>
-                            </li>
-                            <li>
-                            <p>Unregister
-                            Used to unregister from a specific room</p>
-                            </li>
-                            </ul>
+                                <p>This method starts the server.
+                            All the requests that come in will be passed to the router. Which will pick it up from here.</p>
                             
                             </p>
                             
@@ -415,13 +587,19 @@ title_extra: Socket
                                     <tbody>
                                             <tr>
                                                 <td>port</td>
-                                                <td>Number</td>
-                                                <td>The port to start SocketIO on.
+                                                <td>Int</td>
+                                                <td>The optional port number.
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/Raddish.html" class="crosslink">Raddish</a></strong>: The current object for chaining.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>

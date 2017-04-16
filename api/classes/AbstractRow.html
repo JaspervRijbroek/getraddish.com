@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: Socket
+title_extra: AbstractRow
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -300,18 +300,18 @@ title_extra: Socket
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Socket</h1>
+                        <h1>AbstractRow</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is a wrapper class around SocketIO,
-            it adds convenience methods and late-binding of listeners.</p>
+                        <p>The abstract row holds all the abstract method for the Row object.
+            All basic methods can be found here.</p>
             
                     </div>
             
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L5" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:5</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L5" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:5</code></a>
                         </div>
                 </div>
             </div>
@@ -322,14 +322,14 @@ title_extra: Socket
                 <div class="row">
             
                         <div class="col-md-12 method">
-                            <h3 class="title">addListener
-                                (<small>event, funct</small>)
+                            <h3 class="title">clone
+                                ()
                             </h3>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L44" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:44</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L88" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:88</code></a>
                             </p>
                             
                             
@@ -337,48 +337,31 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method add an event listener with custom logic.</p>
+                                <p>This is an extension on the global clone method.
+                            It will return the data and modified data to an empty object.</p>
+                            <p>Also the isNew is reset to true.</p>
                             
                             </p>
                             
-                                <h3>Parameters</h3>
                             
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                            <tr>
-                                                <td>event</td>
-                                                <td>String</td>
-                                                <td>The event name
-                            </td>
-                                            </tr>
-                                            <tr>
-                                                <td>funct</td>
-                                                <td>Function</td>
-                                                <td>The function to execute on that event
-                            </td>
-                                            </tr>
-                                    </tbody>
-                                </table>
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
                             
+                                            <p><strong>Row | <a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a></strong>: The cloned row object.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">start
-                                (<small>port</small>)
+                            <h3 class="title">delete
+                                ()
                             </h3>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L16" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:16</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L77" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:77</code></a>
                             </p>
                             
                             
@@ -386,19 +369,157 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method starts the SocketIO Server.
-                            When socketio is enabled this will be done automatically.</p>
-                            <p>By default there are two events:</p>
-                            <ul>
-                            <li>
-                            <p>Register
-                            Used to register to a specific room</p>
-                            </li>
-                            <li>
-                            <p>Unregister
-                            Used to unregister from a specific room</p>
-                            </li>
-                            </ul>
+                                <p>This method won't do anything with the object,
+                            it will only be returned and the rest is called in a override method.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <span class="type">Row | <a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a></span>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getData
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L56" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:56</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method returns the data of the row object.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Object</strong>: The data of the row object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getTable
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L106" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:106</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This returns the table object connected to this row object.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/AbstractTable.html" class="crosslink">AbstractTable</a> | Table</strong>: The table object connected to this row object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">isNew
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L20" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:20</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method will return a boolean telling if the row object is new or not.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <span class="type">Boolean</span>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">save
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L66" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:66</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>This method saves the data.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a></strong>: The current row object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">setData
+                                (<small>data</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/database/row/abstract.js#L34" target="_blank"><code>lib&#x2F;database&#x2F;row&#x2F;abstract.js:34</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>Set the data of the row object.
+                            Within this method a check is done if a value is updated or not.</p>
                             
                             </p>
                             
@@ -414,14 +535,19 @@ title_extra: Socket
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>port</td>
-                                                <td>Number</td>
-                                                <td>The port to start SocketIO on.
+                                                <td>data</td>
+                                                <td>Object</td>
+                                                <td>The new data of the row object.
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <span class="type"><a href="../classes/AbstractRow.html" class="crosslink">AbstractRow</a></span>
+                                </div>
             
                             <hr />
                         </div>

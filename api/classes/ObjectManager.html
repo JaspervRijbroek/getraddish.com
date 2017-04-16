@@ -1,7 +1,7 @@
 ---
 title: API
 layout: default
-title_extra: Socket
+title_extra: ObjectManager
 ---
 
 <div class="layout with-left-sidebar js-layout">
@@ -300,18 +300,18 @@ title_extra: Socket
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Socket</h1>
+                        <h1>ObjectManager</h1>
                     </div>
             
                     <div class="description">
-                        <p>This is a wrapper class around SocketIO,
-            it adds convenience methods and late-binding of listeners.</p>
+                        <p>The ObjectManager class is the basic class of all the files in Raddish,
+            if the object you have created has the method getObject it extends from this class.</p>
             
                     </div>
             
             
                         <div class="foundat">
-                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L5" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:5</code></a>
+                            Defined in: <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L9" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:9</code></a>
                         </div>
                 </div>
             </div>
@@ -322,14 +322,16 @@ title_extra: Socket
                 <div class="row">
             
                         <div class="col-md-12 method">
-                            <h3 class="title">addListener
-                                (<small>event, funct</small>)
+                            <h3 class="title">_getComponentConfig
+                                (<small>identifier, config</small>)
                             </h3>
+                            
+                                <span class="flag private">private</span>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L44" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:44</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L124" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:124</code></a>
                             </p>
                             
                             
@@ -337,7 +339,8 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method add an event listener with custom logic.</p>
+                                <p>The _getComponentConfig is an internal method to combine all the config object together.
+                            Usually you don't have to call this method manually.</p>
                             
                             </p>
                             
@@ -353,32 +356,40 @@ title_extra: Socket
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>event</td>
-                                                <td>String</td>
-                                                <td>The event name
+                                                <td>identifier</td>
+                                                <td>Identifier</td>
+                                                <td>The identifier object of the object to load.
                             </td>
                                             </tr>
                                             <tr>
-                                                <td>funct</td>
-                                                <td>Function</td>
-                                                <td>The function to execute on that event
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>The config object for the object to load.
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Object</strong>: The complete and combined config object.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>
                         <div class="col-md-12 method">
-                            <h3 class="title">start
-                                (<small>port</small>)
+                            <h3 class="title">_initialize
+                                (<small>config</small>)
                             </h3>
+                            
+                                <span class="flag private">private</span>
                             
                             <div class="meta">
                                     <p>
                                             Defined in
-                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/socket/socket.js#L16" target="_blank"><code>lib&#x2F;socket&#x2F;socket.js:16</code></a>
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L25" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:25</code></a>
                             </p>
                             
                             
@@ -386,19 +397,8 @@ title_extra: Socket
                             </div>
                             
                             <p class="description">
-                                <p>This method starts the SocketIO Server.
-                            When socketio is enabled this will be done automatically.</p>
-                            <p>By default there are two events:</p>
-                            <ul>
-                            <li>
-                            <p>Register
-                            Used to register to a specific room</p>
-                            </li>
-                            <li>
-                            <p>Unregister
-                            Used to unregister from a specific room</p>
-                            </li>
-                            </ul>
+                                <p>The abstract initialize method sets the config,
+                            and when behaviors are added it will allocate them.</p>
                             
                             </p>
                             
@@ -414,14 +414,280 @@ title_extra: Socket
                                     </thead>
                                     <tbody>
                                             <tr>
-                                                <td>port</td>
-                                                <td>Number</td>
-                                                <td>The port to start SocketIO on.
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>the config for this object
                             </td>
                                             </tr>
                                     </tbody>
                                 </table>
                             
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the initialized object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">clone
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L61" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:61</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The clone method will return a clone of the current object.
+                            The clone is going exactly 4 levels deep.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Object</strong>: The cloned object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">execute
+                                (<small>method, context</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L72" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:72</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The execute method executes a method against the command chain.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>method</td>
+                                                <td>Object</td>
+                                                <td>The method to execute
+                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>context</td>
+                                                <td>Object</td>
+                                                <td>A simple object to act as the basic context.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the context with the result of the call.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">get
+                                (<small>identifier, config</small>)
+                            </h3>
+                            
+                                <span class="flag static">static</span>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L177" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:177</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The get method on the ObjectManager class will load an object.
+                            This is a static alias of the getObject method.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>identifier</td>
+                                                <td>String|Identifier</td>
+                                                <td>An identifier string/ object.
+                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>An optional config object.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the initialized object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getCommandChain
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L51" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:51</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The getCommandChain will return the command chain for the current object.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong><a href="../classes/CommandChain.html" class="crosslink">CommandChain</a></strong>: The command chain object.
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getIdentifier
+                                ()
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L41" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:41</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The getIdentifier method will return the identifier for the current object.</p>
+                            
+                            </p>
+                            
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Identifier</strong>: The identifier object from Raddish-Loader
+                            </p>
+                                </div>
+            
+                            <hr />
+                        </div>
+                        <div class="col-md-12 method">
+                            <h3 class="title">getObject
+                                (<small>identifier, config</small>)
+                            </h3>
+                            
+                            <div class="meta">
+                                    <p>
+                                            Defined in
+                                    <a href="https://github.com/JaspervRijbroek/raddish/tree/master/lib/object/manager.js#L103" target="_blank"><code>lib&#x2F;object&#x2F;manager.js:103</code></a>
+                            </p>
+                            
+                            
+                            
+                            </div>
+                            
+                            <p class="description">
+                                <p>The getObject method will try to load the specified identifier.
+                            An optional config can be given for the identifier to load.</p>
+                            
+                            </p>
+                            
+                                <h3>Parameters</h3>
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>identifier</td>
+                                                <td>String|Identifier</td>
+                                                <td>An identifier string/ object.
+                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>config</td>
+                                                <td>Object</td>
+                                                <td>An optional config object.
+                            </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <div class="returns">
+                                    <h4>Returned Value</h4>
+                            
+                                            <p><strong>Promise</strong>: A promise containing the initialized object.
+                            </p>
+                                </div>
             
                             <hr />
                         </div>
